@@ -1,8 +1,19 @@
 ﻿{
-  "background_color": "red",
-  "description": "Portfolio of Muhammad Saifullah Khan, a Software Engineer from Islamabad, Pakistan!",
+  "short_name": "Portfolio",
+  "name": "Saif's Portfolio",
+  "description": "Portfolio of Muhammad Saifullah K., a Software Engineer from Pakistan!",
+
+  "lang": "en",
+  "orientation": "portrait",
+
+  "scope": "/",
+  "start_url": "/index.html",
+  "theme_color": "aliceblue",
+  "background_color": "wgite",
+  
+  "display": "standalone",
   "dir": "ltr",
-  "display": "fullscreen",
+
   "icons": [
     {
       "sizes": "any",
@@ -16,12 +27,6 @@
       "sizes": "any",
       "src": "icon/res-hi.png"
     }
-  ],
-  "lang": "en",
-  "name": "Saif's Portfolio",
-  "orientation": "portrait",
-  "scope": "/",
-  "short_name": "Portfolio",
-  "start_url": "/index.html",
-  "theme_color": "aliceblue"
+  ]
+
 }
