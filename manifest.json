@@ -10,8 +10,8 @@
   "start_url": "/index.html",
   "theme_color": "aliceblue",
   "background_color": "wgite",
-  
-  "display": "standalone",
+
+  "display": "fullscreen",
   "dir": "ltr",
 
   "icons": [

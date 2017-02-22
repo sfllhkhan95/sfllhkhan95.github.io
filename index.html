@@ -5,9 +5,22 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <!-- Web App settings for iOS devices -->
+    <meta name="apple-mobile-web-app-title" content="Saif's Portfolio" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link rel="apple-touch-icon" href="icon/res-hi.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/res-low.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/res-md.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/res-hi.png">
+
+    <link rel="apple-touch-startup-image" href="img/bg.jpg">
+
     <meta name="p:domain_verify" content="a756de613e3e91e14743d6a24b29a35c" />
 
     <title>Portfolio | Muhammad Saifullah Khan</title>
@@ -59,14 +72,29 @@
                 <a class="navbar-brand" href="#top">Muhammad Saifullah K.</a>
             </div>            
             <ul class="nav navbar-nav sidebar-nav">
-                <li >
-                    <img width="100%" src="img/bg.jpg" />
-                </li>
+                <li><img width="100%" src="img/bg.jpg"/></li>
                 <li class="active"><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li id="portfolio-menu" class="dropdown hide-on-sm">
+                    <a href="#portfolio">
+                        Portfolio<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Websites</a></li>
+                        <li><a href="#">Graphic Designs</a></li>
+                        <li><a href="#">Writings</a></li>
+                        <li><a href="#">Miscellaneous</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95" class="fa fa-linkedin"></a></li>
+                <li><a target="_blank" href="https://github.com/sfllhkhan95" class="fa fa-github"></a></li>
+                <li><a href="#"></a></li>
             </ul>
         </div>
     </nav>
@@ -360,7 +388,25 @@
                 $("[href=#contact]").parent().addClass("active");
             }
         });
+        // Display dropdown-menu when hovering over dropdown
+        $(".dropdown").hover(function(){
+            $(".dropdown-menu").show();
+        }, function(){
+            $(".dropdown-menu").hide();
+        });
     </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            if(window.navigator.standalone == true) {
+                $('a').click(function() {
+                    window.location = $(this).attr('href');
+                    return false;
+                });
+            }
+        });
+</script>
+
 
 </body>
 
