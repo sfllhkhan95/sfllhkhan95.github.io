@@ -39,30 +39,36 @@
 
 <body>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$( "#menu-close").click();>Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$( "#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$( "#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$( "#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$( "#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
-            </li>
-        </ul>
+    <!-- Action Bar (Android-style action bar, appears only on small devices) -->
+    <nav id="action-bar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle pull-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a id="action-bar-title" class="navbar-brand" href="#top">Home</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Bar (appears as a side menu on small devices) -->
+    <nav id="sidebar-wrapper" class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#top">Muhammad Saifullah K.</a>
+            </div>            
+            <ul class="nav navbar-nav sidebar-nav">
+                <li >
+                    <img width="100%" src="img/bg.jpg" />
+                </li>
+                <li class="active"><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Header -->
@@ -240,7 +246,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
                     <a href="#" class="btn btn-lg btn-light">Hire Me!</a>
                     <a target="_blank" href="docs/resume.pdf" title="Muhammad Saifullah's Resume" class="btn btn-lg btn-dark">See Resumé!</a>
                 </div>
@@ -276,7 +281,6 @@
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
     <!-- jQuery -->
@@ -290,73 +294,72 @@
         // Closes the sidebar menu
         $("#menu-close").click(function(e) {
             e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
+            $("#sidebar-wrapper").removeClass("opened");
+            $("#action-bar").removeClass("opened");
         });
         // Opens the sidebar menu
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
+            $("#sidebar-wrapper").toggleClass("opened");
+            $("#action-bar").toggleClass("opened");
         });
-        // Scrolls to the selected menu item on the page
+        // Scrolls to the selected menu item on the page, and closes sidebar
         $(function() {
             $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
+                        // Scroll to correct section
                         $('html,body').animate({
                             scrollTop: target.offset().top
                         }, 1000);
+
+                        // Close sidebar
+                        $("#sidebar-wrapper").removeClass("opened");
+                        $("#action-bar").removeClass("opened");
+
+                        // Update title
+                        if ($(this).html() != "Discover")
+                            $("#action-bar-title").html($(this).html());
                         return false;
                     }
                 }
             });
         });
-        //#to-top button appears after scrolling
-        var fixed = false;
+        // Sidebar closes when window is resized
+        $(window).resize(function(){
+            $("#sidebar-wrapper").removeClass("opened");
+            $("#action-bar").removeClass("opened");
+        });
         $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
+            // Update page title based on which section we are in
+            if ($(this).scrollTop() < $("#about").offset().top){
+                $("#action-bar-title").html("Home");
+                $(".sidebar-nav li").removeClass("active");
+                $("[href=#top]").parent().addClass("active");
+            }
+            else if ($(this).scrollTop() < $("#services").offset().top){
+                $("#action-bar-title").html("About");
+                $(".sidebar-nav li").removeClass("active");
+                $("[href=#about]").parent().addClass("active");
+            }
+            else if ($(this).scrollTop() < $("#portfolio").offset().top){
+                $("#action-bar-title").html("Services");
+                $(".sidebar-nav li").removeClass("active");
+                $("[href=#services]").parent().addClass("active");
+            }
+            else if ($(this).scrollTop() < $("#contact").offset().top){
+                $("#action-bar-title").html("Portfolio");
+                $(".sidebar-nav li").removeClass("active");
+                $("[href=#portfolio]").parent().addClass("active");
+            }
+            else {
+                $("#action-bar-title").html("Contact");
+                $(".sidebar-nav li").removeClass("active");
+                $("[href=#contact]").parent().addClass("active");
             }
         });
-        // Disable Google Maps scrolling
-        // See http://stackoverflow.com/a/25904582/1607849
-        // Disable scroll zooming and bind back the click event
-        var onMapMouseleaveHandler = function(event) {
-            var that = $(this);
-            that.on('click', onMapClickHandler);
-            that.off('mouseleave', onMapMouseleaveHandler);
-            that.find('iframe').css("pointer-events", "none");
-        }
-        var onMapClickHandler = function(event) {
-                var that = $(this);
-                // Disable the click handler until the user leaves the map area
-                that.off('click', onMapClickHandler);
-                // Enable scrolling zoom
-                that.find('iframe').css("pointer-events", "auto");
-                // Handle the mouse leave event
-                that.on('mouseleave', onMapMouseleaveHandler);
-            }
-            // Enable map zooming with mouse scroll when the user clicks the map
-        $('.map').on('click', onMapClickHandler);
     </script>
 
 </body>
