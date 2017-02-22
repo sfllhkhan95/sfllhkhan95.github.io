@@ -1,0 +1,145 @@
+nav {
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+}
+
+body {
+	background-color: #000;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'roboto', 'sans-serif';
+}
+
+#resume {
+	background-color: #fff;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	overflow: auto;
+}
+
+#column-lt {
+	width: 40%;
+	float: left;
+}
+
+#intro {
+	float: right
+}
+
+#name {
+	background-color: black;
+	color: white;
+	padding: 10px 30px;
+	float: right;
+	text-align: center;
+}
+
+#avatar {
+	background-color: black;
+	width: 200px;
+	height: 200px;
+	border: white 5px solid;
+	border-radius: 3px 30px;
+}
+
+#links, #projects {
+	text-align: left;
+}
+
+#contact {
+	float: right;
+	text-align: right;
+}
+
+#column-rt {
+	width: 60%;
+	float: right;
+}
+
+#objective, #skills, #quals, #educ, #refers {
+	margin: 10px 40px;
+}
+
+#skills table tr td {
+	padding: 0 10px;
+}
+
+.degree {
+	float: left;
+}
+
+.grades {
+	float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-variant: small-caps;
+}
+
+h1 {
+	font-size: larger;
+	margin-bottom: 2px;
+	color: black;
+}
+
+h1:hover {
+	color: green;
+	-webkit-transition: 1s;
+}
+
+h2 {
+	font-size: large;
+}
+
+p {
+	text-align: justify;
+}
+
+input[type='text'], input[type='email'], textarea, select {
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+option {
+	background-color: green;
+	color: white;
+	font-weight: bolder;
+}
+
+option:focus, option:hover, option:visited, option:link {
+	background-color: white;
+	color: green;
+	font-weight: lighter;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: 0;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	box-shadow: 0 0 5px green;
+}
+
+input[type=checkbox]+label {
+	font-weight: lighter;
+}
+
+input[type=checkbox]:checked+label {
+	font-weight: normal;
+}
+
+input[type='submit'] {
+	background-color: green;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0;
+}
+
+input[type='submit']:focus, input[type='submit']:hover {
+	background-color: rgb(0, 255, 50);
+}
