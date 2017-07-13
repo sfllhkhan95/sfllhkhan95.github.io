@@ -108,7 +108,7 @@ body a:hover{
 .modal .title {
 	text-align: center;
 	margin-bottom: 15px;
-	text-shadow: 0 0 3px #018fa0;
+	text-shadow: 0 0 1px #018fa0;
 }
 .modal .container ol {
 	margin-bottom: 30px;
