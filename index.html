@@ -52,12 +52,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-        type="text/css">
+    <!--link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css"-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -112,7 +113,7 @@
                 </li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right social-icons">
                 <li>
                     <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95" class="fa fa-linkedin"></a>
                 </li>
@@ -230,63 +231,74 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div class="gallery-grids">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Projects</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <label class="text-center">Applications</label>
-                                <a href="projects/apps/">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-apps.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+							<a href="projects/apps/">
+								<figure class="effect-bubba">
+									<img src="img/portfolio-apps.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Applications</h4>
+									</figcaption>
+								</figure>
+							</a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <label class="text-center">Games</label>
-                                <a href="projects/games/">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-games.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+							<a href="projects/games/">
+								<figure class="effect-bubba">
+									<img src="img/portfolio-games.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Games</h4>
+									</figcaption>
+								</figure>
+							</a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <label class="text-center">Websites</label>
-                                <a href="projects/web/">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-web.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+							<a href="projects/web/">
+								<figure class="effect-bubba">
+									<img src="img/portfolio-web.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Websites</h4>
+									</figcaption>
+								</figure>
+							</a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <label class="text-center">Graphic Designs</label>
-                                <a href="projects/graphics/">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-graphics.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+							<a href="projects/graphics/">
+								<figure class="effect-bubba">
+									<img src="img/portfolio-graphics.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Graphic Designs</h4>
+									</figcaption>
+								</figure>
+							</a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <label class="text-center">Writings</label>
-                                <a href="projects/writings/">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-publications.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+							<div data-toggle="modal" data-target="#publications">
+								<figure class="effect-bubba">
+									<img src="img/portfolio-publications.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Publications</h4>
+									</figcaption>
+								</figure>
+							</div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <label class="text-center">Miscellaneous</label>
-                                <a href="projects/sketches/">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-sketching.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+							<a href="projects/sketeches/">
+								<figure class="effect-bubba">
+									<img src="img/portfolio-sketching.jpg" alt="" class="img-responsive">
+									<figcaption>
+										<h4>Miscellaneous</h4>
+									</figcaption>
+								</figure>
+							</a>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View All Projects</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -337,6 +349,103 @@
             </div>
         </div>
     </footer>
+
+    <div id="publications" class="modal" role="dialog">
+        <nav class="navbar navbar-inverse navbar-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="pull-left" data-dismiss="modal">
+                    <span class="fa fa-angle-left"></span>
+                </div>
+                <div class="navbar-brand">
+                    <a class="modal-title" >Publications</a>
+                </div>
+            </div>
+        </div>
+        <div class="pull-right" data-dismiss="modal">
+            <span class="fa fa-close"></span>
+        </div>
+        </nav>
+        <div class="first container">
+            <h3 class="title">Papers</h3>
+            <ol>
+                <li><a href="#">
+                    S. U. Khan, M. Tariq and S. Iqbal, "Pre-Planned Electricity Bills Without Prepaid
+                    Billing," in <i>IEEE FIT 2017</i>, June 30, 2017, Islamabad (Unpublished).
+                </a></li>
+            </ol>
+        </div>
+        <div class="last container">
+            <div class="left-col col-sm-8 col-xs-12 gallery-grids">
+                <h3 class="title">Blog Articles</h3>
+                <div class="blog"><a target="_blank" href="http://www.thedailysuggest.com/campaign-tax-free-education-pakistan/">
+                    <img class="blog-cover" src="img/blogs/tax-free-education.jpg">                
+                    <label>
+                        <h4 class="blog-title">University Students Demand Tax-Free Education in Pakistan</h4>
+                        <i class="blog-date">February 7, 2017</i>
+                    </label>
+                </a></div>
+                <div class="blog"><a target="_blank" href="http://www.thedailysuggest.com/be-a-mushroom-in-the-afterlife-with-the-infinity-burial-suit/">
+				    <img class="blog-cover" src="img/blogs/mushrooms.jpg">
+                    <label>
+                        <h4 class="blog-title">Burial Suit That Turns You Into Mushrooms</h4>
+                        <i class="blog-date">April 8, 2017</i>
+                    </label>
+	    		</a></div>
+                <div class="blog"><a target="_blank" href="http://www.thedailysuggest.com/10-reasons-why-chocolate-is-your-best-friend/">
+			    	<img class="blog-cover" src="img/blogs/chocolate.jpg">                
+                    <label>
+                        <h4 class="blog-title">10 Reasons Why Chocolate is Your Best Friend</h4>
+                        <i class="blog-date">April 26, 2017</i>
+                    </label>
+                </a></div>
+                <div class="blog"><a target="_blank" href="http://www.thedailysuggest.com/remembering-hogwarts-battle/">
+                    <img class="blog-cover" src="img/blogs/battle-hogwarts.png">                
+                    <label>
+                        <h4 class="blog-title">Remembering the Battle of Hogwarts</h4>
+                        <i class="blog-date">May 2, 2017</i>
+                    </label>
+                </a></div>
+                <div class="blog"><a target="_blank" href="http://www.thedailysuggest.com/malala-set-reach-half-million-twitter-followers-first-day/">
+                    <img class="blog-cover" src="img/blogs/malala-twitter.jpg">                
+                    <label>
+                        <h4 class="blog-title">Malala Set To Reach Half-million Twitter Followers On First Day</h4>
+                        <i class="blog-date">July 8, 2017</i>
+                    </label>
+                </a></div>
+                <div class="blog"><a target="_blank" href="http://www.thedailysuggest.com/everything-know-game-thrones-season-7-episode-1/">
+                    <img class="blog-cover" src="img/blogs/got-s07e01.jpg">                
+                    <label>
+                        <h4 class="blog-title">Everything We Know About Game of Thrones Season 7 Episode 1</h4>
+                        <i class="blog-date">July 8, 2017</i>
+                    </label>
+                </a></div>
+            </div>
+            <div class="right-col col-sm-4 col-xs-12">
+                <h3 class="title">Stories &amp; Essays</h3>
+                <ol>
+                    <li><a href="#">
+                        His Last Speech
+                    </a></li>
+                    <li><a href="#">
+                        From Indifference to Passion
+                    </a></li>
+                </ol>
+                <h3 class="title">Poetry</h3>
+                <ol>
+                    <li><a href="#">
+                        Morning Beauty
+                    </a></li>
+                </ol>
+                <h3 class="title">Travelogues</h3>
+                <ol>
+                    <li><a href="#">
+                        There and Back Again
+                    </a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
