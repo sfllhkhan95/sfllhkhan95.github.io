@@ -100,7 +100,7 @@
                 <li class="active"><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right social-icons">
@@ -321,17 +321,17 @@
                     <p>National University of Sciences and Technology (NUST)
                         <br>Islamabad, PK - 44000</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> <a href="tel:+923053177781">(305) 317-7781</a></li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:sfllhkhan95@live.com">sfllhkhan95@live.com</a>
+                        <li><i class="fa fa-phone fa-fw"></i> <a class="text-primary" href="tel:+923053177781">(305) 317-7781</a></li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a class="text-primary" href="mailto:sfllhkhan95@live.com">sfllhkhan95@live.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95"><img src="img/linkedin.png" class="fa fa-fw fa-2x" /></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95"><span class="fa fa-linkedin fa-fw fa-2x text-primary" ></span></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://github.com/sfllhkhan95"><img src="img/github.png" class="fa fa-fw fa-2x" /></a>
+                            <a target="_blank" href="https://github.com/sfllhkhan95"><span class="fa fa-github fa-fw fa-2x text-primary" ></span></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -503,7 +503,7 @@
                 $(".sidebar-nav li").removeClass("active");
                 $("[href=#services]").parent().addClass("active");
             } else if ($(this).scrollTop() < $("#contact").offset().top) {
-                $("#action-bar-title").html("Portfolio");
+                $("#action-bar-title").html("Projects");
                 $(".sidebar-nav li").removeClass("active");
                 $("[href=#portfolio]").parent().addClass("active");
             } else {
