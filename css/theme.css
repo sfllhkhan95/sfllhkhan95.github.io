@@ -1,0 +1,176 @@
+/*-- Global Styles --*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #bbb;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body a:hover{
+	text-decoration:none;
+}
+
+.bg-primary {
+    background: #018fa0;
+}
+
+.text-primary {
+    color: #018fa0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family: 'Cairo', sans-serif;
+}
+
+hr.small {
+    max-width: 100px;
+}
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+/*-- //Global Styles --*/
+
+
+/*-- Header --*/
+.header {
+    display: table;
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(1, 143, 160, 0.5)),
+                url(../img/bg.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.photo-frame {
+	position: relative;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background: #000;
+	border: 5px #fff solid;
+	border-radius: 100px;
+}
+.photo {
+	width: 190px;
+	height: 190px;
+	border-radius: 100px;
+	padding: 0;
+	margin: 0;
+}
+.photo-frame:hover .photo {
+	opacity: 0.5;
+}
+.photo-frame:hover {
+	box-shadow: 0 0 5px #000;
+}
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #fff !important;
+    text-shadow: 1px 1px #000;
+}
+.text-vertical-center h4 {
+    font-size: 2em;
+    color: #fff !important;    
+    text-shadow: 1px 1px #000;    
+}
+@media (max-width: 768px){
+    .text-vertical-center h1 {
+        font-size: 2.5em;
+    }
+    .text-vertical-center ￼h4 {
+        font-size: 1.25em;
+    }
+}
+/*-- //Header --*/
+
+
+/*-- About --*/
+.about {
+    padding: 50px 0;
+}
+/*-- //About --*/
+
+
+/*-- Services --*/
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+/*-- //Services --*/
+
+
+/*-- Callout --*/
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/*-- //Callout --*/
+
+
+/*-- Call to Action --*/
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+/*-- //Call to Action --*/
+
+
+/*-- Footer --*/
+footer {
+    padding: 100px 0;
+}
+/*-- //Footer --*/

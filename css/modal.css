@@ -1,0 +1,109 @@
+/*-- bootstrap-modal-pop-up --*/
+/* modal */
+.modal {
+	background: rgba(1, 143, 160, 0.1);
+	color: #000;
+	z-index: 99999;
+}
+.modal .close {
+	opacity: 0.85;
+	font-size: 15px;
+}
+.modal nav {
+	background: #001d22;
+	color: #fff;
+}
+.modal nav .container-fluid {
+	width: 100%;
+}
+.modal nav .container-fluid > * {
+	width: 100%;
+	text-align: center !important;
+}
+.modal nav .container-fluid .navbar-brand {
+	width: 100%;	
+}
+.modal nav > * {
+	float: left;
+}
+.modal a{
+	color: #000;
+	letter-spacing: 2px;	
+}
+.modal a:hover {
+	color: #018fa0;
+}
+.modal .container {
+	margin: 20px auto;
+	background: #bbb;
+	padding: 20px;
+}
+.modal .pull-left {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	width: 50px;
+	line-height: 50px;
+	border: 0;
+	background: rgba(0,0,0,0);	
+}
+.modal .pull-right {
+	position: absolute;
+	right: 0;
+	opacity: 1;
+	width: 50px;
+	line-height: 50px;
+	border: 0;
+	background: rgba(0,0,0,0);	
+}
+.modal .pull-left:hover, .modal .pull-right:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0);
+}
+@media (min-width: 768px) {
+	.modal .left-col {
+		border-right: 1px solid white;
+	}
+}
+@media (max-width: 768px) {
+	.modal {
+		background: #bbb;
+	}
+	.modal .container {
+		margin: auto;
+		background: #bbb;
+	}
+	.modal .container * {
+		color: #000;
+	}
+	.modal .pull-left {
+		opacity: 1;
+	}
+	.modal .pull-right {
+		opacity: 0;
+	}
+}
+.modal .left-col {
+	padding: 10px;
+}
+.modal .right-col {
+	padding: 10px;
+}
+.modal .container.first {
+	border-radius: 7px 7px 0px 0px;
+}
+.modal .container.last {
+	border-radius: 0px 0px 7px 7px;
+}
+.modal-title {
+	color: #fff !important; 
+}
+.modal .title {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.modal .container ol {
+	margin-bottom: 30px;
+}
+/* //modal */
+/*-- //bootstrap-modal-pop-up --*/
