@@ -8,8 +8,8 @@
 
   "scope": "/",
   "start_url": "/index.html",
-  "theme_color": "aliceblue",
-  "background_color": "wgite",
+  "theme_color": "#018fa0",
+  "background_color": "#bbbbbb",
 
   "display": "fullscreen",
   "dir": "ltr",
