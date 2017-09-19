@@ -77,3 +77,15 @@ nav img {
         display: none;
     }
 }
+
+@media screen and (min-width: 768px){
+    #sidebar-wrapper, #sidebar-wrapper * {
+        background: rgba(0,0,0,0);
+        border: 0;
+        color: #fff;
+    }
+
+    #sidebar-wrapper:hover, #sidebar-wrapper *:hover {
+        color: #D6F8FF;
+    }
+}

@@ -4,11 +4,7 @@ body {
     width: 100%;
     height: 100%;
     background: #bbb;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'GB Garamond', 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 body a:hover{
@@ -25,7 +21,7 @@ body a:hover{
 
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-	font-family: 'Cairo', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 hr.small {
@@ -73,54 +69,35 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-.photo-frame {
-	position: relative;
-	margin: auto;
-	width: 200px;
-	height: 200px;
-	background: #000;
-	border: 5px #fff solid;
-	border-radius: 100px;
-}
-.photo {
-	width: 190px;
-	height: 190px;
-	border-radius: 100px;
-	padding: 0;
-	margin: 0;
-}
-.photo-frame:hover .photo {
-	opacity: 0.5;
-}
-.photo-frame:hover {
-	box-shadow: 0 0 5px #000;
-}
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 3.5em;
-    font-weight: 600;
     color: #fff !important;
     text-shadow: 1px 1px #000;
 }
-.text-vertical-center h4 {
-    font-size: 2em;
-    color: #fff !important;    
-    text-shadow: 1px 1px #000;    
+.header .name {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-size: 3em;
+    font-weight: bold;
 }
-@media (max-width: 768px){
-    .text-vertical-center h1 {
-        font-size: 2.5em;
-    }
-    .text-vertical-center ￼h4 {
-        font-size: 1.25em;
-    }
+.header .about {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 2em;
+    font-weight: lighter;  
+}
+.yarn .photo {
+    opacity: 0.75;
+    width: 90%;
+    height: 90%; 
+    margin: 5%;
+    z-index: 1;
+    background: url('../img/me.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+.yarn:hover .photo {
+    cursor: pointer;
 }
 /*-- //Header --*/
 
