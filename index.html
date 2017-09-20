@@ -48,12 +48,12 @@
 
     <!-- Stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/navigation.css" rel="stylesheet">
     <link href="css/rain.css" rel="stylesheet">
     <link href="css/cat.css" rel="stylesheet">
-    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -82,22 +82,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-                <a id="action-bar-title" class="navbar-brand" href="#top">Home</a>
+                <!--a id="action-bar-title" class="navbar-brand" href="#top">Home</a-->
             </div>
         </div>
     </nav>
     <!-- Navigation Bar (appears as a side menu on small devices) -->
     <nav id="sidebar-wrapper" class="navbar navbar-inverse">
         <div class="container container-fluid">
+            <ul class="nav navbar-nav sidebar-nav">
+                <li><a href="#top">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right sidebar-nav">
-                <li class="sidebar-photo-frame">
-                    <img class="sidebar-photo" src="img/bg.png" />
-                </li>
-                <li class="active"><a href="#top">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PROJECTS</a></li>
             </ul>
         </div>
     </nav>
@@ -125,6 +124,20 @@
                                     <div class="cat-whiskers"></div>
                                 </div>
                             </div>
+                            <div style="
+                            position: relative;
+                            left: -18px;
+                            top: 80px;
+                            background: url('img/button.png') center center no-repeat;
+                            background-size: cover;
+                            width: 125px;
+                            height: 80px;
+                            line-height: 80px;
+                            padding: 10px;
+                            text-align: center;
+                            color: #018fa0;
+                            font-size: 1.5em;
+                            font-weight: bolder;">DISCOVER</div>
                         </div>
                         <div class="cat-lower-wrap">
                             <div class="cat-lower">
@@ -231,7 +244,11 @@
                 </div>
             </div>
         </div>
-        <p class="about">Android Developer</p>
+        <div class="WhatIAm" style="white-space: nowrap;">
+            <div id="what-i-am" style="display: inline-block; white-space: nowrap;">
+                Android Developer
+            </div>
+        </div>
         <p class="name">SAIF KHAN</p>
     </header>
 
@@ -551,6 +568,7 @@
     <script src="js/navigation.js"></script>
     <script src="js/webapp.js"></script>
     <script src="js/rain.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

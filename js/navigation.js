@@ -71,7 +71,7 @@ $(".dropdown").hover(function () {
     $(".dropdown-menu").hide();
 });
 
-$(".header .photo").click(function() {
+$(".header .all-wrap").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
     }, 1500);

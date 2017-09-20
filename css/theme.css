@@ -79,12 +79,23 @@ hr.small {
     font-size: 3em;
     font-weight: bold;
 }
-.header .about {
+.header .WhatIAm {
     position: absolute;
     left: 5%;
     top: 5%;
     font-size: 2em;
     font-weight: lighter;  
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    .header .WhatIAm {
+        top: 10%;
+    }
+}
+.typed-cursor {
+    font-weight: bolder;
+    font-size: 1.25em;
+    color: #bbb;
 }
 .yarn .photo {
     opacity: 0.75;
@@ -96,7 +107,7 @@ hr.small {
     background-size: cover;
     border-radius: 100%;
 }
-.yarn:hover .photo {
+.all-wrap:hover {
     cursor: pointer;
 }
 /*-- //Header --*/
@@ -105,6 +116,7 @@ hr.small {
 /*-- About --*/
 .about {
     padding: 50px 0;
+
 }
 /*-- //About --*/
 
