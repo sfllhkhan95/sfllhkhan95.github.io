@@ -70,9 +70,34 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <style>
+        .no-js #loader {
+            display: none;
+        }
+
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999999;
+            background: url('img/loading.gif') center no-repeat #fff;
+        }
+    </style>
 </head>
 
 <body class="">
+    <div class="se-pre-con"></div>
+
     <!-- Action Bar (Android-style action bar, appears only on small devices) -->
     <nav id="action-bar" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -245,14 +270,14 @@
         <div class="gallery-grids">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Photography</h2>
+                    <h2>Discover</h2>
                     <hr class="small">
                 </div>
             </div>
         </div>
         <div class="conatiner insatfeed">
             <div id="instaheader">
-                <p id="title">Instagram</p>
+                <p id="title">InstaFeed</p>
                 <p id="more" onclick="window.open('http://instagram.com/saifkhichi96', '_blank')">
                     See all <span class="fa fa-arrow-right"></span>
                 </p>
@@ -577,8 +602,15 @@
     <script type="text/javascript" src="js/webapp.js"></script>
     <script type="text/javascript" src="js/rain.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
     <script type="text/javascript">
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+
         $.fn.spectragram.accessData = {
             accessToken: '1400700842.08cd6a7.05beeae4cf4e4a02963b01b895765e3d',
             clientID: '08cd6a752d0e4413a6a0d33e9257804b'
