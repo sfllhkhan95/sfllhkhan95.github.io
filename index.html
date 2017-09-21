@@ -125,7 +125,7 @@
                                     <div class="cat-whiskers"></div>
                                 </div>
                             </div>
-                            <div class="board" >WELCOME</div>
+                            <div class="board">WELCOME</div>
                         </div>
                         <div class="cat-lower-wrap">
                             <div class="cat-lower">
@@ -242,22 +242,32 @@
 
     <!-- About -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+        <div class="conatiner insatfeed">
+            <div id="instaheader">
+                <p id="title">InstaFeed</p>
+                <p id="more" onclick="window.open('http://instagram.com/saifkhichi96', '_blank')">
+                    See all <span class="fa fa-arrow-right"></span>
+                    </a>
+            </div>
+            <div id="instafeed" class="text-center">
+                <span id="loading" class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+            </div>
+        </div>
+
+        <!-- Callout -->
+        <aside class="callout">
+            <div class="container">
                     <h2>Know yourself, and always, always, be prepared!</h2>
                     <p class="lead">Dream big. Never despair. For you lose only when you give up.</p>
-                </div>
             </div>
+        </aside>
+
+        <div class="">
+
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <h1>Success is ... determination.</h1>
-    </aside>
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -551,12 +561,26 @@
     </div>
 
     <!-- Scripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/webapp.js"></script>
-    <script src="js/rain.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/spectragram.min.js"></script>
+
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/webapp.js"></script>
+    <script type="text/javascript" src="js/rain.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript">
+        $.fn.spectragram.accessData = {
+            accessToken: '1400700842.08cd6a7.05beeae4cf4e4a02963b01b895765e3d',
+            clientID: '08cd6a752d0e4413a6a0d33e9257804b'
+        };
+
+        $('#instafeed').spectragram('getUserFeed', {
+            query: 'saifkhichi96'
+        });
+    </script>
+
 </body>
 
 </html>
