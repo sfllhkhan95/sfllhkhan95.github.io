@@ -89,21 +89,19 @@
     <!-- Navigation Bar (appears as a side menu on small devices) -->
     <nav id="sidebar-wrapper" class="navbar navbar-inverse">
         <div class="container container-fluid">
-            <ul class="nav navbar-nav sidebar-nav">
+            <ul class="nav navbar-nav navbar-right sidebar-nav">
                 <li><a href="#top">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right sidebar-nav">
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#portfolio">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header rain">
-        <div class="all-wrap">
+        <a href="#about" class="all-wrap">
             <div class="all">
                 <div class="yarn">
                     <div class="photo"></div>
@@ -243,13 +241,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="WhatIAm" style="white-space: nowrap;">
-            <div id="what-i-am" style="display: inline-block; white-space: nowrap;">
+        </a>
+        <div class="WhatIAm">
+            <p class="name">SAIF KHAN</p>
+            <p id="what-i-am" style="display: inline-block; white-space: nowrap;">
                 Android Developer
-            </div>
+            </p>
         </div>
-        <p class="name">SAIF KHAN</p>
     </header>
 
     <!-- About -->
@@ -264,6 +262,13 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
+
+        <!-- Callout -->
+        <aside class="callout">
+            <div class="text-vertical-center">
+                <h1>Success is ... determination.</h1>
+            </div>
+        </aside>
     </section>
 
     <!-- Services -->
@@ -336,13 +341,6 @@
         </div>
         <!-- /.container -->
     </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Success is ... determination.</h1>
-        </div>
-    </aside>
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -424,46 +422,48 @@
     </section>
 
     <!-- Call to Action -->
-    <aside id="contact" class="contact call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <a href="#" class="btn btn-lg btn-light">Hire Me!</a>
-                    <a target="_blank" href="docs/resume.pdf" title="Muhammad Saifullah's Resume" class="btn btn-lg btn-dark">See Resumé!</a>
+    <aside id="contact">
+        <div class="contact call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="#" class="btn btn-lg btn-light">Hire Me!</a>
+                        <a target="_blank" href="docs/resume.pdf" title="Muhammad Saifullah's Resume" class="btn btn-lg btn-dark">See Resumé!</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </aside>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Muhammad Saifullah Khan</strong>
-                    </h4>
-                    <p>National University of Sciences and Technology (NUST)
-                        <br>Islamabad, PK - 44000</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> <a class="text-primary" href="tel:+923053177781">(305) 317-7781</a></li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a class="text-primary" href="mailto:sfllhkhan95@live.com">sfllhkhan95@live.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95"><span class="fa fa-linkedin fa-fw fa-2x text-primary" ></span></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/sfllhkhan95"><span class="fa fa-github fa-fw fa-2x text-primary" ></span></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Muhammad Saifullah Khan 2017</p>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h4><strong>Muhammad Saifullah Khan</strong>
+                        </h4>
+                        <p>National University of Sciences and Technology (NUST)
+                            <br>Islamabad, PK - 44000</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i> <a class="text-primary" href="tel:+923053177781">(305) 317-7781</a></li>
+                            <li><i class="fa fa-envelope-o fa-fw"></i> <a class="text-primary" href="mailto:sfllhkhan95@live.com">sfllhkhan95@live.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95"><span class="fa fa-linkedin fa-fw fa-2x text-primary" ></span></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/sfllhkhan95"><span class="fa fa-github fa-fw fa-2x text-primary" ></span></a>
+                            </li>
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; Muhammad Saifullah Khan 2017</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </aside>
 
     <div id="publications" class="modal" role="dialog" style="padding-top:50px;">
         <nav class="navbar navbar-inverse navbar-fixed-top">
