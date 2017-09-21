@@ -1,5 +1,7 @@
 .portfolio {
-    padding: 50px 0;
+	padding: 50px 0;
+	background: black;
+	color: white;
 }
 
 .portfolio-item {

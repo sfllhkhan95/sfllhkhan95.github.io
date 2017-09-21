@@ -97,7 +97,7 @@ hr.small {
 /*-- About --*/
 .about {
     background: black;
-    padding-top: 50px;
+    padding: 50px 5%;
     color: white;
 }
 
