@@ -25,6 +25,22 @@
   bottom: 20rem;
 }
 
+.cat .board {
+  position: relative;
+  left: -18px;
+  top: 80px;
+  background: url('../img/button.png') center center no-repeat;
+  background-size: cover;
+  width: 125px;
+  height: 80px;
+  line-height: 80px;
+  padding: 10px;
+  text-align: center;
+  color: #018fa0;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
 .yarn {
   position: absolute;
   top: 0;
@@ -51,6 +67,17 @@
 .yarn:after {
   right: calc(50% + 7px);
   background-color: #D5E8F8;
+}
+
+.yarn .photo {
+  opacity: 0.75;
+  width: 90%;
+  height: 90%; 
+  margin: 5%;
+  z-index: 1;
+  background: url('../img/me.jpg') center center no-repeat;
+  background-size: cover;
+  border-radius: 100%;
 }
 
 .cat-wrap {

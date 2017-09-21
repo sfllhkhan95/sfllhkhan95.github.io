@@ -89,19 +89,7 @@ hr.small {
     font-size: 1.25em;
     color: #bbb;
 }
-.yarn .photo {
-    opacity: 0.75;
-    width: 90%;
-    height: 90%; 
-    margin: 5%;
-    z-index: 1;
-    background: url('../img/me.jpg') center center no-repeat;
-    background-size: cover;
-    border-radius: 100%;
-}
-.all-wrap:hover {
-    cursor: pointer;
-}
+
 /*-- //Header --*/
 
 

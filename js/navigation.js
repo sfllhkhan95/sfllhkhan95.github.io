@@ -1,47 +1,50 @@
 function openDrawer() {
-    $("#sidebar-wrapper").addClass("opened");
-    $("#action-bar").addClass("opened");
+    $("#sidebar-wrapper, #action-bar").addClass("opened");
 
     $("#menu-toggle").css("display", "none");
     $("#menu-close").css("display", "block");
+
+    console.log("Drawer opened.");
 }
 
 function closeDrawer() {
-    $("#sidebar-wrapper").removeClass("opened");
-    $("#action-bar").removeClass("opened");
+    $("#sidebar-wrapper, #action-bar").removeClass("opened");
 
     $("#menu-close").css("display", "none");
     $("#menu-toggle").css("display", "block");
+
+    console.log("Drawer closed.");    
 }
 
-// Toggles the sidebar menu
-$("#menu-toggle").click(function (e) {
-    e.preventDefault();
-    openDrawer();
-});
-$("#menu-close").click(function (e) {
-    e.preventDefault();
+// Scroll to correct section
+function openSection(section) {
     closeDrawer();
-});
 
-// Scrolls to the selected menu item on the page, and closes sidebar
-$(function () {
+    $('html, body').css("scrollTop", section.offset().top);
+}
+
+$(document).ready(function () {
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        openDrawer();
+    });
+
+    $("#menu-close").click(function (e) {
+        e.preventDefault();
+        closeDrawer();
+    });
+
+    // Scrolls to the selected menu item on the page, and closes sidebar    
     $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
             location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
-                // Scroll to correct section
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 0);
-
-
                 document.location.hash = this.hash.slice(1);
+                openSection(target);
 
-                // Close sidebar
-                closeDrawer();
+                console.log("Opened " + this.hash.slice(1));
                 return false;
             }
         }
