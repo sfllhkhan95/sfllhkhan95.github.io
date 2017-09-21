@@ -25,6 +25,15 @@ nav img {
 }
 #menu-toggle {
     margin-left: 10px;
+    color: white;
+}
+#menu-toggle:hover, #menu-close:hover {
+    background: rgba(0,0,0,0);
+}
+#menu-close {
+    margin-left: 10px;
+    color: white;
+    display: none;
 }
 
 #sidebar-wrapper, #sidebar-wrapper * {
@@ -35,9 +44,6 @@ nav img {
 
 #action-bar:hover, #action-bar *:hover, #sidebar-wrapper:hover, #sidebar-wrapper *:hover {
     color: #D6F8FF;
-}
-#menu-toggle:hover {
-    background: rgba(0,0,0,0);
 }
 
 @media (max-width: 768px){
