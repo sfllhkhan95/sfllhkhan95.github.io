@@ -956,7 +956,7 @@
   }
 }
 
-*, *:before, *:after {
+.all-wrap *, .all-wrap *:before, .all-wrap *:after {
   box-sizing: border-box;
   position: relative;
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
@@ -965,7 +965,7 @@
           animation-fill-mode: both;
 }
 
-*:before, *:after {
+.all-wrap :before, .all-wrap *:after {
   content: '';
   display: block;
 }

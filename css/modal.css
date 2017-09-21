@@ -76,6 +76,9 @@
 	.modal .container * {
 		color: #000;
 	}
+	.modal .container h1, .modal .container h2, .modal .container h3, .modal .container h4, .modal .container h5, .modal .container h6 {
+		color: #018fa0;
+	}
 	.modal .pull-left {
 		opacity: 1;
 	}
