@@ -46,8 +46,16 @@
     <meta name="p:domain_verify" content="a756de613e3e91e14743d6a24b29a35c" />
     <title>Portfolio | Muhammad Saifullah Khan</title>
 
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <!-- Custom fonts for this page -->
+    <script src="https://use.fontawesome.com/54fcd4a1ed.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:800|Roboto|EB+Garamond" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
     <link href="css/rain.css" rel="stylesheet">
     <link href="css/cat.css" rel="stylesheet">
     <link href="css/navigation.css" rel="stylesheet">
@@ -55,44 +63,6 @@
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/portfolio.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <script src="https://use.fontawesome.com/54fcd4a1ed.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-        type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto|EB+Garamond" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-    <style>
-        .no-js #loader {
-            display: none;
-        }
-
-        .js #loader {
-            display: block;
-            position: absolute;
-            left: 100px;
-            top: 0;
-        }
-
-        .se-pre-con {
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 9999999;
-            background: url('img/loading.gif') center no-repeat #fff;
-        }
-    </style>
 </head>
 
 <body class="">
@@ -105,24 +75,34 @@
                 <button id="menu-toggle" type="button" class="navbar-toggle pull-left">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
                 </button>
                 <button id="menu-close" type="button" class="navbar-toggle pull-left">
                     <span class="fa fa-arrow-left"></span>
                 </button>
             </div>
         </div>
-
     </nav>
+
     <!-- Navigation Bar (appears as a side menu on small devices) -->
     <nav id="sidebar-wrapper" class="navbar navbar-inverse">
         <div class="container container-fluid">
             <ul class="nav navbar-nav navbar-right sidebar-nav">
-                <li><a href="#top">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li>
+                    <a href="#top">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#services">SERVICES</a>
+                </li>
+                <li>
+                    <a href="#portfolio">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -260,45 +240,41 @@
         </div>
         <div class="WhatIAm">
             <p class="name">SAIF KHAN</p>
-            <p id="what-i-am" style="display: inline-block; white-space: nowrap;">
+            <p id="what-i-am" style="display: inline-block; white-space: nowrap; font-family: 'Source Sans Pro';">
                 Android Developer
             </p>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
-        <div class="gallery-grids">
+    <section id="about" class="callout">
+        <div class="container">
+            <h4 style="margin-top: 150px;">
+                Software developer. Optimist. Naturalist.
+                <br> Hobbyists. Bookaholic. Listener. Explorer. Curious.
+                <br>
+            </h4>
+            <hr class="small bg-light" style="margin-top: 25px;">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Discover</h2>
-                    <hr class="small">
+                <div class="col-lg-12 text-center">
+                    <a href="#" class="btn btn-lg btn-dark" style="border-color: #32cd32; color: #32cd32;">Hire Me!</a>
+                    <a href="resume/" title="Muhammad Saifullah's Resume" class="btn btn-lg btn-dark" style="border-color: #018fa0; color: #018fa0;">See Resumé!</a>
                 </div>
             </div>
-        </div>
-        <div class="container insatfeed">
-            <div id="instaheader">
-                <p id="title">InstaFeed</p>
-                <p id="more" onclick="window.open('http://instagram.com/saifkhichi96', '_blank')">
-                    See all <span class="fa fa-arrow-right"></span>
-                </p>
+            <hr class="small bg-light" style="margin-bottom: 25px;">
+
+            <h6>
+                <br>... discover more about my </h6>
+            <div>
+                <a href="#" class="btn bg-light btn-light">Music</a>
+                <a href="#" class="btn bg-light btn-light">Photography</a>
+                <a href="#" class="btn bg-light btn-light">Reading List</a>
             </div>
-            <div id="instafeed" class="text-center"></div>
+            <h5>"Every man's island, every man's watchman, is his conscience."
+                <br>
+                <small style="color: silver;"> - Harper Lee</small>
+            </h5>
         </div>
-
-        <!-- Callout -->
-        <aside class="callout">
-            <div class="container">
-                <h3>"Every man's island, every man's watchman, is his conscience." <small style="color: white;"> - Harper Lee</small></h3>
-                <button type="button" class="btn btn-primary btn-light">Discover Me</button>
-            </div>
-        </aside>
-
-        <div class="">
-
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
     </section>
 
     <!-- Services -->
@@ -313,9 +289,9 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Android Development</strong>
                                 </h4>
@@ -326,9 +302,9 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Web Development</strong>
                                 </h4>
@@ -339,9 +315,9 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Graphics Design</strong>
                                 </h4>
@@ -352,9 +328,9 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Content Writing</strong>
                                 </h4>
@@ -453,38 +429,37 @@
 
     <!-- Call to Action -->
     <aside id="contact">
-        <div class="contact call-to-action bg-primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <a href="#" class="btn btn-lg btn-light">Hire Me!</a>
-                        <a target="_blank" href="docs/resume.pdf" title="Muhammad Saifullah's Resume" class="btn btn-lg btn-dark">See Resumé!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <h4><strong>Muhammad Saifullah Khan</strong>
+                        <h4>
+                            <strong>Muhammad Saifullah Khan</strong>
                         </h4>
                         <p>National University of Sciences and Technology (NUST)
                             <br>Islamabad, PK - 44000</p>
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-phone fa-fw"></i> <a class="text-primary" href="tel:+923053177781">(305) 317-7781</a></li>
-                            <li><i class="fa fa-envelope-o fa-fw"></i> <a class="text-primary" href="mailto:sfllhkhan95@live.com">sfllhkhan95@live.com</a>
+                            <li>
+                                <i class="fa fa-phone fa-fw"></i>
+                                <a class="text-primary" href="tel:+923053177781">(305) 317-7781</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o fa-fw"></i>
+                                <a class="text-primary" href="mailto:sfllhkhan95@live.com">sfllhkhan95@live.com</a>
                             </li>
                         </ul>
                         <br>
                         <ul class="list-inline">
                             <li>
-                                <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95"><span class="fa fa-linkedin fa-fw fa-2x text-primary" ></span></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95">
+                                    <span class="fa fa-linkedin fa-fw fa-2x text-primary"></span>
+                                </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://github.com/sfllhkhan95"><span class="fa fa-github fa-fw fa-2x text-primary" ></span></a>
+                                <a target="_blank" href="https://github.com/sfllhkhan95">
+                                    <span class="fa fa-github fa-fw fa-2x text-primary"></span>
+                                </a>
                             </li>
                         </ul>
                         <hr class="small">
@@ -495,32 +470,29 @@
         </footer>
     </aside>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/spectragram.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="js/navigation.js"></script>
-    <script type="text/javascript" src="js/webapp.js"></script>
-    <script type="text/javascript" src="js/rain.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/navigation.js"></script>
+    <script src="js/webapp.js"></script>
+    <script src="js/rain.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Clean URL
+        var uri = window.location.toString();
+        if (uri.indexOf("?") > 0) {
+            var uri = uri.substring(0, uri.indexOf("?"));
+            window.history.replaceState({}, document.title, uri);
+        }
 
-    <script type="text/javascript">
-        // Wait for window load
-        $(window).load(function () {
+        window.onload = function () {
             // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");;
-        });
-
-        $.fn.spectragram.accessData = {
-            accessToken: '1400700842.08cd6a7.05beeae4cf4e4a02963b01b895765e3d',
-            clientID: '08cd6a752d0e4413a6a0d33e9257804b'
+            $(".se-pre-con").fadeOut("slow");
         };
-
-        $('#instafeed').spectragram('getUserFeed', {
-            query: 'saifkhichi96'
-        });
     </script>
 
 </body>
