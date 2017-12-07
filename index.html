@@ -56,7 +56,7 @@
     <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/54fcd4a1ed.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
         type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto|EB+Garamond" rel="stylesheet">
@@ -381,7 +381,7 @@
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 gallery-top">
-                            <a href="projects/apps/">
+                            <a href="projects/?root=apps">
                                 <figure class="effect-bubba">
                                     <img src="img/portfolio-apps.jpg" alt="" class="img-responsive">
                                     <figcaption>
@@ -391,7 +391,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 gallery-top">
-                            <a href="projects/games/">
+                            <a href="projects/?root=games">
                                 <figure class="effect-bubba">
                                     <img src="img/portfolio-games.jpg" alt="" class="img-responsive">
                                     <figcaption>
@@ -401,7 +401,17 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 gallery-top">
-                            <a href="projects/web/">
+                            <a href="projects/?root=libs">
+                                <figure class="effect-bubba">
+                                    <img src="img/portfolio-libs.gif" alt="" class="img-responsive">
+                                    <figcaption>
+                                        <h4>APIs</h4>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 gallery-top">
+                            <a href="projects/?root=web">
                                 <figure class="effect-bubba">
                                     <img src="img/portfolio-web.jpg" alt="" class="img-responsive">
                                     <figcaption>
@@ -411,7 +421,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 gallery-top">
-                            <a href="projects/graphics/">
+                            <a href="projects/?root=designs">
                                 <figure class="effect-bubba">
                                     <img src="img/portfolio-graphics.jpg" alt="" class="img-responsive">
                                     <figcaption>
@@ -421,21 +431,11 @@
                             </a>
                         </div>
                         <div class="col-md-4 col-sm-4 gallery-top">
-                            <a href="#" data-toggle="modal" data-target="#publications">
+                            <a href="projects/?root=publications">
                                 <figure class="effect-bubba">
                                     <img src="img/portfolio-publications.jpg" alt="" class="img-responsive">
                                     <figcaption>
                                         <h4>Publications</h4>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-4 gallery-top">
-                            <a href="projects/sketeches/">
-                                <figure class="effect-bubba">
-                                    <img src="img/portfolio-sketching.jpg" alt="" class="img-responsive">
-                                    <figcaption>
-                                        <h4>Miscellaneous</h4>
                                     </figcaption>
                                 </figure>
                             </a>
@@ -494,115 +494,6 @@
             </div>
         </footer>
     </aside>
-
-    <div id="publications" class="modal" role="dialog" style="padding-top:50px;">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="pull-left" data-dismiss="modal">
-                        <span class="fa fa-angle-left"></span>
-                    </div>
-                    <div class="navbar-brand">
-                        <a class="modal-title">Publications</a>
-                    </div>
-                </div>
-            </div>
-            <div class="pull-right" data-dismiss="modal">
-                <span class="fa fa-close"></span>
-            </div>
-        </nav>
-        <div class="first container">
-            <h3 class="title text-primary">Papers</h3>
-            <hr class="small">
-            <ol>
-                <li><a href="#">
-                    S. U. Khan, M. Tariq and S. Iqbal, "Pre-Planned Electricity Bills Without Prepaid
-                    Billing," in <i>IEEE FIT 2017</i>, June 30, 2017, Islamabad (Unpublished).
-                </a></li>
-            </ol>
-        </div>
-        <div class="last container">
-            <div class="left-col col-sm-8 col-xs-12 gallery-grids">
-                <h3 class="title text-primary">Blog Articles</h3>
-                <hr class="small">
-                <div class="blog-articles">
-                    <a class="blog" style="background-image: url('img/blogs/tax-free-education.jpg');" target="_blank" href="http://www.thedailysuggest.com/campaign-tax-free-education-pakistan/">
-                        <div class='blog-overlay'></div>
-                        <label>
-                            <h4 class="blog-title">University Students Demand Tax-Free Education in Pakistan</h4>
-                            <i class="blog-date">February 7, 2017</i>
-                        </label>
-                    </a>
-
-                    <a class="blog" style="background-image: url('img/blogs/mushrooms.jpg');" target="_blank" href="http://www.thedailysuggest.com/be-a-mushroom-in-the-afterlife-with-the-infinity-burial-suit/">
-                        <div class='blog-overlay'></div>
-                        <label>
-                            <h4 class="blog-title">Burial Suit That Turns You Into Mushrooms</h4>
-                            <i class="blog-date">April 8, 2017</i>
-                        </label>
-                    </a>
-
-                    <a class="blog" style="background-image: url('img/blogs/chocolate.jpg');" target="_blank" href="http://www.thedailysuggest.com/10-reasons-why-chocolate-is-your-best-friend/">
-                        <div class='blog-overlay'></div>
-                        <label>
-                            <h4 class="blog-title">10 Reasons Why Chocolate is Your Best Friend</h4>
-                            <i class="blog-date">April 26, 2017</i>
-                        </label>
-                    </a>
-
-                    <a class="blog" style="background-image: url('img/blogs/battle-hogwarts.png');" target="_blank" href="http://www.thedailysuggest.com/remembering-hogwarts-battle/">
-                        <div class='blog-overlay'></div>
-                        <label>
-                            <h4 class="blog-title">Remembering the Battle of Hogwarts</h4>
-                            <i class="blog-date">May 2, 2017</i>
-                        </label>
-                    </a>
-
-                    <a class="blog" style="background-image: url('img/blogs/malala-twitter.jpg');" target="_blank" href="http://www.thedailysuggest.com/malala-set-reach-half-million-twitter-followers-first-day/">
-                        <div class='blog-overlay'></div>
-                        <label>
-                            <h4 class="blog-title">Malala Set To Reach Half-million Twitter Followers On First Day</h4>
-                            <i class="blog-date">July 8, 2017</i>
-                        </label>
-                    </a>
-
-                    <a class="blog" style="background-image: url('img/blogs/got-s07e01.jpg');" target="_blank" href="http://www.thedailysuggest.com/everything-know-game-thrones-season-7-episode-1/">
-                        <div class='blog-overlay'></div>
-                        <label>
-                            <h4 class="blog-title">Everything We Know About Game of Thrones Season 7 Episode 1</h4>
-                            <i class="blog-date">July 8, 2017</i>
-                        </label>
-                    </a>
-                </div>
-            </div>
-            <div class="right-col col-sm-4 col-xs-12">
-                <h3 class="title text-primary">Stories &amp; Essays</h3>
-                <hr class="small">
-                <ol>
-                    <li><a href="publications/stories/his-last-speech.html">
-                        His Last Speech
-                    </a></li>
-                    <li><a href="#">
-                        From Indifference to Passion
-                    </a></li>
-                </ol>
-                <h3 class="title text-primary">Poetry</h3>
-                <hr class="small">
-                <ol>
-                    <li><a href="#">
-                        Morning Beauty
-                    </a></li>
-                </ol>
-                <h3 class="title text-primary">Travelogues</h3>
-                <hr class="small">
-                <ol>
-                    <li><a href="#">
-                        There and Back Again
-                    </a></li>
-                </ol>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script type="text/javascript" src="js/jquery.js"></script>
