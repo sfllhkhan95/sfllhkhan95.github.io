@@ -1,0 +1,43 @@
+{
+  "name": "Connect",
+  "about": "Connect is a social networking application.",
+  "tagline": "Stop waiting.<br>Start building.",
+  "device": "nexus7",
+  "screens": [
+    "/img/demo-screen-1.jpg",
+    "/img/demo-screen-1.jpg"
+  ],
+  "platforms": {
+    "android": "https://",
+    "ios": null,
+    "windows": null,
+    "mac": null
+  },
+  "features": {
+    "heading": "Unlimited Features, Unlimited Fun",
+    "subheading": "Check out what you can do with Connect",
+    "list": [
+      {
+        "name": "Device Mockups",
+        "icon": "icon-screen-smartphone",
+        "about": "Ready to use HTML/CSS device mockups, no Photoshop required!"
+      },
+      {
+        "name": "Flexible Use",
+        "icon": "icon-camera",
+        "about": "Put an image, video, animation, or anything else in the screen!"
+      },
+      {
+        "name": "Free to Use",
+        "icon": "icon-present",
+        "about": "As always, this theme is free to download and use for any purpose!"
+      },
+      {
+        "name": "Open Source",
+        "icon": "icon-lock-open",
+        "about": "Since this theme is MIT licensed, you can use it commercially!"
+      }
+    ]
+  },
+  "code": "https://github.com/sfllhkhan95/"
+}

@@ -1,0 +1,46 @@
+{
+    "name": "Doodle",
+    "about": "<a href='#'>Doodle</a> is a complete art tool to help bring out your inner artist.",
+    "tagline": "Happy doodling!",
+    "devices": [
+        "nexus7 portrait",
+        "nexus7 portrait"
+    ],
+    "screens": [
+        "/img/demo-screen-1.jpg",
+        "/img/demo-screen-1.jpg"
+    ],
+    "platforms": {
+        "android": "https://play.google.com/store/apps/details?id=sfllhkhan95.doodle",
+        "ios": null,
+        "windows": null,
+        "mac": null
+    },
+    "features": {
+        "heading": "Express yourself without limits!",
+        "subheading": "With its easy-to-use and intuitive design, Doodle is the perfect addition to your art toolbox.",
+        "list": [
+            {
+                "name": "Powerful Toolbox",
+                "icon": "icon-camera",
+                "about": "Choose between a number of brush sizes and colors, easily draw basic geometric shapes, set fill and stroke colors."
+            },
+            {
+                "name": "Save Projects",
+                "icon": "icon-present",
+                "about": "Doodles can be saved and loaded from device memory. You can continue working on a saved project later, or load an base image from Gallery."
+            },
+            {
+                "name": "Share Doodles",
+                "icon": "icon-screen-smartphone",
+                "about": "Effortlessly share your drawings with friends on social media or send to another device, right from inside the app."
+            },
+            {
+                "name": "Distraction-Free",
+                "icon": "icon-screen-smartphone",
+                "about": "Doodle allows you to focus on your project by providing an option to hide unnecessary controls while you are working."
+            }
+        ]
+    },
+    "code": "https://github.com/sfllhkhan95/"
+}
