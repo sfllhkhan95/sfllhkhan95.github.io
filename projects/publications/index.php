@@ -181,53 +181,19 @@
                             <h3 class="title text-primary">Blog Articles</h3>
                             <hr class="small">
                             <div class="blog-articles">
-                                <a class="blog" style="background-image: url('blogs/tax-free-education.jpg');" target="_blank" href="http://www.thedailysuggest.com/campaign-tax-free-education-pakistan/">
+                                <?
+                                foreach (json_decode(file_get_contents("blogs.json"))->blogs as $blog) {
+                                echo "
+                                <a class='blog' style='background-image: url(\"$blog->cover\");'
+                                   target='_blank' href='$blog->link'>
                                     <div class='blog-overlay'></div>
                                     <label>
-                                        <h4 class="blog-title">University Students Demand Tax-Free Education in Pakistan</h4>
-                                        <i class="blog-date">February 7, 2017</i>
+                                        <h4 class='blog-title'>$blog->title</h4>
+                                        <i class='blog-date'>$blog->date</i>
                                     </label>
-                                </a>
-
-                                <a class="blog" style="background-image: url('blogs/mushrooms.jpg');" target="_blank" href="http://www.thedailysuggest.com/be-a-mushroom-in-the-afterlife-with-the-infinity-burial-suit/">
-                                    <div class='blog-overlay'></div>
-                                    <label>
-                                        <h4 class="blog-title">Burial Suit That Turns You Into Mushrooms</h4>
-                                        <i class="blog-date">April 8, 2017</i>
-                                    </label>
-                                </a>
-
-                                <a class="blog" style="background-image: url('blogs/chocolate.jpg');" target="_blank" href="http://www.thedailysuggest.com/10-reasons-why-chocolate-is-your-best-friend/">
-                                    <div class='blog-overlay'></div>
-                                    <label>
-                                        <h4 class="blog-title">10 Reasons Why Chocolate is Your Best Friend</h4>
-                                        <i class="blog-date">April 26, 2017</i>
-                                    </label>
-                                </a>
-
-                                <a class="blog" style="background-image: url('blogs/battle-hogwarts.png');" target="_blank" href="http://www.thedailysuggest.com/remembering-hogwarts-battle/">
-                                    <div class='blog-overlay'></div>
-                                    <label>
-                                        <h4 class="blog-title">Remembering the Battle of Hogwarts</h4>
-                                        <i class="blog-date">May 2, 2017</i>
-                                    </label>
-                                </a>
-
-                                <a class="blog" style="background-image: url('blogs/malala-twitter.jpg');" target="_blank" href="http://www.thedailysuggest.com/malala-set-reach-half-million-twitter-followers-first-day/">
-                                    <div class='blog-overlay'></div>
-                                    <label>
-                                        <h4 class="blog-title">Malala Set To Reach Half-million Twitter Followers On First Day</h4>
-                                        <i class="blog-date">July 8, 2017</i>
-                                    </label>
-                                </a>
-
-                                <a class="blog" style="background-image: url('blogs/got-s07e01.jpg');" target="_blank" href="http://www.thedailysuggest.com/everything-know-game-thrones-season-7-episode-1/">
-                                    <div class='blog-overlay'></div>
-                                    <label>
-                                        <h4 class="blog-title">Everything We Know About Game of Thrones Season 7 Episode 1</h4>
-                                        <i class="blog-date">July 8, 2017</i>
-                                    </label>
-                                </a>
+                                </a>";
+                                }
+                                ?>
                             </div>
                         </div>
                         <div class="right-col col-sm-4 col-xs-12">
