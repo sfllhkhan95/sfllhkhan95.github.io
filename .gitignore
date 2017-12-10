@@ -1,3 +1,7 @@
-# Configuration files
+# IDEA Files
+.idea/
+*.iml
+
+# OS Configuration files
 *.DS_STORE
-*.ini
+Desktop.ini
