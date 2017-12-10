@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if (window.navigator.standalone == true) {
+    if (window.navigator.standalone === true) {
         $('a').click(function () {
             window.location = $(this).attr('href');
             return false;

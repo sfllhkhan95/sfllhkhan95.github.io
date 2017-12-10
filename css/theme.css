@@ -8,8 +8,8 @@ body {
     font-family: 'Lato', 'EB Garamond', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-body a:hover{
-	text-decoration:none;
+body a:hover {
+    text-decoration: none;
 }
 
 .bg-primary {
@@ -20,8 +20,8 @@ body a:hover{
     color: #018fa0;
 }
 
-h1,h2,h3,h4,h5,h6{
-	margin:0;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
 }
@@ -33,28 +33,29 @@ hr.small {
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
+
 /*-- //Global Styles --*/
 
 /*-- Header --*/
@@ -64,7 +65,7 @@ hr.small {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(1, 143, 160, 0.5)),
-                url(../img/bg.png) no-repeat center center scroll;
+    url(../img/bg.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -72,21 +73,25 @@ hr.small {
     color: #fff !important;
     text-shadow: 1px 1px #000;
 }
+
 .header .WhatIAm {
-    position: relative;    
+    position: relative;
     top: 40%;
     width: 100%;
     height: 100%;
     text-align: center;
 }
+
 .WhatIAm .name {
     font-size: 3em;
     font-weight: bold;
 }
+
 .WhatIAm #what-i-am {
     font-size: 2em;
     font-weight: lighter;
 }
+
 .typed-cursor {
     font-weight: bolder;
     font-size: 1.25em;
@@ -94,7 +99,6 @@ hr.small {
 }
 
 /*-- //Header --*/
-
 
 /*-- About --*/
 .about {
@@ -136,18 +140,26 @@ hr.small {
 }
 
 .glyphicon-refresh-animate {
-    -animation: spin .7s infinite linear;
+    animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
 }
 
 @-webkit-keyframes spin2 {
-    from { -webkit-transform: rotate(0deg);}
-    to { -webkit-transform: rotate(360deg);}
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    from { transform: scale(1) rotate(0deg);}
-    to { transform: scale(1) rotate(360deg);}
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
 }
 
 #instafeed {
@@ -163,8 +175,8 @@ hr.small {
     width: 300px;
     height: 300px;
 }
-/*-- //About --*/
 
+/*-- //About --*/
 
 /*-- Services --*/
 .services {
@@ -174,8 +186,8 @@ hr.small {
 .service-item {
     margin-bottom: 30px;
 }
-/*-- //Services --*/
 
+/*-- //Services --*/
 
 /*-- Callout --*/
 .callout {
@@ -191,12 +203,13 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
+
 .callout .container {
     display: table-cell;
     vertical-align: middle;
 }
-/*-- //Callout --*/
 
+/*-- //Callout --*/
 
 /*-- Call to Action --*/
 .call-to-action {
@@ -206,33 +219,33 @@ hr.small {
 .call-to-action .btn {
     margin: 10px;
 }
-/*-- //Call to Action --*/
 
+/*-- //Call to Action --*/
 
 /*-- Footer --*/
 footer {
     padding: 100px 0;
 }
-/*-- //Footer --*/
 
+/*-- //Footer --*/
 
 @media (max-width: 768px) {
     .header .WhatIAm {
-        position: relative;    
-        top: 0% !important;
+        position: relative;
+        top: 0 !important;
         width: 100%;
         height: 100%;
         text-align: center;
     }
 
     .WhatIAm .name {
-        position: absolute;    
+        position: absolute;
         bottom: 5%;
         left: 5%;
     }
 
     .WhatIAm #what-i-am {
-        position: absolute;    
+        position: absolute;
         top: 10%;
         left: 5%;
     }
@@ -245,7 +258,7 @@ footer {
 
     min-height: 100%;
     max-height: 100%;
-    
+
     overflow-x: hidden;
     overflow-y: scroll;
 }

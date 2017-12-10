@@ -1,27 +1,27 @@
 body {
-	text-align: center;
-	font-family: 'Lato';
+    text-align: center;
+    font-family: 'Lato', serif;
 }
 
 .icon {
-	position: relative;
-	width: 100px;
-	overflow: hidden;
-	text-align: center;
-	display: inline-block;
-	padding: 25px;
-	margin: 10px;
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+    margin: 10px;
 
-	/* Display a round-corner border */
-	border: 2px solid #dadada;
-	border-radius: 7px;
+    /* Display a round-corner border */
+    border: 2px solid #dadada;
+    border-radius: 7px;
 }
 
 .icon:hover {
-	cursor: pointer;
-	background-color: #eee;
+    cursor: pointer;
+    background-color: #eee;
 
-	/* Make the border glow */
+    /* Make the border glow */
     outline: none;
     border-color: #9ecaed;
     box-shadow: 0 0 10px #9ecaed;
@@ -30,26 +30,26 @@ body {
 }
 
 .icon > img {
-	width: 64px;
-	height: 64px;
-	border-radius: 32px;
-	margin-bottom: 5px;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    margin-bottom: 5px;
 }
 
 .icon > label {
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .icon > p {
-	width: 15px;
-	height: 15px;
-	font-size: 10px;
-	position: absolute;
-	top: -10px;
-	left: 0px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
 }
 
 .linked {
-	color: teal;
-	border-color: #9ecaed;
+    color: teal;
+    border-color: #9ecaed;
 }

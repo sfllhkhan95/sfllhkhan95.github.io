@@ -4,10 +4,12 @@
     display: none;
     background: #001d22;
 }
+
 nav img {
     display: none;
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     #action-bar,
     nav img {
         display: block;
@@ -21,15 +23,18 @@ nav img {
     width: 100%;
     background: #001d22;
     border-radius: 0;
-    top: 0px;    
+    top: 0;
 }
+
 #menu-toggle {
     margin-left: 10px;
     color: white;
 }
+
 #menu-toggle:hover, #menu-close:hover {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
+
 #menu-close {
     margin-left: 10px;
     color: white;
@@ -37,7 +42,7 @@ nav img {
 }
 
 #sidebar-wrapper, #sidebar-wrapper * {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     border: 0;
     color: #fff;
 }
@@ -46,14 +51,16 @@ nav img {
     color: #D6F8FF;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     #action-bar {
-        background: rgba(6, 6, 6, 0.0);   
-        border: 0;     
+        background: rgba(6, 6, 6, 0.0);
+        border: 0;
     }
+
     #action-bar * {
-        border: 0;     
+        border: 0;
     }
+
     #sidebar-wrapper {
         z-index: 1000;
         position: fixed;
@@ -64,10 +71,10 @@ nav img {
         background: rgba(6, 6, 6, 0.75);
         -webkit-transition: all 0.4s ease 0s;
         -moz-transition: all 0.4s ease 0s;
-        -ms-transition: all 0.4s ease 0s;
         -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
     }
+
     .sidebar-nav {
         position: relative;
         top: 100px;
@@ -76,32 +83,40 @@ nav img {
         padding: 0;
         list-style: none;
     }
-    .sidebar-nav li {
+
+    .sidebar-nav:not(.navbar-right) li {
         margin-left: -15px;
     }
+
     #sidebar-wrapper.opened {
         left: 0;
         width: 250px;
         -webkit-transition: all 0.4s ease 0s;
         -moz-transition: all 0.4s ease 0s;
-        -ms-transition: all 0.4s ease 0s;
         -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
     }
+
     .sidebar-photo-frame {
         width: 250px;
         height: 150px;
         overflow: hidden;
         position: relative;
-        top: -50px;        
+        top: -50px;
     }
+
     .sidebar-photo {
         width: 250px;
         min-height: 100%;
         position: absolute;
-        top: -50px;        
+        top: -50px;
     }
+
     .social-icons {
         display: none;
     }
+}
+
+nav li.active * {
+    text-shadow: 2px 2px 2px teal;
 }

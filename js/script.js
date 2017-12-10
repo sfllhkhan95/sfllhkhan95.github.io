@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    jobs = [
+    var jobs = [
         "Android Developer",
         "Web Developer",
         "Amateur Designer",
@@ -10,15 +10,16 @@ $(document).ready(function () {
         "Blogger"
     ];
 
-    j = 0;
-    dispJob = jobs[j];
+    var j = 0;
+    var dispJob = jobs[j];
 
-    cursor = 0;
-    label = dispJob[cursor];
+    var cursor = 0;
+    var label = dispJob[cursor];
 
-    erase = false;
+    var erase = false;
 
-    skip = true;
+    var skip = true;
+
     function ticker() {
         if (!erase) {
             if (skip) {
@@ -51,12 +52,13 @@ $(document).ready(function () {
         $("#what-i-am").html(label + "<span class='typed-cursor' style='display:inline-block;'>|</span>");
     }
 
-    b = 0;
+    var b = 0;
+
     function blink() {
         if (cursor <= 0) {
-            if (++b == 1) {
+            if (++b === 1) {
                 $(".typed-cursor").css("opacity", "0");
-            } else if (b == 3) {
+            } else if (b === 3) {
                 $(".typed-cursor").css("opacity", "1");
             } else if (b > 3) b = 0;
         }

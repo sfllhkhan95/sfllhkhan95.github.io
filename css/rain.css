@@ -1,27 +1,31 @@
 .rain {
-	position: absolute;
-	width: 100%;
-	min-height: 100%;
-	z-index: 1;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
 }
 
 .drop {
-  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
-  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
-	width:10px;
-	height:10px;
-	border-radius: 100px;
-	position: absolute;
-	-webkit-animation: fall 5s linear infinite;
-  -moz-animation: fall 5s linear infinite;
-  
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(13, 52, 58, 1)), to(rgba(255, 255, 255, 0.6)));
+    background: -moz-linear-gradient(top, rgba(13, 52, 58, 1) 0%, rgba(255, 255, 255, .6) 100%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    position: absolute;
+    -webkit-animation: fall 5s linear infinite;
+    -moz-animation: fall 5s linear infinite;
+
 }
 
 /* animate the drops*/
 @-webkit-keyframes fall {
-	to {top:100%;}
+    to {
+        top: 100%;
+    }
 }
 
 @-moz-keyframes fall {
-	to {top:100%;}
+    to {
+        top: 100%;
+    }
 }

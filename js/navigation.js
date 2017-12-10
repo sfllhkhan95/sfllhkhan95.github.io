@@ -13,7 +13,7 @@ function closeDrawer() {
     $("#menu-close").css("display", "none");
     $("#menu-toggle").css("display", "block");
 
-    console.log("Drawer closed.");    
+    console.log("Drawer closed.");
 }
 
 // Scroll to correct section
@@ -36,8 +36,8 @@ $(document).ready(function () {
 
     // Scrolls to the selected menu item on the page, and closes sidebar    
     $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
-            location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') ||
+            location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
