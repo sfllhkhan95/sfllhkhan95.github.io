@@ -4,7 +4,6 @@ if (isset($_GET['root'])) {
     $root = $_GET['root'];
 }
 
-// Does this directory contain its own index file?
 $title = end(explode("/", $root));
 if ($title == ".") $title = "Projects";
 ?>
@@ -59,9 +58,7 @@ if ($title == ".") $title = "Projects";
     <title><? echo ucwords($title); ?> | Muhammad Saifullah Khan</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-          crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom fonts for this page -->
     <script src="https://use.fontawesome.com/54fcd4a1ed.js"></script>
@@ -145,6 +142,19 @@ if ($title == ".") $title = "Projects";
             font-weight: bold;
             font-variant: small-caps;
         }
+
+        div.mocukp {
+            position: relative;
+            overflow: hidden;
+        }
+
+        img.mockup {
+            position: absolute;
+            min-width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+
     </style>
     <script>
         // Clean URL
@@ -323,6 +333,8 @@ if ($title == ".") $title = "Projects";
                             }
 
                             $label = strtoupper(end(explode("/", $dir)));
+                            $label = str_replace(" ", "-", $label);
+
                             $project = json_decode(file_get_contents($dir . "/details.json"));
 
                             // Locate an icon
@@ -343,7 +355,6 @@ if ($title == ".") $title = "Projects";
                             }
 
                             // Display directory
-                            $label = str_replace(" ", "-", $label);
                             echo "
 			<div class='col-md-2 col-sm-3 col-xs-4 gallery-top'>
 				<a href='#' data-toggle='modal' data-target='#$label-info' >
@@ -356,7 +367,7 @@ if ($title == ".") $title = "Projects";
 				</a>
 			</div>
 			<!-- Modal -->
-			<div id='$label-info' class='modal fade' role='dialog'>
+			<div id='$label-info' class='modal fade' role='dialog' style='background: whitesmoke'>
 			  <nav class='navbar navbar-inverse navbar-fixed-top modal-header' style='border: 0;'>
 				<div class='container-fluid'>
 				  <div class='navbar-header'>
@@ -366,7 +377,7 @@ if ($title == ".") $title = "Projects";
 				  </div>
 				</div>
 			  </nav>
-			  <div class='project-demo modal-body' style='margin-top: -20px'>
+			  <div class='project-demo modal-body' style='margin-top: -20px; height: 100%'>
 			  <header class='masthead parent' style='height: 100%;'>
 			  <div class='child'>
 			    <div class='container' style='height: 100%'>
@@ -381,9 +392,9 @@ if ($title == ".") $title = "Projects";
 					<div class='device-container child'>
 					  <div class='device-mockup " . $project->devices[0] . "'>
 						<div class='device'>
-						  <div class='screen'>
+						  <div class='screen mockup'>
 							<!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-							<img src='" . $project->screens[0] . "' class='img-fluid' alt=''>
+							<img src='" . $project->screens[0] . "' class='img-responsive mockup' alt=''>
 						  </div>
 						</div>
 					  </div>
@@ -398,7 +409,7 @@ if ($title == ".") $title = "Projects";
 				<div class='section-heading text-center'>
 				  <h2>" . $project->features->heading . "</h2>
 				  <p class='text-muted'>" . $project->features->subheading . "</p>
-				  <a onclick='scrollToSection(\"$label-info\", \"download\")' class='btn btn-outline btn-light btn-xl js-scroll-trigger'>Get now!</a>
+				  <a style='margin-top: 20px;' onclick='scrollToSection(\"$label-info\", \"download\")' class='btn btn-outline btn-light btn-xl js-scroll-trigger'>Get now!</a>
 				  <hr class='small'>
 				  </div>
 				<div class='row'>
@@ -406,9 +417,9 @@ if ($title == ".") $title = "Projects";
 					<div class='device-container'>
 					  <div class='device-mockup " . $project->devices[1] . "'>
 						<div class='device'>
-						  <div class='screen'>
+						  <div class='screen mockup'>
 							<!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-							<img src='" . $project->screens[1] . "' class='img-fluid' alt=''>
+							<img src='" . $project->screens[1] . "' class='img-responsive mockup' alt=''>
 						  </div>
 						  <div class='button'>
 							<!-- You can hook the 'home button' to some JavaScript events or just remove it -->
@@ -441,7 +452,7 @@ if ($title == ".") $title = "Projects";
 			<section class='download bg-primary text-center' id='download'>
 			  <div class='container'>
 					<h2 class='section-heading'>" . $project->tagline . "</h2>
-					<p>" . $project->name . " is available on following platforms. Download now to get started!</p>
+					<p>" . $project->message . "</p>
 					<div class='badges'>";
                             if ($project->platforms->android != null) {
                                 echo "
@@ -475,13 +486,9 @@ if ($title == ".") $title = "Projects";
 </section>
 
 <!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
 <!-- Custom scripts for this template -->
 <script src="/js/navigation.js"></script>
 <script src="/js/webapp.js"></script>

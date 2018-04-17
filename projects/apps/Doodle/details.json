@@ -3,13 +3,14 @@
     "about": "<a href='#'>Doodle</a> is a complete art tool to help bring out your inner artist.",
     "tagline": "Happy doodling!",
     "devices": [
-        "nexus7 portrait",
-        "nexus7 portrait"
+        "galaxy_s3 portrait",
+        "galaxy_s5 portrait"
     ],
     "screens": [
-        "/img/demo-screen-1.jpg",
-        "/img/demo-screen-1.jpg"
+        "/img/screens/doodle-screen-1.png",
+        "/img/screens/doodle-screen-2.png"
     ],
+    "message" : "Doodle is available on following platforms. Download now to get started!",
     "platforms": {
         "android": "https://play.google.com/store/apps/details?id=sfllhkhan95.doodle",
         "ios": null,
@@ -24,6 +25,11 @@
                 "name": "Powerful Toolbox",
                 "icon": "icon-camera",
                 "about": "Choose between a number of brush sizes and colors, easily draw basic geometric shapes, set fill and stroke colors."
+            },
+            {
+                "name": "Messenger Expressions",
+                "icon": "fa fa-close",
+                "about": "Integrate Doodle with Messenger to make your conversations richer and more personal."
             },
             {
                 "name": "Save Projects",
@@ -42,5 +48,5 @@
             }
         ]
     },
-    "code": "https://github.com/sfllhkhan95/"
+    "code": "https://github.com/sfllhkhan95/paint"
 }
