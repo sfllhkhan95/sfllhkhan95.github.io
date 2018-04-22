@@ -340,6 +340,7 @@ if ($title == ".") $title = "Projects";
                             // Locate an icon
                             $ic_default = "./favicon.png";
                             $icons = array(
+                                "$dir/favicon.png",
                                 "$dir/favicon.ico",
                                 "$dir/app/src/main/res/mipmap-hdpi/ic_launcher.png",
                                 "$dir/$label-android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
@@ -409,7 +410,6 @@ if ($title == ".") $title = "Projects";
 				<div class='section-heading text-center'>
 				  <h2>" . $project->features->heading . "</h2>
 				  <p class='text-muted'>" . $project->features->subheading . "</p>
-				  <a style='margin-top: 20px;' onclick='scrollToSection(\"$label-info\", \"download\")' class='btn btn-outline btn-light btn-xl js-scroll-trigger'>Get now!</a>
 				  <hr class='small'>
 				  </div>
 				<div class='row'>
@@ -445,7 +445,8 @@ if ($title == ".") $title = "Projects";
 					  </div>
 					</div>
 				  </div>
-				</div>
+                </div>
+                <a style='margin-top: 20px;' onclick='scrollToSection(\"$label-info\", \"download\")' class='btn btn-outline btn-light btn-xl js-scroll-trigger'>Get now!</a>
 			  </div>
 			</section>
 			
