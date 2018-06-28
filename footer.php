@@ -20,12 +20,12 @@
                 <br>
                 <ul class="list-inline">
                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/sfllhkhan95">
+                        <a target="_blank" href="https://www.linkedin.com/in/saifkhichi96">
                             <span class="fa fa-linkedin fa-fw fa-2x text-primary"></span>
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://github.com/sfllhkhan95">
+                        <a target="_blank" href="https://github.com/saifkhichi96">
                             <span class="fa fa-github fa-fw fa-2x text-primary"></span>
                         </a>
                     </li>
