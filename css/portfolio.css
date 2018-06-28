@@ -3,23 +3,18 @@
     background: black;
     color: white;
 }
-
 .portfolio-item {
     margin-bottom: 30px;
 }
-
 .img-portfolio {
     margin: 0 auto;
 }
-
 .img-portfolio:hover {
     opacity: 0.8;
 }
-
 .gallery-top {
     padding: 0;
 }
-
 .gallery-grids figure {
     position: relative;
     float: left;
@@ -27,22 +22,18 @@
     text-align: center;
     width: 100%;
 }
-
 .gallery-grids figure.effect-bubba:hover {
     background-color: #000;
 }
-
 .gallery-grids figure img {
     position: relative;
     display: block;
     width: 100%;
     border: 3px solid #fff;
 }
-
 .gallery-bottom {
     margin: 2.5em 0;
 }
-
 .gallery-grids figure figcaption {
     padding: 2em;
     color: #fff;
@@ -50,11 +41,9 @@
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 .gallery-grids figure figcaption::before, .gallery-grids figure figcaption::after {
     pointer-events: none;
 }
-
 .gallery-grids figure figcaption {
     position: absolute;
     top: 0;
@@ -62,11 +51,9 @@
     width: 100%;
     height: 100%;
 }
-
 figure.effect-bubba:hover img {
     opacity: 0.3;
 }
-
 figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after {
     position: absolute;
     top: 30px;
@@ -80,7 +67,6 @@ figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after {
     -o-transition: opacity 0.35s, -o-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
 }
-
 figure.effect-bubba figcaption::before {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -90,7 +76,6 @@ figure.effect-bubba figcaption::before {
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
 }
-
 figure.effect-bubba figcaption::after {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -100,7 +85,6 @@ figure.effect-bubba figcaption::after {
     -ms-transform: scale(1, 0);
     transform: scale(1, 0);
 }
-
 figure.effect-bubba h4 {
     padding-top: 11%;
     -webkit-transition: transform 0.35s;
@@ -114,11 +98,9 @@ figure.effect-bubba h4 {
     transform: translate3d(0, -20px, 0);
     opacity: 0;
 }
-
 .gallery-top figure.effect-bubba h4 {
     padding-top: 16%;
 }
-
 figure.effect-bubba:hover figcaption::before, figure.effect-bubba:hover figcaption::after {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -127,7 +109,6 @@ figure.effect-bubba:hover figcaption::before, figure.effect-bubba:hover figcapti
     -ms-transform: scale(1);
     transform: scale(1);
 }
-
 figure.effect-bubba:hover h4 {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -136,7 +117,6 @@ figure.effect-bubba:hover h4 {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
 /*-- Blog Articles --*/
 .blog {
     width: 188px;
@@ -151,7 +131,6 @@ figure.effect-bubba:hover h4 {
     float: left;
     background: #000;
 }
-
 .blog-overlay {
     position: absolute;
     width: 100%;
@@ -159,21 +138,16 @@ figure.effect-bubba:hover h4 {
     background: black;
     opacity: 0.25;
 }
-
 .blog * {
     color: #fff;
-
 }
-
 .blog:hover label {
     text-shadow: 0 0 3px #018fa0;
 }
-
 .blog:hover .blog-overlay {
     cursor: pointer;
     opacity: 0.5;
 }
-
 .blog-title {
     position: absolute;
     font-size: 18px;
@@ -182,7 +156,6 @@ figure.effect-bubba:hover h4 {
     right: 25px;
     color: white;
 }
-
 .blog-date {
     position: absolute;
     font-size: 12px;
@@ -190,7 +163,6 @@ figure.effect-bubba:hover h4 {
     left: 25px;
     right: 25px;
 }
-
 .blog label::before, .blog label::after {
     position: absolute;
     top: 15px;
@@ -199,46 +171,38 @@ figure.effect-bubba:hover h4 {
     left: 15px;
     content: '';
 }
-
 .blog label::before {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
-
 .blog label::after {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
 }
-
 @media (max-width: 768px) {
     .blog-articles {
         height: 300px;
         overflow-y: hidden;
         overflow-x: auto;
         white-space: nowrap;
-    }
-
+   }
     .blog {
         display: inline-block;
         white-space: normal;
         background: #000;
         float: none;
-    }
-
+   }
     .blog * {
         display: block;
         color: #fff !important;
-    }
+   }
 }
-
 /*-- //Blog Articles --*/
-
 @media (max-width: 768px) {
     .gallery-grids figure.effect-bubba {
         border: 5px solid #bbb;
         background-color: #000;
-    }
-
+   }
     figure.effect-bubba h4 {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
@@ -246,8 +210,7 @@ figure.effect-bubba:hover h4 {
         -o-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-    }
-
+   }
     figure.effect-bubba:hover figcaption::before, figure.effect-bubba:hover figcaption::after {
         opacity: 1;
         -webkit-transform: scale(1);
@@ -255,15 +218,12 @@ figure.effect-bubba:hover h4 {
         -o-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);
-    }
-
+   }
     figure.effect-bubba img {
         opacity: 0.5;
-    }
-
+   }
     figure.effect-bubba:hover img {
         opacity: 0.15;
-    }
+   }
 }
-
 /*-- //Portfolio --*/
