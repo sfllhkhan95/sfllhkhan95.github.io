@@ -1,7 +1,9 @@
-# IDEA Files
+# IntelliJ files
 .idea/
 *.iml
 
-# OS Configuration files
-*.DS_STORE
+# OS files
 Desktop.ini
+Thumbs.db
+.DS_STORE
+Icon?
