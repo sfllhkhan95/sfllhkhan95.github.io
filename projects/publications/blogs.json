@@ -1,28 +1,10 @@
 {
   "blogs": [
     {
-      "title": "University Students Demand Tax-Free Education in Pakistan",
-      "cover": "/img/blogs/TDS-20170207-TAX.jpg",
-      "date": "February 7, 2017",
-      "link": "http://www.thedailysuggest.com/campaign-tax-free-education-pakistan/"
-    },
-    {
-      "title": "Burial Suit That Turns You Into Mushrooms",
-      "cover": "/img/blogs/TDS-20170408-BSM.jpg",
-      "date": "April 8, 2017",
-      "link": "http://www.thedailysuggest.com/be-a-mushroom-in-the-afterlife-with-the-infinity-burial-suit/"
-    },
-    {
-      "title": "10 Reasons Why Chocolate is Your Best Friend",
-      "cover": "/img/blogs/TDS-20170426-CHOC.jpg",
-      "date": "April 26, 2017",
-      "link": "http://www.thedailysuggest.com/10-reasons-why-chocolate-is-your-best-friend/"
-    },
-    {
-      "title": "Remembering the Battle of Hogwarts",
-      "cover": "/img/blogs/TDS-20170502-BOH.png",
-      "date": "May 2, 2017",
-      "link": "http://www.thedailysuggest.com/remembering-hogwarts-battle/"
+      "title": "Young Pakistani journalist among top 100 selected around the world",
+      "cover": "/img/blogs/TDS-20180613-SHAHAB.png",
+      "date": "June 13, 2018",
+      "link": "https://www.thedailysuggest.com/makhdoom-shahab-among-top-100-journalists-selected-worldwide/"
     },
     {
       "title": "Malala Set To Reach Half-million Twitter Followers On First Day",
@@ -31,10 +13,28 @@
       "link": "http://www.thedailysuggest.com/malala-set-reach-half-million-twitter-followers-first-day/"
     },
     {
-      "title": "Everything We Know About Game of Thrones Season 7 Episode 1",
-      "cover": "/img/blogs/TDS-20170708-GOT.jpg",
-      "date": "July 8, 2017",
-      "link": "http://www.thedailysuggest.com/everything-know-game-thrones-season-7-episode-1/"
+      "title": "Remembering the Battle of Hogwarts",
+      "cover": "/img/blogs/TDS-20170502-BOH.png",
+      "date": "May 2, 2017",
+      "link": "http://www.thedailysuggest.com/remembering-hogwarts-battle/"
+    },
+    {
+      "title": "10 Reasons Why Chocolate is Your Best Friend",
+      "cover": "/img/blogs/TDS-20170426-CHOC.jpg",
+      "date": "April 26, 2017",
+      "link": "http://www.thedailysuggest.com/10-reasons-why-chocolate-is-your-best-friend/"
+    },
+    {
+      "title": "Burial Suit That Turns You Into Mushrooms",
+      "cover": "/img/blogs/TDS-20170408-BSM.jpg",
+      "date": "April 8, 2017",
+      "link": "http://www.thedailysuggest.com/be-a-mushroom-in-the-afterlife-with-the-infinity-burial-suit/"
+    },
+    {
+      "title": "University Students Demand Tax-Free Education in Pakistan",
+      "cover": "/img/blogs/TDS-20170207-TAX.jpg",
+      "date": "February 7, 2017",
+      "link": "http://www.thedailysuggest.com/campaign-tax-free-education-pakistan/"
     }
   ]
 }

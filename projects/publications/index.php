@@ -61,6 +61,10 @@
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/portfolio.css" rel="stylesheet">
     <style>
+        body, html {
+            overflow: auto;
+        }
+        
         section {
             background: #212121 !important;
         }
@@ -213,12 +217,12 @@
                         <hr class="small">
                         <ol>
                             <li>
-                                <a href="stories/his-last-speech.html">
+                                <a href="stories/his-last-speech.php">
                                     His Last Speech
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="essays/from-indifference-to-passion.php">
                                     From Indifference to Passion
                                 </a>
                             </li>
@@ -261,10 +265,10 @@
 <script src="/js/webapp.js"></script>
 <script src="/js/script.js"></script>
 <script>
-    window.onload = function () {
+    $(window).ready(function() {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");
-    };
+    });
 </script>
 </body>
 
