@@ -1,0 +1,37 @@
+{
+    "name": "VerSign",
+    "about": "<a href='#'>VerSign</a> is an Off-Line Signature Verification system.",
+    "tagline": "Safeguard Your Identify!",
+    "devices": [
+        "macbook",
+        "surface"
+    ],
+    "screens": [
+        "/img/screens/versign-screen-1.png",
+        "/img/screens/versign-screen-2.png"
+    ],
+    "message" : "VerSign will soon be released for public use. Stay tuned!",
+    "platforms": {
+        "android": null,
+        "ios": null,
+        "windows": null,
+        "mac": null
+    },
+    "features": {
+        "heading": "Protect your signature!",
+        "subheading": "VerSign allows banks to verify authenticity of signatures on bank cheques.",
+        "list": [
+            {
+                "name": "Secure Identity",
+                "icon": "fa fa-lock",
+                "about": "Completely automatic and reliable verification of signatures on bank cheques counters fraudulent transactions."
+            },
+            {
+                "name": "Save Resources",
+                "icon": "fa fa-money",
+                "about": "By automating verification, VerSign saves both time and money by detecting frauds."
+            }
+        ]
+    },
+    "code": "https://github.com/bytexcite/versign"
+}
