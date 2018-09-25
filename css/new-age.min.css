@@ -3,6 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
+
 body, html {
     width: 100%;
     height: 100%
@@ -82,27 +83,27 @@ section h2 {
     color: #222
 }
 
-#mainNav .navbar-nav > li > a {
+#mainNav .navbar-nav>li>a {
     font-size: 11px;
     font-family: Lato, Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase
 }
 
-#mainNav .navbar-nav > li > a.active {
+#mainNav .navbar-nav>li>a.active {
     color: #fdcc52 !important;
     background-color: transparent
 }
 
-#mainNav .navbar-nav > li > a.active:hover {
+#mainNav .navbar-nav>li>a.active:hover {
     background-color: transparent
 }
 
-#mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+#mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
     color: #222
 }
 
-#mainNav .navbar-nav > li > a:focus:hover, #mainNav .navbar-nav > li > a:hover {
+#mainNav .navbar-nav>li>a:focus:hover, #mainNav .navbar-nav>li>a:hover {
     color: #fdcc52
 }
 
@@ -111,41 +112,32 @@ section h2 {
         border-color: transparent;
         background-color: transparent
     }
-
     #mainNav .navbar-brand {
         color: fade(white, 70%)
     }
-
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
         color: #fff
     }
-
-    #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+    #mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
         color: rgba(255, 255, 255, .7)
     }
-
-    #mainNav .navbar-nav > li > a:focus:hover, #mainNav .navbar-nav > li > a:hover {
+    #mainNav .navbar-nav>li>a:focus:hover, #mainNav .navbar-nav>li>a:hover {
         color: #fff
     }
-
     #mainNav.navbar-shrink {
         border-color: rgba(34, 34, 34, .1);
         background-color: #fff
     }
-
     #mainNav.navbar-shrink .navbar-brand {
         color: #222
     }
-
     #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
         color: #fdcc52
     }
-
-    #mainNav.navbar-shrink .navbar-nav > li > a, #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+    #mainNav.navbar-shrink .navbar-nav>li>a, #mainNav.navbar-shrink .navbar-nav>li>a:focus {
         color: #222
     }
-
-    #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover, #mainNav.navbar-shrink .navbar-nav > li > a:hover {
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, #mainNav.navbar-shrink .navbar-nav>li>a:hover {
         color: #fdcc52
     }
 }
@@ -188,16 +180,13 @@ header.masthead .device-container .screen img {
         padding-top: 0;
         padding-bottom: 0
     }
-
     header.masthead .header-content {
         margin-bottom: 0;
         text-align: left
     }
-
     header.masthead .header-content h1 {
         font-size: 50px
     }
-
     header.masthead .device-container {
         max-width: 325px
     }
@@ -411,7 +400,7 @@ footer ul li a.active, footer ul li a:active, footer ul li a:focus, footer ul li
     color: #fdcc52
 }
 
-.no-gutter > [class*=col-] {
+.no-gutter>[class*=col-] {
     padding-right: 0;
     padding-left: 0
 }

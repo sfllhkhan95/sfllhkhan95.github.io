@@ -60,6 +60,7 @@
 
 	<!-- Stylesheets -->
 	<link href="/css/navigation.css" rel="stylesheet">
+	<link href="/css/theme.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
 	<!--[if lt IE 9]>
@@ -69,11 +70,12 @@
 
 	<!-- Custom styles for this page -->
 	<style>
-		nav * {
-			color: #018fa0 !important;
+		#services {
+			background: black;
 		}
 
-		p {
+		.course-item {
+			background: white;
 			text-align: justify;
 		}
 
@@ -89,6 +91,10 @@
 
 		h5 {
 			text-align: center;
+		}
+
+		p {
+			text-align: justify;
 		}
 
 		#outline {
@@ -167,705 +173,707 @@
 	</nav>
 
 	<!-- Courses section  -->
-	<section class="courses-section spad">
-		<div class="container">
-			<div class="sec-title text-center">
-				<span>Bachelor of Software Engineering (2014-2018)</span>
-				<h2>Course List</h2>
-			</div>
-			<div class="row courses-page">
-				<!-- FYP -->
-				<div class="col-sm-12">
-					<div class="course-item featured">
-						<div class="course-preview" style="background: center center no-repeat url('img/fyp.jpg'); background-size: cover;">
-							<div class="featur-badges">SE-499 Final-Year Project</div>
-							<iframe width="100%" height="100%"
-							src="http://youtube.com/embed/i8i6sC14x1c">
-							</iframe>
-						</div>
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>Signature Verification</h5>
-								<p>Signature verification is the process of using machine learning methods to
-									validate the authenticity of an individual's signature. Signatures can be of one of
-									the two types; on-line or off-line, and this project focuses on off-line signature
-									verification. Aim of this project is to design an algorithm which can distinguish
-									between genuine and forged signatures using writer independent features, and to
-									develop a system using this algorithm which can be used to verify signatures on
-									bank cheques. We intend to build a complete end-to-end hardware/software system
-									which can be used to acquire signatures from bank cheques, perform signature
-									verification, and display the results. For this purpose, various deep learning
-									techniques were developed and tested on standard datasets for off-line signature
-									verification, as well as on a dataset collected by ourselves.</p>
-								<span><i class="fas fa-award"></i> Nominated for Gold Medal</span>
-								<div class="rating">
-									<a href="?outline=se499">Project Report</a>
-								</div>
+	<section id="services" class="container courses-section spad">
+		<div class="row text-center">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h2 style="color:white">Course List</h2>
+				<hr class="small">
+				<h4 style="color:silver" class="sec-title">Bachelor of Software Engineering (2014-2018)</h4>
+				<div class="row courses-page">
+					<!-- FYP -->
+					<div class="col-sm-12">
+						<div class="course-item featured">
+							<div class="course-preview" style="background: center center no-repeat url('img/fyp.jpg'); background-size: cover;">
+								<div class="featur-badges">SE-499 Final-Year Project</div>
+								<iframe width="100%" height="100%" src="http://youtube.com/embed/i8i6sC14x1c">
+								</iframe>
 							</div>
-							<div class="seller-info">
-								<div class="seller-pic set-bg"></div>
-								<h6>Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en" target="_blank"><span>Dr. Muhammad Imran Malik</span></a></h6>
-								<h6>Co-Advisor: <a href="http://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank"><span>Dr. Muhammad Shahzad</span></a></h6>
-								<br>
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>Signature Verification</h5>
+									<p>Signature verification is the process of using machine learning methods to
+										validate the authenticity of an individual's signature. Signatures can be of one of
+										the two types; on-line or off-line, and this project focuses on off-line signature
+										verification. Aim of this project is to design an algorithm which can distinguish
+										between genuine and forged signatures using writer independent features, and to
+										develop a system using this algorithm which can be used to verify signatures on
+										bank cheques. We intend to build a complete end-to-end hardware/software system
+										which can be used to acquire signatures from bank cheques, perform signature
+										verification, and display the results. For this purpose, various deep learning
+										techniques were developed and tested on standard datasets for off-line signature
+										verification, as well as on a dataset collected by ourselves.</p>
+									<span><i class="fas fa-award"></i> Nominated for Gold Medal</span>
+									<div class="rating">
+										<a href="?outline=se499">Project Report</a>
+									</div>
+								</div>
+								<div class="seller-info">
+									<div class="seller-pic set-bg"></div>
+									<h6>Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en" target="_blank"><span>Dr.
+												Muhammad Imran Malik</span></a></h6>
+									<h6>Co-Advisor: <a href="http://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank"><span>Dr.
+												Muhammad Shahzad</span></a></h6>
+									<br>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<!-- CS Courses -->
-				<div id="cs" class="col-sm-12 sec-title text-center">
-					<span>Computer Science</span>
-				</div>
+					<!-- CS Courses -->
+					<div id="cs" class="col-sm-12 sec-title text-center">
+						<span>Computer Science</span>
+					</div>
 
-				<!-- CS-100 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-100<br>Fundamentals of ICT</h5>
-								<span><i class="fas fa-school"></i> 2+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs100">Course Outline</a>
+					<!-- CS-100 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-100<br>Fundamentals of ICT</h5>
+									<span><i class="fas fa-school"></i> 2+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs100">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-110 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-110 Fundamentals of Computer Programming</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs110">Course Outline</a>
+					<!-- CS-110 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-110 Fundamentals of Computer Programming</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs110">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-212 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-212 Object-Oriented Programming</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs212">Course Outline</a>
+					<!-- CS-212 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-212 Object-Oriented Programming</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs212">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-220 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-220<br>Database Systems</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=cs220">Course Outline</a>
+					<!-- CS-220 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-220<br>Database Systems</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=cs220">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-250 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-250 Data Structures and Algorithms</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs250">Course Outline</a>
+					<!-- CS-250 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-250 Data Structures and Algorithms</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs250">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-251 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-251 Design and Analysis of Algorithms</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs251">Course Outline</a>
+					<!-- CS-251 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-251 Design and Analysis of Algorithms</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs251">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-260 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-260 Human-Computer Interaction</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs260">Course Outline</a>
+					<!-- CS-260 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-260 Human-Computer Interaction</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs260">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-330 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-330<br>Operating Systems</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs330">Course Outline</a>
+					<!-- CS-330 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-330<br>Operating Systems</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs330">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-332 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-332<br>Distributed Computing</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> B</span>
-								<div class="rating">
-									<a href="?outline=cs332">Course Outline</a>
+					<!-- CS-332 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-332<br>Distributed Computing</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> B</span>
+									<div class="rating">
+										<a href="?outline=cs332">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-344 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-344<br>Web Engineering</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs344">Course Outline</a>
+					<!-- CS-344 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-344<br>Web Engineering</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs344">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-361 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-361<br>Computer Graphics</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs361">Course Outline</a>
+					<!-- CS-361 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-361<br>Computer Graphics</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs361">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-471 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-471<br>Machine Learning</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=cs471">Course Outline</a>
+					<!-- CS-471 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-471<br>Machine Learning</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=cs471">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- CS-474 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CS-474<br>Computer Vision</h5>
-								<span><i class="fas fa-school"></i> 2+1</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=cs474">Course Outline</a>
+					<!-- CS-474 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CS-474<br>Computer Vision</h5>
+									<span><i class="fas fa-school"></i> 2+1</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=cs474">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-
-				<!-- SE Courses -->
-				<div id="se" class="col-sm-12 sec-title text-center">
-					<span>Software Engineering</span>
-				</div>
-				<!-- SE-200 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-200<br>Software Engineering</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=se200">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- SE-210 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-210 Software Design and Architecture</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=se210">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- SE-311 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-311 Software Requirements Engineering</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=se311">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- SE-312 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-312<br>Software Construction</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=se312">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- SE-320 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-320<br>Formal Methods</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=se320">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- SE-321 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-321 Software Quality Engineering</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=se321">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- SE-430 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>SE-430 Software Project Management</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=se430">Course Outline</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 
-				<!-- MATH Courses -->
-				<div id="math" class="col-sm-12 sec-title text-center">
-					<span>Mathematics</span>
-				</div>
-				<!-- MATH-111 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MATH-111<br>Calculus I</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=math111">Course Outline</a>
+					<!-- SE Courses -->
+					<div id="se" class="col-sm-12 sec-title text-center">
+						<span>Software Engineering</span>
+					</div>
+					<!-- SE-200 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-200<br>Software Engineering</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=se200">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MATH-112 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MATH-112<br>Calculus II</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=math112">Course Outline</a>
+					<!-- SE-210 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-210 Software Design and Architecture</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=se210">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MATH-161 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MATH-161<br>Discrete Mathematics</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=math161">Course Outline</a>
+					<!-- SE-311 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-311 Software Requirements Engineering</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=se311">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MATH-222 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MATH-222<br>Linear Algebra</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=math222">Course Outline</a>
+					<!-- SE-312 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-312<br>Software Construction</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=se312">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MATH-351 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MATH-351<br>Numerical Methods</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=math351">Course Outline</a>
+					<!-- SE-320 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-320<br>Formal Methods</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=se320">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MATH-361 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MATH-361<br>Probability and Statistics</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=math361">Course Outline</a>
+					<!-- SE-321 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-321 Software Quality Engineering</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=se321">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+					<!-- SE-430 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>SE-430 Software Project Management</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=se430">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
-				<!-- EE Courses -->
-				<div id="ee" class="col-sm-12 sec-title text-center">
-					<span>Electrical Engineering</span>
-				</div>
-				<!-- EE-212 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>EE-212<br>Basic Electronics</h5>
-								<span><i class="fas fa-school"></i> 2+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=ee212">Course Outline</a>
+					<!-- MATH Courses -->
+					<div id="math" class="col-sm-12 sec-title text-center">
+						<span>Mathematics</span>
+					</div>
+					<!-- MATH-111 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MATH-111<br>Calculus I</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=math111">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- EE-221 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>EE-221<br>Digital Logic Design</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=ee221">Course Outline</a>
+					<!-- MATH-112 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MATH-112<br>Calculus II</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=math112">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- EE-321 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>EE-321 Computer Architecture & Organisation</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=ee321">Course Outline</a>
+					<!-- MATH-161 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MATH-161<br>Discrete Mathematics</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=math161">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- EE-353 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>EE-353<br>Computer Networks</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=ee353">Course Outline</a>
+					<!-- MATH-222 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MATH-222<br>Linear Algebra</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=math222">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+					<!-- MATH-351 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MATH-351<br>Numerical Methods</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=math351">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MATH-361 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MATH-361<br>Probability and Statistics</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=math361">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
-				<!-- Misc Courses -->
-				<div id="misc" class="col-sm-12 sec-title text-center">
-					<span>Miscellaneous</span>
-				</div>
-				<!-- CSL-401 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>CSL-401<br>Community Service</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> Qualified</span>
-								<div class="rating">
-									<a href="?outline=csl401">Course Outline</a>
+					<!-- EE Courses -->
+					<div id="ee" class="col-sm-12 sec-title text-center">
+						<span>Electrical Engineering</span>
+					</div>
+					<!-- EE-212 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>EE-212<br>Basic Electronics</h5>
+									<span><i class="fas fa-school"></i> 2+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=ee212">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- ECO-130 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>ECO-130<br>Engineering Economics</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> C+</span>
-								<div class="rating">
-									<a href="?outline=eco130">Course Outline</a>
+					<!-- EE-221 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>EE-221<br>Digital Logic Design</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=ee221">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- FIN-100 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>FIN-100<br>Principles of Accounting</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=fin100">Course Outline</a>
+					<!-- EE-321 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>EE-321 Computer Architecture & Organisation</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=ee321">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- HRM-241 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>HRM-241<br>Organisational Behaviour</h5>
-								<span><i class="fas fa-school"></i> 3+0</span>
-								<span><i class="fas fa-award"></i> B</span>
-								<div class="rating">
-									<a href="?outline=hrm241">Course Outline</a>
+					<!-- EE-353 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>EE-353<br>Computer Networks</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=ee353">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- HU-101 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>HU-101<br>Islamic Studies</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=hu101">Course Outline</a>
+
+
+					<!-- Misc Courses -->
+					<div id="misc" class="col-sm-12 sec-title text-center">
+						<span>Miscellaneous</span>
+					</div>
+					<!-- CSL-401 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>CSL-401<br>Community Service</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> Qualified</span>
+									<div class="rating">
+										<a href="?outline=csl401">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- HU-107 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>HU-107<br>Pakistan Studies</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=hu107">Course Outline</a>
+					<!-- ECO-130 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>ECO-130<br>Engineering Economics</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> C+</span>
+									<div class="rating">
+										<a href="?outline=eco130">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- HU-109 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>HU-109<br>Communication Skills</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=hu109">Course Outline</a>
+					<!-- FIN-100 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>FIN-100<br>Principles of Accounting</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=fin100">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- HU-212 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>HU-212 Technical & Business Writing</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=hu212">Course Outline</a>
+					<!-- HRM-241 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>HRM-241<br>Organisational Behaviour</h5>
+									<span><i class="fas fa-school"></i> 3+0</span>
+									<span><i class="fas fa-award"></i> B</span>
+									<div class="rating">
+										<a href="?outline=hrm241">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- HU-222 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>HU-222<br>Professional Ethics</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=hu222">Course Outline</a>
+					<!-- HU-101 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>HU-101<br>Islamic Studies</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=hu101">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MGT-164 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MGT-164 Introduction to Management</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=mgt164">Course Outline</a>
+					<!-- HU-107 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>HU-107<br>Pakistan Studies</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=hu107">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- MGT-271 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>MGT-271<br>Entrepreneurship</h5>
-								<span><i class="fas fa-school"></i> 2+0</span>
-								<span><i class="fas fa-award"></i> B+</span>
-								<div class="rating">
-									<a href="?outline=mgt271">Course Outline</a>
+					<!-- HU-109 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>HU-109<br>Communication Skills</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=hu109">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- PHY-101 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="course-item">
-						<div class="course-content">
-							<div class="cc-text">
-								<h5>PHY-101<br>Applied Physics</h5>
-								<span><i class="fas fa-school"></i> 3+1</span>
-								<span><i class="fas fa-award"></i> A</span>
-								<div class="rating">
-									<a href="?outline=phy101">Course Outline</a>
+					<!-- HU-212 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>HU-212 Technical & Business Writing</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=hu212">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- HU-222 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>HU-222<br>Professional Ethics</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=hu222">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MGT-164 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MGT-164 Introduction to Management</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=mgt164">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MGT-271 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>MGT-271<br>Entrepreneurship</h5>
+									<span><i class="fas fa-school"></i> 2+0</span>
+									<span><i class="fas fa-award"></i> B+</span>
+									<div class="rating">
+										<a href="?outline=mgt271">Course Outline</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- PHY-101 -->
+					<div class="col-md-4 col-sm-6">
+						<div class="course-item">
+							<div class="course-content">
+								<div class="cc-text">
+									<h5>PHY-101<br>Applied Physics</h5>
+									<span><i class="fas fa-school"></i> 3+1</span>
+									<span><i class="fas fa-award"></i> A</span>
+									<div class="rating">
+										<a href="?outline=phy101">Course Outline</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -878,7 +886,8 @@
 
 	<div id="outline">
 		<!-- Modal content-->
-		<iframe id="outlineSrc" src="http://docs.google.com/gview?embedded=true&url=http://saifkhichi.com/courses/bese/files/" width="100%" height="100%"></iframe>
+		<iframe id="outlineSrc" src="http://docs.google.com/gview?embedded=true&url=http://saifkhichi.com/courses/bese/files/"
+		 width="100%" height="100%"></iframe>
 		<button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-times"></span></button>
 	</div>
 
@@ -902,10 +911,10 @@
 			return decodeURIComponent(results[2].replace(/\+/g, " "));
 		}
 
-		$('#outline button').click(function() {
+		$('#outline button').click(function () {
 			$('#outline').hide();
 		})
-	
+
 		$('#outline').hide();
 		$(window).ready(function () {
 			// Hide preloaer
@@ -914,21 +923,21 @@
 			var uri = window.location.toString();
 			var outline = getParameterByName('outline');
 			if (!outline || outline == '') {
-				
+
 			} else {
 				var content = $('#outlineSrc').attr('src');
 				content += outline + ".pdf";
-				$('#outlineSrc').attr('src',  content);
+				$('#outlineSrc').attr('src', content);
 				$('#outline').show();
 			}
-	
+
 			// Clean URL
 			if (uri.indexOf("?") > 0) {
-			 	var uri = uri.substring(0, uri.indexOf("?"));
-			 	window.history.replaceState({}, document.title, uri);
+				var uri = uri.substring(0, uri.indexOf("?"));
+				window.history.replaceState({}, document.title, uri);
 			}
 		});
-		</script>
+	</script>
 
 </body>
 

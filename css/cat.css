@@ -19,7 +19,7 @@
 .all:before {
     height: 20rem;
     width: 2px;
-    background-color: #00414D;
+    background-color: #00695f;
     left: calc(50% - 1px);
     bottom: 20rem;
 }
@@ -27,7 +27,7 @@
     position: relative;
     left: -18px;
     top: 80px;
-    background: url('../img/button.png') center center no-repeat;
+    background: url('/img/button.png') center center no-repeat;
     background-size: cover;
     width: 125px;
     height: 80px;
@@ -44,7 +44,7 @@
     top: -300px;
     left: 25px;
     width: 2px;
-    background: #00414D;
+    background: #00695f;
 }
 .all .string:after {
     content: '';
@@ -56,8 +56,8 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: -webkit-radial-gradient(top left, circle, #D6F8FF, #00414D 50%, #001d22);
-    background-image: radial-gradient(circle at top left, #D6F8FF, #00414D 50%, #001d22);
+    background-image: -webkit-radial-gradient(top left, circle, #D6F8FF, #00695f 50%, #141520);
+    background-image: radial-gradient(circle at top left, #D6F8FF, #00695f 50%, #141520);
     z-index: 1;
 }
 .yarn .photo {
@@ -66,7 +66,7 @@
     height: 90%;
     margin: 5%;
     z-index: 1;
-    background: url('../img/me.jpg') center center no-repeat;
+    background: url('/img/me.jpg') center center no-repeat;
     background-size: cover;
     border-radius: 100%;
 }
@@ -294,7 +294,7 @@
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    background-color: #00414D;
+    background-color: #00695f;
 }
 .cat-eyes:before {
     left: 20px;
@@ -306,7 +306,7 @@
     position: absolute;
     width: 12px;
     height: 8px;
-    background-color: #00414D;
+    background-color: #00695f;
     top: 60%;
     left: calc(50% - 6px);
     border-top-left-radius: 50% 30%;

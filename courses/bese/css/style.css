@@ -10,49 +10,6 @@
 /* Template default CSS
 /*----------------------------------------*/
 
-html,
-body {
-	height: 100%;
-	font-family: 'Raleway', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-	font-weight: 600;
-	color: #1d1d1d;
-}
-
-h1 {
-	font-size: 70px;
-}
-
-h2 {
-	font-size: 34px;
-}
-
-h3 {
-	font-size: 30px;
-}
-
-h4 {
-	font-size: 24px;
-}
-
-h5 {
-	font-size: 20px;
-}
-
-h6 {
-	font-size: 14px;
-}
-
 p {
 	font-size: 14px;
 	color: #838383;
@@ -87,7 +44,8 @@ ol {
 -----------------------*/
 
 .sec-title {
-	margin-bottom: 84px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 .sec-title span {
@@ -96,7 +54,7 @@ ol {
 	font-weight: 700;
 	display: block;
 	margin-bottom: 20px;
-	color: #1a5ed1;
+	color: #00695f;
 	letter-spacing: 2px;
 }
 
@@ -115,8 +73,8 @@ ol {
 }
 
 .spad {
-	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .text-white h1,
@@ -217,7 +175,7 @@ ol {
 }
 
 .site-btn.btn-3 {
-	background: #1a5ed1;
+	background: #00695f;
 }
 
 .site-btn.btn-4 {
@@ -433,7 +391,7 @@ ol {
 }
 
 .nav-switch:hover {
-	background: #1a5ed1;
+	background: #00695f;
 	color: #f3e830;
 }
 
@@ -593,7 +551,7 @@ ol {
 	width: 0;
 	right: 0;
 	top: 0;
-	background: #1a5ed1;
+	background: #00695f;
 	z-index: 1;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -705,11 +663,11 @@ ol {
 }
 
 .course-slider .owl-dots .owl-dot.active {
-	background: #1a5ed1;
+	background: #00695f;
 }
 
 .courses-page .course-item {
-	margin-bottom: 77px;
+	margin-bottom: 30px;
 }
 
 .course-item {
@@ -840,7 +798,7 @@ ol {
 }
 
 .course-item.featured-2 p {
-	margin-bottom: 48px;
+	margin-bottom: 25px;
 }
 
 /*------------------
@@ -1080,7 +1038,7 @@ ol {
 }
 
 .pricing-switch .ps-month {
-	color: #1a5ed1;
+	color: #00695f;
 }
 
 .pricing-switch.annual .ps-month {
@@ -1088,7 +1046,7 @@ ol {
 }
 
 .pricing-switch.annual .ps-annual {
-	color: #1a5ed1;
+	color: #00695f;
 }
 
 .pricing-switch.annual .main-switch:after {
@@ -1139,7 +1097,7 @@ ol {
 .pricing-chart span {
 	font-size: 12px;
 	font-weight: 800;
-	color: #1a5ed1;
+	color: #00695f;
 	text-transform: uppercase;
 	display: block;
 	margin-bottom: 35px;
@@ -1184,7 +1142,7 @@ ol {
 }
 
 .pricing-chart.pc-populer .offer-info {
-	background: #1a5ed1;
+	background: #00695f;
 	color: #fff;
 }
 
@@ -1282,7 +1240,7 @@ ol {
 }
 
 .blog-item .blog-tag a:hover {
-	background: #1a5ed1;
+	background: #00695f;
 	color: #fff;
 }
 
@@ -1295,7 +1253,7 @@ ol {
 }
 
 .site-pagination span {
-	color: #1a5ed1;
+	color: #00695f;
 }
 
 .widget {
@@ -1453,7 +1411,7 @@ ol {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-	border-bottom: 2px solid #1a5ed1;
+	border-bottom: 2px solid #00695f;
 }
 
 .contact-form textarea {
