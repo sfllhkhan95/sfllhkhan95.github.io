@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" manifest="/offline.manifest">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Muhammad Saif Ullah Khan">
+    <meta name="description" content="">
+    <meta name="keywords" content="saifkhichi96, saifkhichi, saif, khichi, software, games, development, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web App settings -->
+    <meta name="apple-mobile-web-app-title" content="Saif's Portfolio" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- iOS startup screen -->
+    <link rel="apple-touch-startup-image" href="/ios/start/iphone-startup.png">
+    <link rel="apple-touch-startup-image" href="/ios/start/ipad-landscape-startup.png" />
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" href="/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Application Cache -->
+    <meta name="p:domain_verify" content="a756de613e3e91e14743d6a24b29a35c" />
+
+    <title>Games | Saif's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Custom fonts for this page -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:800|Roboto|EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modal.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="/css/new-age.min.css" rel="stylesheet">
+    <link href="/css/navigation.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/portfolio.css" rel="stylesheet">
+    <style>
+        .card {
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .card img {
+            width: 100%;
+            border-bottom: 1px solid silver;
+        }
+
+        .card .card-body {
+            background: white;
+            padding: 10px;
+            box-shadow: 1px 1px 5px white;
+        }
+
+        .portfolio {
+            background: #212121 !important;
+        }
+
+        .portfolio a:hover,
+        .portfolio a:hover * {
+            color: whitesmoke;
+            text-shadow: 1px 1px 10px teal;
+        }
+
+        .portfolio a,
+        .portfolio a * {
+            color: white;
+        }
+
+        nav {
+            text-align: left !important;
+        }
+
+        .project-demo .container {
+            background: #0000;
+        }
+
+        .masthead * {
+            color: white !important;
+        }
+
+        .masthead a, .masthead:hover {
+            color: #fdcc52 !important;
+            font-weight: bold;
+        }
+
+        .features a, .features a:hover {
+            color: rgba(190, 23, 74, 1.0) !important;
+            font-weight: bold;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999999;
+            background: url('/img/loading.gif') center no-repeat #fff;
+        }
+
+        .parent {
+            display: table;
+        }
+
+        .child {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        div.mocukp {
+            position: relative;
+            overflow: hidden;
+        }
+
+        img.mockup {
+            position: absolute;
+            min-width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+
+    </style>
+    <script>
+        // Clean URL
+        var uri = window.location.toString();
+        if (uri.indexOf("?") > 0) {
+            uri = uri.substring(0, uri.indexOf("?"));
+            window.history.replaceState({}, document.title, uri);
+        }
+
+        function scrollToSection(modal, section) {
+            // reset the scroll to top
+            $('#' + modal + ' .modal-body').scrollTop(0);
+
+            // get the top of the section
+            var id = '#' + modal + ' #' + section;
+            var elpos = $(id).position();
+
+            //scroll the container
+            $('#' + modal).animate({
+                scrollTop: elpos.top
+            }, 500);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+
+    <!-- Action Bar (Android-style action bar, appears only on small devices) -->
+    <nav id="action-bar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle pull-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button id="menu-close" type="button" class="navbar-toggle pull-left">
+                    <span class="fa fa-arrow-left"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar (appears as a side menu on small devices) -->
+    <nav id="sidebar-wrapper" class="navbar navbar-inverse">
+        <div class="container container-fluid">
+            <ul class="nav navbar-nav sidebar-nav">
+                <li><a href="/projects/"><span class="fa fa-chevron-left"> PROJECTS</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right sidebar-nav">
+                <li><a href="/projects/apps">APPS</a></li>
+                <li class="active"><a href="/projects/games/">GAMES</a></li>
+                <li><a href="/projects/web/">WEBSITES</a></li>
+                <li><a href="/projects/libs/">LIBRARIES</a></li>
+                <li><a href="/projects/designs/">DESIGNS</a></li>
+                <li><a href="/projects/publications/">PUBLICATIONS</a></li>
+        </div>
+    </nav>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 id="title">
+                    <br>
+                    Games
+                    <hr class="small" style="background: white;">
+                    <br>
+                </h3>
+                <div class="container">
+                    <!-- Bouncy -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="bouncy/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Bouncy</h5>
+                            <p class="card-text"></p>
+                            <a href="bouncy/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Dodge -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="dodge/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Dodge</h5>
+                            <p class="card-text"></p>
+                            <a href="dodge/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Hangman -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="hangman/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Hangman</h5>
+                            <p class="card-text"></p>
+                            <a href="hangman/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- HunTrek -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="huntrek/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">HunTrek</h5>
+                            <p class="card-text"></p>
+                            <a href="huntrek/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Jungle Run -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="jungle-run/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Jungle Run</h5>
+                            <p class="card-text"></p>
+                            <a href="jungle-run/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Poppit -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="poppit/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Poppit!</h5>
+                            <p class="card-text"></p>
+                            <a href="poppit/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Quest -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="quest/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Quest</h5>
+                            <p class="card-text"></p>
+                            <a href="quest/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Space Shooter -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="space-shooter/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Shooter</h5>
+                            <p class="card-text"></p>
+                            <a href="space-shooter/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                    <!-- University Run -->
+                    <div class='card bg-white col-xs-6 col-sm-4 col-md-3 col-lg-2'>
+                        <img class="card-img-top" src="university-run/favicon.png" alt="ADT Simulator's icon">
+                        <div class="card-body">
+                            <h5 class="card-title">University Run</h5>
+                            <p class="card-text"></p>
+                            <a href="university-run/" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/navigation.js"></script>
+    <script src="/js/webapp.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/new-age.min.js"></script>
+    <script>
+        window.onload = function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");
+            $('[data-toggle="tooltip"]').tooltip();
+        }
+    </script>
+</body>
+
+</html>
