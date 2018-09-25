@@ -1,4 +1,5 @@
 /*-- Global Styles --*/
+
 html, body {
     width: 100%;
     height: 100%;
@@ -6,46 +7,58 @@ html, body {
     overflow: hidden;
     font-family: 'Lato', 'EB Garamond', 'Open Sans', Helvetica, Arial, sans-serif;
 }
+
 body a:hover {
     text-decoration: none;
 }
+
 .bg-primary {
     background: #018fa0;
 }
+
 .text-primary {
     color: #018fa0;
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
 }
+
 hr.small {
     max-width: 100px;
 }
+
 .btn-dark {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .btn-light {
     border-radius: 0;
     color: #333;
     background-color: rgb(255, 255, 255);
 }
+
 .btn-light:hover, .btn-light:focus, .btn-light:active {
     color: #333;
     background-color: rgba(255, 255, 255, 0.8);
 }
+
 /*-- //Global Styles --*/
+
 /*-- Header --*/
+
 .header {
     position: relative;
-    overflow: auto !important;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(1, 143, 160, 0.5)), url(../img/bg.png) no-repeat center center scroll;
@@ -56,6 +69,7 @@ hr.small {
     color: #fff !important;
     text-shadow: 1px 1px #000;
 }
+
 .header .WhatIAm {
     position: relative;
     top: 40%;
@@ -63,88 +77,113 @@ hr.small {
     height: 100%;
     text-align: center;
 }
+
 .WhatIAm .name {
     font-size: 3em;
     font-weight: bold;
 }
+
 .WhatIAm #what-i-am {
     font-size: 2em;
     font-weight: lighter;
 }
+
 .typed-cursor {
     font-weight: bolder;
     font-size: 1.25em;
     color: #bbb;
 }
+
 /*-- //Header --*/
+
 /*-- About --*/
+
 .about {
     padding-top: 50px;
     background: rebeccapurple;
     color: whitesmoke;
     overflow: auto !important;
 }
+
 .glyphicon-refresh-animate {
     animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
 }
+
 @-webkit-keyframes spin2 {
     from {
         -webkit-transform: rotate(0deg);
-   }
+    }
     to {
         -webkit-transform: rotate(360deg);
-   }
+    }
 }
+
 @keyframes spin {
     from {
         transform: scale(1) rotate(0deg);
-   }
+    }
     to {
         transform: scale(1) rotate(360deg);
-   }
+    }
 }
+
 /*-- //About --*/
+
 /*-- Services --*/
+
 .services {
     padding: 50px 0;
 }
+
 .service-item {
     margin-bottom: 30px;
 }
+
 /*-- //Services --*/
+
 /*-- Callout --*/
+
 .callout {
     display: table;
-    line-height: 100px;
     text-align: center;
     width: 100%;
-    height: 400px;
+    height: 100%;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(/img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
 .callout .container {
     display: table-cell;
     vertical-align: middle;
 }
+
 /*-- //Callout --*/
+
 /*-- Call to Action --*/
+
 .call-to-action {
-    padding: 50px 0;
+    padding: 25px 0;
 }
+
 .call-to-action .btn {
-    margin: 10px;
+    margin: 5px;
 }
+
 /*-- //Call to Action --*/
+
 /*-- Footer --*/
+
 footer {
     padding: 100px 0;
 }
+
 /*-- //Footer --*/
+
 @media (max-width: 768px) {
     .header .WhatIAm {
         position: relative;
@@ -152,18 +191,19 @@ footer {
         width: 100%;
         height: 100%;
         text-align: center;
-   }
+    }
     .WhatIAm .name {
         position: absolute;
         bottom: 5%;
         left: 5%;
-   }
+    }
     .WhatIAm #what-i-am {
         position: absolute;
         top: 10%;
         left: 5%;
-   }
+    }
 }
+
 #about, #services, #portfolio, #contact {
     min-width: 100%;
     max-width: 100%;
