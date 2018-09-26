@@ -6,21 +6,32 @@ section h2 {
     font-size: 50px;
 }
 
-header.masthead {
-    position: relative;
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    color: white;
-    background: url("../img/bg-pattern.png"), #7b4397;
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
 }
 
-header.masthead .header-content {
-    max-width: 500px;
-    margin-bottom: 100px;
-    text-align: center;
+header.masthead {
+    position: relative;
+    width: 100% !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    margin: 0;
+    overflow: hidden !important;
+    color: white;
+    background: url("/img/bg-pattern.png"), #141520;
+    background: url("/img/bg-pattern.png"), -webkit-linear-gradient(to right, #141520, #971297);
+    background: url("/img/bg-pattern.png"), linear-gradient(to right, #141520, #971297);
+}
+
+@media (max-width: 991px) {
+    header.masthead {
+        text-align: center;
+    }
 }
 
 header.masthead .header-content h1 {
@@ -35,25 +46,6 @@ header.masthead .device-container {
 
 header.masthead .device-container .screen img {
     border-radius: 3px;
-}
-
-@media (min-width: 992px) {
-    header.masthead {
-        height: 100vh;
-        min-height: 775px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    header.masthead .header-content {
-        margin-bottom: 0;
-        text-align: left;
-    }
-    header.masthead .header-content h1 {
-        font-size: 50px;
-    }
-    header.masthead .device-container {
-        max-width: 325px;
-    }
 }
 
 section.download {
@@ -92,6 +84,10 @@ section.download .badges .badge-link img {
     }
 }
 
+section.features {
+    background: silver;
+}
+
 section.features .section-heading {
     margin-bottom: 100px;
 }
@@ -126,15 +122,20 @@ section.features .feature-item {
 }
 
 section.features .feature-item h3 {
-    font-size: 30px;
+    font-size: 26px;
+}
+
+section.features .feature-item p {
+    font-size: 20px;
+    text-align: center;
 }
 
 section.features .feature-item i {
     font-size: 80px;
     display: block;
     margin-bottom: 15px;
-    background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-    background: linear-gradient(to left, #7b4397, #dc2430);
+    background: -webkit-linear-gradient(to left, #141520, #971297);
+    background: linear-gradient(to left, #141520, #971297);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -254,13 +255,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-    background: #00695f;
-    background: -webkit-linear-gradient(#00695f, #fdc539);
-    background: linear-gradient(#00695f, #fdc539);
+    background: #971297;
 }
 
 .text-primary {
-    color: #00695f;
+    color: #971297;
 }
 
 .no-gutter>[class*='col-'] {
@@ -275,8 +274,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     color: white;
-    border-color: #00695f;
-    background-color: #00695f;
+    border-color: #971297;
+    background-color: #971297;
 }
 
 .btn {
