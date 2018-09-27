@@ -29,13 +29,19 @@
 
     <!-- Custom styles for this page -->
     <link href="/css/navigation.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/resume.css" rel="stylesheet">
     <style>
         small.rating {
             position: relative;
             top: -14px;
             font-size: 10px;
             color: orange;
+        }
+
+        a.download {
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
         .se-pre-con {
@@ -162,12 +168,16 @@
                 <div class="theiaStickySidebar">
                     <!-- Skills and Abilities-->
                     <section class="expertise-wrapper section-wrapper gray-bg">
+                        <a href="/assets/CV_MuhammadSaifullahKhan.pdf" download class="download btn" title="Download PDF">
+                            <span class="fas fa-download"></span>
+                        </a>
+
                         <div class="container-fluid">
                             <!-- Section Heading -->
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="section-title">
-                                        <h2>Skills and Abilities</h2>
+                                        <h2>Expertise</h2>
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +346,7 @@
                                                 </li>
                                                 <li>Unity 3D<br>
                                                     <small class="rating">
-                                                        Game Dev / 3D Models
+                                                        Games / 3D Models
                                                     </small>
                                                 </li>
                                             </ul>
@@ -673,8 +683,17 @@
     <!-- Custom scripts for this template -->
     <script src="/webapp/scripts.js"></script>
     <script src="/js/navigation.js"></script>
-    <script src="js/theia-sticky-sidebar.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="/js/sticky-sidebar.js"></script>
+    <script>
+        jQuery(function ($) {
+            'use strict';
+            // --------------------------------------------------------------------
+            // Sticky Sidebar
+            // --------------------------------------------------------------------
+
+            $('.left-col-block, .right-col-block').theiaStickySidebar();
+        }); // JQuery end
+    </script>
     <script>
         window.onload = function () {
             // Animate loader off screen
