@@ -1,4 +1,4 @@
-importScripts('/webapp/cache-polyfill.js');
+// importScripts('/webapp/cache-polyfill.js');
 
 self.addEventListener('install', function (e) {
     e.waitUntil(
@@ -36,7 +36,7 @@ self.addEventListener('install', function (e) {
                 '/img/portfolio-apps.jpg',
                 '/img/portfolio-games.jpg',
                 '/img/portfolio-graphics.jpg',
-                '/img/portfolio-libs.jpg',
+                '/img/portfolio-libs.gif',
                 '/img/portfolio-publications.jpg',
                 '/img/portfolio-web.jpg',
 
