@@ -11,3 +11,11 @@ $(document).ready(function () {
         );
     }
 });
+
+// Does this browser support Service Workers?
+if ('serviceWorker' in navigator) {
+    // Yes! Register our Service Worker to enable offline capabilities.
+    navigator.serviceWorker
+        .register('/webapp/sw.js')
+        .then(function () { console.log("Service Worker Registered"); });
+}
