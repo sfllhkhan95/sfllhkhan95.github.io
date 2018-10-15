@@ -25,35 +25,11 @@
     <!-- Custom fonts for this page -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+    
     <!-- Custom styles for this page -->
-    <link href="/css/navigation.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/resume.css" rel="stylesheet">
-    <style>
-        small.rating {
-            position: relative;
-            top: -14px;
-            font-size: 10px;
-            color: orange;
-        }
-
-        a.download {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        .se-pre-con {
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 9999999;
-            background: url('/img/loading.gif') center no-repeat #fff;
-        }
-    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,619 +37,604 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <script>
-        // Clean URL
-        var uri = window.location.toString();
-        if (uri.indexOf("?") > 0) {
-            var uri = uri.substring(0, uri.indexOf("?"));
-            window.history.replaceState({}, document.title, uri);
-        }
-    </script>
-
-    <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-6293532072634065",
-            enable_page_level_ads: true
-        });
-    </script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar">
-    <div id="main-wrapper">
-        <div class="se-pre-con"></div>
+<body>
+    <div class="se-pre-con"></div>
 
-        <!-- Action Bar (Android-style action bar, appears only on small devices) -->
-        <nav id="action-bar" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button id="menu-toggle" type="button" class="navbar-toggle pull-left">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <button id="menu-close" type="button" class="navbar-toggle pull-left">
-                        <span class="fa fa-arrow-left"></span>
-                    </button>
-                </div>
+    <!-- Action Bar (Android-style action bar, appears only on small devices) -->
+    <nav id="action-bar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle pull-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button id="menu-close" type="button" class="navbar-toggle pull-left">
+                    <span class="fa fa-arrow-left"></span>
+                </button>
+                <div class="navbar-brand">RESUMÉ</div>
             </div>
-        </nav>
-
-        <!-- Navigation Bar (appears as a side menu on small devices) -->
-        <nav id="sidebar-wrapper" class="navbar navbar-default">
-            <div class="container container-fluid">
-                <ul class="nav navbar-nav sidebar-nav">
-                    <li><a href="/#about"><span class="fa fa-chevron-left"> HOME</span></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right sidebar-nav">
-                    <li><a href="/#contact">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="columns-block container">
-            <div class="left-col-block blocks">
-                <header class="header theiaStickySidebar">
-                    <div class="profile-img">
-                        <img src="/img/me.jpg" class="img-responsive" alt="" />
-                    </div>
-                    <div class="content">
-                        <h1>Muhammad Saif Ullah Khan</h1>
-                        <span class="lead">Software Engineering Graduate</span>
-
-                        <div class="about-text">
-                            <p>
-                                Versatile software developer versed in machine learning, mobile development, game
-                                design and computer graphics. Self-directed leader who fosters a collaborative and
-                                supportive team environment. Dedicated, hard-working and open to new experieces.
-                            </p>
-
-                            <p>I'm looking for a career which helps me grow intellectually and gives me a chance
-                                to hone my skills.</p>
-                        </div>
-
-
-                        <ul class="social-icon">
-                            <li>
-                                <a target="_blank" href="https://linkedin.com/in/saifkhichi96">
-                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://github.com/saifkhichi96">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://fb.me/saifkhichi96">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://twitter.com/saifkhichi96">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </header>
-                <!-- .header-->
-            </div>
-            <!-- .left-col-block -->
-
-            <div class="right-col-block blocks">
-                <div class="theiaStickySidebar">
-                    <!-- Skills and Abilities-->
-                    <section class="expertise-wrapper section-wrapper gray-bg">
-                        <a href="/assets/CV_MuhammadSaifullahKhan.pdf" download class="download btn" title="Download PDF">
-                            <span class="fas fa-download"></span>
-                        </a>
-
-                        <div class="container-fluid">
-                            <!-- Section Heading -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Expertise</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Technical Skills -->
-                            <div class="row">
-                                <!-- Languages -->
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Languages</h3>
-
-                                        <p>
-                                            <ul class="col-sm-6 col-xs-6">
-                                                <li>C/C++<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star-half-alt"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                                <li>CSS/HTML/JS<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                                <li>JSON/XML<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star-half-alt"></span>
-                                                    </small>
-                                                </li>
-                                                <li>MATLAB<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                                <li>Python<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                            </ul>
-
-                                            <ul class="col-sm-6 col-xs-6">
-                                                <li>C#<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                                <li>Java<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star-half-alt"></span>
-                                                    </small>
-                                                </li>
-                                                <li>Kotlin<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                                <li>MySQL/PHP<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="fas fa-star-half-alt"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                                <li>Swift<br>
-                                                    <small class="rating">
-                                                        <span class="fas fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                        <span class="far fa-star"></span>
-                                                    </small>
-                                                </li>
-                                            </ul>
-                                        </p>
-                                        <br>
-                                    </div>
-                                </div>
-
-                                <!--Tools-->
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <h3>Tools</h3>
-                                        <p>
-                                            <ul class="col-md-6">
-                                                <li>Adobe Photoshop<br>
-                                                    <small class="rating">
-                                                        Design and Editing
-                                                    </small>
-                                                </li>
-                                                <li>Android NDK<br>
-                                                    <small class="rating">
-                                                        Native Development
-                                                    </small>
-                                                </li>
-                                                <li>Firebase<br>
-                                                    <small class="rating">
-                                                        Cloud Services
-                                                    </small>
-                                                </li>
-                                                <li>iMovie<br>
-                                                    <small class="rating">
-                                                        Video Editing
-                                                    </small>
-                                                </li>
-                                                <li>Microsoft Office<br>
-                                                    <small class="rating">
-                                                        Productivity
-                                                    </small>
-                                                </li>
-                                            </ul>
-
-                                            <ul class="col-md-6">
-                                                <li>Mapbox SDK<br>
-                                                    <small class="rating">
-                                                        Location Services
-                                                    </small>
-                                                </li>
-                                                <li>OpenCV/PIL<br>
-                                                    <small class="rating">
-                                                        Image Processing
-                                                    </small>
-                                                </li>
-                                                <li>Tensorflow<br>
-                                                    <small class="rating">
-                                                        Deep Learning
-                                                    </small>
-                                                </li>
-                                                <li>Visual Paradigm<br>
-                                                    <small class="rating">
-                                                        Software Architecture
-                                                    </small>
-                                                </li>
-                                                <li>Unity 3D<br>
-                                                    <small class="rating">
-                                                        Games / 3D Models
-                                                    </small>
-                                                </li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Abilities -->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <p>
-                                            Sound knowledge of <strong>object-oriented concepts</strong>, basic <strong>design
-                                                patterns</strong> and <strong>good programming practices</strong>.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="expertise-item">
-                                        <p>
-                                            Ability to <strong>work independently</strong> as well as <strong>with
-                                                others</strong>. Experienced in <strong>leading teams</strong> and
-                                            <strong>managing projects</strong>.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!-- Featured Skills -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="progress-wrapper">
-                                        <!-- Android Developmen: 91% -->
-                                        <div class="progress-item">
-                                            <span class="progress-title">Android Development</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="91"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 91%"><span
-                                                        class="progress-percent"> 91%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Machine Learning: 74% -->
-                                        <div class="progress-item">
-                                            <span class="progress-title">Machine Learning</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="74"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 74%"><span
-                                                        class="progress-percent"> 74%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Communication Skills: 67% -->
-                                        <div class="progress-item">
-                                            <span class="progress-title">Communtcation</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="67"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 67%;"><span
-                                                        class="progress-percent"> 67%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Project Management: 83% -->
-                                        <div class="progress-item">
-                                            <span class="progress-title">Project Management</span>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="83"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 83%;"><span
-                                                        class="progress-percent"> 83%</span>
-                                                </div>
-                                            </div>
-                                            <!-- .progress -->
-                                        </div>
-
-                                    </div>
-                                    <!-- /.progress-wrapper -->
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Education-->
-                    <section class="section-wrapper section-education">
-                        <div class="container-fluid">
-                            <!-- Section Heading-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Education</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- BESE -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                        <small>2014 - 2018</small>
-                                        <h3>Bachelor of Software Engineering</h3>
-                                        <h4>National University of Sciences and Technology (NUST)</h4>
-                                        <p>Islamabad, Pakistan</p>
-                                        <ul>
-                                            <li>CGPA 3.78</li>
-                                            <li><a href="courses/bese/">See courses</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Experience -->
-                    <section class="section-wrapper section-experience gray-bg">
-                        <div class="container-fluid">
-                            <!-- Section Heading -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Experience</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!-- Freelancing -->
-                                    <div class="content-item">
-                                        <small>2018 - Present</small>
-                                        <h3>Freelance Android Developer</h3>
-                                        <h4><a href="#">Freelancer.com</a> and <a href="#">Upwork</a></h4>
-                                    </div>
-
-                                    <!-- NEC Manager -->
-                                    <div class="content-item">
-                                        <small>10/2016 - 04/2017</small>
-                                        <h3>Manager Application Development</h3>
-                                        <h4>NUST Entreprenuers Club (NEC)</h4>
-                                        <br>
-                                        <p>NEC is a student society at National University of Sciences and Technology
-                                            (NUST). As manager, I led a team of dedicated developers building a social
-                                            networking system. During my time at this position, first functional
-                                            prototype of the system was sucessfully delivered.
-                                        </p>
-                                    </div>
-
-                                    <!-- NIMUN '17 -->
-                                    <div class="content-item">
-                                        <small>10/2016 - 02/2017</small>
-                                        <h3>Android Developer</h3>
-                                        <h4>NUST International Model United Nations (NIMUN) 2017</h4>
-                                        <br>
-                                        <p>I was a member of the student organising committe for NIMUN '17, an
-                                            international event held at NUST. As part of the IT team, I was
-                                            responsible for developing the official mobile app for the event to
-                                            be used by the participants.
-                                        </p>
-                                    </div>
-
-                                    <!-- Beijing Forum '16 -->
-                                    <div class="content-item">
-                                        <small>04/2016 - 05/2016</small>
-                                        <h3>Member IT Team</h3>
-                                        <h4>Beijing Forum Islamabad 2016</h4>
-                                        <br>
-                                        <p>I was a member of the student organising committe for Beijing Forum '16,
-                                            a global conference whose first international chapter was hosted in
-                                            Islamabad. As part of the IT team, I was responsible for developing the
-                                            official mobile app for the event to be used by the attendees.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!-- .container-fluid -->
-
-                    </section>
-                    <!-- .section-experience -->
-
-                    <!-- Accomplishments -->
-                    <section class="section-contact section-wrapper gray-bg">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Accomplishments</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                            <div class="row">
-                                <ol class="col-md-12">
-                                    <li>Final-Year Project of BESE, titled "Signature Verification" was nominated for
-                                        gold medal.</li>
-
-                                    <li>First Prize Winner of <em>NUST Pakathon 2015</em> along with my team Dr.
-                                        Phoenix</li>
-
-                                    <li>Successfully led a team to participate in <em>LUMS PsiFi 2014</em>.</li>
-
-                                    <li>Several apps and games published on Google Play Store.</li>
-
-                                    <li>Developed an object-oriented abstraction of OpenGL/GLUT in C++ language for
-                                        builing GUI applications on Windows easily. Multiple Java APIs published
-                                        on JCenter.</li>
-                                </ol>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!--.container-fluid-->
-                    </section>
-
-                    <!-- Interests -->
-                    <section class="section-wrapper section-interest gray-bg">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Interests</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="content-item">
-                                        <h3>Books</h3>
-                                        <p>As an avid reader, I have a huge collection of books in my home library. I
-                                            read on topics ranging from fiction, to science, history, politics,
-                                            theology and current affairs.
-                                        </p>
-                                    </div>
-
-                                    <div class="content-item">
-                                        <h3>Art</h3>
-                                        <p>Occasional writer and artist. I sometimes write short stories and poetry,
-                                            and indulge in oil painting and pencil sketching.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-
-                        </div>
-                    </section>
-
-                    <!-- Languages -->
-                    <section class="section-contact section-wrapper gray-bg">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Languages</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div>
-                                        <strong>English</strong><br>
-                                        Proficiency: <strong>Advanced - C1</strong><br>
-                                        <small class="rating">IELTS Score: 7.0</small>
-                                    </div>
-
-                                    <div>
-                                        <strong>Urdu</strong><br>
-                                        Proficiency: <strong>Native</strong><br>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!--.container-fluid-->
-                    </section>
-
-                    <!-- Contact -->
-                    <section class="section-contact section-wrapper gray-bg">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="section-title">
-                                        <h2>Contact</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <address>
-                                        <strong>Address</strong><br>
-                                        2 Shamsabad Colony<br>
-                                        Multan, PK 60000
-
-                                    </address>
-
-                                    <address>
-                                        <strong>Mobile Number</strong><br>
-                                        +92 305 3177781
-                                    </address>
-
-
-                                    <address>
-                                        <strong>Email</strong><br>
-                                        <a href="mailto:saifkhichi96@gmail.com">saifkhichi96@gmail.com</a>
-                                    </address>
-                                </div>
-                            </div>
-                            <!--.row-->
-                        </div>
-                        <!--.container-fluid-->
-                    </section>
-                </div>
-                <!-- Sticky -->
-            </div>
-            <!-- .right-col-block -->
         </div>
-        <!-- .columns-block -->
-    </div>
-    <!-- #main-wrapper -->
+    </nav>
+
+    <!-- Navigation Bar (appears as a side menu on small devices) -->
+    <nav id="sidebar-wrapper" class="navbar navbar-default">
+        <div class="container container-fluid">
+            <ul class="nav navbar-nav sidebar-nav">
+                <li><a href="/#about"><span class="fa fa-chevron-left"> HOME</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right sidebar-nav">
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#achievements">AWARDS</a></li>
+                <li><a href="#languages">LANGUAGES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="columns-block container">
+        <div class="left-col-block blocks">
+            <header class="header theiaStickySidebar">
+                <div class="profile-img">
+                    <img src="/img/me.jpg" class="img-responsive" alt="" />
+                </div>
+                <div class="content">
+                    <h1>Muhammad Saif Ullah Khan</h1>
+                    <span class="lead">Software Engineering Graduate</span>
+
+                    <div class="about-text">
+                        <p>
+                            Versatile software developer versed in machine learning, mobile development, game
+                            design and computer graphics. Self-directed leader who fosters a collaborative and
+                            supportive team environment. Dedicated, hard-working and open to new experieces.
+                        </p>
+
+                        <p>I'm looking for a career which helps me grow intellectually and gives me a chance
+                            to hone my skills.</p>
+                    </div>
+
+
+                    <ul class="social-icon">
+                        <li>
+                            <a target="_blank" href="https://linkedin.com/in/saifkhichi96">
+                                <i class="btn-light fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/saifkhichi96">
+                                <i class="btn-light fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fb.me/saifkhichi96">
+                                <i class="btn-light fab fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/saifkhichi96">
+                                <i class="btn-light fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+            <!-- .header-->
+        </div>
+        <!-- .left-col-block -->
+
+        <div class="right-col-block blocks">
+            <div class="theiaStickySidebar">
+                <!-- Skills and Abilities-->
+                <section id="skills" class="expertise-wrapper section-wrapper gray-bg">
+                    <a href="/assets/CV_MuhammadSaifullahKhan.pdf" download class="btn download" title="Download PDF">
+                        <span class="fas fa-download"></span>
+                    </a>
+
+                    <div class="container-fluid">
+                        <!-- Section Heading -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Expertise</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Skills -->
+                        <div class="row">
+                            <!-- Languages -->
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <h3>Languages</h3>
+
+                                    <p>
+                                        <ul class="col-sm-6 col-xs-6">
+                                            <li>C/C++<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star-half-alt"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                            <li>CSS/HTML/JS<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                            <li>JSON/XML<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star-half-alt"></span>
+                                                </small>
+                                            </li>
+                                            <li>MATLAB<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                            <li>Python<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="col-sm-6 col-xs-6">
+                                            <li>C#<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                            <li>Java<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star-half-alt"></span>
+                                                </small>
+                                            </li>
+                                            <li>Kotlin<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                            <li>MySQL/PHP<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star-half-alt"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                            <li>Swift<br>
+                                                <small class="rating">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </small>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <!--Tools-->
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <h3>Tools</h3>
+                                    <p>
+                                        <ul class="col-md-6">
+                                            <li>Adobe Photoshop<br>
+                                                <small class="rating">
+                                                    Design and Editing
+                                                </small>
+                                            </li>
+                                            <li>Android NDK<br>
+                                                <small class="rating">
+                                                    Native Development
+                                                </small>
+                                            </li>
+                                            <li>Firebase<br>
+                                                <small class="rating">
+                                                    Cloud Services
+                                                </small>
+                                            </li>
+                                            <li>iMovie<br>
+                                                <small class="rating">
+                                                    Video Editing
+                                                </small>
+                                            </li>
+                                            <li>Microsoft Office<br>
+                                                <small class="rating">
+                                                    Productivity
+                                                </small>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="col-md-6">
+                                            <li>Mapbox SDK<br>
+                                                <small class="rating">
+                                                    Location Services
+                                                </small>
+                                            </li>
+                                            <li>OpenCV/PIL<br>
+                                                <small class="rating">
+                                                    Image Processing
+                                                </small>
+                                            </li>
+                                            <li>Tensorflow<br>
+                                                <small class="rating">
+                                                    Deep Learning
+                                                </small>
+                                            </li>
+                                            <li>Visual Paradigm<br>
+                                                <small class="rating">
+                                                    Software Architecture
+                                                </small>
+                                            </li>
+                                            <li>Unity 3D<br>
+                                                <small class="rating">
+                                                    Games / 3D Models
+                                                </small>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Abilities -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <p>
+                                        Sound knowledge of <strong>object-oriented concepts</strong>, basic <strong>design
+                                            patterns</strong> and <strong>good programming practices</strong>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <p>
+                                        Ability to <strong>work independently</strong> as well as <strong>with
+                                            others</strong>. Experienced in <strong>leading teams</strong> and
+                                        <strong>managing projects</strong>.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Featured Skills -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="progress-wrapper">
+                                    <!-- Android Developmen: 91% -->
+                                    <div class="progress-item">
+                                        <span class="progress-title">Android Development</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 91%"><span class="progress-percent">
+                                                    91%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Machine Learning: 74% -->
+                                    <div class="progress-item">
+                                        <span class="progress-title">Machine Learning</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="74"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 74%"><span class="progress-percent">
+                                                    74%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Communication Skills: 67% -->
+                                    <div class="progress-item">
+                                        <span class="progress-title">Communtcation</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="67"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 67%;"><span class="progress-percent">
+                                                    67%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Project Management: 83% -->
+                                    <div class="progress-item">
+                                        <span class="progress-title">Project Management</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="83"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 83%;"><span class="progress-percent">
+                                                    83%</span>
+                                            </div>
+                                        </div>
+                                        <!-- .progress -->
+                                    </div>
+
+                                </div>
+                                <!-- /.progress-wrapper -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education-->
+                <section id="education" class="section-wrapper section-education">
+                    <div class="container-fluid">
+                        <!-- Section Heading-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Education</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BESE -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content-item">
+                                    <small>2014 - 2018</small>
+                                    <h3>Bachelor of Software Engineering</h3>
+                                    <h4>National University of Sciences and Technology (NUST)</h4>
+                                    <p>Islamabad, Pakistan</p>
+                                    <ul>
+                                        <li>CGPA 3.78</li>
+                                        <li><a href="courses/bese/">See courses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section id="experience" class="section-wrapper section-experience gray-bg">
+                    <div class="container-fluid">
+                        <!-- Section Heading -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Experience</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Freelancing -->
+                                <div class="content-item">
+                                    <small>2018 - Present</small>
+                                    <h3>Freelance Android Developer</h3>
+                                    <h4><a href="#">Freelancer.com</a> and <a href="#">Upwork</a></h4>
+                                </div>
+
+                                <!-- NEC Manager -->
+                                <div class="content-item">
+                                    <small>10/2016 - 04/2017</small>
+                                    <h3>Manager Application Development</h3>
+                                    <h4>NUST Entreprenuers Club (NEC)</h4>
+                                    <br>
+                                    <p>NEC is a student society at National University of Sciences and Technology
+                                        (NUST). As manager, I led a team of dedicated developers building a social
+                                        networking system. During my time at this position, first functional
+                                        prototype of the system was sucessfully delivered.
+                                    </p>
+                                </div>
+
+                                <!-- NIMUN '17 -->
+                                <div class="content-item">
+                                    <small>10/2016 - 02/2017</small>
+                                    <h3>Android Developer</h3>
+                                    <h4>NUST International Model United Nations (NIMUN) 2017</h4>
+                                    <br>
+                                    <p>I was a member of the student organising committe for NIMUN '17, an
+                                        international event held at NUST. As part of the IT team, I was
+                                        responsible for developing the official mobile app for the event to
+                                        be used by the participants.
+                                    </p>
+                                </div>
+
+                                <!-- Beijing Forum '16 -->
+                                <div class="content-item">
+                                    <small>04/2016 - 05/2016</small>
+                                    <h3>Member IT Team</h3>
+                                    <h4>Beijing Forum Islamabad 2016</h4>
+                                    <br>
+                                    <p>I was a member of the student organising committe for Beijing Forum '16,
+                                        a global conference whose first international chapter was hosted in
+                                        Islamabad. As part of the IT team, I was responsible for developing the
+                                        official mobile app for the event to be used by the attendees.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!-- .container-fluid -->
+
+                </section>
+                <!-- .section-experience -->
+
+                <!-- Accomplishments -->
+                <section id="achievements" class="section-contact section-wrapper gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Accomplishments</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                        <div class="row">
+                            <ol class="col-md-12">
+                                <li>Final-Year Project of BESE, titled "Signature Verification" was nominated for
+                                    gold medal.</li>
+
+                                <li>First Prize Winner of <em>NUST Pakathon 2015</em> along with my team Dr.
+                                    Phoenix</li>
+
+                                <li>Successfully led a team to participate in <em>LUMS PsiFi 2014</em>.</li>
+
+                                <li>Several apps and games published on Google Play Store.</li>
+
+                                <li>Developed an object-oriented abstraction of OpenGL/GLUT in C++ language for
+                                    builing GUI applications on Windows easily. Multiple Java APIs published
+                                    on JCenter.</li>
+                            </ol>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.container-fluid-->
+                </section>
+
+                <!-- Interests -->
+                <section id="interests" class="section-wrapper section-interest gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Interests</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content-item">
+                                    <h3>Books</h3>
+                                    <p>As an avid reader, I have a huge collection of books in my home library. I
+                                        read on topics ranging from fiction, to science, history, politics,
+                                        theology and current affairs.
+                                    </p>
+                                </div>
+
+                                <div class="content-item">
+                                    <h3>Art</h3>
+                                    <p>Occasional writer and artist. I sometimes write short stories and poetry,
+                                        and indulge in oil painting and pencil sketching.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section id="languages" class="section-contact section-wrapper gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Languages</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <strong>English</strong><br>
+                                    Proficiency: <strong>Advanced - C1</strong><br>
+                                    <small class="rating">IELTS Score: 7.0</small>
+                                </div>
+
+                                <div>
+                                    <strong>Urdu</strong><br>
+                                    Proficiency: <strong>Native</strong><br>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.container-fluid-->
+                </section>
+
+                <!-- Contact -->
+                <section id="contact" class="section-contact section-wrapper gray-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Contact</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <address>
+                                    <strong>Address</strong><br>
+                                    2 Shamsabad Colony<br>
+                                    Multan, PK 60000
+
+                                </address>
+
+                                <address>
+                                    <strong>Mobile Number</strong><br>
+                                    +92 305 3177781
+                                </address>
+
+
+                                <address>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:saifkhichi96@gmail.com">saifkhichi96@gmail.com</a>
+                                </address>
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.container-fluid-->
+                </section>
+            </div>
+            <!-- Sticky -->
+        </div>
+        <!-- .right-col-block -->
+    </section>
+    <!-- .columns-block -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
@@ -682,9 +643,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="/webapp/scripts.js"></script>
+    <script src="/js/w3.js"></script>
     <script src="/js/navigation.js"></script>
     <script src="/js/sticky-sidebar.js"></script>
     <script>
+        includeHTML();
         jQuery(function ($) {
             'use strict';
             // --------------------------------------------------------------------
@@ -694,13 +657,6 @@
             $('.left-col-block, .right-col-block').theiaStickySidebar();
         }); // JQuery end
     </script>
-    <script>
-        window.onload = function () {
-            // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");
-        };
-    </script>
-
 </body>
 
 </html>

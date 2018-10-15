@@ -1,3 +1,10 @@
+function addMenuItem(name, link) {
+    $('.sidebar-nav.navbar-right').html(
+        $('.sidebar-nav.navbar-right').html() +
+        "<li><a href='" + link + "'>" + name + "</a></li>"
+    );
+}
+
 function openDrawer() {
     $("#sidebar-wrapper, #action-bar").addClass("opened");
 
@@ -17,13 +24,18 @@ function closeDrawer() {
 }
 
 // Scroll to correct section
-function openSection(section) {
+function openSection(section, name) {
     closeDrawer();
+    $('.navbar-brand').html(name.toUpperCase());
 
-    $('html, body').css("scrollTop", section.offset().top);
+    // $('html, body').animate({scrollTop: $(section).offset().top}, 800, 'linear');
+    document.location.hash = name;
 }
 
 $(document).ready(function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");
+
     $("#menu-toggle").click(function (e) {
         e.preventDefault();
         openDrawer();
@@ -35,14 +47,14 @@ $(document).ready(function () {
     });
 
     // Scrolls to the selected menu item on the page, and closes sidebar    
-    $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
+    $('.sidebar-nav a').click(function (e) {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') ||
             location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
-                document.location.hash = this.hash.slice(1);
-                openSection(target);
+                e.preventDefault();
+                openSection(target, this.hash.slice(1));
 
                 console.log("Opened " + this.hash.slice(1));
                 return false;

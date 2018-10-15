@@ -26,49 +26,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:800|Roboto|EB+Garamond" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <link href="/device-mockups/device-mockups.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/rain.css" rel="stylesheet">
-    <link href="/css/cat.css" rel="stylesheet">
-    <link href="/css/navigation.css" rel="stylesheet">
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/portfolio.css" rel="stylesheet">
-    <style>
-        .se-pre-con {
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 9999999;
-            background: url('/img/loading.gif') center no-repeat #fff;
-        }
-    </style>
-    <script>
-        // Clean URL
-        var uri = window.location.toString();
-        if (uri.indexOf("?") > 0) {
-            var uri = uri.substring(0, uri.indexOf("?"));
-            window.history.replaceState({}, document.title, uri);
-        }
-    </script>
-
-    <!-- AdSense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-6293532072634065",
-            enable_page_level_ads: true
-        });
-    </script>
 </head>
 
 <body>
@@ -86,6 +50,7 @@
                 <button id="menu-close" type="button" class="navbar-toggle pull-left">
                     <span class="fa fa-arrow-left"></span>
                 </button>
+                <div class="navbar-brand">PROJECTS</div>
             </div>
         </div>
     </nav>
@@ -96,7 +61,6 @@
             <ul class="nav navbar-nav navbar-right sidebar-nav">
                 <li><a href="/#top">HOME</a></li>
                 <li><a href="/#about">ABOUT</a></li>
-                <li><a href="/#services">SERVICES</a></li>
                 <li><a href="">PROJECTS</a></li>
                 <li><a href="/#contact">CONTACT</a></li>
             </ul>
@@ -108,8 +72,11 @@
         <div class="gallery-grids">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="small">
+                    <h3 class="section-title">
+                        Projects
+                        <hr class="text-muted small">
+                        <br>
+                    </h3>
                     <div class="container">
                         <div class="col-md-4 col-sm-4 gallery-top">
                             <a href="/projects/apps">
@@ -187,16 +154,11 @@
         crossorigin="anonymous"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="/js/navigation.js"></script>
     <script src="/webapp/scripts.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/new-age.min.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/w3.js"></script>
     <script>
-        window.onload = function () {
-            // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");
-            $('[data-toggle="tooltip"]').tooltip();
-        };
+        includeHTML();
     </script>
 </body>
 

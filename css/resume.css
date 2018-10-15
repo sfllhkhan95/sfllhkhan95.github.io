@@ -10,17 +10,16 @@ Author: themehippo.com
 
 # Body  (text): #3a4750
 # Heading Color #444444
-# Theme Color (link color) #82b541
+# Theme Color (link color) #3788ac
 # Mid grey (sub header) #f4f4f4
 # -------------------------------------------------------------------*/
 
 body {
-    font-family: 'Hind', sans-serif;
     font-size: 15px;
     line-height: 1.8em;
-    color: #3d3d50;
+    color: #00352c;
     font-weight: 300;
-    background: url("/img/pattern-bg.png") fixed;
+    background: url("/img/pattern-bg.jpg") fixed;
 }
 
 /* --------------------------------------
@@ -29,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px;
-    color: #2b2b3d;
+    color: #00352c;
 }
 
 h1 {
@@ -72,7 +71,7 @@ h6 {
  *------------------------------------------*/
 
 a {
-    color: #FFC107;
+    color: #3788ac;
     text-decoration: none;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -87,7 +86,7 @@ a, a:active, a:focus, a:active {
 
 a:hover, a:focus {
     text-decoration: none;
-    color: #ff9800;
+    color: #246885;
 }
 
 p {
@@ -100,52 +99,18 @@ ul {
     list-style: none;
 }
 
-/*------------------
- * Button Style
- *------------------*/
 
-.btn {
-    padding: 14px 30px 11px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 0;
-    border: 0;
-    text-transform: uppercase;
+small.rating {
+    position: relative;
+    top: -14px;
+    font-size: 10px;
+    color: #3788ac;
 }
 
-.btn-lg {
-    font-weight: 700;
-    font-size: 24px;
-    padding: 15px 30px;
-}
-
-/*btn-primary*/
-
-.btn-primary {
-    background-color: #FFC107;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active:focus {
-    background: #ff9800;
-}
-
-/*btn-default*/
-
-.btn-default {
-    color: #2a54f5;
-    background-color: transparent;
-    border: 2px solid #2a54f5;
-}
-
-.btn-default:hover, .btn-default:focus, .btn-default:active:focus {
-    background: #2a54f5;
-    color: #ffffff;
-    border-color: #2a54f5;
-}
-
-button:focus, .btn:focus, .btn:active:focus {
-    outline: none;
+a.download {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 /* --------------------
@@ -248,7 +213,7 @@ button:focus, .btn:focus, .btn:active:focus {
 
 .section-title h2 {
     margin-bottom: 5px;
-    color: #bebece;
+    color: #9dabb1;
 }
 
 /*-----------------------------
@@ -377,7 +342,7 @@ button:focus, .btn:focus, .btn:active:focus {
 }
 
 .progress-item .progress-bar {
-    background-color: #FFC107;
+    background-color: #3788ac;
     box-shadow: none;
     text-align: right;
 }
