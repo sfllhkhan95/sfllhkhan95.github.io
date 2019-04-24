@@ -5,9 +5,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="author" content="Muhammad Saif Ullah Khan">
-	<meta name="description" content="List of courses I studied during my Bachelor of Software Engineering degree at National University of Sciences and Technology (NUST).">
-	<meta name="keywords" content="saifkhichi96, saifkhichi, saif, khichi, saif's portfolio, bese, bese5b, courses, nust, seecs, 2k14">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description"
+		content="List of courses I studied during my Bachelor of Software Engineering degree at National University of Sciences and Technology (NUST).">
+	<meta name="keywords"
+		content="saifkhichi96, saifkhichi, saif, khichi, saif's portfolio, bese, bese5b, courses, nust, seecs, 2k14">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- Web App Settings -->
 	<div w3-include-html="/webapp.html"></div>
@@ -18,18 +21,22 @@
 	<!-- Page Title -->
 	<title>Courses (BESE) | Saif's Portfolio</title>
 
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	 crossorigin="anonymous">
-
 	<!-- Custom fonts for this page -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/vendors/linericon/style.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
 
 	<!-- Stylesheets -->
-	<link href="/css/theme.css" rel="stylesheet" />
 	<link href="/css/resume.css" rel="stylesheet" />
+	<link href="/css/style.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
 	<!--[if lt IE 9]>
@@ -79,56 +86,62 @@
 </head>
 
 <body>
-	<!-- Page Preloder -->
-	<div class="se-pre-con"></div>
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="/"><img src="/img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="#cs">CS</a></li>
+							<li class="nav-item"><a class="nav-link" href="#se">SE</a></li>
+							<li class="nav-item"><a class="nav-link" href="#math">MATH</a></li>
+							<li class="nav-item"><a class="nav-link" href="#ee">EE</a></li>
+							<li class="nav-item"><a class="nav-link" href="#misc">Others</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-	<!-- Action Bar (Android-style action bar, appears only on small devices) -->
-	<nav id="action-bar" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button id="menu-toggle" type="button" class="navbar-toggle pull-left">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<button id="menu-close" type="button" class="navbar-toggle pull-left">
-					<span class="fa fa-arrow-left"></span>
-				</button>
-				<div class="navbar-brand">COURSES (BESE)</div>
+	<!--================ Start Banner Area =================-->
+	<section class="banner_area">
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-center">
+					<h2>BESE</h2>
+					<div class="page_link">
+						<a href="/">Home</a>
+						<a href="/resume/">CV</a>
+						<a href="/resume/courses/">Courses</a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</nav>
-
-	<!-- Navigation Bar (appears as a side menu on small devices) -->
-	<nav id="sidebar-wrapper" class="navbar navbar-default">
-		<div class="container container-fluid">
-			<ul class="nav navbar-nav sidebar-nav">
-				<li><a href="/resume/"><span class="fa fa-chevron-left"> RESUMÉ</span></a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right sidebar-nav">
-				<li><a href="#cs">CS</a></li>
-				<li><a href="#se">SE</a></li>
-				<li><a href="#math">MATH</a></li>
-				<li><a href="#ee">EE</a></li>
-				<li><a href="#misc">OTHERS</a></li>
-			</ul>
-		</div>
-	</nav>
+	</section>
+	<!--================ End Banner Area =================-->
 
 	<!-- Courses section  -->
-	<section id="services" class="container">
+	<section id="services" class="container section_gap">
 		<div class="row text-center">
-			<div class="col-lg-10 col-lg-offset-1">
-				<h3 class="section-title">
-					Bachelor of Software Engineering (2014-2018)
-					<hr class="text-muted small">
-					<br>
-				</h3>
+			<div class="col-sm-1"></div>
+			<div class="col-lg-10">
 				<div class="row courses-page">
 					<!-- FYP -->
 					<div class="col-sm-12">
 						<div class="course-item featured">
-							<div class="course-preview" style="background: center center no-repeat url('img/fyp.jpg'); background-size: cover;">
+							<div class="course-preview"
+								style="background: center center no-repeat url('img/fyp.jpg'); background-size: cover;">
 								<div class="featur-badges">SE-499 Final-Year Project</div>
 								<iframe width="100%" height="100%" src="http://youtube.com/embed/i8i6sC14x1c">
 								</iframe>
@@ -137,9 +150,12 @@
 								<div class="cc-text">
 									<h5>Signature Verification</h5>
 									<p>Signature verification is the process of using machine learning methods to
-										validate the authenticity of an individual's signature. Signatures can be of one of
-										the two types; on-line or off-line, and this project focuses on off-line signature
-										verification. Aim of this project is to design an algorithm which can distinguish
+										validate the authenticity of an individual's signature. Signatures can be of one
+										of
+										the two types; on-line or off-line, and this project focuses on off-line
+										signature
+										verification. Aim of this project is to design an algorithm which can
+										distinguish
 										between genuine and forged signatures using writer independent features, and to
 										develop a system using this algorithm which can be used to verify signatures on
 										bank cheques. We intend to build a complete end-to-end hardware/software system
@@ -154,9 +170,11 @@
 								</div>
 								<div class="seller-info">
 									<div class="seller-pic set-bg"></div>
-									<h6>Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en" target="_blank"><span>Dr.
+									<h6>Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en"
+											target="_blank"><span>Dr.
 												Muhammad Imran Malik</span></a></h6>
-									<h6>Co-Advisor: <a href="http://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank"><span>Dr.
+									<h6>Co-Advisor: <a href="http://seecs.nust.edu.pk/faculty/muhammadshahzad.html"
+											target="_blank"><span>Dr.
 												Muhammad Shahzad</span></a></h6>
 									<br>
 								</div>
@@ -831,15 +849,52 @@
 
 	<div id="outline">
 		<!-- Modal content-->
-		<iframe id="outlineSrc" src="http://docs.google.com/gview?embedded=true&url=http://saifkhichi.com/courses/bese/files/"
-		 width="100%" height="100%"></iframe>
+		<iframe id="outlineSrc"
+			src="http://docs.google.com/gview?embedded=true&url=http://saifkhichi.com/courses/bese/files/" width="100%"
+			height="100%"></iframe>
 		<button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-times"></span></button>
 	</div>
 
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="/img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer_social">
+							<a href="https://github.com/saifkhichi96"><i class="fa fa-github"></i></a>
+							<a href="https://linkedin.com/in/saifkhichi96"><i class="fa fa-linkedin"></i></a>
+							<a href="https://twitter.com/saifkhichi96"><i class="fa fa-twitter"></i></a>
+							<a href="https://facebook.com/saifkhichi96"><i class="fa fa-facebook"></i></a>
+							<a href="https://instagram.com/saifkhichi96"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved
+					<br>
+					<small>made using template by <a href="https://colorlib.com" target="_blank">colorlib</a></small>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
 	<!-- Bootstrap core JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
 
 	<!-- Custom scripts for this template -->
 	<script src="/webapp/scripts.js"></script>
@@ -883,6 +938,19 @@
 		});
 	</script>
 
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/theme.js"></script>
 </body>
 
 </html>
