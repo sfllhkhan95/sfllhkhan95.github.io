@@ -2,8 +2,21 @@
 .idea/
 *.iml
 
+# Visual Studio files
+*.userprefs
+*.csproj
+*/.vs/
+
 # OS files
 Desktop.ini
 Thumbs.db
 .DS_STORE
 Icon?
+._*
+
+# Solution files
+*.sln
+
+# Project source files
+projects/*/*/*/
+*.psd
