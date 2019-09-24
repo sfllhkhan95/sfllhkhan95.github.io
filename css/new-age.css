@@ -57,11 +57,3 @@ section.features .feature-item i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
-
-.bg-primary {
-    background: #854fee
-}
-
-.text-primary {
-    color: #854fee
-}
