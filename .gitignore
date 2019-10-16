@@ -6,6 +6,12 @@
 *.userprefs
 *.csproj
 */.vs/
+*.sln
+
+# Project source files
+projects/*/*/sources/
+projects/*/*/docs/
+projects/*/*/*.psd
 
 # OS files
 Desktop.ini
@@ -13,10 +19,3 @@ Thumbs.db
 .DS_STORE
 Icon?
 ._*
-
-# Solution files
-*.sln
-
-# Project source files
-projects/*/*/*/
-*.psd
