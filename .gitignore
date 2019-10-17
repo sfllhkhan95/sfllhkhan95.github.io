@@ -3,6 +3,7 @@
 *.iml
 
 # Visual Studio files
+/projects/games/.vs/
 *.userprefs
 *.csproj
 */.vs/
