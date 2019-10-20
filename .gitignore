@@ -13,6 +13,8 @@
 projects/*/*/sources/
 projects/*/*/docs/
 projects/*/*/*.psd
+blog/*/*.docx
+blog/*/*.doc
 
 # OS files
 Desktop.ini
