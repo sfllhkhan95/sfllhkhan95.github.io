@@ -3273,12 +3273,12 @@ h6 {
 
 .portfolio_area .filters ul {
     padding-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 991px) {
     .portfolio_area .filters ul {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -3911,6 +3911,10 @@ h6 {
     }
 }
 
+.brand_area .primary_btn {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .home_banner_area {
         min-height: 300px;
@@ -3928,6 +3932,10 @@ h6 {
 
     .home_banner_area .banner_inner .banner_content .primary_btn {
         display: none;
+    }
+
+    .brand_area .primary_btn {
+        display: block;
     }
 
     /* Blog Page Area css
