@@ -40,10 +40,12 @@
 </head>
 
 <body>
-  <header class="mdc-top-app-bar" style="background: transparent;">
+  <!-- Top App Bar -->
+  <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <span class="mdc-top-app-bar__title"><img src="/img/logo.png" /></span>
+        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: #333">menu</button>
+        <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.png" /></a>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
         <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: #333"><span class="fab fa-github-alt"></span></a>
@@ -53,48 +55,45 @@
     </div>
   </header>
 
-  <div class="row">
-    <div class="mdc-top-app-bar__row">
-    </div>
-    <aside class="mdc-drawer col-sm-2">
-      <div class="mdc-drawer__content">
-        <nav class="mdc-list">
-          <a class="mdc-list-item" href="/" aria-current="page">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-            <span class="mdc-list-item__text">Home</span>
-          </a>
-          <a class="mdc-list-item" href="/projects/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
-            <span class="mdc-list-item__text">Projects</span>
-          </a>
-          <a class="mdc-list-item mdc-list-item--activated" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>
-            <span class="mdc-list-item__text">Services</span>
-          </a>
-          <a class="mdc-list-item" href="/resume/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>
-            <span class="mdc-list-item__text">Experience</span>
-          </a>
+  <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
+    <!-- Drawer -->
+    <aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
+      <nav class="mdc-drawer__drawer">
+        <nav class="mdc-drawer__content">
+          <div id="icon-with-text-demo" class="mdc-list">
+            <a class="mdc-list-item demo-drawer-list-item" href="/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>Home
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="/projects/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>Projects
+            </a>
+            <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>Services
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="/resume/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>Experience
+            </a>
+          </div>
 
           <hr class="mdc-list-divider">
-          <h6 class="mdc-list-group__subheader">My Library</h6>
-          <a class="mdc-list-item" href="/blog/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>
-            <span class="mdc-list-item__text">Blog</span>
-          </a>
-          <a class="mdc-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>
-            <span class="mdc-list-item__text">Books</span>
-          </a>
-          <a class="mdc-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>
-            <span class="mdc-list-item__text">Videos</span>
-          </a>
+
+          <div class="mdc-list">
+            <a class="mdc-list-item demo-drawer-list-item" href="/blog/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>Blog
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>Books
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>Videos
+            </a>
+          </div>
         </nav>
-      </div>
+      </nav>
     </aside>
 
-    <div class="content col-sm-10">
+    <!-- Content -->
+    <main class="mdc-drawer-app-content main-content">
       <section id="services" class="features_area">
         <div class="container">
           <div class="row feature_inner">
@@ -288,7 +287,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->

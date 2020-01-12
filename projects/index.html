@@ -54,11 +54,13 @@
   </style>
 </head>
 
-<body class="blog_version">
-  <header class="mdc-top-app-bar" style="background: transparent;">
+<body>
+  <!-- Top App Bar -->
+  <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <span class="mdc-top-app-bar__title"><img src="/img/logo.png" /></span>
+        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: #333">menu</button>
+        <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.png" /></a>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
         <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: #333"><span class="fab fa-github-alt"></span></a>
@@ -68,589 +70,623 @@
     </div>
   </header>
 
-  <div class="row">
-    <div class="mdc-top-app-bar__row">
-    </div>
-    <aside class="mdc-drawer col-sm-2">
-      <div class="mdc-drawer__content">
-        <nav class="mdc-list">
-          <a class="mdc-list-item" href="/" aria-current="page">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-            <span class="mdc-list-item__text">Home</span>
-          </a>
-          <a class="mdc-list-item mdc-list-item--activated" href="#">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
-            <span class="mdc-list-item__text">Projects</span>
-          </a>
-          <a class="mdc-list-item" href="/services/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>
-            <span class="mdc-list-item__text">Services</span>
-          </a>
-          <a class="mdc-list-item" href="/resume/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>
-            <span class="mdc-list-item__text">Experience</span>
-          </a>
+  <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
+    <!-- Drawer -->
+    <aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
+      <nav class="mdc-drawer__drawer">
+        <nav class="mdc-drawer__content">
+          <div id="icon-with-text-demo" class="mdc-list">
+            <a class="mdc-list-item demo-drawer-list-item" href="/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>Home
+            </a>
+            <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>Projects
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="/services/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>Services
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="/resume/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>Experience
+            </a>
+          </div>
 
           <hr class="mdc-list-divider">
-          <h6 class="mdc-list-group__subheader">My Library</h6>
-          <a class="mdc-list-item" href="/blog/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>
-            <span class="mdc-list-item__text">Blog</span>
-          </a>
-          <a class="mdc-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>
-            <span class="mdc-list-item__text">Books</span>
-          </a>
-          <a class="mdc-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>
-            <span class="mdc-list-item__text">Videos</span>
-          </a>
+
+          <div class="mdc-list">
+            <a class="mdc-list-item demo-drawer-list-item" href="/blog/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>Blog
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>Books
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>Videos
+            </a>
+          </div>
         </nav>
-      </div>
+      </nav>
     </aside>
 
-    <div class="content col-sm-10">
-
+    <!-- Content -->
+    <main class="mdc-drawer-app-content main-content">
       <section class="portfolio_area" id="portfolio">
         <div class="container">
-          <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
-            <a href="#" style="margin: auto 0;"><small>filter by type: </small></a>
-            <li class="mdc-chip filter-all" role="row" data-filter="*">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="0" class="mdc-chip__text">all</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".app">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="0" class="mdc-chip__text">apps</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".game">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">games</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".web">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">web</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".api">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">apis</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".design">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">designs</span>
-              </span>
-            </li>
-          </div>
-          <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
-            <a href="#" style="margin: auto 0;"><small>filter by platform: </small></a>
-            <li class="mdc-chip" role="row" data-filter=".android">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="0" class="mdc-chip__text">android</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".browser">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">browser</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".ios">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">ios</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".linux">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">linux</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".mac">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">mac</span>
-              </span>
-            </li>
-            <li class="mdc-chip" role="row" data-filter=".windows">
-              <div class="mdc-chip__ripple"></div>
-              <span role="gridcell">
-                <span role="button" tabindex="-1" class="mdc-chip__text">windows</span>
-              </span>
-            </li>
-          </div>
-          <hr>
+          <div class="row">
 
-          <div class="filters-content">
-            <div class="row portfolio-grid justify-content-center">
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/acacia-timber/portfolio.png" alt="Acacia" onerror="this.src = 'https://via.placeholder.com/80x60?text=Acacia'">
-                    <div class="overlay"></div>
-                    <a href="/acacia-timber/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
-                      </div>
-                    </a>
+            <div class="col-lg-4">
+              <div class="blog_right_sidebar">
+                <aside class="single_sidebar_widget popular_post_widget">
+                  <h3 class="widget_title text-secondary">Featured Projects</h3>
+                  <div class="media post_item">
+                    <div class="media-body">
+                      <a href="#">
+                        <h3>Doodle</h3>
+                      </a>
+                      <p>A light-weight paint application for mobile devices.</p>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/acacia-timber/">Acacia Joinery</a></h4>
-                    <p>Productivity, Android</p>
+                  <div class="media post_item">
+                    <div class="media-body">
+                      <a href="#">
+                        <h3>VerSign</h3>
+                      </a>
+                      <p>An offline signature verification system.</p>
+                    </div>
                   </div>
-                </div>
+                  <div class="media post_item">
+                    <div class="media-body">
+                      <a href="#">
+                        <h3>SmartGL</h3>
+                      </a>
+                      <p>An object-oriented wrapper for OpenGL/GLUT for C++.</p>
+                    </div>
+                  </div>
+                  <div class="br"></div>
+                </aside>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action" tabindex="0">
-                    <img class="img-fluid w-100" src="/projects/apps/adt-simulator/portfolio.png" alt="ADT Simulator" onerror="this.src = 'https://via.placeholder.com/80x60?text=ADT%20Simulator'">
-                    <div class="overlay"></div>
-                    <a href="/adt-simulator/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/adt-simulator/">ADT Simulator</a></h4>
-                    <p>Educational, Windows OS</p>
-                  </div>
-                </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
+                <a href="#" style="margin: auto 0;"><small>filter by type: </small></a>
+                <li class="mdc-chip filter-all" role="row" data-filter="*">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="0" class="mdc-chip__text">all</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".app">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="0" class="mdc-chip__text">apps</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".game">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">games</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".web">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">web</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".api">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">apis</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".design">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">designs</span>
+                  </span>
+                </li>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all web browser">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/web/aspirasoft/portfolio.png" alt="AspiraSoft" onerror="this.src = 'https://via.placeholder.com/80x60?text=AspiraSoft'">
-                    <div class="overlay"></div>
-                    <a href="/aspirasoft/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/aspirasoft/">AspiraSoft</a></h4>
-                    <p>Company Website</p>
-                  </div>
-                </div>
+              <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
+                <a href="#" style="margin: auto 0;"><small>filter by platform: </small></a>
+                <li class="mdc-chip" role="row" data-filter=".android">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="0" class="mdc-chip__text">android</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".browser">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">browser</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".ios">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">ios</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".linux">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">linux</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".mac">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">mac</span>
+                  </span>
+                </li>
+                <li class="mdc-chip" role="row" data-filter=".windows">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__text">windows</span>
+                  </span>
+                </li>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android windows mac">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/bouncy/portfolio.png" alt="Bouncy" onerror="this.src = 'https://via.placeholder.com/80x60?text=Bouncy'">
-                    <div class="overlay"></div>
-                    <a href="/bouncy/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+              <hr>
+
+              <div class="filters-content">
+                <div class="row portfolio-grid justify-content-center">
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/acacia-timber/portfolio.png" alt="Acacia" onerror="this.src = 'https://via.placeholder.com/80x60?text=Acacia'">
+                        <div class="overlay"></div>
+                        <a href="/acacia-timber/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/bouncy/">Bouncy</a></h4>
-                    <p>Game, Unity 3D</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/beijing-forum/portfolio.png" alt="Beijing Forum" onerror="this.src = 'https://via.placeholder.com/80x60?text=Beijing%20Forum'">
-                    <div class="overlay"></div>
-                    <a href="/beijing-forum/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/acacia-timber/">Acacia Joinery</a></h4>
+                        <p>Productivity, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/beijing-forum/">Beijing Forum</a></h4>
-                    <p>Event App, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/cafe-manager/portfolio.png" alt="Café Manager" onerror="this.src = 'https://via.placeholder.com/80x60?text=Café%20Manager'">
-                    <div class="overlay"></div>
-                    <a href="/cafe-manager/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action" tabindex="0">
+                        <img class="img-fluid w-100" src="/projects/apps/adt-simulator/portfolio.png" alt="ADT Simulator" onerror="this.src = 'https://via.placeholder.com/80x60?text=ADT%20Simulator'">
+                        <div class="overlay"></div>
+                        <a href="/adt-simulator/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/cafe-manager/">Café Manager</a></h4>
-                    <p>Food, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/connect/portfolio.png" alt="Connect" onerror="this.src = 'https://via.placeholder.com/80x60?text=Connect'">
-                    <div class="overlay"></div>
-                    <a href="/connect/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/adt-simulator/">ADT Simulator</a></h4>
+                        <p>Educational, Windows OS</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/connect/">Connect</a></h4>
-                    <p>Communication, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all design">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/designs/book-covers/cursed-star.jpg" alt="The Cursed Star" onerror="this.src = 'https://via.placeholder.com/80x60?text=The%20Cursed%20Star'">
-                    <div class="overlay"></div>
-                    <a href="/designs/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all web browser">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/web/aspirasoft/portfolio.png" alt="AspiraSoft" onerror="this.src = 'https://via.placeholder.com/80x60?text=AspiraSoft'">
+                        <div class="overlay"></div>
+                        <a href="/aspirasoft/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/designs/">The Cursed Star</a></h4>
-                    <p>Book Cover</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/directions/portfolio.png" alt="Directions" onerror="this.src = 'https://via.placeholder.com/80x60?text=Directions'">
-                    <div class="overlay"></div>
-                    <a href="/directions/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/aspirasoft/">AspiraSoft</a></h4>
+                        <p>Company Website</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/directions/">Directions</a></h4>
-                    <p>Educational, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/dodge/portfolio.png" alt="Dodge" onerror="this.src = 'https://via.placeholder.com/80x60?text=Dodge'">
-                    <div class="overlay"></div>
-                    <a href="/dodge/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android windows mac">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/bouncy/portfolio.png" alt="Bouncy" onerror="this.src = 'https://via.placeholder.com/80x60?text=Bouncy'">
+                        <div class="overlay"></div>
+                        <a href="/bouncy/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/dodge/">Dodge</a></h4>
-                    <p>Game, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/doodle/portfolio.png" alt="Doodle" onerror="this.src = 'https://via.placeholder.com/80x60?text=Doodle'">
-                    <div class="overlay"></div>
-                    <a href="/paint/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/bouncy/">Bouncy</a></h4>
+                        <p>Game, Unity 3D</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/paint/">Doodle</a></h4>
-                    <p>Creativity, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all api">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/libs/droid-rest/portfolio.png" alt="DroidREST" onerror="this.src = 'https://via.placeholder.com/80x60?text=DroidREST'">
-                    <div class="overlay"></div>
-                    <a href="/droid-rest/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/beijing-forum/portfolio.png" alt="Beijing Forum" onerror="this.src = 'https://via.placeholder.com/80x60?text=Beijing%20Forum'">
+                        <div class="overlay"></div>
+                        <a href="/beijing-forum/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/droid-rest/">DroidREST</a></h4>
-                    <p>REST API, Java</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/hangman/portfolio.png" alt="Hangman" onerror="this.src = 'https://via.placeholder.com/80x60?text=Hangman'">
-                    <div class="overlay"></div>
-                    <a href="/hangman/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/beijing-forum/">Beijing Forum</a></h4>
+                        <p>Event App, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/hangman/">Hangman</a></h4>
-                    <p>Classic, Windows OS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/huntrek/portfolio.png" alt="HunTrek" onerror="this.src = 'https://via.placeholder.com/80x60?text=HunTrek'">
-                    <div class="overlay"></div>
-                    <a href="/huntrek/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/cafe-manager/portfolio.png" alt="Café Manager" onerror="this.src = 'https://via.placeholder.com/80x60?text=Café%20Manager'">
+                        <div class="overlay"></div>
+                        <a href="/cafe-manager/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/huntrek/">HunTrek</a></h4>
-                    <p>AR Quest, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/iprd-geotag/portfolio.png" alt="IPRD Geotag" onerror="this.src = 'https://via.placeholder.com/80x60?text=IPRD Geotag'">
-                    <div class="overlay"></div>
-                    <a href="/iprd-geotag/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/cafe-manager/">Café Manager</a></h4>
+                        <p>Food, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/iprd-geotag/">IPRD Geotag</a></h4>
-                    <p>Productivity, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android windows mac">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/jungle-run/portfolio.png" alt="Jungle Run" onerror="this.src = 'https://via.placeholder.com/80x60?text=Jungle%20Run'">
-                    <div class="overlay"></div>
-                    <a href="/jungle-run/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/connect/portfolio.png" alt="Connect" onerror="this.src = 'https://via.placeholder.com/80x60?text=Connect'">
+                        <div class="overlay"></div>
+                        <a href="/connect/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/jungle-run/">Jungle Run</a></h4>
-                    <p>2D Platformer, Cross-Platform</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/lexiconic/portfolio.png" alt="LexiConic" onerror="this.src = 'https://via.placeholder.com/80x60?text=LexiConic'">
-                    <div class="overlay"></div>
-                    <a href="/lexiconic/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/connect/">Connect</a></h4>
+                        <p>Communication, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/lexiconic/">LexiConic</a></h4>
-                    <p>Educational, Android/Windows</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/maze-solver/portfolio.png" alt="Maze Solver" onerror="this.src = 'https://via.placeholder.com/80x60?text=Maze%20Solver'">
-                    <div class="overlay"></div>
-                    <a href="/maze-solver/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all design">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/designs/book-covers/cursed-star.jpg" alt="The Cursed Star" onerror="this.src = 'https://via.placeholder.com/80x60?text=The%20Cursed%20Star'">
+                        <div class="overlay"></div>
+                        <a href="/designs/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/maze-solver/">Maze Solver</a></h4>
-                    <p>Simulation, Windows OS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/poppit/portfolio.png" alt="Poppit" onerror="this.src = 'https://via.placeholder.com/80x60?text=Poppit'">
-                    <div class="overlay"></div>
-                    <a href="/poppit/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/designs/">The Cursed Star</a></h4>
+                        <p>Book Cover</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/poppit/">Poppit</a></h4>
-                    <p>Arcade, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game android windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/quest/portfolio.png" alt="Quest" onerror="this.src = 'https://via.placeholder.com/80x60?text=Quest'">
-                    <div class="overlay"></div>
-                    <a href="/quest/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/directions/portfolio.png" alt="Directions" onerror="this.src = 'https://via.placeholder.com/80x60?text=Directions'">
+                        <div class="overlay"></div>
+                        <a href="/directions/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/quest/">Quest</a></h4>
-                    <p>Board, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/sams/portfolio.png" alt="SAMS" onerror="this.src = 'https://via.placeholder.com/80x60?text=SAMS'">
-                    <div class="overlay"></div>
-                    <a href="/sams/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/directions/">Directions</a></h4>
+                        <p>Educational, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/sams/">SAMS</a></h4>
-                    <p>Educational, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/scanner/portfolio.png" alt="Scanner" onerror="this.src = 'https://via.placeholder.com/80x60?text=Scanner'">
-                    <div class="overlay"></div>
-                    <a href="/scanner/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/dodge/portfolio.png" alt="Dodge" onerror="this.src = 'https://via.placeholder.com/80x60?text=Dodge'">
+                        <div class="overlay"></div>
+                        <a href="/dodge/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/scanner/">Scanner</a></h4>
-                    <p>Productivity, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all api windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/libs/smartgl/portfolio.png" alt="SmartGL" onerror="this.src = 'https://via.placeholder.com/80x60?text=SmartGL'">
-                    <div class="overlay"></div>
-                    <a href="/smartgl/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/dodge/">Dodge</a></h4>
+                        <p>Game, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/smartgl/">SmartGL</a></h4>
-                    <p>Graphics API, Windows OS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/space-shooter/portfolio.png" alt="Space Shooter" onerror="this.src = 'https://via.placeholder.com/80x60?text=Space%20Shooter'">
-                    <div class="overlay"></div>
-                    <a href="/space-shooter/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/doodle/portfolio.png" alt="Doodle" onerror="this.src = 'https://via.placeholder.com/80x60?text=Doodle'">
+                        <div class="overlay"></div>
+                        <a href="/paint/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/space-shooter">Space Shooter</a></h4>
-                    <p>Arcade, Android</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all game windows">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/games/university-run/portfolio.png" alt="University Run" onerror="this.src = 'https://via.placeholder.com/80x60?text=University%20Run'">
-                    <div class="overlay"></div>
-                    <a href="/university-run/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/paint/">Doodle</a></h4>
+                        <p>Creativity, Android</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/university-run/">University Run</a></h4>
-                    <p>2D Infinite Runner, Windows OS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all app android mac windows linux">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/apps/versign/portfolio.png" alt="VerSign" onerror="this.src = 'https://via.placeholder.com/80x60?text=VerSign'">
-                    <div class="overlay"></div>
-                    <a href="/versign/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all api">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/libs/droid-rest/portfolio.png" alt="DroidREST" onerror="this.src = 'https://via.placeholder.com/80x60?text=DroidREST'">
+                        <div class="overlay"></div>
+                        <a href="/droid-rest/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div class="short_info">
-                    <h4><a href="/versign/">VerSign</a></h4>
-                    <p>Tools, Cross-Platform</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 all web browser">
-                <div class="mdc-card portfolio_box">
-                  <div class="single_portfolio mdc-card__primary-action">
-                    <img class="img-fluid w-100" src="/projects/web/vread/portfolio.png" alt="vRead" onerror="this.src = 'https://via.placeholder.com/80x60?text=vRead'">
-                    <div class="overlay"></div>
-                    <a href="/vread/">
-                      <div class="icon">
-                        <span class="fa fa-hand-pointer"></span>
+                      <div class="short_info">
+                        <h4><a href="/droid-rest/">DroidREST</a></h4>
+                        <p>REST API, Java</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div class="short_info">
-                    <h4><a href="/vread/">vRead</a></h4>
-                    <p>Social Platform</p>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/hangman/portfolio.png" alt="Hangman" onerror="this.src = 'https://via.placeholder.com/80x60?text=Hangman'">
+                        <div class="overlay"></div>
+                        <a href="/hangman/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/hangman/">Hangman</a></h4>
+                        <p>Classic, Windows OS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/huntrek/portfolio.png" alt="HunTrek" onerror="this.src = 'https://via.placeholder.com/80x60?text=HunTrek'">
+                        <div class="overlay"></div>
+                        <a href="/huntrek/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/huntrek/">HunTrek</a></h4>
+                        <p>AR Quest, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/iprd-geotag/portfolio.png" alt="IPRD Geotag" onerror="this.src = 'https://via.placeholder.com/80x60?text=IPRD Geotag'">
+                        <div class="overlay"></div>
+                        <a href="/iprd-geotag/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/iprd-geotag/">IPRD Geotag</a></h4>
+                        <p>Productivity, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android windows mac">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/jungle-run/portfolio.png" alt="Jungle Run" onerror="this.src = 'https://via.placeholder.com/80x60?text=Jungle%20Run'">
+                        <div class="overlay"></div>
+                        <a href="/jungle-run/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/jungle-run/">Jungle Run</a></h4>
+                        <p>2D Platformer, Cross-Platform</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/lexiconic/portfolio.png" alt="LexiConic" onerror="this.src = 'https://via.placeholder.com/80x60?text=LexiConic'">
+                        <div class="overlay"></div>
+                        <a href="/lexiconic/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/lexiconic/">LexiConic</a></h4>
+                        <p>Educational, Android/Windows</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/maze-solver/portfolio.png" alt="Maze Solver" onerror="this.src = 'https://via.placeholder.com/80x60?text=Maze%20Solver'">
+                        <div class="overlay"></div>
+                        <a href="/maze-solver/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/maze-solver/">Maze Solver</a></h4>
+                        <p>Simulation, Windows OS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/poppit/portfolio.png" alt="Poppit" onerror="this.src = 'https://via.placeholder.com/80x60?text=Poppit'">
+                        <div class="overlay"></div>
+                        <a href="/poppit/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/poppit/">Poppit</a></h4>
+                        <p>Arcade, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game android windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/quest/portfolio.png" alt="Quest" onerror="this.src = 'https://via.placeholder.com/80x60?text=Quest'">
+                        <div class="overlay"></div>
+                        <a href="/quest/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/quest/">Quest</a></h4>
+                        <p>Board, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/sams/portfolio.png" alt="SAMS" onerror="this.src = 'https://via.placeholder.com/80x60?text=SAMS'">
+                        <div class="overlay"></div>
+                        <a href="/sams/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/sams/">SAMS</a></h4>
+                        <p>Educational, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/scanner/portfolio.png" alt="Scanner" onerror="this.src = 'https://via.placeholder.com/80x60?text=Scanner'">
+                        <div class="overlay"></div>
+                        <a href="/scanner/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/scanner/">Scanner</a></h4>
+                        <p>Productivity, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all api windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/libs/smartgl/portfolio.png" alt="SmartGL" onerror="this.src = 'https://via.placeholder.com/80x60?text=SmartGL'">
+                        <div class="overlay"></div>
+                        <a href="/smartgl/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/smartgl/">SmartGL</a></h4>
+                        <p>Graphics API, Windows OS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/space-shooter/portfolio.png" alt="Space Shooter" onerror="this.src = 'https://via.placeholder.com/80x60?text=Space%20Shooter'">
+                        <div class="overlay"></div>
+                        <a href="/space-shooter/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/space-shooter">Space Shooter</a></h4>
+                        <p>Arcade, Android</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all game windows">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/games/university-run/portfolio.png" alt="University Run" onerror="this.src = 'https://via.placeholder.com/80x60?text=University%20Run'">
+                        <div class="overlay"></div>
+                        <a href="/university-run/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/university-run/">University Run</a></h4>
+                        <p>2D Infinite Runner, Windows OS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all app android mac windows linux">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/apps/versign/portfolio.png" alt="VerSign" onerror="this.src = 'https://via.placeholder.com/80x60?text=VerSign'">
+                        <div class="overlay"></div>
+                        <a href="/versign/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/versign/">VerSign</a></h4>
+                        <p>Tools, Cross-Platform</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 all web browser">
+                    <div class="mdc-card portfolio_box">
+                      <div class="single_portfolio mdc-card__primary-action">
+                        <img class="img-fluid w-100" src="/projects/web/vread/portfolio.png" alt="vRead" onerror="this.src = 'https://via.placeholder.com/80x60?text=vRead'">
+                        <div class="overlay"></div>
+                        <a href="/vread/">
+                          <div class="icon">
+                            <span class="fa fa-hand-pointer"></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="short_info">
+                        <h4><a href="/vread/">vRead</a></h4>
+                        <p>Social Platform</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -658,7 +694,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
   </div>
 
   <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->

@@ -1,30 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,700");
 
-html, body {
-    background: url(../img/body-bg.png) no-repeat center;
-    color: #424242;
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    height: 100%;
-    line-height: 26px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-body>.row {
+html {
   height: 100%;
 }
 
-.mdc-drawer {
-  height: 100%;
-  overflow: scroll;
+body {
+  background: url(../img/body-bg.png) no-repeat center;
+  color: #424242;
+  display: flex;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+.demo-body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.demo-main {
+  padding-left: 16px;
+  padding-bottom: 16px;
+  overflow: auto;
+}
+
+.mdc-top-app-bar {
   background: transparent;
 }
 
-.content {
-  height: 100%;
-  overflow: scroll;
+.app-drawer-layout {
+  display: flex;
+  flex: 1;
+
+  .mdc-drawer--dismissible {
+    background: transparent;
+    top: 64px;
+    height: calc(100% - 64px);
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 1.5rem;
 }
 
 .mdc-chip {
@@ -3272,29 +3296,23 @@ h6 {
     }
 }
 
-.portfolio_area .filters ul {
+.portfolio_area .filters {
     padding-left: 0;
     margin-bottom: 20px;
 }
 
 @media (max-width: 991px) {
-    .portfolio_area .filters ul {
+    .portfolio_area .filters {
         margin-bottom: 10px;
     }
 }
 
-.portfolio_area .filters ul li {
-    display: inline-block;
-    margin-right: 50px;
-    font-size: 14px;
+.portfolio_area .filters li {
+    font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
     color: #222222;
     cursor: pointer;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
 }
 
 .portfolio_area .filters ul li:hover, .portfolio_area .filters ul li.active {
