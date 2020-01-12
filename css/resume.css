@@ -4,7 +4,8 @@ p {
 
 small.rating {
     position: relative;
-    top: -14px;
+    left: 8px;
+    top: 4px;
     font-size: 10px;
     color: #854fee
 }
@@ -25,7 +26,6 @@ a.download {
 
 .section-wrapper {
     padding: 50px;
-    border-bottom: 1px solid #eaeaea
 }
 
 @media (max-width:480px) {

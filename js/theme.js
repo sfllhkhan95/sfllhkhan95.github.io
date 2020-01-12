@@ -3,7 +3,7 @@
 
 	var nav_offset_top = $('header').height() + 50;
 	/*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
 
 	//* Navbar Fixed
@@ -34,10 +34,7 @@
             Isotope js Starts
          --------------------------------------------- */
 	$(window).on('load', function() {
-		$('.portfolio-filter ul li').on('click', function() {
-			$('.portfolio-filter ul li').removeClass('active');
-			$(this).addClass('active');
-
+		$('.portfolio-filter li').on('click', function() {
 			var data = $(this).attr('data-filter');
 			$workGrid.isotope({
 				filter: data

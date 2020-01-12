@@ -7,8 +7,38 @@ html, body {
     font-size: 14px;
     height: 100%;
     line-height: 26px;
-    overflow: auto;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body>.row {
+  height: 100%;
+}
+
+.mdc-drawer {
+  height: 100%;
+  overflow: scroll;
+  background: transparent;
+}
+
+.content {
+  height: 100%;
+  overflow: scroll;
+}
+
+.mdc-chip {
+  background: white;
+  border: 1px solid lightgray;
+  color: black;
+}
+
+.mdc-chip .active {
+  color: #854fee;
+}
+
+.filters-content {
+  margin-top: 24px;
 }
 
 ul, .list {
@@ -241,23 +271,9 @@ button:focus {
 /* End Main Title Area css
 ============================================================================================ */
 .primary_btn {
-    display: inline-block;
-    color: #fff;
-    letter-spacing: 0;
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 46px;
-    outline: none !important;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
     background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
-    border: double 2px transparent;
-    box-shadow: 0 10px 30px rgba(118, 85, 225, 0.3);
+    border: 1px solid transparent;
+    color: #fff;
 }
 
 .primary_btn span {
@@ -266,24 +282,15 @@ button:focus {
 
 .primary_btn.tr-bg {
     background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
-    border: 2px solid transparent;
-    color: #222222;
-    box-shadow: none;
-}
-
-.primary_btn.tr-bg:hover {
-    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
-    border: double 2px transparent;
-    color: #ffffff;
-    box-shadow: 0 10px 30px rgba(118, 85, 225, 0.3);
+    border: 1px solid #854fee;
 }
 
 .primary_btn:hover {
-    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
-    border: 2px solid #854fee;
-    color: #222222;
-    box-shadow: none;
-    background-clip: border-box;
+    box-shadow: 1px 1px 5px #854fee88;
+}
+
+.primary_btn.tr-bg:hover {
+    box-shadow: 1px 1px 5px #854fee88;
 }
 
 .overlay {
@@ -489,17 +496,11 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
     z-index: 1;
-    background: url(../img/banner/home-banner.png) no-repeat top center;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/banner/home-banner.png);
 }
 
 .home_banner_area .banner_inner {
     width: 100%;
-}
-
-.home_banner_area .banner_inner .home_right_img {
-    padding-top: 197px;
 }
 
 @media (max-width: 1480px) {
@@ -3307,33 +3308,33 @@ h6 {
 }
 
 .portfolio_box {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
     .portfolio_box {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 }
 
 .portfolio_box .short_info {
-    margin-top: 30px;
+    padding: 18px;
 }
 
 @media (max-width: 767px) {
     .portfolio_box .short_info {
-        margin-top: 20px;
+        margin-top: 12px;
     }
 }
 
 .portfolio_box .short_info h4 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0;
 }
 
 .portfolio_box .short_info h4 a {
-    color: #000000;
+    color: black;
 }
 
 .single_portfolio {
@@ -3544,13 +3545,7 @@ h6 {
 
 .subscription_box {
     background: url(../img/subscribe-bg.png) no-repeat center;
-    padding: 150px 0;
-}
-
-@media (max-width: 767px) {
-    .subscription_box {
-        padding: 50px 20px;
-    }
+    padding: 32px;
 }
 
 .subscription_box h2 {
