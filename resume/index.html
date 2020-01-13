@@ -35,6 +35,11 @@
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Firebase SDK -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
 </head>
 
 <body>
@@ -46,9 +51,7 @@
         <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.png" /></a>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: #333"><span class="fab fa-github-alt"></span></a>
-        <a href="https://linkedin.com/in/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="LinkedIn" style="color: #333"><span class="fab fa-linkedin-in"></span></a>
-        <a href="https://wa.me/491727223577" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" style="color: #333"><span class="fab fa-whatsapp"></span></a>
+        <button onclick="downloadCV()" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download PDF" style="color: #333">file_download</button>
       </section>
     </div>
   </header>
@@ -656,6 +659,31 @@
   <script src="/vendors/isotope/isotope-min.js"></script>
   <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
   <script src="/js/theme.js"></script>
+  <script>
+    function downloadCV() {
+      let file = 'assets/experience/cv.pdf'
+      firebase.storage().ref(file).getDownloadURL().then(function(url) {
+        window.location = url
+      }).catch(function(e) {
+        console.error(e);
+      });
+    }
+
+    $(function() {
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCQFSAQ40XRnjLnE796GquBVkyXLCnlzOQ",
+        authDomain: "portfolio-e6373.firebaseapp.com",
+        databaseURL: "https://portfolio-e6373.firebaseio.com",
+        projectId: "portfolio-e6373",
+        storageBucket: "portfolio-e6373.appspot.com",
+        messagingSenderId: "517647642009",
+        appId: "1:517647642009:web:d39fc611879592c8def708"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    });
+  </script>
 </body>
 
 </html>

@@ -76,6 +76,11 @@
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Firebase SDK -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
 </head>
 
 <body>
@@ -88,7 +93,7 @@
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
         <a class="mdc-top-app-bar__title" href="#" style="color: #333">BESE Courses</a>
-        <a href="files/transcript.pdf" download class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download Transcript" style="color: #333">file_download</a>
+        <button onclick="downloadTranscript()" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download Transcript" style="color: #333">file_download</button>
       </section>
     </div>
   </header>
@@ -143,7 +148,7 @@
                 <div class="course-item featured">
                   <div class="course-preview" style="background: center center no-repeat url('img/fyp.jpg'); background-size: cover;">
                     <div class="featur-badges">SE-499 Final-Year Project</div>
-                    <iframe width="100%" height="100%" src="http://youtube.com/embed/i8i6sC14x1c">
+                    <iframe width="100%" height="100%" src="https://youtube.com/embed/i8i6sC14x1c">
                     </iframe>
                   </div>
                   <div class="mdc-card course-content">
@@ -172,7 +177,7 @@
                       <div class="seller-pic set-bg"></div>
                       <h6>Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en" target="_blank"><span>Dr.
                             Muhammad Imran Malik</span></a></h6>
-                      <h6>Co-Advisor: <a href="http://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank"><span>Dr.
+                      <h6>Co-Advisor: <a href="https://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank"><span>Dr.
                             Muhammad Shahzad</span></a></h6>
                       <br>
                     </div>
@@ -847,12 +852,6 @@
     </main>
   </div>
 
-  <div id="outline">
-    <!-- Modal content-->
-    <iframe id="outlineSrc" src="http://docs.google.com/gview?embedded=true&url=http://saifkhichi.com/resume/bese/files/" width="100%" height="100%"></iframe>
-    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-times"></span></button>
-  </div>
-
   <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -876,22 +875,45 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
+    function downloadTranscript() {
+      let file = 'assets/experience/bese/transcript.pdf'
+      firebase.storage().ref(file).getDownloadURL().then(function(url) {
+        window.location = url
+      }).catch(function(e) {
+        console.error(e);
+      });
+    }
+
     $('#outline button').click(function() {
       $('#outline').hide();
     });
 
     $('#outline').hide();
-    $(window).ready(function() {
+    $(function() {
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCQFSAQ40XRnjLnE796GquBVkyXLCnlzOQ",
+        authDomain: "portfolio-e6373.firebaseapp.com",
+        databaseURL: "https://portfolio-e6373.firebaseio.com",
+        projectId: "portfolio-e6373",
+        storageBucket: "portfolio-e6373.appspot.com",
+        messagingSenderId: "517647642009",
+        appId: "1:517647642009:web:d39fc611879592c8def708"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
       let uri = window.location.toString();
       const outline = getParameterByName('outline');
       if (!outline || outline === '') {
 
       } else {
-        const outlineSrc = $('#outlineSrc');
-        let content = outlineSrc.attr('src');
-        content += outline + ".pdf";
-        outlineSrc.attr('src', content);
-        $('#outline').show();
+        let file = 'assets/experience/bese/courses/' + outline + '.pdf'
+        firebase.storage().ref(file).getDownloadURL().then(function(url) {
+          window.location = url
+        }).catch(function(e) {
+          console.error(e);
+        });
       }
 
       // Clean URL
@@ -901,7 +923,6 @@
       }
     });
   </script>
-
 </body>
 
 </html>

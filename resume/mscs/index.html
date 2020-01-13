@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
   <meta name="description" content="List of courses I studied during my Bachelor of Software Engineering degree at National University of Sciences and Technology (NUST).">
-  <meta name="keywords" content="saifkhichi96, saifkhichi, saif, khichi, saif's portfolio, bese, bese5b, courses, nust, seecs, 2k14">
+  <meta name="keywords" content="saifkhichi96, saifkhichi, muhammad, saif, ullah, khan, khichi, saif's portfolio, mscs, courses, tukl, 2019">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- Page Title -->
@@ -76,6 +76,11 @@
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Firebase SDK -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
 </head>
 
 <body>
@@ -287,12 +292,6 @@
     </main>
   </div>
 
-  <div id="outline">
-    <!-- Modal content-->
-    <iframe id="outlineSrc" src="http://docs.google.com/gview?embedded=true&url=http://saifkhichi.com/resume/bese/files/" width="100%" height="100%"></iframe>
-    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-times"></span></button>
-  </div>
-
   <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -316,22 +315,45 @@
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
+    function downloadTranscript() {
+      let file = 'assets/experience/mscs/transcript.pdf'
+      firebase.storage().ref(file).getDownloadURL().then(function(url) {
+        window.location = url
+      }).catch(function(e) {
+        console.error(e);
+      });
+    }
+
     $('#outline button').click(function() {
       $('#outline').hide();
     });
 
     $('#outline').hide();
-    $(window).ready(function() {
+    $(function() {
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCQFSAQ40XRnjLnE796GquBVkyXLCnlzOQ",
+        authDomain: "portfolio-e6373.firebaseapp.com",
+        databaseURL: "https://portfolio-e6373.firebaseio.com",
+        projectId: "portfolio-e6373",
+        storageBucket: "portfolio-e6373.appspot.com",
+        messagingSenderId: "517647642009",
+        appId: "1:517647642009:web:d39fc611879592c8def708"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
       let uri = window.location.toString();
       const outline = getParameterByName('outline');
       if (!outline || outline === '') {
 
       } else {
-        const outlineSrc = $('#outlineSrc');
-        let content = outlineSrc.attr('src');
-        content += outline + ".pdf";
-        outlineSrc.attr('src', content);
-        $('#outline').show();
+        let file = 'assets/experience/mscs/courses/' + outline + '.pdf'
+        firebase.storage().ref(file).getDownloadURL().then(function(url) {
+          window.location = url
+        }).catch(function(e) {
+          console.error(e);
+        });
       }
 
       // Clean URL
@@ -341,7 +363,6 @@
       }
     });
   </script>
-
 </body>
 
 </html>
