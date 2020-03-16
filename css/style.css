@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: url(../img/body-bg.png) no-repeat center;
+  background: url(/img/body-bg.webp) no-repeat center;
   color: #424242;
   display: flex;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -520,7 +520,7 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
     z-index: 1;
-    background: url(../img/banner/home-banner.png);
+    background: url(/img/banner/home-banner.webp);
 }
 
 .home_banner_area .banner_inner {
@@ -621,7 +621,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     min-height: 485px;
-    background: url(../img/banner/common-banner.png) no-repeat right bottom;
+    background: url(/img/banner/common-banner.webp) no-repeat right bottom;
     background-size: 90% 85%;
     width: 98%;
     z-index: 1;
@@ -3215,7 +3215,7 @@ h6 {
     position: absolute;
     top: -25px;
     left: -50px;
-    background: url(../img/client-info-bg.png) no-repeat;
+    background: url(/img/client-info-bg.webp) no-repeat;
     height: 175px;
     width: 175px;
 }
@@ -3562,7 +3562,7 @@ h6 {
 }
 
 .subscription_box {
-    background: url(../img/subscribe-bg.png) no-repeat center;
+    background: url(/img/subscribe-bg.webp) no-repeat center;
     padding: 32px;
 }
 
