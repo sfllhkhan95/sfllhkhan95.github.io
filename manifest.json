@@ -1,0 +1,22 @@
+{
+  "short_name": "Saif's Portfolio",
+  "name": "Saif Khan's Portfolio",
+  "description": "Personal website of Muhammad Saif Ullah Khan, containing a complete portfolio, work history, and other details.",
+  "icons": [
+    {
+      "src": "/img/icons-256.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#854fee"
+}
