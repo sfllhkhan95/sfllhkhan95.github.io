@@ -112,502 +112,305 @@
 
     <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
-      <section class="portfolio_area" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
-                <a href="#" style="margin: auto 0;"><small>filter by type: </small></a>
-                <li class="mdc-chip filter-all" role="row" data-filter="*">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__text">all</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".app">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__text">apps</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".game">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">games</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".web">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">web</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".api">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">apis</span>
-                  </span>
-                </li>
+      <div class="portfolio container" id="portfolio">
+        <div class="row">
+          <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
+            <li class="mdc-chip" role="row" data-filter=".all">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" tabindex="0" class="mdc-chip__text active">all platforms</span>
+              </span>
+            </li>
+            <li class="mdc-chip" role="row" data-filter=".mobile">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" tabindex="0" class="mdc-chip__text">mobile</span>
+              </span>
+            </li>
+            <li class="mdc-chip" role="row" data-filter=".desktop">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" tabindex="-1" class="mdc-chip__text">desktop</span>
+              </span>
+            </li>
+            <li class="mdc-chip" role="row" data-filter=".web">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" tabindex="-1" class="mdc-chip__text">web</span>
+              </span>
+            </li>
+          </div>
+        </div>
+        <section>
+          <h3>APPS</h3>
+          <div class="filters-content">
+            <div class="grid">
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/acacia-timber/portfolio.png" alt="Acacia" onerror="this.src = 'https://via.placeholder.com/100x100?text=Acacia'">
+                  <a class="overlay" href="/acacia-timber/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/acacia-timber/">Acacia Joinery</a></h4>
+                  <p>Productivity</p>
+                </div>
               </div>
-              <div class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
-                <a href="#" style="margin: auto 0;"><small>filter by platform: </small></a>
-                <li class="mdc-chip" role="row" data-filter=".android">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__text">android</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".browser">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">browser</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".ios">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">ios</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".linux">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">linux</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".mac">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">mac</span>
-                  </span>
-                </li>
-                <li class="mdc-chip" role="row" data-filter=".windows">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__text">windows</span>
-                  </span>
-                </li>
+              <div class="grid-item mdc-card portfolio_box all app desktop">
+                <div class="grid-item-icon mdc-card__primary-action" tabindex="0">
+                  <img class="img-fluid w-100" src="/projects/apps/adt-simulator/portfolio.png" alt="ADT Simulator" onerror="this.src = 'https://via.placeholder.com/100x100?text=ADT%20Simulator'">
+                  <a class="overlay" href="/adt-simulator/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/adt-simulator/">ADT Simulator</a></h4>
+                  <p>Educational</p>
+                </div>
               </div>
-              <hr>
-
-              <div class="filters-content">
-                <div class="row portfolio-grid justify-content-center">
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/acacia-timber/portfolio.png" alt="Acacia" onerror="this.src = 'https://via.placeholder.com/80x60?text=Acacia'">
-                        <div class="overlay"></div>
-                        <a href="/acacia-timber/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/acacia-timber/">Acacia Joinery</a></h4>
-                        <p>Productivity</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action" tabindex="0">
-                        <img class="img-fluid w-100" src="/projects/apps/adt-simulator/portfolio.png" alt="ADT Simulator" onerror="this.src = 'https://via.placeholder.com/80x60?text=ADT%20Simulator'">
-                        <div class="overlay"></div>
-                        <a href="/adt-simulator/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/adt-simulator/">ADT Simulator</a></h4>
-                        <p>Educational</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android windows mac">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/bouncy/portfolio.png" alt="Bouncy" onerror="this.src = 'https://via.placeholder.com/80x60?text=Bouncy'">
-                        <div class="overlay"></div>
-                        <a href="/bouncy/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/bouncy/">Bouncy</a></h4>
-                        <p>Game</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/beijing-forum/portfolio.png" alt="Beijing Forum" onerror="this.src = 'https://via.placeholder.com/80x60?text=Beijing%20Forum'">
-                        <div class="overlay"></div>
-                        <a href="/beijing-forum/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/beijing-forum/">Beijing Forum</a></h4>
-                        <p>Event App</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/cafe-manager/portfolio.png" alt="Café Manager" onerror="this.src = 'https://via.placeholder.com/80x60?text=Café%20Manager'">
-                        <div class="overlay"></div>
-                        <a href="/cafe-manager/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/cafe-manager/">Café Manager</a></h4>
-                        <p>Food</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/connect/portfolio.png" alt="Connect" onerror="this.src = 'https://via.placeholder.com/80x60?text=Connect'">
-                        <div class="overlay"></div>
-                        <a href="/connect/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/connect/">Connect</a></h4>
-                        <p>Communication</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/directions/portfolio.png" alt="Directions" onerror="this.src = 'https://via.placeholder.com/80x60?text=Directions'">
-                        <div class="overlay"></div>
-                        <a href="/directions/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/directions/">Directions</a></h4>
-                        <p>Educational</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/dodge/portfolio.png" alt="Dodge" onerror="this.src = 'https://via.placeholder.com/80x60?text=Dodge'">
-                        <div class="overlay"></div>
-                        <a href="/dodge/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/dodge/">Dodge</a></h4>
-                        <p>Game</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/doodle/portfolio.png" alt="Doodle" onerror="this.src = 'https://via.placeholder.com/80x60?text=Doodle'">
-                        <div class="overlay"></div>
-                        <a href="/paint/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/paint/">Doodle</a></h4>
-                        <p>Creativity</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all api">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/libs/droid-rest/portfolio.png" alt="DroidREST" onerror="this.src = 'https://via.placeholder.com/80x60?text=DroidREST'">
-                        <div class="overlay"></div>
-                        <a href="/droid-rest/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/droid-rest/">DroidREST</a></h4>
-                        <p>REST API</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/hangman/portfolio.png" alt="Hangman" onerror="this.src = 'https://via.placeholder.com/80x60?text=Hangman'">
-                        <div class="overlay"></div>
-                        <a href="/hangman/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/hangman/">Hangman</a></h4>
-                        <p>Classic Game</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/huntrek/portfolio.png" alt="HunTrek" onerror="this.src = 'https://via.placeholder.com/80x60?text=HunTrek'">
-                        <div class="overlay"></div>
-                        <a href="/huntrek/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/huntrek/">HunTrek</a></h4>
-                        <p>AR Quest</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/iprd-geotag/portfolio.png" alt="IPRD Geotag" onerror="this.src = 'https://via.placeholder.com/80x60?text=IPRD Geotag'">
-                        <div class="overlay"></div>
-                        <a href="/iprd-geotag/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/iprd-geotag/">IPRD Geotag</a></h4>
-                        <p>Productivity</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android windows mac">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/jungle-run/portfolio.png" alt="Jungle Run" onerror="this.src = 'https://via.placeholder.com/80x60?text=Jungle%20Run'">
-                        <div class="overlay"></div>
-                        <a href="/jungle-run/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/jungle-run/">Jungle Run</a></h4>
-                        <p>2D Platformer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/lexiconic/portfolio.png" alt="LexiConic" onerror="this.src = 'https://via.placeholder.com/80x60?text=LexiConic'">
-                        <div class="overlay"></div>
-                        <a href="/lexiconic/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/lexiconic/">Lexiconic</a></h4>
-                        <p>Educational</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/poppit/portfolio.png" alt="Poppit" onerror="this.src = 'https://via.placeholder.com/80x60?text=Poppit'">
-                        <div class="overlay"></div>
-                        <a href="/poppit/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/poppit/">Poppit</a></h4>
-                        <p>Arcade</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game android windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/quest/portfolio.png" alt="Quest" onerror="this.src = 'https://via.placeholder.com/80x60?text=Quest'">
-                        <div class="overlay"></div>
-                        <a href="/quest/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/quest/">Quest</a></h4>
-                        <p>Board</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/sams/portfolio.png" alt="SAMS" onerror="this.src = 'https://via.placeholder.com/80x60?text=SAMS'">
-                        <div class="overlay"></div>
-                        <a href="/sams/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/sams/">SAMS</a></h4>
-                        <p>Educational</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/scanner/portfolio.png" alt="Scanner" onerror="this.src = 'https://via.placeholder.com/80x60?text=Scanner'">
-                        <div class="overlay"></div>
-                        <a href="/scanner/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/scanner/">Scanner</a></h4>
-                        <p>Productivity</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all api windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/libs/smartgl/portfolio.png" alt="SmartGL" onerror="this.src = 'https://via.placeholder.com/80x60?text=SmartGL'">
-                        <div class="overlay"></div>
-                        <a href="/smartgl/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/smartgl/">SmartGL</a></h4>
-                        <p>Graphics API</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/space-shooter/portfolio.png" alt="Space Shooter" onerror="this.src = 'https://via.placeholder.com/80x60?text=Space%20Shooter'">
-                        <div class="overlay"></div>
-                        <a href="/space-shooter/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/space-shooter">Space Shooter</a></h4>
-                        <p>Arcade</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all game windows">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/games/university-run/portfolio.png" alt="University Run" onerror="this.src = 'https://via.placeholder.com/80x60?text=University%20Run'">
-                        <div class="overlay"></div>
-                        <a href="/university-run/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/university-run/">University Run</a></h4>
-                        <p>2D Infinite Runner</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all app android mac windows linux">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/apps/versign/portfolio.png" alt="VerSign" onerror="this.src = 'https://via.placeholder.com/80x60?text=VerSign'">
-                        <div class="overlay"></div>
-                        <a href="/versign/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/versign/">Versign</a></h4>
-                        <p>Tools</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 all web browser">
-                    <div class="mdc-card portfolio_box">
-                      <div class="single_portfolio mdc-card__primary-action">
-                        <img class="img-fluid w-100" src="/projects/web/vread/portfolio.png" alt="vRead" onerror="this.src = 'https://via.placeholder.com/80x60?text=vRead'">
-                        <div class="overlay"></div>
-                        <a href="/vread/">
-                          <div class="icon">
-                            <span class="fa fa-hand-pointer"></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="short_info">
-                        <h4><a href="/vread/">vRead</a></h4>
-                        <p>Social</p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/beijing-forum/portfolio.png" alt="Beijing Forum" onerror="this.src = 'https://via.placeholder.com/100x100?text=Beijing%20Forum'">
+                  <a class="overlay" href="/beijing-forum/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/beijing-forum/">Beijing Forum</a></h4>
+                  <p>Event App</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/cafe-manager/portfolio.png" alt="Café Manager" onerror="this.src = 'https://via.placeholder.com/100x100?text=Café%20Manager'">
+                  <a class="overlay" href="/cafe-manager/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/cafe-manager/">Café Manager</a></h4>
+                  <p>Food</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/connect/portfolio.png" alt="Connect" onerror="this.src = 'https://via.placeholder.com/100x100?text=Connect'">
+                  <a class="overlay" href="/connect/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/connect/">Connect</a></h4>
+                  <p>Communication</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/directions/portfolio.png" alt="Directions" onerror="this.src = 'https://via.placeholder.com/100x100?text=Directions'">
+                  <a class="overlay" href="/directions/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/directions/">Directions</a></h4>
+                  <p>Educational</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/doodle/portfolio.png" alt="Doodle" onerror="this.src = 'https://via.placeholder.com/100x100?text=Doodle'">
+                  <a class="overlay" href="/paint/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/paint/">Doodle</a></h4>
+                  <p>Creativity</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/iprd-geotag/portfolio.png" alt="IPRD Geotag" onerror="this.src = 'https://via.placeholder.com/100x100?text=IPRD Geotag'">
+                  <a class="overlay" href="/iprd-geotag/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/iprd-geotag/">IPRD Geotag</a></h4>
+                  <p>Productivity</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/lexiconic/portfolio.png" alt="LexiConic" onerror="this.src = 'https://via.placeholder.com/100x100?text=LexiConic'">
+                  <a class="overlay" href="/lexiconic/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/lexiconic/">Lexiconic</a></h4>
+                  <p>Educational</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/sams/portfolio.png" alt="SAMS" onerror="this.src = 'https://via.placeholder.com/100x100?text=SAMS'">
+                  <a class="overlay" href="/sams/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/sams/">SAMS</a></h4>
+                  <p>Educational</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/scanner/portfolio.png" alt="Scanner" onerror="this.src = 'https://via.placeholder.com/100x100?text=Scanner'">
+                  <a class="overlay" href="/scanner/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/scanner/">Scanner</a></h4>
+                  <p>Productivity</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all web">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/web/vread/portfolio.png" alt="vRead" onerror="this.src = 'https://via.placeholder.com/100x100?text=vRead'">
+                  <a class="overlay" href="/vread/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/vread/">vRead</a></h4>
+                  <p>Social</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all app mobile desktop web">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/apps/versign/portfolio.png" alt="VerSign" onerror="this.src = 'https://via.placeholder.com/100x100?text=VerSign'">
+                  <a class="overlay" href="/versign/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/versign/">Versign</a></h4>
+                  <p>Tools</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section>
+          <h3>GAMES</h3>
+          <div class="filters-content">
+            <div class="grid">
+              <div class="grid-item mdc-card portfolio_box all game mobile desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/bouncy/portfolio.png" alt="Bouncy" onerror="this.src = 'https://via.placeholder.com/100x100?text=Bouncy'">
+                  <a class="overlay" href="/bouncy/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/bouncy/">Bouncy</a></h4>
+                  <p>Game</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/dodge/portfolio.png" alt="Dodge" onerror="this.src = 'https://via.placeholder.com/100x100?text=Dodge'">
+                  <a class="overlay" href="/dodge/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/dodge/">Dodge</a></h4>
+                  <p>Game</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game mobile desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/hangman/portfolio.png" alt="Hangman" onerror="this.src = 'https://via.placeholder.com/100x100?text=Hangman'">
+                  <a class="overlay" href="/hangman/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/hangman/">Hangman</a></h4>
+                  <p>Classic Game</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/huntrek/portfolio.png" alt="HunTrek" onerror="this.src = 'https://via.placeholder.com/100x100?text=HunTrek'">
+                  <a class="overlay" href="/huntrek/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/huntrek/">HunTrek</a></h4>
+                  <p>AR Quest</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game mobile desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/jungle-run/portfolio.png" alt="Jungle Run" onerror="this.src = 'https://via.placeholder.com/100x100?text=Jungle%20Run'">
+                  <a class="overlay" href="/jungle-run/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/jungle-run/">Jungle Run</a></h4>
+                  <p>2D Platformer</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/poppit/portfolio.png" alt="Poppit" onerror="this.src = 'https://via.placeholder.com/100x100?text=Poppit'">
+                  <a class="overlay" href="/poppit/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/poppit/">Poppit</a></h4>
+                  <p>Arcade</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game mobile desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/quest/portfolio.png" alt="Quest" onerror="this.src = 'https://via.placeholder.com/100x100?text=Quest'">
+                  <a class="overlay" href="/quest/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/quest/">Quest</a></h4>
+                  <p>Board</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/space-shooter/portfolio.png" alt="Space Shooter" onerror="this.src = 'https://via.placeholder.com/100x100?text=Space%20Shooter'">
+                  <a class="overlay" href="/space-shooter/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/space-shooter">Space Shooter</a></h4>
+                  <p>Arcade</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all game desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/games/university-run/portfolio.png" alt="University Run" onerror="this.src = 'https://via.placeholder.com/100x100?text=University%20Run'">
+                  <a class="overlay" href="/university-run/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/university-run/">University Run</a></h4>
+                  <p>2D Infinite Runner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>APIs</h3>
+          <div class="filters-content">
+            <div class="grid">
+              <div class="grid-item mdc-card portfolio_box all api mobile">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/libs/droid-rest/portfolio.png" alt="DroidREST" onerror="this.src = 'https://via.placeholder.com/100x100?text=DroidREST'">
+                  <a class="overlay" href="/droid-rest/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/droid-rest/">DroidREST</a></h4>
+                  <p>REST API</p>
+                </div>
+              </div>
+              <div class="grid-item mdc-card portfolio_box all api desktop">
+                <div class="grid-item-icon mdc-card__primary-action">
+                  <img class="img-fluid w-100" src="/projects/libs/smartgl/portfolio.png" alt="SmartGL" onerror="this.src = 'https://via.placeholder.com/100x100?text=SmartGL'">
+                  <a class="overlay" href="/smartgl/"></a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="/smartgl/">SmartGL</a></h4>
+                  <p>Graphics API</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   </div>
+
+  <ul class="bottom-navigation">
+    <li class="nav-item active" data-filter=".app"><span class="fab fa-facebook"><br><small>Apps</small></span></li>
+    <li class="nav-item" data-filter=".game"><span class="fab fa-facebook"><br><small>Games</small></span></li>
+    <li class="nav-item" data-filter=".api"><span class="fab fa-facebook"><br><small>APIs</small></span></li>
+  </ul>
 
   <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -615,13 +418,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <!-- Other scripts -->
-  <script src="/js/stellar.js"></script>
   <script src="/js/jquery.magnific-popup.min.js"></script>
   <script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
   <script src="/vendors/isotope/imagesloaded.pkgd.min.js"></script>
   <script src="/vendors/isotope/isotope-min.js"></script>
   <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="/js/jquery.ajaxchimp.min.js"></script>
   <script src="/js/theme.js"></script>
   <script>
     $(function() {
