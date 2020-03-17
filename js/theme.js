@@ -35,9 +35,9 @@
     if (document.getElementById('portfolio')) {
       var $workGrid = $('.grid').isotope({
         itemSelector: '.all',
-        percentPosition: true,
         masonry: {
-          columnWidth: '.all'
+          columnWidth: '.all',
+          isFitWidth: true
         }
       });
     }
