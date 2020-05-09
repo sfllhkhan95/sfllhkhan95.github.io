@@ -79,8 +79,8 @@
   /*  Testimonials Slider                               */
   /*----------------------------------------------------*/
   function testimonials_slider() {
-    if ($('.testi_slider').length) {
-      $('.testi_slider').owlCarousel({
+    if ($('.reviews-slider').length) {
+      $('.reviews-slider').owlCarousel({
         loop: true,
         margin: 30,
         items: 2,
