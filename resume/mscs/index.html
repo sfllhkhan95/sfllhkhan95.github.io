@@ -44,18 +44,12 @@
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
   <link href="/css/style.css" rel="stylesheet">
-  <link href="/css/resume.css" rel="stylesheet">
-  <link href="/css/courses.css" rel="stylesheet" />
 
   <!-- Custom styles for this page -->
   <style>
-    .course-item {
-      background: white;
-      text-align: justify;
-    }
-
-    h5 {
+    .mdc-card .section-heading {
       text-align: center;
+      margin: 16px;
     }
 
     #outline {
@@ -150,158 +144,167 @@
 
     <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
-      <!-- Courses section  -->
-      <section id="services" class="container">
-        <div class="row text-center">
-          <div class="col-sm-1"></div>
-          <div class="col-lg-10">
-            <div class="row courses-page">
+      <section>
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <!-- Intelligent Systems -->
+            <div id="is" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Intelligent Systems</h3>
 
-              <!-- CS Courses -->
-              <div id="cs" class="col-sm-12 sec-title text-center">
-                <span>Intelligent Systems</span>
-              </div>
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- DIP -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=dip">
+                    <span class="mdc-list-item__primary-text">2D Image Processing</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
 
-              <!-- VDL -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-71-57<br>Very Deep Learning</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=vdl">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- 3DCV -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-73-51<br>3D Computer Vision</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=3dcv">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- 3DCV -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=3dcv">
+                    <span class="mdc-list-item__primary-text">3D Computer Vision</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
+                  </a>
+                </li>
 
-              <!-- SE Courses -->
-              <div id="se" class="col-sm-12 sec-title text-center">
-                <span>Software Engineering</span>
-              </div>
-              <!-- RE -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-31-55<br>Requirements Engineering</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=re">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PLE -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-31-52<br>Product Line Engineering</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=ple">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SRES -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-33-31 Safety &amp; Reliability of Embedded Systems</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=sres">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- ML1 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ml1">
+                    <span class="mdc-list-item__primary-text">Machine Learning 1: Foundations</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
 
-              <!-- MATH Courses -->
-              <div id="math" class="col-sm-12 sec-title text-center">
-                <span>Visualization and Scientific Computing</span>
-              </div>
-              <!-- DV -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-19-31<br>Data Visualization</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=dv">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HCI -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>INF-16-52 Human-Computer Interaction</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=hci">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- CI -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ci">
+                    <span class="mdc-list-item__primary-text">Collaborative Intelligence</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
 
-              <!-- Misc Courses -->
-              <div id="misc" class="col-sm-12 sec-title text-center">
-                <span>Miscellaneous</span>
-              </div>
-              <!-- CSL-401 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>15WS-10043<br>German Language A1</h5>
-                      <span><i class="fas fa-school"></i> n/a</span>
-                      <span><i class="fas fa-award"></i> n/a</span>
-                      <div class="rating">
-                        <a href="?outline=csl401">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- SWM -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=swm">
+                    <span class="mdc-list-item__primary-text">Social Web Mining</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
+
+                <!-- VDL -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=vdl">
+                    <span class="mdc-list-item__primary-text">Very Deep Learning</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 3.3)</small></b></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Software Engineering -->
+            <div id="se" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Software Engineering</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- FSE -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=fse">
+                    <span class="mdc-list-item__primary-text">Foundations of Software Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
+
+                <!-- RE -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=re">
+                    <span class="mdc-list-item__primary-text">Requirements Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
+
+                <!-- SSA -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ssa">
+                    <span class="mdc-list-item__primary-text">System and Software Architecture</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
+
+                <!-- SRES -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=sres">
+                    <span class="mdc-list-item__primary-text">Safety &amp; Reliability of Embedded Systems</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 2.7)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- PLE -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ple">
+                    <span class="mdc-list-item__primary-text">Product Line Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
+                  </a>
+                </li>
+
+                <!-- ASSE -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=asse">
+                    <span class="mdc-list-item__primary-text">Automotive Software and Systems Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Visualization and Scientific Computing -->
+            <div id="vis" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Visualization and Scientific Computing</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- DV -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=dv">
+                    <span class="mdc-list-item__primary-text">Data Visualization</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
+                  </a>
+                </li>
+
+                <!-- HCI -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hci">
+                    <span class="mdc-list-item__primary-text">Human-Computer Interaction</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 3.7)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SV -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=sv">
+                    <span class="mdc-list-item__primary-text">Scientific Visualization</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Misc Courses -->
+            <div id="misc" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Miscellaneous</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- Deutschabendkurs-A1 -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=dea1">
+                    <span class="mdc-list-item__primary-text">German Language A1</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Passed <small></small></b></span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <!-- Courses section end -->
     </main>
   </div>
 

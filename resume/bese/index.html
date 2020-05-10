@@ -44,18 +44,12 @@
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
   <link href="/css/style.css" rel="stylesheet">
-  <link href="/css/resume.css" rel="stylesheet">
-  <link href="/css/courses.css" rel="stylesheet" />
 
   <!-- Custom styles for this page -->
   <style>
-    .course-item {
-      background: white;
-      text-align: justify;
-    }
-
-    h5 {
+    .mdc-card .section-heading {
       text-align: center;
+      margin: 16px;
     }
 
     #outline {
@@ -150,718 +144,427 @@
 
     <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
-      <!-- Courses section  -->
-      <section id="services" class="container">
-        <div class="row text-center">
-          <div class="col-sm-1"></div>
-          <div class="col-lg-10">
-            <div class="row courses-page">
-              <!-- FYP -->
-              <div class="col-sm-12">
-                <div class="course-item featured">
-                  <div class="course-preview" style="background: center center no-repeat url('img/fyp.jpg'); background-size: cover;">
-                    <div class="featur-badges">SE-499 Final-Year Project</div>
-                    <iframe width="100%" height="100%" src="https://youtube.com/embed/i8i6sC14x1c">
-                    </iframe>
-                  </div>
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>Signature Verification</h5>
-                      <p>Signature verification is the process of using machine learning methods to
-                        validate the authenticity of an individual's signature. Signatures can be of one
-                        of
-                        the two types; on-line or off-line, and this project focuses on off-line
-                        signature
-                        verification. Aim of this project is to design an algorithm which can
-                        distinguish
-                        between genuine and forged signatures using writer independent features, and to
-                        develop a system using this algorithm which can be used to verify signatures on
-                        bank cheques. We intend to build a complete end-to-end hardware/software system
-                        which can be used to acquire signatures from bank cheques, perform signature
-                        verification, and display the results. For this purpose, various deep learning
-                        techniques were developed and tested on standard datasets for off-line signature
-                        verification, as well as on a dataset collected by ourselves.</p>
-                      <span><i class="fas fa-award"></i> Nominated for Gold Medal</span>
-                      <div class="rating">
-                        <a href="?outline=se499">Project Report</a>
-                      </div>
-                    </div>
-                    <div class="seller-info">
-                      <div class="seller-pic set-bg"></div>
-                      <h6>Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en" target="_blank"><span>Dr.
-                            Muhammad Imran Malik</span></a></h6>
-                      <h6>Co-Advisor: <a href="https://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank"><span>Dr.
-                            Muhammad Shahzad</span></a></h6>
-                      <br>
-                    </div>
-                  </div>
-                </div>
+      <section>
+        <!-- FYP -->
+        <div class="mdc-card" style="margin: 16px;">
+          <div class="section-heading">
+            <h4>SE-499 Final-Year Project</h4>
+            <h3>Automatic Signature Verification</h3>
+            <span><i class="fas fa-award"></i> Nominated for Gold Medal</span>
+          </div>
+          <div class="mdc-card__primary-action">
+            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url('img/fyp.jpg')">
+              <div class="mdc-card__media-content">
+                <iframe width="100%" height="100%" src="https://youtube.com/embed/i8i6sC14x1c">
+                </iframe>
               </div>
+            </div>
+            <div style="padding: 8px;">
+              <p>Signature verification is the process of using machine learning methods to
+                validate the authenticity of an individual's signature. Signatures can be of one
+                of the two types; on-line or off-line, and this project focuses on off-line
+                signature verification. Aim of this project is to design an algorithm which can
+                distinguish between genuine and forged signatures using writer independent features,
+                and to develop a system using this algorithm which can be used to verify signatures on
+                bank cheques. We intend to build a complete end-to-end hardware/software system
+                which can be used to acquire signatures from bank cheques, perform signature
+                verification, and display the results. For this purpose, various deep learning
+                techniques were developed and tested on standard datasets for off-line signature
+                verification, as well as on a dataset collected by ourselves.</p>
+              <ul>
+                <span class="mdc-list-item__text">Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ&hl=en" target="_blank">Dr.
+                    Muhammad Imran Malik</a></span><br>
+                <span class="mdc-list-item__text">Co-Advisor: <a href="https://seecs.nust.edu.pk/faculty/muhammadshahzad.html" target="_blank">Dr.
+                    Muhammad Shahzad</a></span>
+              </ul>
+            </div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-icons">
+              <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.location='?outline=se499'">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">See Final Report</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-              <!-- CS Courses -->
-              <div id="cs" class="col-sm-12 sec-title text-center">
-                <span>Computer Science</span>
-              </div>
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <!-- CS Courses -->
+            <div id="cs" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Computer Science</h3>
 
-              <!-- CS-100 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-100<br>Fundamentals of ICT</h5>
-                      <span><i class="fas fa-school"></i> 2+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs100">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-110 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-110 Fundamentals of Computer Programming</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs110">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-212 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-212 Object-Oriented Programming</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs212">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-220 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-220<br>Database Systems</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=cs220">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-250 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-250 Data Structures and Algorithms</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs250">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-251 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-251 Design and Analysis of Algorithms</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs251">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-260 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-260 Human-Computer Interaction</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs260">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-330 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-330<br>Operating Systems</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs330">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-332 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-332<br>Distributed Computing</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> B</span>
-                      <div class="rating">
-                        <a href="?outline=cs332">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-344 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-344<br>Web Engineering</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs344">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-361 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-361<br>Computer Graphics</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs361">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-471 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-471<br>Machine Learning</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=cs471">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- CS-474 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CS-474<br>Computer Vision</h5>
-                      <span><i class="fas fa-school"></i> 2+1</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=cs474">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- CS-100 -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=cs100">
+                    <span class="mdc-list-item__primary-text">CS-100 Fundamentals of ICT</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
+                <!-- CS-110 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs110">
+                    <span class="mdc-list-item__primary-text">CS-110 Fundamentals of Computer Programming</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
-              <!-- SE Courses -->
-              <div id="se" class="col-sm-12 sec-title text-center">
-                <span>Software Engineering</span>
-              </div>
-              <!-- SE-200 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-200<br>Software Engineering</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=se200">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SE-210 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-210 Software Design and Architecture</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=se210">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SE-311 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-311 Software Requirements Engineering</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=se311">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SE-312 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-312<br>Software Construction</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=se312">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SE-320 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-320<br>Formal Methods</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=se320">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SE-321 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-321 Software Quality Engineering</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=se321">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SE-430 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>SE-430 Software Project Management</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=se430">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- CS-212 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs212">
+                    <span class="mdc-list-item__primary-text">CS-212 Object-Oriented Programming</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
+                <!-- CS-220 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs220">
+                    <span class="mdc-list-item__primary-text">CS-220 Database Systems</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B)</small></b></span>
+                  </a>
+                </li>
 
-              <!-- MATH Courses -->
-              <div id="math" class="col-sm-12 sec-title text-center">
-                <span>Mathematics</span>
-              </div>
-              <!-- MATH-111 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MATH-111<br>Calculus I</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=math111">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MATH-112 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MATH-112<br>Calculus II</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=math112">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MATH-161 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MATH-161<br>Discrete Mathematics</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=math161">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MATH-222 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MATH-222<br>Linear Algebra</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=math222">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MATH-351 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MATH-351<br>Numerical Methods</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=math351">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MATH-361 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MATH-361<br>Probability and Statistics</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=math361">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- CS-250 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs250">
+                    <span class="mdc-list-item__primary-text">CS-250 Data Structures and Algorithms</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
+                <!-- CS-251 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs251">
+                    <span class="mdc-list-item__primary-text">CS-251 Design and Analysis of Algorithms</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
-              <!-- EE Courses -->
-              <div id="ee" class="col-sm-12 sec-title text-center">
-                <span>Electrical Engineering</span>
-              </div>
-              <!-- EE-212 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>EE-212<br>Basic Electronics</h5>
-                      <span><i class="fas fa-school"></i> 2+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=ee212">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- EE-221 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>EE-221<br>Digital Logic Design</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=ee221">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- EE-321 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>EE-321 Computer Architecture & Organisation</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=ee321">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- EE-353 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>EE-353<br>Computer Networks</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=ee353">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- CS-260 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs260">
+                    <span class="mdc-list-item__primary-text">CS-260 Human-Computer Interaction</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
+                <!-- CS-330 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs330">
+                    <span class="mdc-list-item__primary-text">CS-330 Operating Systems</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
 
-              <!-- Misc Courses -->
-              <div id="misc" class="col-sm-12 sec-title text-center">
-                <span>Miscellaneous</span>
-              </div>
-              <!-- CSL-401 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>CSL-401<br>Community Service</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> Qualified</span>
-                      <div class="rating">
-                        <a href="?outline=csl401">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ECO-130 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>ECO-130<br>Engineering Economics</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> C+</span>
-                      <div class="rating">
-                        <a href="?outline=eco130">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- FIN-100 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>FIN-100<br>Principles of Accounting</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=fin100">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HRM-241 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>HRM-241<br>Organisational Behaviour</h5>
-                      <span><i class="fas fa-school"></i> 3+0</span>
-                      <span><i class="fas fa-award"></i> B</span>
-                      <div class="rating">
-                        <a href="?outline=hrm241">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HU-101 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>HU-101<br>Islamic Studies</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=hu101">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HU-107 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>HU-107<br>Pakistan Studies</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=hu107">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HU-109 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>HU-109<br>Communication Skills</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=hu109">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HU-212 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>HU-212 Technical & Business Writing</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=hu212">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- HU-222 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>HU-222<br>Professional Ethics</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=hu222">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MGT-164 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MGT-164 Introduction to Management</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=mgt164">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- MGT-271 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>MGT-271<br>Entrepreneurship</h5>
-                      <span><i class="fas fa-school"></i> 2+0</span>
-                      <span><i class="fas fa-award"></i> B+</span>
-                      <div class="rating">
-                        <a href="?outline=mgt271">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PHY-101 -->
-              <div class="col-md-4 col-sm-6">
-                <div class="course-item">
-                  <div class="mdc-card course-content">
-                    <div class="cc-text">
-                      <h5>PHY-101<br>Applied Physics</h5>
-                      <span><i class="fas fa-school"></i> 3+1</span>
-                      <span><i class="fas fa-award"></i> A</span>
-                      <div class="rating">
-                        <a href="?outline=phy101">more...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- CS-332 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs332">
+                    <span class="mdc-list-item__primary-text">CS-332 Distributed Computing</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- CS-344 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs344">
+                    <span class="mdc-list-item__primary-text">CS-344 Web Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- CS-361 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs361">
+                    <span class="mdc-list-item__primary-text">CS-361 Computer Graphics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- CS-471 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs471">
+                    <span class="mdc-list-item__primary-text">CS-471 Machine Learning</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- CS-474 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=cs474">
+                    <span class="mdc-list-item__primary-text">CS-474 Computer Vision</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- SE Courses -->
+            <div id="se" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Software Engineering</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- SE-200 -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=se200">
+                    <span class="mdc-list-item__primary-text">SE-200 Software Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SE-210 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=se210">
+                    <span class="mdc-list-item__primary-text">SE-210 Software Design and Architecture</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SE-311 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=se311">
+                    <span class="mdc-list-item__primary-text">SE-311 Software Requirements Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SE-312 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=se312">
+                    <span class="mdc-list-item__primary-text">SE-312 Software Construction</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SE-320 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=se320">
+                    <span class="mdc-list-item__primary-text">SE-320 Formal Methods</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SE-321 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=se321">
+                    <span class="mdc-list-item__primary-text">SE-321 Software Quality Engineering</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- SE-430 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=se430">
+                    <span class="mdc-list-item__primary-text">SE-430 Software Project Management</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- MATH Courses -->
+            <div id="math" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Mathematics</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- MATH-111 -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=math111">
+                    <span class="mdc-list-item__primary-text">MATH-111 Calculus I</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MATH-112 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=math112">
+                    <span class="mdc-list-item__primary-text">MATH-112 Calculus II</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MATH-161 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=math161">
+                    <span class="mdc-list-item__primary-text">MATH-161 Discrete Mathematics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MATH-222 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=math222">
+                    <span class="mdc-list-item__primary-text">MATH-222 Linear Algebra</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MATH-351 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=math351">
+                    <span class="mdc-list-item__primary-text">MATH-351 Numerical Methods</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MATH-361 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=math361">
+                    <span class="mdc-list-item__primary-text">MATH-361 Probability and Statistics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- EE Courses -->
+            <div id="ee" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Electrical Engineering</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- EE-212 -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=ee212">
+                    <span class="mdc-list-item__primary-text">EE-212 Basic Electronics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- EE-221 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ee221">
+                    <span class="mdc-list-item__primary-text">EE-221 Digital Logic Design</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- EE-321 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ee321">
+                    <span class="mdc-list-item__primary-text">EE-321 Computer Architecture & Organisation</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- EE-353 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=ee353">
+                    <span class="mdc-list-item__primary-text">EE-353 Computer Networks</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Misc Courses -->
+            <div id="misc" class="mdc-layout-grid__cell mdc-card">
+              <h3 class="section-heading">Miscellaneous</h3>
+
+              <ul class="mdc-list mdc-list--two-line">
+                <!-- CSL-401 -->
+                <li class="mdc-list-item" tabindex="0">
+                  <a class="mdc-list-item__text" href="?outline=csl401">
+                    <span class="mdc-list-item__primary-text">CSL-401 Community Service</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: Qualified)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- ECO-130 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=eco130">
+                    <span class="mdc-list-item__primary-text">ECO-130 Engineering Economics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: C+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- FIN-100 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=fin100">
+                    <span class="mdc-list-item__primary-text">FIN-100 Principles of Accounting</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- HRL-241 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hrm241">
+                    <span class="mdc-list-item__primary-text">HRM-241 Organisational Behaviour</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- HU-101 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hu101">
+                    <span class="mdc-list-item__primary-text">HU-101 Islamic Studies</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- HU-107 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hu107">
+                    <span class="mdc-list-item__primary-text">HU-107 Pakistan Studies</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- HU-109 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hu109">
+                    <span class="mdc-list-item__primary-text">HU-109 Communication Skills</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- HU-212 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hu212">
+                    <span class="mdc-list-item__primary-text">HU-212 Technical & Business Writing</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- HU-222 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=hu222">
+                    <span class="mdc-list-item__primary-text">HU-222 Professional Ethics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MGT-164 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=mgt164">
+                    <span class="mdc-list-item__primary-text">MGT-164 Introduction to Management</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- MGT-271 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=mgt271">
+                    <span class="mdc-list-item__primary-text">MGT-271 Entrepreneurship</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: B+)</small></b></span>
+                  </a>
+                </li>
+
+                <!-- PHY-101 -->
+                <li class="mdc-list-item">
+                  <a class="mdc-list-item__text" href="?outline=phy101">
+                    <span class="mdc-list-item__primary-text">PHY-101 Applied Physics</span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: A)</small></b></span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <!-- Courses section end -->
     </main>
   </div>
 

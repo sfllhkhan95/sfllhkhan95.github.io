@@ -44,7 +44,6 @@
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
   <link href="/css/style.css" rel="stylesheet">
-  <link href="/css/resume.css" rel="stylesheet">
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -53,6 +52,121 @@
   <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
   <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+
+  <style>
+    .social-icon {
+      display: inline-block;
+    }
+
+    .social-icon:after {
+      content: '';
+      clear: both;
+    }
+
+    .social-icon>li {
+      float: left;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: 4px;
+      padding: 4px;
+    }
+
+    .social-icon>li>* {
+      width: 18px;
+      height: 18px;
+      padding: 0px;
+    }
+
+    .section-title {
+      opacity: 0.75;
+      color: var(--textColorSecondary);
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    section.mdc-card {
+      padding: 8px;
+    }
+
+    section.mdc-card h4 {
+      font-weight: bold;
+    }
+
+    section.mdc-card blockquote {
+      color: var(--textColorSecondary);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .progress-item {
+      position: relative;
+    }
+
+    .progress-item .progress-title {
+      font-size: 15px;
+      font-weight: 400;
+      display: inline-block;
+      margin-bottom: 5px
+    }
+
+    .progress-item .progress {
+      height: 4px;
+      box-shadow: none;
+      border-radius: 5px
+    }
+
+    .progress-item .progress-bar {
+      background-color: #854fee;
+      box-shadow: none;
+      text-align: right
+    }
+
+    .progress-item .progress-percent {
+      font-size: 10px;
+      background-color: #313131;
+      position: absolute;
+      top: 5px;
+      padding: 0 8px;
+      border-radius: 3px
+    }
+
+    .progress-item .progress-percent::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      border-top: 6px solid #313131;
+      border-right: 8px solid transparent
+    }
+
+    .bio img {
+      width: 160px;
+      height: 160px;
+      border-radius: 4px;
+      margin-bottom: 4px;
+      margin-top: 36px;
+    }
+
+    @media (max-width: 768px) {
+      .bio {
+        background: var(--colorAccent);
+        color: var(--colorPrimaryLight);
+        text-align: center;
+        padding: 16px;
+      }
+
+      .bio img {
+        border-radius: 80px;
+        margin-top: 0px;
+        margin-bottom: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -108,559 +222,533 @@
 
     <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
-      <section class="portfolio_area section-wrapper">
-        <div class="banner_inner">
-          <article class="row">
-            <section class="col-md-3 section-contact">
-              <div class="profile-img" style="margin-bottom: 32px;">
-                <img src="/img/me.webp" class="mdc-card img-responsive" alt="" style="width: 164px; height: 164px;" />
-              </div>
-
-              <div class="content">
+      <div class="row">
+        <div class="col-md-3">
+          <section>
+            <div class="bio">
+              <img src="/img/me.webp" class="img-responsive" alt="" />
+              <small>
                 <h3>Muhammad Saif Ullah Khan</h3>
-                <h4 class="lead">Professional Software Developer</h4>
+              </small>
+              <h4>Professional Software Developer</h4>
+            </div>
+            <br>
+            <div>
+              <p>
+                Versatile software developer versed in machine learning, mobile development,
+                game design and computer graphics. Self-directed leader who fosters a collaborative
+                and supportive team environment. Dedicated, hard-working and open to new experiences.
+              </p>
+              <p>
+                I'm looking for a career which helps me grow intellectually and gives me a
+                chance to hone my skills.
+              </p>
+            </div>
 
-                <div class="about-text" style="margin-top: 24px;">
-                  <p>
-                    Versatile software developer versed in machine learning, mobile development,
-                    game design and computer graphics. Self-directed leader who fosters a collaborative
-                    and supportive team environment. Dedicated, hard-working and open to new experiences.
-                  </p>
+            <!-- Social Icons -->
+            <ul class="social-icon">
+              <li class="mdc-chip">
+                <a target="_blank" href="https://linkedin.com/in/saifkhichi96">
+                  <span class="fab fa-linkedin" aria-hidden="true"></span>
+                </a>
+              </li>
+              <li class="mdc-chip">
+                <a target="_blank" href="https://github.com/saifkhichi96">
+                  <span class="fab fa-github" aria-hidden="true"></span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-                  <p>
-                    I'm looking for a career which helps me grow intellectually and gives me a
-                    chance to hone my skills.
-                  </p>
-                </div>
+          <!-- Languages -->
+          <h4 class="section-title">Languages</h4>
+          <section id="languages">
+            <ul>
+              <li>
+                English <small>(Advanced - C1)</small></span>
+              </li>
+              <li>
+                German <small>(Beginner - A1)</small></span>
+              </li>
+              <li>
+                Urdu <small>(Native)</small></span>
+              </li>
+            </ul>
+          </section>
 
-                <!-- Social Icons -->
-                <ul class="social-icon">
-                  <li>
-                    <a target="_blank" href="https://linkedin.com/in/saifkhichi96">
-                      <span class="fab fa-linkedin" aria-hidden="true"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="https://github.com/saifkhichi96">
-                      <span class="fab fa-github" aria-hidden="true"></span>
-                    </a>
-                  </li>
-                </ul>
-
-                <!-- Languages -->
-                <div id="languages">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Languages</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div style="margin-bottom: 8px;">
-                        <strong>English</strong><br>
-                        <small>Proficiency: <strong>Advanced (C1)</strong></small>
-                      </div>
-                      <div>
-                        <strong>German</strong><br>
-                        <small>Proficiency: <strong>Beginner (A1)</strong></small>
-                      </div>
-                      <div>
-                        <strong>Urdu</strong><br>
-                        <small>Proficiency: <strong>Native</strong></small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Contact -->
-                <div id="contact">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Contact</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <address>
-                        <strong>Address</strong><br>
-                        Schlehweg 22<br>
-                        67661 Kaiserslautern, DE
-                      </address>
-
-                      <address>
-                        <strong>Email</strong><br>
-                        <a href="mailto:saifkhichi96@gmail.com">saifkhichi96@gmail.com</a>
-                      </address>
-
-                      <address>
-                        <strong>Mobile Number</strong><br>
-                        <a href="https://wa.me/491727223577">+49 172 7223577</a>
-                      </address>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="col-md-9">
-              <!-- Skills and Abilities-->
-              <div id="skills" class="expertise-wrapper">
-                <div class="container-fluid">
-                  <!-- Section Heading-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Expertise</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Technical Skills -->
-                  <div class="row">
-                    <!-- Languages -->
-                    <div class="col-md-6">
-                      <small class="rating">Programming Languages</small>
-                      <div class="mdc-chip-set" role="grid">
-                        <li class="mdc-chip active filter-all" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="0" class="mdc-chip__text">C</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip active filter-all" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="0" class="mdc-chip__text">C++</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Java</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="0" class="mdc-chip__text">JavaScript</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Kotlin</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">MATLAB</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">PHP</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Python</span>
-                          </span>
-                        </li>
-                      </div>
-
-                      <small class="rating">Markdown/Styling Languages</small>
-                      <div class="mdc-chip-set" role="grid">
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="0" class="mdc-chip__text">CSS</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="0" class="mdc-chip__text">HTML</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="0" class="mdc-chip__text">JSON</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Markdown</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">XML</span>
-                          </span>
-                        </li>
-                      </div>
-
-                      <small class="rating">Databases</small>
-                      <div class="mdc-chip-set" role="grid">
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">MySQL</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">SQLite</span>
-                          </span>
-                        </li>
-                      </div>
-                    </div>
-
-                    <!--Tools-->
-                    <div class="col-md-6">
-                      <small class="rating">Prototyping and Architecture</small>
-                      <div class="mdc-chip-set" role="grid">
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Balsamiq</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">InVision</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Visual Paradigm</span>
-                          </span>
-                        </li>
-                      </div>
-
-                      <small class="rating">IDEs and Game Engines</small>
-                      <div class="mdc-chip-set" role="grid">
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Eclipse</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">JetBrains IDEs</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Visual Studio</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Unity 3D</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">XCode</span>
-                          </span>
-                        </li>
-                      </div>
-
-                      <small class="rating">Other Tools</small>
-                      <div class="mdc-chip-set" role="grid">
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Android NDK</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Firebase Services</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Mapbox SDK</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">OpenCV</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">PyTorch</span>
-                          </span>
-                        </li>
-                        <li class="mdc-chip" role="row" data-filter=".video">
-                          <span role="gridcell">
-                            <span role="button" tabindex="-1" class="mdc-chip__text">Tensorflow</span>
-                          </span>
-                        </li>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Abilities -->
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="expertise-item">
-                        <p>
-                          Sound knowledge of <strong>object-oriented concepts</strong>, basic
-                          <strong>design
-                            patterns</strong> and <strong>good programming
-                            practices</strong>.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="expertise-item">
-                        <p>
-                          Ability to <strong>work independently</strong> as well as <strong>with
-                            others</strong>. Experienced in <strong>leading teams</strong> and
-                          <strong>managing projects</strong>.
-                        </p>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <!-- Featured Skills -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="progress-wrapper">
-                        <!-- Android Developmen: 91% -->
-                        <div class="progress-item">
-                          <span class="progress-title">Android Development</span>
-                          <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%">
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Machine Learning: 74% -->
-                        <div class="progress-item">
-                          <span class="progress-title">Machine Learning</span>
-                          <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%">
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Communication Skills: 67% -->
-                        <div class="progress-item">
-                          <span class="progress-title">Communication</span>
-                          <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;">
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Project Management: 83% -->
-                        <div class="progress-item">
-                          <span class="progress-title">Project Management</span>
-                          <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width: 83%;">
-                            </div>
-                          </div>
-                          <!-- .progress -->
-                        </div>
-
-                      </div>
-                      <!-- /.progress-wrapper -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Education-->
-              <div id="education" class="section-education">
-                <div class="container-fluid">
-                  <!-- Section Heading-->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Education</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- MSCS -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="content-item">
-                        <small>2019 - 2021 (expected)</small>
-                        <h3>Master of Computer Science</h3>
-                        <h4>Technische Universität Kaiserslautern (TUKL)</h4>
-                        <p>Kaiserslautern, Germany</p>
-                        <ul>
-                          <li><a href="#">Specialisations</a></li>
-                          <li>- Intelligent Systems (Major)</li>
-                          <li>- Software Engineering</li>
-                          <br>
-                          <li><a href="mscs/">See courses</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- BESE -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="content-item">
-                        <small>2014 - 2018</small>
-                        <h3>Bachelor of Software Engineering</h3>
-                        <h4>National University of Sciences and Technology (NUST)</h4>
-                        <p>Islamabad, Pakistan</p>
-                        <ul>
-                          <li>CGPA 3.78</li>
-                          <li><a href="bese/">See courses</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Experience -->
-              <div id="experience" class="section-experience">
-                <div class="container-fluid">
-                  <!-- Section Heading -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Experience</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <!-- AISAT -->
-                      <div class="content-item">
-                        <small>09/2018 - 02/2019</small>
-                        <h3>Software Developer / Graphics Designer</h3>
-                        <h4>Active Institute of Science, Arts &amp; Technology (AISAT)</h4>
-                      </div>
-
-                      <!-- NEC Manager -->
-                      <div class="content-item">
-                        <small>10/2016 - 04/2017</small>
-                        <h3>Manager Application Development</h3>
-                        <h4>NUST Entreprenuers Club (NEC)</h4>
-                        <br>
-                        <p>NEC is a student society at National University of Sciences and
-                          Technology
-                          (NUST). As manager, I led a team of dedicated developers building a
-                          social
-                          networking system. During my time at this position, first functional
-                          prototype of the system was sucessfully delivered.
-                        </p>
-                      </div>
-
-                      <!-- NIMUN '17 -->
-                      <div class="content-item">
-                        <small>10/2016 - 02/2017</small>
-                        <h3>Android Developer</h3>
-                        <h4>NUST International Model United Nations (NIMUN) 2017</h4>
-                        <br>
-                        <p>I was a member of the student organising committe for NIMUN '17, an
-                          international event held at NUST. As part of the IT team, I was
-                          responsible for developing the official mobile app for the event to
-                          be used by the participants.
-                        </p>
-                      </div>
-
-                      <!-- Beijing Forum '16 -->
-                      <div class="content-item">
-                        <small>04/2016 - 05/2016</small>
-                        <h3>Member IT Team</h3>
-                        <h4>Beijing Forum Islamabad 2016</h4>
-                        <br>
-                        <p>I was a member of the student organising committe for Beijing Forum
-                          '16,
-                          a global conference whose first international chapter was hosted in
-                          Islamabad. As part of the IT team, I was responsible for developing
-                          the
-                          official mobile app for the event to be used by the attendees.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accomplishments -->
-              <div id="achievements">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Accomplishments</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <ol class="col-md-12">
-                      <li>Final-Year Project of BESE, titled "Signature Verification" was
-                        nominated for
-                        gold medal.
-                      </li>
-
-                      <li>First Prize Winner of <em>NUST Pakathon 2015</em> along with my team Dr.
-                        Phoenix
-                      </li>
-
-                      <li>Successfully led a team to participate in <em>LUMS PsiFi 2014</em>.</li>
-
-                      <li>Several apps and games published on Google Play Store.</li>
-
-                      <li>Developed an object-oriented abstraction of OpenGL/GLUT in C++ language
-                        for
-                        builing GUI applications on Windows easily. Multiple Java APIs published
-                        on JCenter.
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Interests -->
-              <div id="interests" class="section-interest">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="section-title">
-                        <h4>Interests</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- .row -->
-
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="content-item">
-                        <h3>Books</h3>
-                        <p>As an avid reader, I have a huge collection of books in my home
-                          library. I read fiction as well as non-fiction with topics ranging
-                          from history, politics, and theology to science, technology and
-                          current affairs.
-                        </p>
-                      </div>
-
-                      <div class="content-item">
-                        <h3>Art</h3>
-                        <p>Occasional writer and artist. I sometimes write short stories and
-                          poetry, and indulge in oil painting and pencil sketching.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- .row -->
-
-                </div>
-              </div>
-            </section>
-          </article>
+          <!-- Contact -->
+          <h4 class="section-title">Contact</h4>
+          <section id="contact">
+            <ul>
+              <li>
+                &nbsp;<i class="fas fa-map-pin"></i>
+                &nbsp; Schlehweg 22 67661<br>
+                Kaiserslautern, DE
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:saifkhichi96@gmail.com">&nbsp;saifkhichi96@gmail.com</a>
+              </li>
+              <li>
+                &nbsp;<i class="fas fa-mobile"></i>
+                <a href="https://wa.me/491727223577">&nbsp;+49 172 7223577</a>
+              </li>
+            </ul>
+          </section>
         </div>
-      </section>
+
+        <div class="col-md-9">
+          <!-- Skills and Abilities-->
+          <h4 class="section-title">Expertise</h4>
+          <section id="skills" class="mdc-card">
+            <!-- Featured Skills -->
+            <div class="container">
+              <!-- Android Developmen: 91% -->
+              <div class="progress-item">
+                <span class="progress-title">Android Development</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Machine Learning: 74% -->
+              <div class="progress-item">
+                <span class="progress-title">Machine Learning</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Communication Skills: 67% -->
+              <div class="progress-item">
+                <span class="progress-title">Communication</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Management: 83% -->
+              <div class="progress-item">
+                <span class="progress-title">Project Management</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" style="width: 83%;">
+                  </div>
+                </div>
+                <!-- .progress -->
+              </div>
+            </div>
+
+            <div class="mdc-layout-grid">
+              <!-- Technical Skills -->
+              <div class="mdc-layout-grid__inner">
+                <!-- Languages -->
+                <div class="mdc-layout-grid__cell">
+                  <h5><small>Programming Languages</small></h5>
+                  <div class="mdc-chip-set" role="grid">
+                    <li class="mdc-chip active filter-all" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="0" class="mdc-chip__text">C</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip active filter-all" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="0" class="mdc-chip__text">C++</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Java</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="0" class="mdc-chip__text">JavaScript</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Kotlin</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">MATLAB</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">PHP</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Python</span>
+                      </span>
+                    </li>
+                  </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                  <h5><small>Markdown/Styling Languages</small></h5>
+                  <div class="mdc-layout-grid__cell mdc-chip-set" role="grid">
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="0" class="mdc-chip__text">CSS</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="0" class="mdc-chip__text">HTML</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="0" class="mdc-chip__text">JSON</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Markdown</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">XML</span>
+                      </span>
+                    </li>
+                  </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                  <h5><small>Databases</small></h5>
+                  <div class="mdc-layout-grid__cell mdc-chip-set" role="grid">
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">MySQL</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">SQLite</span>
+                      </span>
+                    </li>
+                  </div>
+                </div>
+
+                <!--Tools-->
+                <div class="mdc-layout-grid__cell">
+                  <h5><small>Prototyping and Architecture</small></h5>
+                  <div class="mdc-chip-set" role="grid">
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Balsamiq</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">InVision</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Visual Paradigm</span>
+                      </span>
+                    </li>
+                  </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                  <h5><small>IDEs and Game Engines</small></h5>
+                  <div class="mdc-chip-set" role="grid">
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Eclipse</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">JetBrains IDEs</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Visual Studio</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Unity 3D</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">XCode</span>
+                      </span>
+                    </li>
+                  </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                  <h5><small>Other Tools</small></h5>
+                  <div class="mdc-chip-set" role="grid">
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Android NDK</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Firebase Services</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Mapbox SDK</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">OpenCV</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">PyTorch</span>
+                      </span>
+                    </li>
+                    <li class="mdc-chip" role="row" data-filter=".video">
+                      <span role="gridcell">
+                        <span role="button" tabindex="-1" class="mdc-chip__text">Tensorflow</span>
+                      </span>
+                    </li>
+                  </div>
+                </div>
+
+                <!-- Abilities -->
+                <div class="mdc-layout-grid__cell">
+                  <div class="expertise-item">
+                    <p>
+                      Sound knowledge of <strong>object-oriented concepts</strong>, basic
+                      <strong>design
+                        patterns</strong> and <strong>good programming
+                        practices</strong>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell">
+                  <div class="expertise-item">
+                    <p>
+                      Ability to <strong>work independently</strong> as well as <strong>with
+                        others</strong>. Experienced in <strong>leading teams</strong> and
+                      <strong>managing projects</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education-->
+          <h4 class="section-title">Education</h4>
+          <section id="education" class="mdc-card">
+            <ul>
+              <!-- MSCS -->
+              <li>
+                <div class="mdc-card-content">
+                  <small>2019 - 2021 (expected)</small>
+                  <h4>Master of Computer Science</h4>
+                  <h6>Technische Universität Kaiserslautern (TUKL)</h6>
+                  <p><i>Kaiserslautern, Germany</i></p>
+
+                  <u>Specialisations</u>
+                  <ul class="mdc-list">
+                    <div class="mdc-list-item__text">- Intelligent Systems</div>
+                    <div class="mdc-list-item__text">- Visualization and Scientific Computing</div>
+                  </ul>
+                </div>
+                <div class="mdc-card__actions">
+                  <div class="mdc-card__action-buttons">
+                    <span><i class="fas fa-spinner"></i> In-Progress</span>
+                  </div>
+                  <div class="mdc-card__action-icons">
+                    <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.location='mscs/'">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">See Courses</span>
+                    </button>
+                  </div>
+                </div>
+                <hr>
+              </li>
+
+              <!-- BESE -->
+              <li>
+                <div class="mdc-card-content">
+                  <small>2014 - 2018</small>
+                  <h4>Bachelor of Software Engineering</h4>
+                  <h6>National University of Sciences and Technology (NUST)</h6>
+                  <i>Islamabad, Pakistan</i>
+                </div>
+                <div class="mdc-card__actions">
+                  <div class="mdc-card__action-buttons">
+                    <span><i class="fas fa-user-graduate"></i> 3.78/4</span>
+                  </div>
+                  <div class="mdc-card__action-icons">
+                    <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.location='bese/'">
+                      <div class="mdc-button__ripple"></div>
+                      <span class="mdc-button__label">See Courses</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Experience -->
+          <h4 class="section-title">Experience</h4>
+          <section id="experience" class="mdc-card">
+            <ul>
+              <!-- AISAT -->
+              <li>
+                <div class="mdc-card-content">
+                  <small>09/2018 - 02/2019</small>
+                  <h4>Software Developer / Graphics Designer</h4>
+                  <h6>Active Institute of Science, Arts &amp; Technology (AISAT)</h6>
+                </div>
+                <hr>
+              </li>
+
+              <!-- NEC Manager -->
+              <li>
+                <div class="mdc-card-content">
+                  <small>10/2016 - 04/2017</small>
+                  <h4>Manager Application Development</h4>
+                  <h6>NUST Entreprenuers Club (NEC)</h6>
+                  <blockquote>NEC is a student society at National University of Sciences and
+                    Technology (NUST). As manager, I led a team of dedicated developers building a
+                    social networking system. During my time at this position, first functional
+                    prototype of the system was sucessfully delivered.
+                  </blockquote>
+                </div>
+                <hr>
+              </li>
+
+              <!-- NIMUN '17 -->
+              <li>
+                <div class="mdc-card-content">
+                  <small>10/2016 - 02/2017</small>
+                  <h4>Android Developer</h4>
+                  <h6>NUST International Model United Nations (NIMUN) 2017</h6>
+                  <blockquote>I was a member of the student organising committe for NIMUN '17, an
+                    international event held at NUST. As part of the IT team, I was
+                    responsible for developing the official mobile app for the event to
+                    be used by the participants.
+                  </blockquote>
+                </div>
+                <hr>
+              </li>
+
+              <!-- Beijing Forum '16 -->
+              <li>
+                <div class="mdc-card-content">
+                  <small>04/2016 - 05/2016</small>
+                  <h4>Member IT Team</h4>
+                  <h6>Beijing Forum Islamabad 2016</h6>
+                  <blockquote>I was a member of the student organising committe for Beijing Forum
+                    '16,
+                    a global conference whose first international chapter was hosted in
+                    Islamabad. As part of the IT team, I was responsible for developing
+                    the
+                    official mobile app for the event to be used by the attendees.
+                  </blockquote>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Accomplishments -->
+          <h4 class="section-title">Achievements &amp; Projects</h4>
+          <section id="achievements" class="mdc-card">
+            <ul>
+              <li>The final project of my Bachelor degree, called <a href="#">Signature Verification</a> was
+                nominated for gold medal in our department.
+                <hr>
+              </li>
+
+              <li>Wrote an object-oriented binding for the OpenGL/GLUT in C++ language, called <a href="#">SmartGL</a>,
+                to easily create GUI apps on the Windows platform.
+                <hr>
+              </li>
+
+              <li>Multiple APIs and packages, written in Java, Kotlin and Python langauges, published on <a href="#">JCenter</a> and <a href="#">PyPI</a>.
+                <hr>
+              </li>
+
+              <li>Several well-performing games and applications published on <a href="#">Google Play Store</a>
+                <hr>
+              </li>
+
+              <li>Won the first prize, along with my team, in a local hackathon <a href="#">NUST Pakathon 2015</a>.
+                <hr>
+              </li>
+
+              <li>Successfully led a team to participate in <a href="#">LUMS PsiFi 2014</a>.
+                <hr>
+              </li>
+            </ul>
+            <div class="mdc-card__actions">
+              <div class="mdc-card__action-icons">
+                <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.location='/projects'">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">See all projects</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Interests -->
+          <h4 class="section-title">Interests</h4>
+          <section id="interests" class="mdc-card">
+            <ul>
+              <li>
+                <div class="mdc-card-content">
+                  <h4>Reading</h4>
+                  <blockquote>As an avid reader, I have a large collection of books in my home
+                    library. I read some fiction, but mostly non-fiction with topics ranging
+                    from history, politics, and theology to science, technology and
+                    current affairs.
+                  </blockquote>
+                </div>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.location='https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan'">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">See my reading list</span>
+                  </button>
+                </div>
+                <hr>
+              </li>
+
+              <li>
+                <div class="mdc-card-content">
+                  <h4>Art/Blogging</h4>
+                  <blockquote>Occasional writer and artist. I sometimes write short stories and
+                    poetry, and indulge in oil painting and pencil sketching.
+                  </blockquote>
+                </div>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="window.location='https://saifkhichisays.wordpress.com/'">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Visit my blog</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </main>
   </div>
 
