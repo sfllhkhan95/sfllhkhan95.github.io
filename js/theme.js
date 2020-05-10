@@ -29,11 +29,11 @@
     var data = '.all';
 
     // Navigation bar filterting
-    $('.bottom-navigation .nav-item span').on('click', function() {
-        $('.bottom-navigation .nav-item.active').removeClass('active');
-
-        var p = $(this).parent();
-        p.addClass('active');
+    const tabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+    $('.bottom-navigation .mdc-tab').on('click', function() {
+        var p = $(this);
+        var index = parseInt(p.attr('role'));
+        tabBar.activateTab(index);
 
         platform = p.attr('data-filter');
         $workGrid.isotope({
@@ -64,13 +64,13 @@
     var defaultData = $('.mdc-chip__text.active').parent().parent();
     defaultData.click();
 
-    var defaultPlatform = $('.bottom-navigation .nav-item.active span');
+    var defaultPlatform = $('.bottom-navigation .mdc-tab--active');
     if ($('.bottom-navigation').is(':visible')) {
         defaultPlatform.click();
     }
 
     $( window ).resize(function() {
-      var defaultPlatform = $('.bottom-navigation .nav-item.active span');
+      var defaultPlatform = $('.bottom-navigation .mdc-tab--active');
       if ($('.bottom-navigation').is(':visible')) {
           defaultPlatform.click();
       } else {
