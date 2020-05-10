@@ -1,6 +1,25 @@
 (function($) {
   'use strict';
 
+  $(function() {
+    /*----------------------------------------------------*/
+    /*  Init Firebase                                     */
+    /*----------------------------------------------------*/
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD-KEP7A1eVAzYaNDahzOUqeCLJaMK4lfk",
+      authDomain: "meet-saifkhichi96.firebaseapp.com",
+      databaseURL: "https://meet-saifkhichi96.firebaseio.com",
+      projectId: "meet-saifkhichi96",
+      storageBucket: "meet-saifkhichi96.appspot.com",
+      messagingSenderId: "727257041805",
+      appId: "1:727257041805:web:7049b6b5f6abba5ed4cbc4",
+      measurementId: "G-Z2P8EMEFG7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  });
   /*----------------------------------------------------*/
   /*  Isotope js                                        */
   /*----------------------------------------------------*/

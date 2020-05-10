@@ -46,6 +46,14 @@ body {
   background: transparent;
 }
 
+@media (max-width: 768px) {
+  .mdc-top-app-bar {
+    background: var(--colorPrimaryLight);
+    z-index: 999;
+    box-shadow: 1px 1px 5px var(--colorDisabled);
+  }
+}
+
 .app-drawer-layout {
   display: flex;
   flex: 1;
@@ -344,7 +352,7 @@ a:focus {
   position: absolute;
   top: -25px;
   left: -50px;
-  background: url(/img/experience-section-bg.webp) no-repeat;
+  background: url(/img/client-info-bg.webp) no-repeat;
   height: 175px;
   width: 175px;
 }
