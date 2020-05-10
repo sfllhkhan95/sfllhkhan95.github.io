@@ -1,0 +1,108 @@
+@import url("/css/colors.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: var(--textColorPrimary);
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--textColorPrimary);
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24pt;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+h1.subtitle, h2.subtitle, h3.subtitle,
+h4.subtitle, h5.subtitle, h6.subtitle {
+  color: var(--textColorSecondary);
+  opacity: 0.75;
+}
+
+b, strong, sub, sup {
+  color: var(--textColorPrimary);
+  font-weight: 400;
+  margin: 0;
+}
+
+a, a:hover, a:focus {
+  color: var(--colorAccent);
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0;
+}
+
+a.light, a.light:hover, a.light:focus {
+  font-weight: 300;
+  margin: 0;
+}
+
+small, i {
+  color: var(--textColorPrimary);
+  font-weight: 200;
+  margin: 0;
+}
+
+p {
+  color: var(--textColorPrimary);
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+blockquote {
+  color: var(--textColorSecondary);
+  font-weight: 200;
+  font-style: italic;
+  margin: 4px;
+  text-align: justify;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.title {
+  text-transform: capitalize;
+}
