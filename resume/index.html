@@ -12,9 +12,6 @@
   <!-- Page Title -->
   <title>Resumé | Saif's Portfolio</title>
 
-  <!-- Bootstrap v4.4 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
 
@@ -30,11 +27,6 @@
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-  <!-- Firebase SDK -->
-  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
 
   <style>
     .social-icon {
@@ -102,7 +94,7 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: #333">menu</button>
+        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: var(--textColorPrimary);">menu</button>
         <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.webp" /></a>
       </div>
     </div>
@@ -148,7 +140,7 @@
     <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <section>
             <div class="bio">
               <img src="/img/me.webp" class="img-responsive" alt="" />
@@ -226,7 +218,7 @@
           </section>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-8">
           <!-- Skills and Abilities-->
           <h4 class="subtitle">Expertise</h4>
           <section id="skills" class="mdc-card">
@@ -470,8 +462,8 @@
                     </button>
                   </div>
                 </div>
-                <hr>
               </li>
+              <hr class="mdc-list-divider">
 
               <!-- BESE -->
               <li>
@@ -507,8 +499,8 @@
                   <h4>Software Developer / Graphics Designer</h4>
                   <h6>Active Institute of Science, Arts &amp; Technology (AISAT)</h6>
                 </div>
-                <hr>
               </li>
+              <hr class="mdc-list-divider">
 
               <!-- NEC Manager -->
               <li>
@@ -522,8 +514,8 @@
                     prototype of the system was sucessfully delivered.
                   </blockquote>
                 </div>
-                <hr>
               </li>
+              <hr class="mdc-list-divider">
 
               <!-- NIMUN '17 -->
               <li>
@@ -537,8 +529,8 @@
                     be used by the participants.
                   </blockquote>
                 </div>
-                <hr>
               </li>
+              <hr class="mdc-list-divider">
 
               <!-- Beijing Forum '16 -->
               <li>
@@ -564,29 +556,25 @@
             <ul>
               <li>The final project of my Bachelor degree, called <a href="#">Signature Verification</a> was
                 nominated for gold medal in our department.
-                <hr>
               </li>
+              <hr class="mdc-list-divider">
 
               <li>Wrote an object-oriented binding for the OpenGL/GLUT in C++ language, called <a href="#">SmartGL</a>,
                 to easily create GUI apps on the Windows platform.
-                <hr>
               </li>
+              <hr class="mdc-list-divider">
 
-              <li>Multiple APIs and packages, written in Java, Kotlin and Python langauges, published on <a href="#">JCenter</a> and <a href="#">PyPI</a>.
-                <hr>
-              </li>
+              <li>Multiple APIs and packages, written in Java, Kotlin and Python langauges, published on <a href="#">JCenter</a> and <a href="#">PyPI</a>.</li>
+              <hr class="mdc-list-divider">
 
-              <li>Several well-performing games and applications published on <a href="#">Google Play Store</a>
-                <hr>
-              </li>
+              <li>Several well-performing games and applications published on <a href="#">Google Play Store</a></li>
+              <hr class="mdc-list-divider">
 
-              <li>Won the first prize, along with my team, in a local hackathon <a href="#">NUST Pakathon 2015</a>.
-                <hr>
-              </li>
+              <li>Won the first prize, along with my team, in a local hackathon <a href="#">NUST Pakathon 2015</a>.</li>
+              <hr class="mdc-list-divider">
 
-              <li>Successfully led a team to participate in <a href="#">LUMS PsiFi 2014</a>.
-                <hr>
-              </li>
+              <li>Successfully led a team to participate in <a href="#">LUMS PsiFi 2014</a>.</li>
+              <hr class="mdc-list-divider">
             </ul>
             <div class="mdc-card__actions">
               <div class="mdc-card__action-icons">
@@ -641,13 +629,19 @@
     </main>
   </div>
 
-  <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->
+  <!-- jQuery (must be above all other scripts) -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <!-- Other scripts -->
-  <script src="/js/theme.js"></script>
+  <!-- Firebase services -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+  <script src="/js/firebase.js"></script>
+
+  <!-- Other global scripts -->
+  <script src="/js/navigation.js"></script>
+
+  <!-- Page specific scripts -->
   <script>
     function downloadCV() {
       let file = 'assets/experience/cv.pdf'

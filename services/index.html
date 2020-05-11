@@ -18,9 +18,6 @@
   <!-- Page Title -->
   <title>Services | Saif's Portfolio</title>
 
-  <!-- Bootstrap v4.4 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
 
@@ -37,11 +34,6 @@
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-  <!-- Firebase SDK -->
-  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
 </head>
 
 <body>
@@ -49,13 +41,13 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: #333">menu</button>
+        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: var(--textColorPrimary);">menu</button>
         <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.webp" /></a>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: #333"><span class="fab fa-github-alt"></span></a>
-        <a href="https://linkedin.com/in/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="LinkedIn" style="color: #333"><span class="fab fa-linkedin-in"></span></a>
-        <a href="https://wa.me/491727223577" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" style="color: #333"><span class="fab fa-whatsapp"></span></a>
+        <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: var(--textColorPrimary);">code</a>
+        <a href="https://wa.me/491727223577" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" style="color: var(--textColorPrimary);">message</a>
+        <a href="https://linkedin.com/in/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="LinkedIn" style="color: var(--textColorPrimary);">account_circle</a>
       </section>
     </div>
   </header>
@@ -177,127 +169,92 @@
       </section>
 
       <section class="reviews-section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="about-description text-center">
-              <h2>testimonials</h2>
-              <small>as <a href="#">Bill Gates</a> famously said, </small>
-              <blockquote><i>Your most unhappy customers are your greatest source of learning</i>.</blockquote>
+        <div class="about-description text-center">
+          <h2>testimonials</h2>
+          <small>as <a href="#">Bill Gates</a> famously said, </small>
+          <blockquote><i>Your most unhappy customers are your greatest source of learning</i>.</blockquote>
+        </div>
+
+        <div class="reviews-slider owl-carousel">
+          <div class="review-item">
+            <img src="/img/testimonials/pragyesh.png" alt="">
+            <div class="testi_text">
+              <h4>Pragyesh Shrivastava</h4>
+              <p>I came to Saif for a critical and urgent task and he did not disappoint me. The work
+                was done perfectly and within the deadline. Even though there were some changes
+                after the submission, he was able to incorporate the feedback perfectly. I am
+                satisfied with the work and looking forward for a long term relationship with
+                him. </p>
             </div>
           </div>
-          <div class="row">
-            <div class="reviews-slider owl-carousel">
-              <div class="review-item">
-                <div class="row">
-                  <img src="/img/testimonials/pragyesh.png" alt="">
-                  <div class="testi_text">
-                    <h4>Pragyesh Shrivastava</h4>
-                    <p>I came to Saif for a critical and urgent task and he did not disappoint me. The work
-                      was done perfectly and within the deadline. Even though there were some changes
-                      after the submission, he was able to incorporate the feedback perfectly. I am
-                      satisfied with the work and looking forward for a long term relationship with
-                      him. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="review-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="/img/testimonials/nopic.png" alt="">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="testi_text">
-                      <h4>Amol J.</h4>
-                      <p>Very professional, good work, very polite. Good experience. Developed my app with
-                        best quality.
-                        Would hire again for every need. </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="review-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="/img/testimonials/rohanm.png" alt="">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="testi_text">
-                      <h4>Rohan M.</h4>
-                      <p>It has been a splendid experience, understands all sorts of problems and fixes it
-                        when required.
-                        Very professional way of working. Would definitely like to hire again.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="review-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="/img/testimonials/ankurm.png" alt="">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="testi_text">
-                      <h4>Ankur M.</h4>
-                      <p>Nice work, on time. Complete professional.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="review-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="/img/testimonials/mansoorj.png" alt="">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="testi_text">
-                      <h4>Mansoor J.</h4>
-                      <p>It was an amazing experience.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="review-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="/img/testimonials/fatimak.png" alt="">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="testi_text">
-                      <h4>Fatima K.</h4>
-                      <p>Nice work.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="review-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="/img/testimonials/nopic.png" alt="">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="testi_text">
-                      <h4>Bilal A.</h4>
-                      <p>Professional and flexible. Understood my requirements quickly. Delivered work
-                        before time.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="review-item">
+            <img src="/img/testimonials/nopic.png" alt="">
+            <div class="testi_text">
+              <h4>Amol J.</h4>
+              <p>Very professional, good work, very polite. Good experience. Developed my app with
+                best quality.
+                Would hire again for every need. </p>
+            </div>
+          </div>
+          <div class="review-item">
+            <img src="/img/testimonials/rohanm.png" alt="">
+            <div class="testi_text">
+              <h4>Rohan M.</h4>
+              <p>It has been a splendid experience, understands all sorts of problems and fixes it
+                when required.
+                Very professional way of working. Would definitely like to hire again.</p>
+            </div>
+          </div>
+          <div class="review-item">
+            <img src="/img/testimonials/ankurm.png" alt="">
+            <div class="testi_text">
+              <h4>Ankur M.</h4>
+              <p>Nice work, on time. Complete professional.</p>
+            </div>
+          </div>
+          <div class="review-item">
+            <img src="/img/testimonials/mansoorj.png" alt="">
+            <div class="testi_text">
+              <h4>Mansoor J.</h4>
+              <p>It was an amazing experience.</p>
+            </div>
+          </div>
+          <div class="review-item">
+            <img src="/img/testimonials/fatimak.png" alt="">
+            <div class="testi_text">
+              <h4>Fatima K.</h4>
+              <p>Nice work.</p>
+            </div>
+          </div>
+          <div class="review-item">
+            <img src="/img/testimonials/nopic.png" alt="">
+            <div class="testi_text">
+              <h4>Bilal A.</h4>
+              <p>Professional and flexible. Understood my requirements quickly. Delivered work
+                before time.</p>
             </div>
           </div>
         </div>
+
       </section>
     </main>
   </div>
 
-  <!-- Bootstrap 4.4 (jQuery first, then Popper.js, then Bootstrap JS) -->
+  <!-- jQuery (must be above all other scripts) -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <!-- Other scripts -->
+  <!-- Firebase services -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+  <script src="/js/firebase.js"></script>
+
+  <!-- Other global scripts -->
+  <script src="/js/navigation.js"></script>
+
+  <!-- Page specific scripts -->
   <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="/js/theme.js"></script>
+  <script src="/js/services.js"></script>
 </body>
 
 </html>
