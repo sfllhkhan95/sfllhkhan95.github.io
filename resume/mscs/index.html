@@ -28,34 +28,6 @@
       text-align: center;
       margin: 16px;
     }
-
-    #outline {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.75);
-      z-index: 9999999;
-    }
-
-    #outline button {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      top: 15px;
-      border: 0;
-      border-radius: 0;
-      left: 0;
-      color: white !important;
-      background: rgba(0, 0, 0, 0.75);
-    }
-
-    #outlineSrc {
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0);
-    }
   </style>
 
   <!-- AdSense script -->
@@ -126,7 +98,7 @@
               <ul class="mdc-list mdc-list--two-line">
                 <!-- DIP -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="?outline=dip">
+                  <a class="mdc-list-item__text" href="/tukl-improc">
                     <span class="mdc-list-item__primary-text">2D Image Processing</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -134,31 +106,23 @@
 
                 <!-- 3DCV -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=3dcv">
+                  <a class="mdc-list-item__text" href="/tukl-3dcv">
                     <span class="mdc-list-item__primary-text">3D Computer Vision</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
                 </li>
 
                 <!-- ML1 -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=ml1">
+                  <a class="mdc-list-item__text" href="/tukl-ml1">
                     <span class="mdc-list-item__primary-text">Machine Learning 1: Foundations</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
-                </li>
-
-                <!-- CI -->
-                <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=ci">
-                    <span class="mdc-list-item__primary-text">Collaborative Intelligence</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
                 </li>
 
                 <!-- SWM -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=swm">
+                  <a class="mdc-list-item__text" href="/tukl-swm">
                     <span class="mdc-list-item__primary-text">Social Web Mining</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -166,7 +130,7 @@
 
                 <!-- VDL -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=vdl">
+                  <a class="mdc-list-item__text" href="/tukl-vdl">
                     <span class="mdc-list-item__primary-text">Very Deep Learning</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 3.3)</small></b></span>
                   </a>
@@ -181,7 +145,7 @@
               <ul class="mdc-list mdc-list--two-line">
                 <!-- FSE -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="?outline=fse">
+                  <a class="mdc-list-item__text" href="/tukl-fse">
                     <span class="mdc-list-item__primary-text">Foundations of Software Engineering</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -189,7 +153,7 @@
 
                 <!-- RE -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=re">
+                  <a class="mdc-list-item__text" href="/tukl-re">
                     <span class="mdc-list-item__primary-text">Requirements Engineering</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -197,7 +161,7 @@
 
                 <!-- SSA -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=ssa">
+                  <a class="mdc-list-item__text" href="/tukl-ssa">
                     <span class="mdc-list-item__primary-text">System and Software Architecture</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -205,7 +169,7 @@
 
                 <!-- SRES -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=sres">
+                  <a class="mdc-list-item__text" href="/tukl-sres">
                     <span class="mdc-list-item__primary-text">Safety &amp; Reliability of Embedded Systems</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 2.7)</small></b></span>
                   </a>
@@ -213,15 +177,15 @@
 
                 <!-- PLE -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=ple">
+                  <a class="mdc-list-item__text" href="/tukl-ple">
                     <span class="mdc-list-item__primary-text">Product Line Engineering</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
+                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 1.3)</small></b></span>
                   </a>
                 </li>
 
                 <!-- ASSE -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=asse">
+                  <a class="mdc-list-item__text" href="/tukl-asse">
                     <span class="mdc-list-item__primary-text">Automotive Software and Systems Engineering</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -236,7 +200,7 @@
               <ul class="mdc-list mdc-list--two-line">
                 <!-- DV -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="?outline=dv">
+                  <a class="mdc-list-item__text" href="/tukl-dv">
                     <span class="mdc-list-item__primary-text">Data Visualization</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
                   </a>
@@ -244,7 +208,7 @@
 
                 <!-- HCI -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=hci">
+                  <a class="mdc-list-item__text" href="/tukl-hci">
                     <span class="mdc-list-item__primary-text">Human-Computer Interaction</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 3.7)</small></b></span>
                   </a>
@@ -252,7 +216,7 @@
 
                 <!-- SV -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="?outline=sv">
+                  <a class="mdc-list-item__text" href="/tukl-sv">
                     <span class="mdc-list-item__primary-text">Scientific Visualization</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
                   </a>
@@ -267,7 +231,7 @@
               <ul class="mdc-list mdc-list--two-line">
                 <!-- Deutschabendkurs-A1 -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="?outline=dea1">
+                  <a class="mdc-list-item__text" href="/tukl-dea1">
                     <span class="mdc-list-item__primary-text">German Language A1</span>
                     <span class="mdc-list-item__secondary-text">Status: <b>Passed <small></small></b></span>
                   </a>
@@ -291,54 +255,6 @@
 
   <!-- Other global scripts -->
   <script src="/js/navigation.js"></script>
-
-  <!-- Page specific scripts -->
-  <script>
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    function downloadTranscript() {
-      let file = 'assets/experience/mscs/transcript.pdf'
-      firebase.storage().ref(file).getDownloadURL().then(function(url) {
-        window.location = url
-      }).catch(function(e) {
-        console.error(e);
-      });
-    }
-
-    $('#outline button').click(function() {
-      $('#outline').hide();
-    });
-
-    $('#outline').hide();
-    $(function() {
-      let uri = window.location.toString();
-      const outline = getParameterByName('outline');
-      if (!outline || outline === '') {
-
-      } else {
-        let file = 'assets/experience/mscs/courses/' + outline + '.pdf'
-        firebase.storage().ref(file).getDownloadURL().then(function(url) {
-          window.location = url
-        }).catch(function(e) {
-          console.error(e);
-        });
-      }
-
-      // Clean URL
-      if (uri.indexOf("?") > 0) {
-        uri = uri.substring(0, uri.indexOf("?"));
-        window.history.replaceState({}, document.title, uri);
-      }
-    });
-  </script>
 </body>
 
 </html>
