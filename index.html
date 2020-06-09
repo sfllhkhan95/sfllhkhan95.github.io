@@ -36,6 +36,16 @@
 
   <!-- Installable PWA -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
+
+  <style>
+    pwa-install {
+      --install-button-color: #854fee;
+      background: #854fee;
+      border-radius: 4px;
+      margin: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,9 +53,8 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: var(--textColorPrimary);">menu</button>
-        <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.webp" /></a>
-        <pwa-install></pwa-install>
+        <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" style="color: var(--textColorPrimary);">menu</button>
+        <b class="mdc-top-app-bar__title">Home</b>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
         <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: var(--textColorPrimary);">code</a>
@@ -78,14 +87,22 @@
           <hr class="mdc-list-divider">
 
           <div class="mdc-list">
-            <a class="mdc-list-item demo-drawer-list-item" href="https://saifkhichisays.wordpress.com/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>Blog
+            <a class="mdc-list-item demo-drawer-list-item" href="https://saifkhichisays.wordpress.com/" target="_blank">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>Blog <i class="material-icons" style="position: absolute; right: 8px; color: grey;">launch</i>
             </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>Books
+            <a class="mdc-list-item demo-drawer-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan" target="_blank">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>Books <i class="material-icons" style="position: absolute; right: 8px; color: grey;">launch</i>
             </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>Videos
+            <a class="mdc-list-item demo-drawer-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ" target="_blank">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>Videos <i class="material-icons" style="position: absolute; right: 8px; color: grey;">launch</i>
+            </a>
+          </div>
+
+          <hr class="mdc-list-divider">
+
+          <div class="mdc-list">
+            <a id="install-button" class="mdc-list-item" href="#">
+              <pwa-install id="a2hs" installbuttontext="Install Web App"></pwa-install>
             </a>
           </div>
         </nav>
@@ -99,7 +116,7 @@
           <div class="about-summary">
             <h3 class="text-uppercase">Hell0</h3>
             <h1 class="text-uppercase">I am saif khan</h1>
-            <h5 class="text-uppercase">professional software developer</h5>
+            <h5 class="text-uppercase">software developer</h5>
             <div>
               <a class="mdc-button mdc-button--unelevated primary_btn" href="https://wa.me/491727223577">
                 <span class="mdc-button__label">Talk Business</span>
@@ -176,6 +193,16 @@
     import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
     const el = document.createElement('pwa-update');
     document.body.appendChild(el);
+
+    $(function(){
+      const pwaInstall = $('#a2hs');
+      if (pwaInstall.is(":visible")) {
+        pwaInstall.hide();
+        $('#install-button').click(function(){
+          pwaInstall.install();
+        });
+      }
+    });
   </script>
 </body>
 
