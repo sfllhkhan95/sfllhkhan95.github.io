@@ -33,6 +33,9 @@
 
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Installable PWA -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
 </head>
 
 <body>
@@ -42,6 +45,7 @@
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#" style="color: var(--textColorPrimary);">menu</button>
         <a class="mdc-top-app-bar__title" href="/"><img src="/img/logo.webp" /></a>
+        <pwa-install></pwa-install>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
         <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: var(--textColorPrimary);">code</a>
@@ -166,6 +170,13 @@
 
   <!-- Page specific scripts -->
   <script src="/js/webapp.js"></script>
+  <script type="module">
+    // This is the "Offline page" service worker
+    // Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+  </script>
 </body>
 
 </html>
