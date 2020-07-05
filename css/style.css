@@ -153,46 +153,28 @@ ul,
 /* Main Title Section                                                         */
 /******************************************************************************/
 .about-description {
-  text-align: center;
+  width: 100%;
+  margin-top: var(--padding);
   margin-bottom: var(--padding);
 }
-
-.about-description h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-
-.about-description p {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .about-description h2 br {
-    display: none;
-  }
-
-  .about-description p br {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-description h2 {
-    font-size: 30px;
-    line-height: 34px;
-  }
-}
-
 
 /******************************************************************************/
 /* Home Banner Section                                                        */
 /******************************************************************************/
 .about-section {
-  z-index: 1;
-  background: url(/img/banner/home-banner.webp);
+    position: relative;
+}
+
+.about-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(/img/banner/home-banner.webp);
+    opacity: .4;
+    content: "";
+    z-index: -1;
 }
 
 .about-section .col-md-8 {
@@ -204,32 +186,17 @@ ul,
   text-align: left;
 }
 
-.about-section .about-summary h3 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  position: relative;
+.about-section .about-summary .greeting {
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: var(--padding);
+  margin-bottom: 0;
 }
 
-.about-section .about-summary h3:after {
-  content: '';
-  width: 410px;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 23%;
-  background: var(--colorDisabled);
-}
-
-.about-section .about-summary h1 {
-  margin-top: 20px;
-  font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 25px;
-}
-
-.about-section .about-summary h5 {
-  font-size: 24px;
-  margin-bottom: 35px;
+.about-section .about-summary .introduction {
+  font-size: 56px;
+  line-height: 56px;
+  margin-bottom: 24px;
 }
 
 .about-section .home_right_img img {
@@ -255,53 +222,48 @@ ul,
   }
 }
 
-@media (max-width: 768px) {
-  .about-section .about-summary h1 {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-section .about-summary h3:after {
-    display: none;
-  }
-}
-
 
 /******************************************************************************/
 /* Services Section                                                           */
 /******************************************************************************/
 .service-item {
-  padding: var(--padding);
+  padding: 16px;
   text-align: center;
-  background: #f9f9fd;
   cursor: pointer;
-  margin-bottom: 30px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
 }
 
-.service-item img {
-  margin-bottom: 35px;
-}
-
-.service-item h4 {
+.mdc-top-app-bar__title {
   font-size: 20px;
-  margin-bottom: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.page-description {
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+}
+
+.service-item > .material-icons {
+  font-size: 48px;
+  color: var(--colorAccent);
+}
+
+.service-item h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .service-item p {
+  font-size: 16px;
   margin-bottom: 0;
 }
 
-.service-item:hover {
-  box-shadow: 0 15px 30px rgba(77, 87, 222, 0.3);
-  background: #fff;
+.service-item .mdc-button__label {
+  text-transform: lowercase;
 }
-
 
 /******************************************************************************/
 /* Expreience Section                                                          */
@@ -497,7 +459,7 @@ ul,
     padding-bottom: 48px;
   }
 
-  .portfolio h3, .portfolio hr {
+  .portfolio .subtitle, .portfolio hr {
     display: none;
   }
 
@@ -562,7 +524,7 @@ ul,
 }
 
 .review-item img {
-  width: 64px;
+  width: 64px !important;
   height: 64px;
   border-radius: 32px;
 }
@@ -574,6 +536,10 @@ ul,
 
 .review-item .testi_text h4 {
   text-transform: uppercase;
+}
+
+.review-item .testi_text p {
+  margin-top: var(--padding);
 }
 
 .review-item:hover {
@@ -625,9 +591,6 @@ ul,
   }
   .about-section .about-summary h5 {
     margin-top: 0;
-  }
-  .about-description h2 {
-    font-size: 25px;
   }
 }
 

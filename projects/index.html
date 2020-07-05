@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="Personal website of Muhammad Saif Ullah Khan, containing educational background, portfolio, blog, etc.">
-  <meta name="keywords" content="saifkhichi96, saifkhichi, sfllhkhan95, saif, khichi, saif's portfolio">
+  <meta name="description" content="Past work and completed programming projects by the freelancer Saif Khan.">
+  <meta name="keywords" content="projects, programming, freelancer, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
+  <!-- Website icon -->
+  <link rel="shortcut icon" href="/favicon.ico">
+
   <!-- Page Title -->
-  <title>Projects | Saif's Portfolio</title>
+  <title>Completed Projects | Portfolio | Saif Khan</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -32,55 +35,17 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <b class="mdc-top-app-bar__title">Projects</b>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <a href="https://github.com/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="GitHub" style="color: var(--textColorPrimary);">code</a>
-        <a href="https://wa.me/491727223577" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" style="color: var(--textColorPrimary);">message</a>
-        <a href="https://linkedin.com/in/saifkhichi96/" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="LinkedIn" style="color: var(--textColorPrimary);">account_circle</a>
+        <h1 class="mdc-top-app-bar__title">Projects</h1>
       </section>
     </div>
   </header>
 
   <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
-    <!-- Drawer -->
-    <aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
-      <nav class="mdc-drawer__drawer">
-        <nav class="mdc-drawer__content">
-          <div id="icon-with-text-demo" class="mdc-list">
-            <a class="mdc-list-item demo-drawer-list-item" href="/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>Home
-            </a>
-            <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>Projects
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="/services/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>Services
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="/resume/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>Experience
-            </a>
-          </div>
-
-          <hr class="mdc-list-divider">
-
-          <div class="mdc-list">
-            <a class="mdc-list-item demo-drawer-list-item" href="https://saifkhichisays.wordpress.com/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>Blog
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>Books
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>Videos
-            </a>
-          </div>
-        </nav>
-      </nav>
-    </aside>
-
-    <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
+      <p class="page-description">
+        Do you need something? Head over to <a href="/services/">my services</a> to get a quote.
+      </p>
+
       <div class="portfolio" id="portfolio">
         <!-- Filters -->
         <ul class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
@@ -112,435 +77,421 @@
 
         <!-- Apps -->
         <section>
-          <h3 class="subtitle">APPS</h3>
-          <hr class="small" />
-          <div class="grid filters-content">
+          <h2 class="text-uppercase subtitle">Apps</h1>
+            <hr class="small" />
+            <div class="grid filters-content">
 
-            <a href="/acacia-timber/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/acacia-timber.png') center center no-repeat; background-size: cover;">
+              <a href="/acacia-timber/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/acacia-timber.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Acacia Joinery</strong>
-                <small>Productivity</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Acacia Joinery</strong>
+                  <small>Productivity</small>
+                </div>
+              </a>
 
-            <a href="/adt-simulator/" class="portfolio-item all app desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/adt-simulator.png') center center no-repeat; background-size: cover;">
+              <a href="/adt-simulator/" class="portfolio-item all app desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/adt-simulator.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>ADT Simulator</strong>
-                <small>Educational</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>ADT Simulator</strong>
+                  <small>Educational</small>
+                </div>
+              </a>
 
-            <a href="/authentica/" class="portfolio-item all app mobile desktop web">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/authentica.png') center center no-repeat; background-size: cover;">
+              <a href="/authentica/" class="portfolio-item all app mobile desktop web">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/authentica.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Authentica</strong>
-                <small>Tools</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Authentica</strong>
+                  <small>Tools</small>
+                </div>
+              </a>
 
-            <a href="/cafe-manager/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/cafe-manager.png') center center no-repeat; background-size: cover;">
+              <a href="/cafe-manager/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/cafe-manager.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Café Manager</strong>
-                <small>Food</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Café Manager</strong>
+                  <small>Food</small>
+                </div>
+              </a>
 
-            <a href="/connect/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/connect.png') center center no-repeat; background-size: cover;">
+              <a href="/connect/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/connect.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Connect</strong>
-                <small>Communication</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Connect</strong>
+                  <small>Communication</small>
+                </div>
+              </a>
 
-            <a href="/cygnus/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/cygnus.png') center center no-repeat; background-size: cover;">
+              <a href="/cygnus/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/cygnus.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Cygnus</strong>
-                <small>Educational</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Cygnus</strong>
+                  <small>Educational</small>
+                </div>
+              </a>
 
-            <a href="/directions/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/transitus.png') center center no-repeat; background-size: cover;">
+              <a href="/paint/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/doodle.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Transitus</strong>
-                <small>Educational</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Doodle</strong>
+                  <small>Creativity</small>
+                </div>
+              </a>
 
-            <a href="/paint/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/doodle.png') center center no-repeat; background-size: cover;">
+              <a href="/iprd-geotag/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/iprd-geotag.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Doodle</strong>
-                <small>Creativity</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>IPRD Geotag</strong>
+                  <small>Productivity</small>
+                </div>
+              </a>
 
-            <a href="/propero/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/propero.png') center center no-repeat; background-size: cover;">
+              <a href="/lexiconic/" class="portfolio-item all app desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/lexiconic.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Propero</strong>
-                <small>Productivity</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Lexiconic</strong>
+                  <small>Educational</small>
+                </div>
+              </a>
 
-            <a href="/iprd-geotag/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/iprd-geotag.png') center center no-repeat; background-size: cover;">
+              <a href="/propero/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/propero.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>IPRD Geotag</strong>
-                <small>Productivity</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Propero</strong>
+                  <small>Productivity</small>
+                </div>
+              </a>
 
-            <a href="/lexiconic/" class="portfolio-item all app desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/lexiconic.png') center center no-repeat; background-size: cover;">
+              <a href="/scanner/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/scanner.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Lexiconic</strong>
-                <small>Educational</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Scanner</strong>
+                  <small>Productivity</small>
+                </div>
+              </a>
 
-            <a href="/scanner/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/scanner.png') center center no-repeat; background-size: cover;">
+              <a href="/servus/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/servus.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Scanner</strong>
-                <small>Productivity</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Servus</strong>
+                  <small>Educational</small>
+                </div>
+              </a>
 
-            <a href="/servus/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/servus.png') center center no-repeat; background-size: cover;">
+              <a href="/tasbih/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/tasbih.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Servus</strong>
-                <small>Educational</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Tasbih</strong>
+                  <small>Productivity</small>
+                </div>
+              </a>
 
-            <a href="/tasbih/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/tasbih.png') center center no-repeat; background-size: cover;">
+              <a href="/directions/" class="portfolio-item all app mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/transitus.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Tasbih</strong>
-                <small>Productivity</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Transitus</strong>
+                  <small>Educational</small>
+                </div>
+              </a>
 
-            <a href="/transitus/" class="portfolio-item all app mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/transitus.png') center center no-repeat; background-size: cover;">
+              <a href="/vread/" class="portfolio-item all app web">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/vread.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Transitus</strong>
-                <small>Educational</small>
-              </div>
-            </a>
-
-            <a href="/vread/" class="portfolio-item all app web">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/vread.png') center center no-repeat; background-size: cover;">
-                  </div>
-                  <div class="overlay"></div>
+                <div class="project-details">
+                  <strong>vRead</strong>
+                  <small>Social</small>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>vRead</strong>
-                <small>Social</small>
-              </div>
-            </a>
+              </a>
 
-          </div>
+            </div>
         </section>
 
         <!-- Games -->
         <section>
-          <h3 class="subtitle">GAMES</h3>
-          <hr class="small" />
-          <div class="grid filters-content">
+          <h2 class="text-uppercase subtitle">Games</h1>
+            <hr class="small" />
+            <div class="grid filters-content">
 
-            <a href="/bouncy/" class="portfolio-item all game mobile desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/bouncy.png') center center no-repeat; background-size: cover;">
+              <a href="/bouncy/" class="portfolio-item all game mobile desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/bouncy.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Bouncy</strong>
-                <small>Game</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Bouncy</strong>
+                  <small>Game</small>
+                </div>
+              </a>
 
-            <a href="/dodge/" class="portfolio-item all game mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/dodge.png') center center no-repeat; background-size: cover;">
+              <a href="/dodge/" class="portfolio-item all game mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/dodge.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Dodge</strong>
-                <small>Game</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Dodge</strong>
+                  <small>Game</small>
+                </div>
+              </a>
 
-            <a href="/hangman/" class="portfolio-item all game mobile desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/hangman.png') center center no-repeat; background-size: cover;">
+              <a href="/hangman/" class="portfolio-item all game mobile desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/hangman.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Hangman</strong>
-                <small>Classic Game</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Hangman</strong>
+                  <small>Classic Game</small>
+                </div>
+              </a>
 
-            <a href="/huntrek/" class="portfolio-item all game mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/huntrek.png') center center no-repeat; background-size: cover;">
+              <a href="/huntrek/" class="portfolio-item all game mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/huntrek.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>HunTrek</strong>
-                <small>AR Quest</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>HunTrek</strong>
+                  <small>AR Quest</small>
+                </div>
+              </a>
 
-            <a href="/jungle-run/" class="portfolio-item all game mobile desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/jungle-run.png') center center no-repeat; background-size: cover;">
+              <a href="/jungle-run/" class="portfolio-item all game mobile desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/jungle-run.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Jungle Run</strong>
-                <small>2D Platformer</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Jungle Run</strong>
+                  <small>2D Platformer</small>
+                </div>
+              </a>
 
-            <a href="/poppit/" class="portfolio-item all game mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/poppit.png') center center no-repeat; background-size: cover;">
+              <a href="/poppit/" class="portfolio-item all game mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/poppit.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Poppit</strong>
-                <small>Arcade</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Poppit</strong>
+                  <small>Arcade</small>
+                </div>
+              </a>
 
-            <a href="/quest/" class="portfolio-item all game mobile desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/quest.png') center center no-repeat; background-size: cover;">
+              <a href="/quest/" class="portfolio-item all game mobile desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/quest.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Quest</strong>
-                <small>Board</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Quest</strong>
+                  <small>Board</small>
+                </div>
+              </a>
 
-            <a href="/space-shooter/" class="portfolio-item all game desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/space-shooter.png') center center no-repeat; background-size: cover;">
+              <a href="/space-shooter/" class="portfolio-item all game desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/space-shooter.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Space Shooter</strong>
-                <small>Arcade</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Space Shooter</strong>
+                  <small>Arcade</small>
+                </div>
+              </a>
 
-            <a href="/university-run/" class="portfolio-item all game desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/university-run.png') center center no-repeat; background-size: cover;">
+              <a href="/university-run/" class="portfolio-item all game desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/university-run.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>University Run</strong>
-                <small>2D Infinite Runner</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>University Run</strong>
+                  <small>2D Infinite Runner</small>
+                </div>
+              </a>
 
-          </div>
+            </div>
         </section>
 
         <!-- APIs -->
         <section>
-          <h3 class="subtitle">APIs</h3>
-          <hr class="small" />
-          <div class="grid filters-content">
+          <h2 class="text-uppercase subtitle">APIs</h1>
+            <hr class="small" />
+            <div class="grid filters-content">
 
-            <a href="/droid-rest/" class="portfolio-item all api mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/droid-rest.png') center center no-repeat; background-size: cover;">
+              <a href="/droid-rest/" class="portfolio-item all api mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/droid-rest.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>DroidREST</strong>
-                <small>REST API</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>DroidREST</strong>
+                  <small>REST API</small>
+                </div>
+              </a>
 
-            <a href="/game-core/" class="portfolio-item all api mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/game-core.png') center center no-repeat; background-size: cover;">
+              <a href="/game-core/" class="portfolio-item all api mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/game-core.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Game Core</strong>
-                <small>Game API</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Game Core</strong>
+                  <small>Game API</small>
+                </div>
+              </a>
 
-            <a href="/smartgl/" class="portfolio-item all api desktop">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/smartgl.png') center center no-repeat; background-size: cover;">
+              <a href="/smartgl/" class="portfolio-item all api desktop">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/smartgl.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>SmartGL</strong>
-                <small>Graphics API</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>SmartGL</strong>
+                  <small>Graphics API</small>
+                </div>
+              </a>
 
-            <a href="/tiled-view/" class="portfolio-item all api mobile">
-              <div class="mdc-card">
-                <div class="project-icon mdc-card__primary-action">
-                  <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/tiled.png') center center no-repeat; background-size: cover;">
+              <a href="/tiled-view/" class="portfolio-item all api mobile">
+                <div class="mdc-card">
+                  <div class="project-icon mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--square" style="background: url('/img/portfolio/tiled.png') center center no-repeat; background-size: cover;">
+                    </div>
+                    <div class="overlay"></div>
                   </div>
-                  <div class="overlay"></div>
                 </div>
-              </div>
-              <div class="project-details">
-                <strong>Tiled</strong>
-                <small>Easy Tilemaps</small>
-              </div>
-            </a>
+                <div class="project-details">
+                  <strong>Tiled</strong>
+                  <small>Easy Tilemaps</small>
+                </div>
+              </a>
 
-          </div>
+            </div>
         </section>
       </div>
     </main>
