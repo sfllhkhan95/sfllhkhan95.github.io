@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="List of courses I studied during my Bachelor of Software Engineering degree at National University of Sciences and Technology (NUST).">
-  <meta name="keywords" content="saifkhichi96, saifkhichi, muhammad, saif, ullah, khan, khichi, saif's portfolio, mscs, courses, tukl, 2019">
+  <meta name="description" content="List of courses I studied during my Master of Computer Science degree at Technishe Universtät Kaiserslautern (TU KL).">
+  <meta name="keywords" content="graduate, tukl, education, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
   <!-- Page Title -->
-  <title>Courses (MSCS) | Saif's Portfolio</title>
+  <title>MSCS | Educational Background | Saif Khan</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -28,6 +31,26 @@
       text-align: center;
       margin: 16px;
     }
+
+    .very-good {
+      color: #7cb342;
+    }
+
+    .good {
+      color: #c0ca33;
+    }
+
+    .satisfactory {
+      color: #fdd835;
+    }
+
+    .sufficient {
+      color: #fb8c00;
+    }
+
+    .insufficient {
+      color: #f4511e;
+    }
   </style>
 
   <!-- AdSense script -->
@@ -40,206 +63,197 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <b class="mdc-top-app-bar__title">MSCS Courses</b>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-        <a href="#" download class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download Transcript" style="color: var(--textColorPrimary);">file_download</a>
+        <h1 class="mdc-top-app-bar__title">MSCS</h1>
       </section>
     </div>
   </header>
 
   <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
-    <!-- Drawer -->
-    <aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
-      <nav class="mdc-drawer__drawer">
-        <nav class="mdc-drawer__content">
-          <div id="icon-with-text-demo" class="mdc-list">
-            <a class="mdc-list-item demo-drawer-list-item" href="/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>Home
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="/projects/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>Projects
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="/services/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>Services
-            </a>
-            <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="/resume/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>Experience
-            </a>
-          </div>
-
-          <hr class="mdc-list-divider">
-
-          <div class="mdc-list">
-            <a class="mdc-list-item demo-drawer-list-item" href="https://saifkhichisays.wordpress.com/">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>Blog
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>Books
-            </a>
-            <a class="mdc-list-item demo-drawer-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ">
-              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>Videos
-            </a>
-          </div>
-        </nav>
-      </nav>
-    </aside>
-
-    <!-- Content -->
     <main class="mdc-drawer-app-content main-content">
+      <!-- Page Description -->
       <section>
+        <!-- Degree Information -->
+        <div class="page-description">
+          <h2>Master of Computer Science</h2>
+          <a href="https://www.uni-kl.de/" target="_blank">Technische Universität Kaiserslautern (TU KL)</a><br>
+          Kaiserslautern, Germany<br>
+          <br>
+          <p>2019-2021 (expected)</p>
+          <p>
+            TU Kaiserslautern <a target="_blank" href="https://www.uni-kl.de/en/international/master/prospective-students/master-programs/the-german-academic-system/exams/">grades on a scale of 1 to 5</a>, with the following distribution:
+            <ul>
+              <li><b>1.0–1.5</b> very good</li>
+              <li><b>1.6–2.5</b> good</li>
+              <li><b>2.6–3.5</b> satisfactory</li>
+              <li><b>3.6–4.0</b> sufficient</li>
+              <li><b>5.0</b> not sufficient</li>
+            </ul>
+          </p>
+        </div>
+
+        <!-- Course List -->
         <div class="mdc-layout-grid">
           <div class="mdc-layout-grid__inner">
             <!-- Intelligent Systems -->
-            <div id="is" class="mdc-layout-grid__cell mdc-card">
+            <div class="mdc-layout-grid__cell mdc-card">
               <h3 class="section-heading">Intelligent Systems</h3>
 
               <ul class="mdc-list mdc-list--two-line">
                 <!-- DIP -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="/tukl-improc">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">2D Image Processing</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- 3DCV -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-3dcv">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">3D Computer Vision</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- ML1 -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-ml1">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Machine Learning 1: Foundations</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- SWM -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-swm">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Social Web Mining</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- VDL -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-vdl">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Very Deep Learning</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 3.3)</small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle satisfactory"></i> <b>Satisfactory</b></span>
+                  </span>
                 </li>
               </ul>
             </div>
 
             <!-- Software Engineering -->
-            <div id="se" class="mdc-layout-grid__cell mdc-card">
+            <div class="mdc-layout-grid__cell mdc-card">
               <h3 class="section-heading">Software Engineering</h3>
 
               <ul class="mdc-list mdc-list--two-line">
                 <!-- FSE -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="/tukl-fse">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Foundations of Software Engineering</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- RE -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-re">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Requirements Engineering</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- SSA -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-ssa">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">System and Software Architecture</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
 
                 <!-- SRES -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-sres">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Safety &amp; Reliability of Embedded Systems</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 2.7)</small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle satisfactory"></i> <b>Satisfactory</b></span>
+                  </span>
                 </li>
 
                 <!-- PLE -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-ple">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Product Line Engineering</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 1.3)</small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle very-good"></i> <b>Very Good</b></span>
+                  </span>
                 </li>
 
                 <!-- ASSE -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-asse">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Automotive Software and Systems Engineering</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
               </ul>
             </div>
 
             <!-- Visualization and Scientific Computing -->
-            <div id="vis" class="mdc-layout-grid__cell mdc-card">
+            <div class="mdc-layout-grid__cell mdc-card">
               <h3 class="section-heading">Visualization and Scientific Computing</h3>
 
               <ul class="mdc-list mdc-list--two-line">
                 <!-- DV -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="/tukl-dv">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Data Visualization</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Blocked <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle very-good"></i> <b>Very Good</b></span>
+                  </span>
                 </li>
 
                 <!-- HCI -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-hci">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Human-Computer Interaction</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Completed <small>(Grade: 3.7)</small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle sufficient"></i> <b>Sufficient</b></span>
+                  </span>
                 </li>
 
                 <!-- SV -->
                 <li class="mdc-list-item">
-                  <a class="mdc-list-item__text" href="/tukl-sv">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">Scientific Visualization</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>In-Progress <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
+                  </span>
                 </li>
               </ul>
             </div>
 
             <!-- Misc Courses -->
-            <div id="misc" class="mdc-layout-grid__cell mdc-card">
+            <div class="mdc-layout-grid__cell mdc-card">
               <h3 class="section-heading">Miscellaneous</h3>
 
               <ul class="mdc-list mdc-list--two-line">
                 <!-- Deutschabendkurs-A1 -->
                 <li class="mdc-list-item" tabindex="0">
-                  <a class="mdc-list-item__text" href="/tukl-dea1">
+                  <span class="mdc-list-item__text">
                     <span class="mdc-list-item__primary-text">German Language A1</span>
-                    <span class="mdc-list-item__secondary-text">Status: <b>Passed <small></small></b></span>
-                  </a>
+                    <span class="mdc-list-item__secondary-text"><b><i class="fas fa-check-circle very-good"></i></b></span>
+                  </span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
+      <footer class="mdc-layout-grid">
+        <!-- Breadcrumbs -->
+        <span class="breadcrumbs">
+          <a class="mdc-button" href="/"><span class="material-icons">home</span></a>/
+          <a class="mdc-button" href="/resume/">Experience</a>/
+          <a class="mdc-button" href="/resume/mscs/">MSCS</a>
+        </span>
+      </footer>
     </main>
   </div>
 
