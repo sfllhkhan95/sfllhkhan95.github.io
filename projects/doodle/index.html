@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>Doodle | Completed Projects | Saif Khan</title>
+  <title>Doodle | Projects | Saif Khan</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -24,19 +24,8 @@
 
   <!-- Custom styles for this page -->
   <link href="/css/style.css" rel="stylesheet">
-  <style>
-    h2 {
-      font-weight: normal;
-    }
+  <link href="/css/project.css" rel="stylesheet">
 
-    h3 {
-      font-size: 14px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  </style>
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
@@ -47,7 +36,7 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">Doodle</h1>
+        <h1 class="mdc-top-app-bar__title">Project Details</h1>
       </section>
     </div>
   </header>
@@ -56,174 +45,159 @@
     <main class="mdc-drawer-app-content main-content">
       <div class="mdc-layout-grid">
         <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9-desktop mdc-card" style="padding: 32px;">
-            <section style="display: inline-block;">
-              <div style="float: left; margin-right: 32px;">
-                <img src="/img/portfolio/doodle.png" width="150px" height="150px" />
-              </div>
-              <div style="float: left;">
-                <h2 style="font-weight: normal;">Doodle</h2>
-                <span>
-                  <a href="" style="font-weight: bold; margin-right: 8px;">Productivity</a>·
-                </span>
-                <p><span class="material-icons" style="color: gray; font-size: 12px;">devices</span>&nbsp; Mobile App</p>
-                <a class="mdc-button mdc-button--unelevated primary_btn" style="border-radius: 16px;" href="https://www.youtube.com/watch?v=05itwsYAJkU"><span class="material-icons">play_circle_filled</span>&nbsp; Watch Demo</a>
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
+            <section class="project-summary">
+              <img class="project-logo" src="logo.png" alt="Logo of the project." />
+              <div>
+                <h2 class="project-title">Doodle</h2>
+                <a class="project-category" href="#">Creativity</a>
+                <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
+                <a class="mdc-button mdc-button--unelevated primary_btn project-demo" href="https://www.youtube.com/watch?v=05itwsYAJkU" target="_blank"><span class="material-icons">play_circle_filled</span>&nbsp; Watch Demo</a>
               </div>
             </section>
-            <br>
 
-            <div style="text-align: justify; padding: 16px;">
-              <!-- Cover Photo -->
-              <img src="portfolio.png" width="100%" />
+            <!-- Cover Photo -->
+            <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
 
+            <section class="project-details">
               <!-- Overview -->
-              <section>
+              <p>
+                Doodle is a complete art tool to help bring out your inner artist. The application offers a wide range of features, which allows you to express yourself without limits.<br>
                 <br>
-                <p>
-                  Doodle is a complete art tool to help bring out your inner artist. The application offers a wide range of features, which allows you to express yourself without limits.<br>
-                  <br>
-                  It comes with a variety of brush sizes and an extensive set of vibrant colours to bring your creative ideas to life. Full Screen mode helps you focus on your projects by minimising the distractions. You can load images from Gallery
-                  into the application to base your drawing on. This app is also compatible with stylus.<br>
-                </p>
-              </section>
+                It comes with a variety of brush sizes and an extensive set of vibrant colours to bring your creative ideas to life. Full Screen mode helps you focus on your projects by minimising the distractions. You can load images from Gallery
+                into the application to base your drawing on. This app is also compatible with stylus.<br>
+              </p>
               <br>
 
               <!-- Features -->
-              <section>
-                <h3 class="text-uppercase">Key Features</h3>
-                <div class="mdc-layout-grid" style="padding: 0;">
-                  <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell">
-                      <h4>Tools</h4>
-                      <ul class="mdc-list">
-                        <li class="mdc-list-item" tabindex="0">
-                          <span class="mdc-list-item__text">Brush Tool</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Color Picker</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Eraser Tool</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Eyedropper Tool</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Predefined Shapes</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="mdc-layout-grid__cell">
-                      <h4>Other Features</h4>
-                      <ul class="mdc-list">
-                        <li class="mdc-list-item" tabindex="0">
-                          <span class="mdc-list-item__text">Start with blank canvas</span>
-                        </li>
-                        <li class="mdc-list-item" tabindex="0">
-                          <span class="mdc-list-item__text">Edit an exisiting image</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Share doodles with friends</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Undo / Redo / Revert</span>
-                        </li>
-                        <li class="mdc-list-item">
-                          <span class="mdc-list-item__text">Smart, districation-free UI</span>
-                        </li>
-                      </ul>
-                    </div>
+              <h3 class="text-uppercase">Key Features</h3>
+              <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                    <h4>Tools</h4>
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__text">Brush Tool</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Color Picker</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Eraser Tool</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Eyedropper Tool</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Predefined Shapes</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                    <h4>Other Features</h4>
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__text">Start with blank canvas</span>
+                      </li>
+                      <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__text">Edit an exisiting image</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Share doodles with friends</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Undo / Redo / Revert</span>
+                      </li>
+                      <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">Smart, districation-free UI</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <p>
-                  With its light, easy-to-use and intuitive design, Doodle is the perfect choice for artists and art lovers. Stand by for new stuff as the app will be consistently updated with more features and tools.<br>
-                  <br>
-                  Please visit our <a href="/paint/app/src/main/assets/FAQ">FAQs</a> page to find out more.
-                </p>
-              </section>
+              </div>
+              <p>
+                With its light, easy-to-use and intuitive design, Doodle is the perfect choice for artists and art lovers. Stand by for new stuff as the app will be consistently updated with more features and tools.<br>
+                <br>
+                Please visit our <a href="/paint/app/src/main/assets/FAQ">FAQs</a> page to find out more.
+              </p>
               <br>
 
               <!-- Platforms -->
-              <section>
-                <h3 class="text-uppercase">Supported Plaforms</h3>
-                <div class="mdc-chip-set" role="grid">
-                  <div class="mdc-chip" role="row">
-                    <div class="mdc-chip__ripple"></div>
-                    <span role="gridcell">
-                      <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                        <span class="mdc-chip__text">Android</span>
-                      </span>
+              <h3 class="text-uppercase">Supported Plaforms</h3>
+              <div class="mdc-chip-set" role="grid">
+                <div class="mdc-chip" role="row">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                      <span class="mdc-chip__text">Android</span>
                     </span>
-                  </div>
+                  </span>
                 </div>
-              </section>
+              </div>
               <br>
 
               <!-- Tools -->
-              <section>
-                <h3 class="text-uppercase">Programming Languages</h3>
-                <div class="mdc-chip-set" role="grid">
-                  <div class="mdc-chip" role="row">
-                    <div class="mdc-chip__ripple"></div>
-                    <span role="gridcell">
-                      <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                        <span class="mdc-chip__text">Java</span>
-                      </span>
+              <h3 class="text-uppercase">Programming Languages</h3>
+              <div class="mdc-chip-set" role="grid">
+                <div class="mdc-chip" role="row">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                      <span class="mdc-chip__text">Java</span>
                     </span>
-                  </div>
-                  <div class="mdc-chip" role="row">
-                    <div class="mdc-chip__ripple"></div>
-                    <span role="gridcell">
-                      <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                        <span class="mdc-chip__text">Kotlin</span>
-                      </span>
-                    </span>
-                  </div>
+                  </span>
                 </div>
-              </section>
-              <br>
-
-              <!-- Client-->
-              <section>
-                <h3 class="text-uppercase">About the Client</h3>
-                <p>
-                  Doodle is an personal, <b>open-source project</b> which started out as a class assignment.
-                </p>
-              </section>
-              <br>
-
-              <hr class="small">
-              The source code of this project is publicly available under MIT License and can be found <a href="https://github.com/saifkhichi96/paint">here</a>. We believe in an open development environment and welcome all constructive
-              contributions.
-            </div>
+                <div class="mdc-chip" role="row">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
+                      <span class="mdc-chip__text">Kotlin</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </section>
           </div>
 
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-card" style="padding: 32px;">
-            <a href='https://play.google.com/store/apps/details?id=sfllhkhan95.doodle&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
-              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="100%" />
-            </a>
-
-            <div style="background-color: #EEE; padding: 4px; margin-bottom: 4px; text-align: center;">
-              <b style="font-size: 24px;">3.4 stars</b>
-              <p style="font-size: 14px;">81 total
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
+            <section class="project-details">
+              <!-- Client-->
+              <h3 class="text-uppercase">About the Client</h3>
+              <p>
+                Doodle is an personal, <b>open-source project</b> which started out as a class assignment. The source code of this project is publicly available on Github under MIT License.
               </p>
-            </div>
+              <div class="github-card" data-github="saifkhichi96/paint" data-theme="medium" data-width="100%"></div>
+              <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+              <p>
+                We believe in an open development environment and welcome all constructive contributions.
+              </p>
+              <br>
 
-            <h3 class="text-uppercase" style="font-weight: normal;">Additional Information</h3>
-            <b style="font-size: 14px;">Updated</b>
-            March 5, 2020
-            <b style="font-size: 14px;">Size</b>
-            5.4M
-            <b style="font-size: 14px;">Installs</b>
-            10,000+
-            <b style="font-size: 14px;">Current Version</b>
-            3.6.9
-            <b style="font-size: 14px;">Requires Android</b>
-            4.1 and up
-            <b style="font-size: 14px;">Content Rating</b>
-            USK: All ages
-            <b style="font-size: 14px;">In-app Products</b>
-            €4.39 per item
+              <h3 class="text-uppercase">Get it now</h3>
+              <div class="mdc-data-table">
+                <table class="mdc-data-table__table" aria-label="Dessert calories">
+                  <thead>
+                    <tr class="mdc-data-table__header-row">
+                      <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Platform</th>
+                      <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Download Link</th>
+                    </tr>
+                  </thead>
+                  <tbody class="mdc-data-table__content">
+                    <tr class="mdc-data-table__row">
+                      <td class="mdc-data-table__cell">Android</td>
+                      <td class="mdc-data-table__cell"><a href='https://play.google.com/store/apps/details?id=sfllhkhan95.doodle&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
+                          <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="100%" />
+                        </a></td>
+                    </tr>
+                    <tr class="mdc-data-table__row">
+                      <td class="mdc-data-table__cell">iOS</td>
+                      <td class="mdc-data-table__cell">Not Available</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p><small>Google Play and the Google Play logo are trademarks of Google LLC.</small></p>
+            </section>
           </div>
         </div>
       </div>
@@ -233,10 +207,10 @@
         <span class="breadcrumbs">
           <a class="mdc-button" href="/"><span class="material-icons">home</span></a>/
           <a class="mdc-button" href="/projects/">Projects</a>/
-          <a class="mdc-button" href="/doodle/">Doodle</a>
+          <a class="mdc-button" href="/projects/doodle/">Doodle</a>
         </span>
         <br>
-        Google Play and the Google Play logo are trademarks of Google LLC.
+        &copy; 2020 Saif Khan's Portfolio
       </footer>
     </main>
   </div>
