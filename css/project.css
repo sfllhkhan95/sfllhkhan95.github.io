@@ -71,3 +71,8 @@ h4 {
   width: 100%;
   max-width: 100%;
 }
+
+ul {
+  margin-left: 24px;
+  list-style: disc;
+}
