@@ -9,14 +9,13 @@
   --xhdpi: 768px;
   --xxhdpi: 992px;
   --xxxhdpi: 1382px;
-
   /* dimens.xml */
   --padding: 64px;
   --card-radius: 4px;
 }
 
 @media (max-width: 768px) {
-   :root {
+  :root {
     --padding: 32px;
   }
 }
@@ -29,18 +28,20 @@ html, body {
 }
 
 body {
-  background: url(/img/body-bg.webp) no-repeat center;
+  background: url(/img/body-bg.png) no-repeat center;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
 .col-md-8 {
+  box-sizing: border-box;
   float: left;
   width: 67%;
 }
 
 .col-md-4 {
+  box-sizing: border-box;
   float: left;
   width: 33%;
 }
@@ -71,6 +72,7 @@ body {
 .app-drawer-layout {
   display: flex;
   flex: 1;
+
   .mdc-drawer--dismissible {
     background: transparent;
     top: 64px;
@@ -107,7 +109,6 @@ body {
 .ml-15 {
   margin-left: 15px;
 }
-
 
 /******************************************************************************/
 /* UI Elements                                                                */
@@ -162,19 +163,19 @@ ul,
 /* Home Banner Section                                                        */
 /******************************************************************************/
 .about-section {
-    position: relative;
+  position: relative;
 }
 
 .about-section::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url(/img/banner/home-banner.webp);
-    opacity: .4;
-    content: "";
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(/img/banner/home-banner.png);
+  opacity: .4;
+  content: "";
+  z-index: -1;
 }
 
 .about-section .col-md-8 {
@@ -208,7 +209,7 @@ ul,
   margin-right: 16px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .about-section {
     margin-top: 0;
   }
@@ -221,7 +222,6 @@ ul,
     margin-top: 150px;
   }
 }
-
 
 /******************************************************************************/
 /* Services Section                                                           */
@@ -244,7 +244,7 @@ ul,
   text-align: center;
 }
 
-.service-item > .material-icons {
+.service-item>.material-icons {
   font-size: 48px;
   color: var(--colorAccent);
 }
@@ -268,94 +268,6 @@ ul,
 /******************************************************************************/
 /* Expreience Section                                                          */
 /******************************************************************************/
-.experience-section {
-  padding: 25px 30px;
-  background: #faf8ff;
-  text-align: center;
-  position: relative;
-  margin-top: 25px;
-  margin-left: 16px;
-  border-radius: 16px;
-}
-
-.experience-section:before {
-  content: '';
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  background: url(/img/client-info-bg.webp) no-repeat;
-  height: 175px;
-  width: 175px;
-}
-
-.experience-section .title {
-  color: var(--colorAccent);
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 85px;
-  position: relative;
-  z-index: 9;
-}
-
-.experience-section .description {
-  text-align: left;
-  color: #000000;
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-.experience-action {
-  padding-top: 50px;
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-.experience-action p {
-  color: var(--colorAccent);
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-.experience-action span {
-  font-size: 60px;
-  font-weight: 700;
-  color: #000000;
-}
-
-@media (max-width: 992px) {
-  .experience-section {
-    margin-top: var(--padding);
-  }
-}
-
-@media (max-width: 600px) {
-  .experience-section {
-    padding-top: 50px;
-  }
-
-  .experience-section:before {
-    background: none;
-  }
-
-  .experience-section .d-flex {
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .experience-action {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-action h3 {
-    font-size: 17px;
-  }
-}
-
-
-
 .experience-item {
   display: inline-block;
   position: relative;
@@ -410,7 +322,6 @@ ul,
   left: -18px;
   z-index: 100;
 }
-
 
 /******************************************************************************/
 /* Projects Section                                                           */
@@ -534,7 +445,6 @@ ul,
   }
 }
 
-
 /******************************************************************************/
 /* Reviews Section                                                            */
 /******************************************************************************/
@@ -587,6 +497,7 @@ ul,
 }
 
 .review-item .col-lg-8 {
+  box-sizing: border-box;
   vertical-align: middle;
   align-self: center;
 }
@@ -608,7 +519,6 @@ ul,
   display: flex;
 }
 
-
 @media (max-width: 992px) {
   .nav {
     padding: 0 0;
@@ -619,15 +529,19 @@ ul,
   .about-section {
     min-height: 300px;
   }
+
   .about-section .about-summary {
     margin-top: 0;
   }
+
   .about-section .about-summary h3 {
     font-size: 30px;
   }
+
   .about-section .about-summary p br {
     display: none;
   }
+
   .about-section .about-summary h3 span {
     line-height: 45px;
     padding-bottom: 0;
@@ -640,12 +554,15 @@ ul,
     font-size: 28px;
     line-height: 38px;
   }
+
   .about-section {
     min-height: 450px;
   }
+
   .about-section .about-summary img {
     display: none;
   }
+
   .about-section .about-summary h5 {
     margin-top: 0;
   }
@@ -656,6 +573,7 @@ ul,
     padding: 30px 15px;
     margin-top: 0;
   }
+
   .about-section .about-summary h3 {
     font-size: 24px;
   }
@@ -663,10 +581,18 @@ ul,
 
 /* embed responsively (YouTube vidoes) */
 .featured-section {
-  width: calc(100% - 16px);
+  width: 100%;
   margin: 0 auto;
   display: -webkit-flex;
   display: flex;
+}
+
+.featured-section .featured-project {
+  margin-right: 16px;
+  padding: 8px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media (max-width: 768px) {
@@ -674,13 +600,11 @@ ul,
     width: 100%;
     display: block;
   }
-}
 
-.featured-section .featured-project {
-  padding: 8px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  .featured-section .featured-project {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
 }
 
 .featured-project h5 {

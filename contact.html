@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- Custom styles for this page -->
+  <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link href="/css/style.css" rel="stylesheet">
 
   <!-- Manifest -->
@@ -90,7 +91,7 @@
         <br>
 
         <!-- Contact Form -->
-        <form class="mdc-card mdc-card--outlined contact-form" style="padding: 16px; max-width:768px;">
+        <form class="mdc-card mdc-card--outlined contact-form" style="padding: 16px;">
           <label class="mdc-text-field mdc-text-field--outlined" id="name-field">
             <span class="mdc-text-field__ripple"></span>
             <span class="mdc-floating-label" id="name">Name</span>
@@ -141,6 +142,60 @@
         </div>
       </section>
 
+      <!-- Testimonials -->
+      <h2>Reviews</h2>
+      <section class="reviews-section">
+        <div class="reviews-slider owl-carousel">
+          <div class="mdc-card review-item">
+            <div class="testi_text">
+              <img src="/projects/cygnus/logo.png" alt="Logo of the Cygnus Smart School project.">
+              <h3>Cygnus</h3>
+              <b>Smart School Mobile App</b>
+              <br>
+              <p>He had delivered the best-optimized code and my project is very complex from developer points and many experienced developer are not able to do this project but he had done this project online. Very professional for his work and
+                completely satisfactory from all points of production level. </p>
+            </div>
+          </div>
+          <div class="mdc-card review-item">
+            <div class="testi_text">
+              <img src="/img/testimonials/pragyesh.png" alt="Photo of the client named Pragyesh Shrivastava.">
+              <h3>Coffee Shop Mobile App</h3>
+              <b>Directions to store, drinks list, online orders.</b>
+              <br>
+              <p>I came to Saif for a critical and urgent task and he did not disappoint me. The work was done perfectly and within the deadline. Even though there were some changes after the satisfied with the work and looking forward for a long
+                term relationship with him. </p>
+            </div>
+          </div>
+          <div class="mdc-card review-item">
+            <div class="testi_text">
+              <img src="https://lh3.googleusercontent.com/oq_l-N8KFI-LfQ6HNRVEVNYUESPic_PoeuaYAYhanGZA_TTPXrvFiIl1tghLydjSMw0=s360-rw" alt="Logo of the e-commerce project named Brandi.">
+              <h3>Brandi</h3>
+              <b>Android app from existing e-commerce website.</b>
+              <br>
+              <p>Very professional, good work, very polite. Good experience. Developed my app with best quality. Would hire again for every need. </p>
+            </div>
+          </div>
+          <div class="mdc-card review-item">
+            <div class="testi_text">
+              <img src="/projects/iprd-geotag/logo.png" alt="Logo of the IPRD Geotag project.">
+              <h3>IPRD Geotag</h3>
+              <b>Location-based work monitoring mobile app.</b>
+              <br>
+              <p>It has been a splendid experience, understands all sorts of problems and fixes it when required. Very professional way of working. Would definitely like to hire again.</p>
+            </div>
+          </div>
+          <div class="mdc-card review-item">
+            <div class="testi_text">
+              <img src="/img/testimonials/ankurm.png" alt="Photo of the client for the YouTube Livestream project.">
+              <h3>YouTube Live Stream App</h3>
+              <b>Android app for streaming live videos on YouTube.</b>
+              <br>
+              <p>Nice work, on time. Complete professional.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer class="mdc-layout-grid">
         <!-- Breadcrumbs -->
         <span class="breadcrumbs">
@@ -169,6 +224,8 @@
   <script src="/js/navigation.js"></script>
 
   <!-- Page specific scripts -->
+  <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="/js/services.js"></script>
   <script>
     $(function() {
       const nameField = new mdc.textField.MDCTextField(document.getElementById('name-field'));

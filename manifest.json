@@ -9,13 +9,13 @@
       "sizes": "96x96"
     },
     {
-      "src": "/img/icons-256.webp",
-      "type": "image/webp",
+      "src": "/img/icons-256.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/icons-512.webp",
-      "type": "image/webp",
+      "src": "/img/icons-512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
