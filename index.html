@@ -28,6 +28,7 @@
   <!-- Custom styles for this page -->
   <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
   <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/github.css" rel="stylesheet">
 
   <!-- Manifest -->
   <link rel="manifest" href="/manifest.json">
@@ -37,6 +38,9 @@
 
   <!-- Installable PWA -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
+
+  <!-- Prepare a container for your calendar. -->
+  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
   <style>
     pwa-install {
@@ -386,6 +390,15 @@
                 </div>
                 <script src="https://www.goodreads.com/user_challenges/widget/26736309-saif-khan?challenge_id=11621&v=2"></script>
               </div>
+          <!-- GitHub contributions -->
+          <h2 class="subtitle">Coding Stats</h2>
+          <p>Summary of my recent GitHub activity. See my
+            <a href="https://github.com/saifkhichi96/" style="color: var(--textColorPrimary);">GitHub profile</a> for details.
+          <div class="mdc-card mdc-card--outlined calendar-container">
+            <div class="calendar"></div>
+          </div>
+          <br>
+        </div>
 
               <!-- Recently Read Books -->
               <p>I read some fiction, but my favorite topics are history, politics, and religion. My recent reads include:</p>
@@ -552,6 +565,13 @@
   <script src="/js/services.js"></script>
   <script src="/js/webapp.js"></script>
   <script type="module">
+    // Load GitHub contributions calendar
+    $(function() {
+      new GitHubCalendar(".calendar", "saifkhichi96", {
+        responsive: true
+      });
+    });
+
     // This is the "Offline page" service worker
     // Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
     import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
