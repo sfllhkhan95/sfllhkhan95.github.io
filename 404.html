@@ -16,7 +16,7 @@
   <meta name="p:domain_verify" content="a756de613e3e91e14743d6a24b29a35c" />
 
   <!-- Page Title -->
-  <title>NullPointerException | Saif's Portfolio</title>
+  <title>Page Not Found | Saif's Portfolio</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">404 Not Found</h1>
+        <h1 class="mdc-top-app-bar__title">Page Not Found</h1>
       </section>
     </div>
   </header>
@@ -50,22 +50,31 @@
           <div class="container">
             <div class="row">
               <div class="about-summary">
-                <h4 class="text-uppercase">Page not found</h4>
-                <h1>Impedimenta!</h1>
-                <h5 class="text-uppercase">YOU - SHALL - NOT - PASS!</h5>
+                <h2><small>Aww... Don't Cry.</small></h2>
+                <p>
+                  It's just a 404 error!</p>
+                <p>
+                  We seem to have misplaced what you're looking for. But as Gandalf would say,
+                  <em>even the very wise cannot see all ends.</em>
+                </p>
                 <div class="d-flex align-items-center">
-                  <button class="mdc-button mdc-button--unelevated primary_btn" onclick="back();">
-                    <span class="mdc-button__label">Cast "Point Me"</span>
-                  </button>
-                  <a class="mdc-button mdc-button--outlined primary_btn tr-bg" href="/">
-                    <span class="mdc-button__label">Fly, you fool!</span>
-                  </a>
+                  <div class="mdc-touch-target-wrapper">
+                    <button class="mdc-button mdc-button--touch mdc-button--outlined" onclick="back();">
+                      <span class="mdc-button__ripple"></span>
+                      <span class="mdc-button__label">Cast "Point Me"</span>
+                      <span class="mdc-button__touch"></span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <footer class="mdc-layout-grid">
+        <span class="copyright"></span>
+      </footer>
     </main>
   </div>
 
