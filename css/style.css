@@ -732,6 +732,21 @@ footer .breadcrumbs {
   min-width: 0;
 }
 
+footer .copyright {
+  color: var(--colorPrimaryDark) !important;
+  font-size: 12px;
+  font-weight: bold;
+  height: 32px;
+  margin: 0;
+}
+
+.copyright a {
+  color: var(--colorPrimaryDark) !important;
+  font-size: 12px;
+  min-width: 0;
+  text-decoration: underline !important;
+}
+
 .callout {
   font-size: 24px;
   font-weight: bolder;

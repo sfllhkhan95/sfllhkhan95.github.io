@@ -13,9 +13,7 @@ $(function() {
 
   // Instantiate navigation drawer
   const drawerEl = document.querySelector('.mdc-drawer');
-  if (drawerEl != null) {
-    const drawer = new mdc.drawer.MDCDrawer.attachTo(drawerEl);
-  }
+  const drawer = new mdc.drawer.MDCDrawer.attachTo(drawerEl);
 
   // Attach toolbar to navigation drawer
   topAppBar.setScrollTarget(document.querySelector('.main-content'));
@@ -25,6 +23,14 @@ $(function() {
 
   console.log("Navigation setup complete!");
 });
+
+// Import copyright notice
+$.get('/copyright.html', function(data) {
+  var copyright = $('.copyright')
+  if (copyright != null) {
+    copyright.html(data);
+  }
+})
 
 function back() {
   if (document.referrer.indexOf(location.protocol + "//" + location.host) === 0) {
