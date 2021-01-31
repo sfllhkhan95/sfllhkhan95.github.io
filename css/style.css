@@ -639,21 +639,44 @@ footer {
   text-align: center;
 }
 
-footer .breadcrumbs {
-  color: var(--colorPrimaryDark) !important;
-  font-size: 12px;
-  font-weight: bold;
+/* Style the list */
+.breadcrumbs {
+  list-style: none;
   line-height: 32px;
   height: 32px;
-  margin: 0;
+}
+
+/* Display list items side by side */
+.breadcrumbs .breadcrumb-item {
+  display: inline;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
-.breadcrumbs * {
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumbs .breadcrumb-item+.breadcrumb-item:before {
+  color: black !important;
+  content: "/";
+  padding: 0 4px;
+}
+
+/* Add a color to all links inside the list */
+.breadcrumbs .breadcrumb-item * {
   color: var(--colorPrimaryDark) !important;
   font-size: 12px;
-  padding-right: 4px;
-  min-width: 0;
+  text-decoration: none;
+}
+
+.breadcrumbs .breadcrumb-item .material-icons {
+  vertical-align: baseline;
+  position: relative;
+  bottom: -2px;
+}
+
+/* Add a color to all links inside the list */
+.breadcrumbs .breadcrumb-item.active * {
+  color: black !important;
+  font-weight: bold;
 }
 
 footer .copyright {

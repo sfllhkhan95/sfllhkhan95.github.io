@@ -24,6 +24,24 @@ $(function() {
   console.log("Navigation setup complete!");
 });
 
+// Spread breadcrumbs
+$('.breadcrumbs').html("<li class='breadcrumb-item'><a href='/'><span class='material-icons'>home</span></a></li>")
+var pages = location.href.split("://")[1].split('#')[0].split('?')[0].split("/").filter(function(el) {
+  return el != "" && el != "index.html";
+});
+var url = ''
+for (var i = 1, len = pages.length; i < len; i++) {
+  var page = pages[i].split('.')[0].replace('-', ' ').replace('_', ' ')
+  url += '/' + pages[i]
+  var oldHtml = $('.breadcrumbs').html()
+  if (i == pages.length - 1) {
+    var newHtml = oldHtml + "<li class='breadcrumb-item active'><span>" + page + "</span></li>"
+  } else {
+    var newHtml = oldHtml + "<li class='breadcrumb-item'><a href='" + url + "'>" + page + "</a></li>"
+  }
+  $('.breadcrumbs').html(newHtml);
+}
+
 // Import copyright notice
 $.get('/copyright.html', function(data) {
   var copyright = $('.copyright')
