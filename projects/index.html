@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="Past work and completed programming projects by the freelancer Saif Khan.">
+  <meta name="description" content="This page provides a current list of my completed programming projects. These include mobile apps, games, websites, desktop software, APIs, and more.">
   <meta name="keywords" content="projects, programming, freelancer, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>Completed Projects | Portfolio | Saif Khan</title>
+  <title>Projects | Portfolio | Saif Khan</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -35,7 +35,9 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">Projects</h1>
+        <h1 class="mdc-top-app-bar__title">
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </h1>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
         <a class="mdc-button mdc-button--outlined" href="/contact.html">
@@ -47,8 +49,8 @@
 
   <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
     <main class="mdc-drawer-app-content main-content">
-      <p class="page-description">
-        This page provides a current list of my completed <b>programming projects</b>. These include mobile apps, websites, desktop software, and more. You might also be interested in my <a href="/research/">research work</a>.<br>
+      <p class="page-description hide-when-small">
+        This page provides a current list of my completed <b>programming projects</b>. These include mobile apps, games, websites, desktop software, and more. You might also be interested in my <a href="/research/">research work</a>.<br>
         <br>
         Use the filters below to search for projects by platform and type.
       </p>
@@ -524,7 +526,6 @@
       </div>
 
       <footer>
-        <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
         <span class="copyright"></span>
       </footer>
     </main>

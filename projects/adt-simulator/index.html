@@ -36,7 +36,9 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">Project Details</h1>
+        <h1 class="mdc-top-app-bar__title">
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </h1>
       </section>
     </div>
   </header>
@@ -55,15 +57,15 @@
               </div>
             </section>
 
-            <!-- Cover Photo -->
-            <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
-
             <section class="project-details">
               <!-- Overview -->
               <p>
                 ADT Simulator is a data structure simulator.
               </p>
               <br>
+
+              <!-- Cover Photo -->
+              <!-- <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." /> -->
 
               <!-- Features -->
               <h3 class="text-uppercase">Key Features</h3>
@@ -210,7 +212,6 @@
       </div>
 
       <footer>
-        <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
         <span class="copyright"></span>
       </footer>
     </main>

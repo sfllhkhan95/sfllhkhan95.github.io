@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>BESE | Education | Saif Khan</title>
+  <title>BESE Coursework | Saif Khan</title>
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
@@ -66,7 +66,9 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">BESE</h1>
+        <h1 class="mdc-top-app-bar__title">
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </h1>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
         <button onclick="downloadTranscript()" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download Transcript" style="color: var(--textColorPrimary);">file_download</button>
@@ -505,7 +507,6 @@
       </section>
 
       <footer>
-        <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
         <span class="copyright"></span>
       </footer>
     </main>

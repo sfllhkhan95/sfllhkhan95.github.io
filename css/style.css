@@ -422,6 +422,10 @@ ul,
   bottom: 0;
 }
 
+.hide-when-small {
+  display: block;
+}
+
 @media (max-width: 992px) {
   .portfolio {
     padding-bottom: 48px;
@@ -442,6 +446,10 @@ ul,
 
   .bottom-navigation {
     display: block;
+  }
+
+  .hide-when-small {
+    display: none;
   }
 }
 
@@ -580,41 +588,6 @@ ul,
 }
 
 /* embed responsively (YouTube vidoes) */
-.featured-section {
-  width: 100%;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.featured-section .featured-project {
-  margin-right: 16px;
-  padding: 8px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .featured-section {
-    width: 100%;
-    display: block;
-  }
-
-  .featured-section .featured-project {
-    margin-right: 0px;
-    margin-bottom: 16px;
-  }
-}
-
-.featured-project h5 {
-  margin-bottom: 8px;
-}
-
-.featured-project p {
-  margin-top: 8px;
-}
-
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -642,41 +615,34 @@ footer {
 /* Style the list */
 .breadcrumbs {
   list-style: none;
-  line-height: 32px;
-  height: 32px;
 }
 
 /* Display list items side by side */
 .breadcrumbs .breadcrumb-item {
-  display: inline;
-  font-size: 12px;
+  display: inline-block;
   text-transform: uppercase;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 .breadcrumbs .breadcrumb-item+.breadcrumb-item:before {
-  color: black !important;
-  content: "/";
+  color: var(--textColorSecondary) !important;
+  content: "⟩";
   padding: 0 4px;
 }
 
 /* Add a color to all links inside the list */
 .breadcrumbs .breadcrumb-item * {
-  color: var(--colorPrimaryDark) !important;
-  font-size: 12px;
+  color: var(--colorDisabled) !important;
   text-decoration: none;
 }
 
 .breadcrumbs .breadcrumb-item .material-icons {
-  vertical-align: baseline;
-  position: relative;
-  bottom: -2px;
+  vertical-align: text-bottom;
 }
 
 /* Add a color to all links inside the list */
 .breadcrumbs .breadcrumb-item.active * {
-  color: black !important;
-  font-weight: bold;
+  color: var(--textColorPrimary) !important;
 }
 
 footer .copyright {

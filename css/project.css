@@ -14,22 +14,16 @@ h4 {
   font-size: 12px;
 }
 
+.mdc-layout-grid__cell {
+  padding: var(--padding);
+}
+
 .project-summary {
-  padding: 32px;
+  padding-bottom: var(--padding);
   display: inline-block;
 }
 
-.project-details {
-  padding: 32px;
-}
-
-@media (max-width: 768px) {
-  .project-summary, .project-details {
-    padding: 16px;
-  }
-}
-
-.project-summary > * {
+.project-summary>* {
   float: left;
 }
 
@@ -43,17 +37,41 @@ h4 {
 
 .project-logo {
   border-radius: 8px;
-  margin-right: 32px;
-  height: 150px;
-  width: 150px;
+  margin-right: 16px;
+  height: 80px;
+  width: 80px;
 }
 
 .project-title {
-
+  padding: 0;
+  margin: 0;
 }
 
-.project-category {
+.project-tags {
+  display: block;
+  float: left;
+  margin-bottom: 4px;
+}
+
+.project-tags:after {
+  clear: both;
+}
+
+.project-tag {
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 16px;
+  color: var(--textColorPrimary);
+  font-size: 10px;
   font-weight: bold;
+  padding: 2px 8px;
+}
+
+.project-tag .material-icons {
+  color: var(--colorDisabled);
+  font-size: 10px;
+  margin-right: 4px;
+  vertical-align: middle;
 }
 
 .project-type, .project-type * {

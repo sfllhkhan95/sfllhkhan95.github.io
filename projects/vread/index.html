@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="A social networking web app for book readers.">
-  <meta name="keywords" content="projects, programming, freelancer, saif khan, saifkhichi96">
+  <meta name="description" content="vRead is mobile-first social platform for book readers, where users can connect with their fellow bookaholics.">
+  <meta name="keywords" content="social network, web app, books, reading, project, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
   <!-- Website icon -->
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>vRead | Projects | Saif Khan</title>
+  <title>vRead: A Social Platform for Book Readers | Saif Khan</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -36,7 +36,9 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">Project Details</h1>
+        <h1 class="mdc-top-app-bar__title">
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </h1>
       </section>
     </div>
   </header>
@@ -50,86 +52,59 @@
               <img class="project-logo" src="logo.png" alt="Logo of the project." />
               <div>
                 <h2 class="project-title">vRead</h2>
-                <a class="project-category" href="#">Social</a>
+                <div class="project-tags">
+                  <span class="project-tag"><i class="material-icons">sell</i>&nbsp; Social Network</span>
+                  <span class="project-tag"><i class="material-icons">sell</i>&nbsp; Books</span>
+                  <span class="project-tag"><i class="material-icons">sell</i>&nbsp; Reading</span>
+                </div>
+
                 <p class="project-type"><span class="material-icons">devices</span>&nbsp; Web App</p>
               </div>
             </section>
 
-            <!-- Cover Photo -->
-            <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
-
             <section class="project-details">
               <!-- Overview -->
               <p>
-                vRead is a mobile-first social platform for book readers, available as a web app. This was written in PHP, with jQuery and Bootstrap for a responsive design.
+                vRead is mobile-first social network for book readers, where users can connect with their fellow bookaholics. It allows users to search for great books to read, track their own reading activity and see what their friends are reading.
+                This is a space where people can talk about what they read, get recommendations, manage your digital library, and exchange digital books with their friends.
               </p>
               <br>
+
+              <!-- Cover Photo -->
+              <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
 
               <!-- Features -->
               <h3 class="text-uppercase">Key Features</h3>
               <ul class="mdc-list">
                 <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">Keep track of your books.</span>
+                  <span class="mdc-list-item__text">Search books in an extensive catalogue</span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">See what your friends are reading.</span>
+                <li class="mdc-list-item" tabindex="1">
+                  <span class="mdc-list-item__text">Preview contents of a book</span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">Exchange books.</span>
+                <li class="mdc-list-item" tabindex="2">
+                  <span class="mdc-list-item__text">Track your reading activity</span>
+                </li>
+                <li class="mdc-list-item" tabindex="3">
+                  <span class="mdc-list-item__text">Write reviews for books you have read</span>
+                </li>
+                <li class="mdc-list-item" tabindex="4">
+                  <span class="mdc-list-item__text">A personal library for your digital books</span>
+                </li>
+                <li class="mdc-list-item" tabindex="5">
+                  <span class="mdc-list-item__text">Lend digital books to your friends</span>
                 </li>
               </ul>
               <br>
 
               <!-- Platforms -->
               <h3 class="text-uppercase">Supported Plaforms</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Web Browsers</span>
-                    </span>
-                  </span>
-                </div>
-              </div>
+              <p>This is a web application with a mobile-first interface.</p>
               <br>
 
               <!-- Tools -->
               <h3 class="text-uppercase">Programming Languages</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">CSS</span>
-                    </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">HTML</span>
-                    </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">JavaScript</span>
-                    </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">PHP</span>
-                    </span>
-                  </span>
-                </div>
-              </div>
+              The back-end is developed using PHP langauge with a MySQL database. The front-end uses HTML and JavaScript along with jQuery and Bootstrap frameworks.
             </section>
           </div>
 
@@ -138,19 +113,18 @@
               <!-- Client-->
               <h3 class="text-uppercase">About the Client</h3>
               <p>
-                This is a personal project.
+                This is a personal project which I developed as a semester project for the courses of Web Engineering and Human-Computer Interaction during my <a href="/resume/bese/">undergraduate studies</a> at NUST.
               </p>
               <br>
 
               <h3 class="text-uppercase">Get it now</h3>
-              <p>This project is not available for public use.</p>
+              <p>Not available for public use.</p>
             </section>
           </div>
         </div>
       </div>
 
       <footer>
-        <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
         <span class="copyright"></span>
       </footer>
     </main>

@@ -36,7 +36,9 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">Project Details</h1>
+        <h1 class="mdc-top-app-bar__title">
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </h1>
       </section>
     </div>
   </header>
@@ -52,7 +54,6 @@
                 <h2 class="project-title">Poppit!</h2>
                 <a class="project-category" href="#">Games</a>
                 <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
-                <a class="mdc-button mdc-button--unelevated primary_btn project-demo" href="https://www.youtube.com/watch?v=i8i6sC14x1c" target="_blank"><span class="material-icons">play_circle_filled</span>&nbsp; Watch Demo</a>
               </div>
             </section>
 
@@ -153,7 +154,6 @@
       </div>
 
       <footer>
-        <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
         <span class="copyright"></span>
       </footer>
     </main>

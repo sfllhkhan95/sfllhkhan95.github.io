@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="Mobile application for an architectural firm based in Bellambi, Australia.">
-  <meta name="keywords" content="projects, programming, freelancer, saif khan, saifkhichi96">
+  <meta name="description" content="Acacia Joinery is a mobile application for an architectural firm based in Bellambi, Australia.">
+  <meta name="keywords" content="data collection, pdf generator, email, mobile app, projects, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
   <!-- Website icon -->
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>Acacia Joinery | Projects | Saif Khan</title>
+  <title>Acacia Joinery Mobile App | Saif Khan</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -36,7 +36,9 @@
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
         <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">Project Details</h1>
+        <h1 class="mdc-top-app-bar__title">
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </h1>
       </section>
     </div>
   </header>
@@ -46,108 +48,125 @@
       <div class="mdc-layout-grid">
         <div class="mdc-layout-grid__inner">
           <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
-            <section class="project-summary">
+            <header class="project-summary">
               <img class="project-logo" src="logo.png" alt="Logo of the project." />
               <div>
                 <h2 class="project-title">Acacia Joinery</h2>
-                <a class="project-category" href="#">Productivity</a>
+                <div class="project-tags">
+                  <span class="project-tag"><i class="material-icons">sell</i>Data Collection</span>
+                  <span class="project-tag"><i class="material-icons">sell</i>PDF Generator</span>
+                  <span class="project-tag"><i class="material-icons">sell</i>Email</span>
+                </div>
                 <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
               </div>
-            </section>
-
-            <!-- Cover Photo -->
-            <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
-
-            <section class="project-details">
+            </header>
+            <div class="project-details">
               <!-- Overview -->
-              <p>
-                I developed this mobile application on request of an architectural company which specialises in building doors and windows. It was for internal use of the company. The main purpose of this software was to help on-site personnel of
-                the company to collect architectural requirements for their projects and coordinate the requirements with their office.
-              </p>
-              <br>
+              <section>
+                <p>
+                  I developed this mobile application on request of an architectural company which specialises in building doors and windows. It was for internal use of the company. The main purpose of this software was to help on-site personnel of
+                  the company to collect architectural requirements for their projects and coordinate the requirements with their office.
+                </p>
+              </section>
+
+              <!-- Media -->
+              <section>
+                <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
+              </section>
 
               <!-- Features -->
-              <h3 class="text-uppercase">Key Features</h3>
-              <ul class="mdc-list">
-                <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">Data Collection</span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">PDF Generation</span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">File Sharing via Email</span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">On-Device Storage (SQLite)</span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">Cloud Storage (Firebase Realtime Database)</span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">Crashlytics</span>
-                </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">Material Design</span>
-                </li>
-              </ul>
-              <br>
+              <section>
+                <h3 class="text-uppercase">Key Features</h3>
+                <ul class="mdc-list">
+                  <li class="mdc-list-item" tabindex="0">
+                    <span class="mdc-list-item__text">Data Collection</span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">PDF Generation</span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">File Sharing via Email</span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">On-Device Storage (SQLite)</span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">Cloud Storage (Firebase Realtime Database)</span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">Crashlytics</span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">Material Design</span>
+                  </li>
+                </ul>
+              </section>
 
               <!-- Platforms -->
-              <h3 class="text-uppercase">Supported Plaforms</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Android</span>
+              <section>
+                <h3 class="text-uppercase">Supported Plaforms</h3>
+                <div class="mdc-chip-set" role="grid">
+                  <div class="mdc-chip" role="row">
+                    <div class="mdc-chip__ripple"></div>
+                    <span role="gridcell">
+                      <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                        <span class="mdc-chip__text">Android</span>
+                      </span>
                     </span>
-                  </span>
+                  </div>
                 </div>
-              </div>
-              <br>
+              </section>
 
               <!-- Tools -->
-              <h3 class="text-uppercase">Programming Languages</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Java</span>
+              <section>
+                <h3 class="text-uppercase">Programming Languages</h3>
+                <div class="mdc-chip-set" role="grid">
+                  <div class="mdc-chip" role="row">
+                    <div class="mdc-chip__ripple"></div>
+                    <span role="gridcell">
+                      <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                        <span class="mdc-chip__text">Java</span>
+                      </span>
                     </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">SQLite</span>
+                  </div>
+                  <div class="mdc-chip" role="row">
+                    <div class="mdc-chip__ripple"></div>
+                    <span role="gridcell">
+                      <span role="button" tabindex="-1" class="mdc-chip__primary-action">
+                        <span class="mdc-chip__text">SQLite</span>
+                      </span>
                     </span>
-                  </span>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
 
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
-            <section class="project-details">
-              <!-- Client-->
+          <aside class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
+            <!-- Client-->
+            <section>
               <h3 class="text-uppercase">About the Client</h3>
               <p>
                 <a href="https://www.acaciajoinery.com.au/" target="_blank">Acacia Joinery</a> is an architectural company based in Bellambi, Australia.
               </p>
-              <br>
-
-              <h3 class="text-uppercase">Get it now</h3>
-              <p>The project is not available for public use.</p>
             </section>
-          </div>
+
+            <!-- Source Code -->
+            <section>
+              <h3 class="text-uppercase">Source Code</h3>
+              <p>Project source code is not publicly available.</p>
+            </section>
+
+            <!-- Download -->
+            <section>
+              <h3 class="text-uppercase">Get it now</h3>
+              <p>Not available for public use.</p>
+            </section>
+          </aside>
         </div>
       </div>
 
       <footer>
-        <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
         <span class="copyright"></span>
       </footer>
     </main>
