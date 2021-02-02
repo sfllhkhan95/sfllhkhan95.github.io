@@ -161,7 +161,7 @@ footer {
   .main-content .footer ul.sitemap>li {
     display: block;
     margin-right: 0px;
-    margin-bottom: 8px;
+    min-height: 48px;
   }
 }
 
