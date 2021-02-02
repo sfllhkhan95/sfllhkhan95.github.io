@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
   <meta name="description" content="Poppit! is a classic balloon-popping game in which you race against time to pop as many balloons as you can.">
-  <meta name="keywords" content="poppit, arcade, balloons, game, projects, saifkhichi96">
+  <meta name="keywords" content="poppit, arcade, brain game, projects, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
   <!-- Website icon -->
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>Poppit! | Projects | Saif Khan</title>
+  <title>Poppit! | Saif Khan</title>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,124 +53,135 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">
-          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
-        </h1>
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Go to previous page" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
+        <span class="mdc-top-app-bar__title"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></span>
       </section>
     </div>
   </header>
 
   <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
     <main class="mdc-drawer-app-content main-content">
-      <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
-            <section class="project-summary">
-              <img class="project-logo" src="logo.png" alt="Logo of the project." />
-              <div>
-                <h2 class="project-title">Poppit!</h2>
-                <a class="project-category" href="#">Games</a>
-                <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
-              </div>
-            </section>
+      <article>
+        <header>
+          <!-- Breadcrumbs -->
+          <section>
+            <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+          </section>
 
-            <!-- Cover Photo -->
+          <!-- Project Summary -->
+          <section class="project-summary">
+            <img class="project-logo" src="logo.png" alt="Logo of the project." />
+            <div>
+              <h1 class="project-title">Poppit!</h1>
+              <div class="project-tags">
+                <span class="project-tag"><i class="material-icons">sell</i>Arcade</span>
+                <span class="project-tag"><i class="material-icons">sell</i>Brain Game</span>
+              </div>
+              <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
+            </div>
+          </section>
+        </header>
+
+        <div class="col-md-8">
+          <!-- Overview -->
+          <section>
+            <p>
+              Poppit! is a classic balloon-popping game in which you race against time to pop as many balloons as you can. There are different game modes, and the players can see how they rank against others in the public leaderboards.
+            </p>
+          </section>
+
+          <!-- Media -->
+          <section>
             <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
+          </section>
 
-            <section class="project-details">
-              <!-- Overview -->
-              <p>
-                Poppit! is a classic balloon-popping game in which you race against time to pop as many balloons as you can. There are different game modes, and the players can see how they rank against others in the public leaderboards.
-              </p>
-              <br>
+          <!-- Features -->
+          <section>
+            <h2 class="text-uppercase">Key Features</h2>
+            <ul class="mdc-list">
+              <li class="mdc-list-item" tabindex="0">
+                <span class="mdc-list-item__text">Multiple game modes: Tap, Blow and Shoot</span>
+              </li>
+              <li class="mdc-list-item" tabindex="1">
+                <span class="mdc-list-item__text">Google Play Games integration</span>
+              </li>
+              <li class="mdc-list-item" tabindex="2">
+                <span class="mdc-list-item__text">Achievements</span>
+              </li>
+              <li class="mdc-list-item" tabindex="3">
+                <span class="mdc-list-item__text">Leaderboards</span>
+              </li>
+            </ul>
+          </section>
 
-              <!-- Features -->
-              <h3 class="text-uppercase">Key Features</h3>
-              <ul class="mdc-list">
-                <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">Multiple game modes: Tap, Blow and Shoot</span>
-                </li>
-                <li class="mdc-list-item" tabindex="1">
-                  <span class="mdc-list-item__text">Google Play Games integration</span>
-                </li>
-                <li class="mdc-list-item" tabindex="2">
-                  <span class="mdc-list-item__text">Achievements</span>
-                </li>
-                <li class="mdc-list-item" tabindex="3">
-                  <span class="mdc-list-item__text">Leaderboards</span>
-                </li>
-              </ul>
-              <br>
-
-              <!-- Platforms -->
-              <h3 class="text-uppercase">Supported Plaforms</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Android</span>
-                    </span>
+          <!-- Platforms -->
+          <section>
+            <h2 class="text-uppercase">Supported Plaforms</h2>
+            <div class="mdc-chip-set" role="grid">
+              <div class="mdc-chip" role="row">
+                <div class="mdc-chip__ripple"></div>
+                <span role="gridcell">
+                  <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                    <span class="mdc-chip__text">Android</span>
                   </span>
-                </div>
+                </span>
               </div>
-              <br>
+            </div>
+          </section>
 
-              <!-- Tools -->
-              <h3 class="text-uppercase">Programming Languages</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Java</span>
-                    </span>
+          <!-- Tools -->
+          <section>
+            <h2 class="text-uppercase">Programming Languages</h2>
+            <div class="mdc-chip-set" role="grid">
+              <div class="mdc-chip" role="row">
+                <div class="mdc-chip__ripple"></div>
+                <span role="gridcell">
+                  <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                    <span class="mdc-chip__text">Java</span>
                   </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Kotlin</span>
-                    </span>
+                </span>
+              </div>
+              <div class="mdc-chip" role="row">
+                <div class="mdc-chip__ripple"></div>
+                <span role="gridcell">
+                  <span role="button" class="mdc-chip__primary-action">
+                    <span class="mdc-chip__text">Kotlin</span>
                   </span>
-                </div>
+                </span>
               </div>
-            </section>
-          </div>
-
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
-            <section class="project-details">
-              <!-- Client-->
-              <h3 class="text-uppercase">About the Client</h3>
-              <p>
-                This is a personal project developed under brand name AspiraSoft.
-              </p>
-              <br>
-
-              <h3 class="text-uppercase">Get it now</h3>
-              <div class="mdc-data-table">
-                <table class="mdc-data-table__table" aria-label="Dessert calories">
-                  <thead>
-                    <tr class="mdc-data-table__header-row">
-                      <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Platform</th>
-                      <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Download Link</th>
-                    </tr>
-                  </thead>
-                  <tbody class="mdc-data-table__content">
-                    <tr class="mdc-data-table__row">
-                      <td class="mdc-data-table__cell">Android</td>
-                      <td class="mdc-data-table__cell"><a href='https://play.google.com/store/apps/details?id=co.aspirasoft.poppit' target="_blank">Download</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
-      </div>
 
+        <div class="col-md-4">
+          <!-- Client-->
+          <section>
+            <h2 class="text-uppercase">About the Client</h2>
+            <p> This is a personal project developed under brand name AspiraSoft.</p>
+          </section>
+
+          <!-- Source Code -->
+          <section>
+            <h2 class="text-uppercase">Source Code</h2>
+            <p>Project source code is not publicly available.</p>
+          </section>
+
+          <!-- Download -->
+          <section>
+            <h2 class="text-uppercase">Get it now</h2>
+            <div>
+              <span>
+                <a href='https://play.google.com/store/apps/details?id=co.aspirasoft.poppit&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' rel="noopener" target="_blank">
+                  <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="64px" />
+                </a>
+              </span>
+            </div>
+            <p>
+              <small>By downloading this project, you agree to its <a href="privacy-policy.html">terms of use</a>.</small>
+            </p>
+          </section>
+        </div>
+      </article>
       <footer>
         <span class="copyright"></span>
       </footer>
@@ -190,7 +201,6 @@
   <script src="/js/navigation.js"></script>
 
   <!-- Page specific scripts -->
-  <script src="/vendors/isotope/isotope-min.js"></script>
   <script src="/js/projects.js"></script>
 </body>
 

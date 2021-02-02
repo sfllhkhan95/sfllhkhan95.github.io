@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="Connect is a social networking mobile application.">
-  <meta name="keywords" content="projects, programming, freelancer, saif khan, saifkhichi96">
+  <meta name="description" content="NUST Connect is a social networking mobile application for the community of NUST university.">
+  <meta name="keywords" content="social network, nust, projects, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
   <!-- Website icon -->
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>Connect | Projects | Saif Khan</title>
+  <title>NUST Connect Social Network | Saif Khan</title>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -35,176 +35,225 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">
-          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
-        </h1>
+        <button class="material-icons mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);" onclick="back();">arrow_back</button>
+        <span class="mdc-top-app-bar__title"><a href="/"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
       </section>
     </div>
   </header>
 
-  <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
-    <main class="mdc-drawer-app-content main-content">
-      <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
-            <section class="project-summary">
-              <img class="project-logo" src="logo.png" alt="Logo of the project." />
-              <div>
-                <h2 class="project-title">NUST Connect</h2>
-                <a class="project-category" href="#">Communication</a>
-                <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
-              </div>
-            </section>
+  <main class="mdc-top-app-bar--fixed-adjust main-content">
+    <article>
+      <header>
+        <!-- Breadcrumbs -->
+        <section>
+          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+        </section>
 
-            <!-- Cover Photo -->
-            <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
-
-            <section class="project-details">
-              <!-- Overview -->
-              <p>
-                NUST Connect is a platform where the whole community of National University of Sciences and Technology can come together and interact with each other.
-              </p>
-              <br>
-
-              <!-- Purpose -->
-              <h3 class="text-uppercase">Purpose</h3>
-              <ul>
-                <li>
-                  To connect the NUST community by bridging the distance-gap between people, especially people from different schools/departments.
-                </li>
-                <li>
-                  To provide them a platform for sharing opportunities with each other.
-                </li>
-                <li>
-                  To allow students to get help from their peers and teachers.
-                </li>
-              </ul>
-              <br>
-
-              <!-- How it Works -->
-              <h3 class="text-uppercase">How it Works</h3>
-              <ul>
-                <li>
-                  Users <b>request an account</b> by registering in the application.
-                </li>
-                <li>
-                  Once approved, they can <b>sign in</b> to their accounts.
-                </li>
-                <li>
-                  Everyone is connected with everyone else by default (i.e. you see posts from whole community in your <b>timeline</b>), unless they <b>unfollow</b> someone.
-                </li>
-              </ul>
-              <br>
-
-              <!-- Key Feature: Timeline -->
-              <h3 class="text-uppercase">Key Feature: Timeline</h3>
-              <ul>
-                <li>
-                  Updates from everyone (except people you unfollowed) appear in your timeline.
-                </li>
-                <li>
-                  Updates are grouped under/filtered by three categories:
-                  <ol>
-                    <li>Public – Updates from everyone</li>
-                    <li>School – Updates from people of your own school, e.g. SEECS</li>
-                    <li>Department – Updates from people of your own degree, e.g. BESE</li>
-                  </ol>
-                </li>
-                <li>
-                  You can only see posts which have you in their <b>target audience</b>.
-                </li>
-              </ul>
-              <br>
-
-              <!-- Key Feature: Post Visibility -->
-              <h3 class="text-uppercase">Key Feature: Target Audience</h3>
-              <ul>
-                <li>Who should see a status update you post?</li>
-                <li>You limit the target audience by using the visibility controls.</li>
-                <li>For each post, you select the target school, degree and batch.</li>
-              </ul>
-              <br>
-
-              <!-- Additional Features -->
-              <h3 class="text-uppercase">Additional Features</h3>
-              <ul>
-                <li><b>Subscribe for notifications</b> for status updates by specific users.</li>
-                <li>Ask for help by posting a <b>help request</b> on a user’s profile page, which starts a new discussion thread. You control who can see this discussion thread.</li>
-                <li>Visit user profiles by:
-                  <ol>
-                    <li>... browsing an accounts directory, or</li>
-                    <li>... searching for a user by name or CMS ID.</li>
-                  </ol>
-                </li>
-              </ul>
-              <br>
-
-              <!-- Platforms -->
-              <h3 class="text-uppercase">Supported Plaforms</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Android</span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <br>
-
-              <!-- Tools -->
-              <h3 class="text-uppercase">Programming Languages</h3>
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Java</span>
-                    </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">PHP</span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </section>
+        <!-- Project Summary -->
+        <section class="project-summary">
+          <img class="project-logo" src="logo.png" alt="Logo of the project." />
+          <div>
+            <h1 class="project-title">NUST Connect</h1>
+            <div class="project-tags">
+              <span class="project-tag"><i class="material-icons">sell</i>Social Network</span>
+              <span class="project-tag"><i class="material-icons">sell</i>NUST</span>
+            </div>
+            <p class="project-type"><span class="material-icons">devices</span>&nbsp; Mobile App</p>
           </div>
+        </section>
+      </header>
 
-          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-12-tablet mdc-card">
-            <section class="project-details">
-              <!-- Client-->
-              <h3 class="text-uppercase">About the Client</h3>
-              <p>
-                This project was an initiative of <a href="https://www.facebook.com/NEC.NUST/" target="_blank">NUST Entrepreneurs Club</a>, where I was the project manager and headed the development team.
-              </p>
-              <br>
+      <div class="col-md-8">
+        <!-- Overview -->
+        <section>
+          <p>
+            NUST Connect is a platform where the whole community of National University of Sciences and Technology can come together and interact with each other.
+          </p>
+        </section>
 
-              <!-- Client-->
-              <h3 class="text-uppercase">Learn More</h3>
-              <a class="mdc-button" href="SRS_v1.3.pdf"><span class="material-icons">description</span>&nbsp; Requirements Sepcification</a><br>
-              <a class="mdc-button" href="SDD_v1.0.pdf"><span class="material-icons">description</span>&nbsp; Design Description</a><br>
-              <a class="mdc-button" href="SysArch_v1.0.pdf"><span class="material-icons">description</span>&nbsp; Detailed Architecture</a><br>
-              <br>
+        <!-- Media -->
+        <section>
+          <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
+        </section>
 
-              <h3 class="text-uppercase">Get it now</h3>
-              <p>The project is not available for public use.</p>
-            </section>
+        <!-- Purpose -->
+        <section>
+          <h2>Purpose</h2>
+          <ul>
+            <li tabindex="0">
+              To connect the NUST community by bridging the distance-gap between people, especially people from different schools/departments.
+            </li>
+            <li>
+              To provide them a platform for sharing opportunities with each other.
+            </li>
+            <li>
+              To allow students to get help from their peers and teachers.
+            </li>
+          </ul>
+        </section>
+
+        <!-- How it Works -->
+        <section>
+          <h2>How it Works</h2>
+          <ul>
+            <li tabindex="0">
+              Users <b>request an account</b> by registering in the application.
+            </li>
+            <li>
+              Once approved, they can <b>sign in</b> to their accounts.
+            </li>
+            <li>
+              Everyone is connected with everyone else by default (i.e. you see posts from whole community in your <b>timeline</b>), unless they <b>unfollow</b> someone.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Key Feature: Timeline -->
+        <section>
+          <h2>Key Feature: Timeline</h2>
+          <ul>
+            <li tabindex="0">
+              Updates from everyone (except people you unfollowed) appear in your timeline.
+            </li>
+            <li>
+              Updates are grouped under/filtered by three categories:
+              <ol>
+                <li tabindex="0">Public – Updates from everyone</li>
+                <li>School – Updates from people of your own school, e.g. SEECS</li>
+                <li>Department – Updates from people of your own degree, e.g. BESE</li>
+              </ol>
+            </li>
+            <li>
+              You can only see posts which have you in their <b>target audience</b>.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Key Feature: Post Visibility -->
+        <section>
+          <h2>Key Feature: Target Audience</h2>
+          <ul>
+            <li tabindex="0">Who should see a status update you post?</li>
+            <li>You limit the target audience by using the visibility controls.</li>
+            <li>For each post, you select the target school, degree and batch.</li>
+          </ul>
+        </section>
+
+        <!-- Additional Features -->
+        <section>
+          <h2>Additional Features</h2>
+          <ul>
+            <li tabindex="0"><b>Subscribe for notifications</b> for status updates by specific users.</li>
+            <li>Ask for help by posting a <b>help request</b> on a user’s profile page, which starts a new discussion thread. You control who can see this discussion thread.</li>
+            <li>Visit user profiles by:
+              <ol>
+                <li tabindex="0">... browsing an accounts directory, or</li>
+                <li>... searching for a user by name or CMS ID.</li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Platforms -->
+        <section>
+          <h2>Supported Plaforms</h2>
+          <div class="mdc-chip-set" role="grid">
+            <div class="mdc-chip" role="row">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                  <span class="mdc-chip__text">Android</span>
+                </span>
+              </span>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <!-- Tools -->
+        <section>
+          <h2>Programming Languages</h2>
+          <div class="mdc-chip-set" role="grid">
+            <div class="mdc-chip" role="row">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                  <span class="mdc-chip__text">Java</span>
+                </span>
+              </span>
+            </div>
+            <div class="mdc-chip" role="row">
+              <div class="mdc-chip__ripple"></div>
+              <span role="gridcell">
+                <span role="button" class="mdc-chip__primary-action">
+                  <span class="mdc-chip__text">PHP</span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <footer>
-        <span class="copyright"></span>
-      </footer>
-    </main>
-  </div>
+      <aside class="col-md-4">
+        <!-- Client-->
+        <section>
+          <h2>About the Client</h2>
+          <p>
+            This project was an initiative of <a href="https://www.facebook.com/NEC.NUST/" rel="noopener" target="_blank">NUST Entrepreneurs Club</a>, where I was the project manager and headed the development team.
+          </p>
+        </section>
+
+        <!-- Client -->
+        <section>
+          <h2>Learn More</h2>
+          <ul>
+            <li>
+              <a class="mdc-button" href="SRS_v1.3.pdf">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">
+                  <span class="material-icons" style="vertical-align: middle;">description</span>
+                  &nbsp; Requirements Sepcification
+                </span>
+                <span class="mdc-button__touch"></span>
+              </a>
+            </li>
+            <li>
+              <a class="mdc-button" href="SDD_v1.0.pdf">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">
+                  <span class="material-icons" style="vertical-align: middle;">description</span>
+                  &nbsp; Design Description
+                </span>
+                <span class="mdc-button__touch"></span>
+              </a>
+            </li>
+            <li>
+              <a class="mdc-button" href="SysArch_v1.0.pdf">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">
+                  <span class="material-icons" style="vertical-align: middle;">description</span>
+                  &nbsp; Detailed Architecture
+                </span>
+                <span class="mdc-button__touch"></span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Source Code -->
+        <section>
+          <h2>Source Code</h2>
+          <p>Project source code is not publicly available.</p>
+        </section>
+
+        <!-- Download -->
+        <section>
+          <h2>Get it now</h2>
+          <p>Not available for public use.</p>
+        </section>
+      </aside>
+    </article>
+    <footer></footer>
+  </main>
 
   <!-- jQuery (must be above all other scripts) -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -219,7 +268,6 @@
   <script src="/js/navigation.js"></script>
 
   <!-- Page specific scripts -->
-  <script src="/vendors/isotope/isotope-min.js"></script>
   <script src="/js/projects.js"></script>
 </body>
 
