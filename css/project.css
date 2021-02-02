@@ -21,17 +21,12 @@
 
 .project-tags {
   display: block;
-  float: left;
   margin-bottom: 4px;
-}
-
-.project-tags:after {
-  clear: both;
 }
 
 .project-tag {
   display: inline-block;
-  background-color: #eee;
+  background-color: var(--colorPrimary);
   border-radius: 16px;
   color: var(--textColorPrimary);
   font-size: 10px;
