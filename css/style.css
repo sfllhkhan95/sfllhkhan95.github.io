@@ -10,6 +10,8 @@
   --content-padding: 40px;
   /* spacing around the content card */
   --content-spacing: 24px;
+  /* spacing between the content columns */
+  --column-spacing: 40px;
   /* spacing around the footnote */
   --footnote-spacing-x: 24px;
   --footnote-spacing-y: 0px;
@@ -22,6 +24,7 @@
     --content-elevation: 0px;
     --content-padding: 24px;
     --content-spacing: 0px;
+    --column-spacing: 0px;
     --footnote-spacing-x: 24px;
     --footnote-spacing-y: 24px;
   }
@@ -85,7 +88,7 @@ body {
   box-sizing: border-box;
   float: left;
   width: 67%;
-  padding-right: var(--content-padding);
+  padding-right: var(--column-spacing);
 }
 
 .col-md-4 {
