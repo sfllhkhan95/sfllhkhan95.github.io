@@ -1,11 +1,12 @@
 :root {
   --colorPrimaryLight: #ffffff;
-  --colorPrimary: #f3e5f5;
-  --colorPrimaryDark: #c0b3c2;
+  --colorPrimary: #eceff1;
+  --colorPrimaryDark: #b6b8c3;
 
+  --colorAccentLight: #f1f8e9;
   --colorAccent: #854fee;
-  --colorAccentSecondary: #4458dc;
-  --colorDisabled: #bdbdbd;
+  --colorAccentSecondary: #3949ab;
+  --colorDisabled: #babdbe;
 
   --textColorPrimary: #424242;
   --textColorSecondary: #616161;

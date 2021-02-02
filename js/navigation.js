@@ -25,7 +25,7 @@ $(function() {
 });
 
 // Spread breadcrumbs
-$('.breadcrumbs').html("<li class='breadcrumb-item'><a href='/'><span class='material-icons'>home</span></a></li>")
+$('.breadcrumbs').html("<li class='breadcrumb-item'><a href='/'>Home</a></li>")
 var pages = location.href.split("://")[1].split('#')[0].split('?')[0].split("/").filter(function(el) {
   return el != "" && el != "index.html";
 });
@@ -43,10 +43,11 @@ for (var i = 1, len = pages.length; i < len; i++) {
 }
 
 // Import copyright notice
-$.get('/copyright.html', function(data) {
-  var copyright = $('.copyright')
-  if (copyright != null) {
-    copyright.html(data);
+$.get('/footer.html', function(data) {
+  var footer = $('footer')
+  if (footer != null) {
+    footer.html(data);
+    $('#last-modified').html(document.lastModified);
   }
 })
 

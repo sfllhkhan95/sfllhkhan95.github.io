@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="Online curriculum vitae (CV) detailing eductaional and work background.">
+  <meta name="description" content="A downloadable, online resume which provides a summary of my technical skills, eductaion and work background.">
   <meta name="keywords" content="resume, education, jobs, saif khan, saifkhichi96">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
 
@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Page Title -->
-  <title>Curriculum Vitae (CV) | Saif Khan</title>
+  <title>Resume | Saif Khan</title>
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
@@ -32,61 +32,69 @@
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
   <style>
-    .social-icon {
-      display: inline-block;
-    }
-
-    .social-icon:after {
-      content: '';
-      clear: both;
-    }
-
-    .social-icon>li {
+    .bio {
+      display: flex;
       float: left;
-      width: 24px;
-      height: 24px;
-      border-radius: 4px;
-      margin-right: 4px;
-      padding: 4px;
     }
 
-    .social-icon>li>* {
-      width: 18px;
-      height: 18px;
-      padding: 0px;
+    .bio>div {
+      display: inline-block;
+      float: left;
     }
 
-    section {
-      margin-bottom: 24px;
+    .bio .name {
+      font-size: 18pt;
+      font-weight: normal;
+      margin: 0;
     }
 
-    section.mdc-card {
-      padding: 16px;
+    .bio .tagline {
+      font-size: 14pt;
+      font-weight: normal;
     }
 
     .bio img {
-      width: 160px;
-      height: 160px;
-      border-radius: 4px;
-      margin-bottom: 4px;
-      margin-top: 36px;
+      width: 128px;
+      height: 128px;
+      border-radius: 64px;
+      margin-right: var(--content-padding);
     }
 
-    @media (max-width: 768px) {
-      .bio {
-        background: var(--colorAccent);
-        text-align: center;
-        padding: 16px;
-      }
+    .highlight {
+      background: var(--colorAccentLight);
+      border-radius: 4px;
+      padding: var(--content-padding);
+    }
 
-      .bio>* {
-        color: var(--colorPrimaryLight) !important;
+    @media (max-width: 840px) {
+      .bio {
+        background: var(--colorPrimary);
+        box-shadow: 0px 0px 2px var(--colorDisabled);
+        border-radius: 4px;
+        padding: var(--content-padding);
       }
 
       .bio img {
-        border-radius: 80px;
-        margin-top: 0px;
-        margin-bottom: 16px;
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+
+      }
+    }
+
+    @media (max-width: 480px) {
+      .bio {
+        display: block;
+        text-align: center;
+      }
+
+      .bio .summary {
+        text-align: justify;
+      }
+
+      .bio>div {
+        display: block;
+        float: none;
       }
     }
   </style>
@@ -96,90 +104,102 @@
   <!-- Top App Bar -->
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
-      <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="mdc-icon-button material-icons" onclick="back();" style="color: var(--textColorPrimary);">arrow_back</button>
-        <h1 class="mdc-top-app-bar__title">
-          <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
-        </h1>
-      </div>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);">menu</button>
+        <span class="mdc-top-app-bar__title"><a href="#"><img src="/img/logo.png" /></a></span>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <button class="mdc-button mdc-button--outlined" onclick="downloadCV()">
+          <span class="mdc-button__label">Get PDF</span>
+        </button>
+      </section>
     </div>
   </header>
 
-  <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
-    <main class="mdc-drawer-app-content main-content">
-      <div class="row">
-        <div class="col-md-4">
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <!-- Drawer -->
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title">Saif's Portfolio</h3>
+        <h6 class="mdc-drawer__subtitle"><a href="/contact.html">Get in Touch</a></h6>
+      </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a class="mdc-list-item" href="/" aria-current="page" tabindex="0">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+            <span class="mdc-list-item__text">Home</span>
+          </a>
+          <a class="mdc-list-item" href="/projects/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+            <span class="mdc-list-item__text">Projects</span>
+          </a>
+          <a class="mdc-list-item" href="/services/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>
+            <span class="mdc-list-item__text">Services</span>
+          </a>
+          <a class="mdc-list-item mdc-list-item--activated" href="#">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>
+            <span class="mdc-list-item__text">Resume</span>
+          </a>
+          <hr class="mdc-list-divider" />
+
+          <a class="mdc-list-item" href="https://essword.com/" target="_blank">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>
+            <span class="mdc-list-item__text">Blog</span>
+            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
+          </a>
+          <a class="mdc-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan" target="_blank">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>
+            <span class="mdc-list-item__text">Books</span>
+            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
+          </a>
+          <a class="mdc-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ" target="_blank">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>
+            <span class="mdc-list-item__text">Videos</span>
+            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
+          </a>
+          <hr class="mdc-list-divider" />
+
+          <a class="mdc-list-item" href="#" id="install-button">
+            <pwa-install id="a2hs" installbuttontext="Install Web App"></pwa-install>
+          </a>
+          <a class="mdc-list-item" href="#">
+          </a>
+        </nav>
+      </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+
+    <!-- Content -->
+    <div class="main-content">
+      <article>
+        <header>
+          <!-- Breadcrumbs -->
           <section>
-            <div class="bio">
+            <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
+          </section>
+
+          <!-- Page Title and Description -->
+          <section>
+            <h1>Education and Work History</h1>
+            <section class="bio">
               <img src="/img/me.jpg" class="img-responsive" alt="A portrait of Muhammad Saif Ullah Khan." />
-              <h2 style="font-weight: normal;">Muhammad Saif Ullah Khan</h2>
-              <p style="font-size: 20px;">Mobile Developer and ML Engineer</p>
-              <br>
-              <p>
-                <button class="mdc-button mdc-button--outlined primary_btn tr-bg" onclick="downloadCV()">
-                  <span class="mdc-button__label">Download PDF</span>
-                </button>
-              </p>
-            </div>
-            <br>
-            <div>
-              <p>
-                Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>. Self-directed leader who fosters a collaborative
-                and supportive team environment. Dedicated, hard-working and open to new experiences.
-              </p>
-            </div>
-
-            <!-- Social Icons -->
-            <ul class="social-icon">
-              <li class="mdc-chip">
-                <a target="_blank" href="https://linkedin.com/in/saifkhichi96">
-                  <span class="fab fa-linkedin" aria-hidden="true"></span>
-                </a>
-              </li>
-              <li class="mdc-chip">
-                <a target="_blank" href="https://github.com/saifkhichi96">
-                  <span class="fab fa-github" aria-hidden="true"></span>
-                </a>
-              </li>
-            </ul>
+              <div>
+                <p class="name">Muhammad Saif Ullah Khan</p>
+                <p class="tagline">Mobile Developer and ML Engineer</p>
+                <p class="summary">
+                  Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>. Self-directed leader who fosters a collaborative
+                  and supportive team environment. Dedicated, hard-working and open to new experiences.
+                </p>
+              </div>
+            </section>
           </section>
-
-          <!-- Languages -->
-          <section>
-            <h3 class="subtitle">Languages</h3>
-            <ul>
-              <li>
-                English <small>(Advanced - C1)</small>
-              </li>
-              <li>
-                German <small>(Beginner - A1)</small>
-              </li>
-              <li>
-                Urdu <small>(Native)</small>
-              </li>
-            </ul>
-          </section>
-
-          <!-- Contact -->
-          <section>
-            <h3 class="subtitle">Contact</h3>
-            <ul>
-              <li>
-                &nbsp;<i class="fas fa-map-pin"></i>
-                &nbsp; Kaiserslautern, Germany
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:saifkhichi96@gmail.com">&nbsp;saifkhichi96@gmail.com</a>
-              </li>
-            </ul>
-          </section>
-        </div>
+        </header>
 
         <div class="col-md-8">
           <!-- Skills and Abilities-->
-          <h3 class="subtitle">Expertise</h3>
-          <section class="mdc-card">
+          <section>
+            <h2>Technical Skills</h2>
             <ul class="mdc-list">
               <li>
                 Programming Languages
@@ -191,17 +211,17 @@
                   </li>
                   <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="1" class="mdc-chip__text">Kotlin</span>
+                      <span role="button" class="mdc-chip__text">Kotlin</span>
                     </span>
                   </li>
                   <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="2" class="mdc-chip__text">Java</span>
+                      <span role="button" class="mdc-chip__text">Java</span>
                     </span>
                   </li>
                   <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="3" class="mdc-chip__text">JavaScript</span>
+                      <span role="button" class="mdc-chip__text">JavaScript</span>
                     </span>
                   </li>
                 </ul>
@@ -217,59 +237,58 @@
                   </li>
                   <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="1" class="mdc-chip__text">SQLite</span>
+                      <span role="button" class="mdc-chip__text">SQLite</span>
                     </span>
                   </li>
                   <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="2" class="mdc-chip__text">MySQL</span>
+                      <span role="button" class="mdc-chip__text">MySQL</span>
                     </span>
                   </li>
                 </ul>
               </li>
 
               <li class="mdc-layout-grid__cell">
-                Other Tools
+                Tools
                 <ul class="mdc-chip-set">
-                  <li class="mdc-chip" data-filter=".video">
+                  <li class="mdc-chip">
                     <span>
                       <span role="button" tabindex="0" class="mdc-chip__text">Firebase Services</span>
                     </span>
                   </li>
-                  <li class="mdc-chip" data-filter=".video">
+                  <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="1" class="mdc-chip__text">Google Cloud Services</span>
+                      <span role="button" class="mdc-chip__text">Google Cloud Services</span>
                     </span>
                   </li>
-                  <li class="mdc-chip" data-filter=".video">
+                  <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="2" class="mdc-chip__text">Mapbox SDK</span>
+                      <span role="button" class="mdc-chip__text">OpenCV</span>
                     </span>
                   </li>
-                  <li class="mdc-chip" data-filter=".video">
+                  <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="3" class="mdc-chip__text">OpenCV</span>
+                      <span role="button" class="mdc-chip__text">PyTorch</span>
                     </span>
                   </li>
-                  <li class="mdc-chip" data-filter=".video">
+                  <li class="mdc-chip">
                     <span>
-                      <span role="button" tabindex="4" class="mdc-chip__text">PyTorch</span>
-                    </span>
-                  </li>
-                  <li class="mdc-chip" data-filter=".video">
-                    <span>
-                      <span role="button" tabindex="5" class="mdc-chip__text">Tensorflow</span>
+                      <span role="button" class="mdc-chip__text">Tensorflow</span>
                     </span>
                   </li>
                 </ul>
               </li>
+            </ul>
+            <p>Please note that this list is not exhaustive, and only mentions the skills I am most familiar with.</p>
 
+            <ul class="highlight">
               <li>
                 Sound knowledge of <strong>object-oriented concepts</strong>, basic
                 <strong>design
                   patterns</strong> and <strong>good programming
                   practices</strong>.
               </li>
+              <br>
 
               <li>
                 Ability to <strong>work independently</strong> as well as <strong>with
@@ -280,9 +299,9 @@
           </section>
 
           <!-- Experience-->
-          <h3 class="subtitle">Experience</h3>
-          <section class="mdc-card">
+          <section>
             <ul>
+              <h2>Experience Summary</h2>
               <!-- MSCS -->
               <li class="experience-item">
                 <div class="timeline">
@@ -292,25 +311,22 @@
                 <div class="content">
                   <div class="mdc-card-content">
                     <small class="date">2019 - present</small>
-                    <h4 class="name">Master of Computer Science</h4>
+                    <h3 class="name">Master of Computer Science</h3>
                     <b>Technische Universität Kaiserslautern (TUK)</b>
-                    <p><i>Kaiserslautern, Germany</i></p>
+                    <address>Kaiserslautern, Germany</address>
 
-                    <details>
-                      <summary>Learn More</summary>
-                      <section class="mdc-card mdc-card--outlined">
-                        <span>
-                          <i class="fas fa-spinner"></i> In-Progress &#xb7;
-                          <a href="mscs/" style="color: black;">See Master Courses</a>
-                        </span>
-                        <br>
-                        <u>Specialisations</u>
-                        <ul class="mdc-list">
-                          <li class="mdc-list-item__text">Intelligent Systems</li>
-                          <li class="mdc-list-item__text">Visualization and Scientific Computing</li>
-                        </ul>
-                      </section>
-                    </details>
+                    <div class="mdc-card mdc-card--outlined" style="padding: 16px; margin-top: 8px;">
+                      <span>
+                        <i class="fas fa-spinner"></i> In-Progress &#xb7;
+                        <a href="mscs/" style="color: black;">See Master Courses</a>
+                      </span>
+                      <br>
+                      <u>Specialisations</u>
+                      <ul class="mdc-list">
+                        <li class="mdc-list-item__text">Intelligent Systems</li>
+                        <li class="mdc-list-item__text">Visualization and Scientific Computing</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -325,10 +341,10 @@
                   <div class="mdc-card-content">
                     <small class="date">09/2018 - 02/2019</small>
                     <a href="#">
-                      <h4 class="name">Software Developer / Graphics Designer</h4>
+                      <h3 class="name">Software Developer / Graphics Designer</h3>
                     </a>
                     <b>Active Institute of Science, Arts &amp; Technology (AISAT)</b>
-                    <p><i>Multan, Pakistan</i></p>
+                    <address>Multan, Pakistan</address>
                   </div>
                 </div>
               </li>
@@ -342,68 +358,67 @@
                 <div class="content">
                   <div class="mdc-card-content">
                     <small class="date">2014 - 2018</small>
-                    <h4 class="name">Bachelor of Software Engineering</h4>
+                    <h3 class="name">Bachelor of Software Engineering</h3>
                     <b>National University of Sciences and Technology (NUST)</b>
-                    <p><i>Islamabad, Pakistan</i></p>
+                    <address>Islamabad, Pakistan</address>
                   </div>
 
-                  <details>
-                    <summary>Learn More</summary>
-                    <div class="mdc-card mdc-card--outlined" style="padding: 16px;">
-                      <span>
-                        <i class="fas fa-user-graduate"></i> 3.78 / 4.0 CGPA &#xb7;
-                        <a href="bese/" style="color: black;">See Bachelor Courses</a>
-                      </span>
-                      <br>
-                      <u>Co-Curricular Activities</u>
-                      <ul class="mdc-list">
-                        <!-- NEC Manager -->
-                        <li>
-                          <details>
-                            <summary>NUST Entreprenuers Club (NEC)</summary>
-                            <small>10/2016 - 04/2017</small>
-                            <blockquote>As manager app development, I led a team developing a
-                              campus-wide social networking system and successfully designed and delivered
-                              the first functional prototype.
-                            </blockquote>
-                          </details>
-                        </li>
+                  <div class="mdc-card mdc-card--outlined" style="padding: 16px; margin-top: 8px;">
+                    <span>
+                      <i class="fas fa-user-graduate"></i> 3.78 / 4.0 CGPA &#xb7;
+                      <a href="bese/" style="color: black;">See Bachelor Courses</a>
+                    </span>
+                    <br>
+                    <u>Co-Curricular Activities</u>
+                    <ul class="mdc-list">
+                      <!-- NEC Manager -->
+                      <li>
+                        <details>
+                          <summary>NUST Entreprenuers Club (NEC)</summary>
+                          <small>10/2016 - 04/2017</small>
+                          <blockquote>As manager app development, I led a team developing a
+                            campus-wide social networking system and successfully designed and delivered
+                            the first functional prototype.
+                          </blockquote>
+                        </details>
+                      </li>
 
-                        <!-- NIMUN '17 -->
-                        <li>
-                          <details>
-                            <summary>NUST International Model United Nations (NIMUN) 2017</summary>
-                            <small>10/2016 - 02/2017</small>
-                            <blockquote>As an IT team member in the student organising committee,
-                              I was responsible for developing the Android version of the event's official
-                              mobile app, as well as a mobile app for the security team.
-                            </blockquote>
-                          </details>
-                        </li>
+                      <!-- NIMUN '17 -->
+                      <li>
+                        <details>
+                          <summary>NUST International Model United Nations (NIMUN) 2017</summary>
+                          <small>10/2016 - 02/2017</small>
+                          <blockquote>As an IT team member in the student organising committee,
+                            I was responsible for developing the Android version of the event's official
+                            mobile app, as well as a mobile app for the security team.
+                          </blockquote>
+                        </details>
+                      </li>
 
-                        <!-- Beijing Forum '16 -->
-                        <li>
-                          <details>
-                            <summary>Beijing Forum Islamabad 2016</summary>
-                            <small>04/2016 - 05/2016</small>
-                            <blockquote>As a member of the student organising committee for Beijing Forum
-                              '16, a global conference whose first international chapter was hosted in
-                              Islamabad, I was responsible for developing the official mobile app for
-                              the event to be used by the attendees.
-                            </blockquote>
-                          </details>
-                        </li>
-                      </ul>
-                    </div>
-                  </details>
+                      <!-- Beijing Forum '16 -->
+                      <li>
+                        <details>
+                          <summary>Beijing Forum Islamabad 2016</summary>
+                          <small>04/2016 - 05/2016</small>
+                          <blockquote>As a member of the student organising committee for Beijing Forum
+                            '16, a global conference whose first international chapter was hosted in
+                            Islamabad, I was responsible for developing the official mobile app for
+                            the event to be used by the attendees.
+                          </blockquote>
+                        </details>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
           </section>
+        </div>
 
+        <div class="col-md-4">
           <!-- Accomplishments -->
-          <h3 class="subtitle">Achievements &amp; Projects</h3>
-          <section class="mdc-card">
+          <section>
+            <h2>Achievements &amp; Projects</h2>
             <ul>
               <li>The final project of my Bachelor degree, called <a href="/projects/authentica">Signature Verification</a> was
                 nominated for gold medal in our department.
@@ -442,15 +457,41 @@
             </div>
           </section>
 
+          <!-- Languages -->
+          <section>
+            <h2>Languages</h2>
+            <ul>
+              <li>
+                <strong>English</strong><br> Bilingual</small>
+                <hr class="mdc-list-divider">
+              </li>
+              <li>
+                <strong>German</strong><br> Basic</small>
+                <hr class="mdc-list-divider">
+              </li>
+              <li>
+                <strong>Urdu</strong><br> Native</small>
+                <hr class="mdc-list-divider">
+              </li>
+              <li>
+                <strong>Hindi</strong><br> Spoken-only, reading in Roman script</small>
+                <hr class="mdc-list-divider">
+              </li>
+              <li>
+                <strong>Other Regional Languages</strong><br> Saraiki, Punjabi</small>
+                <hr class="mdc-list-divider">
+              </li>
+            </ul>
+          </section>
+
           <!-- Interests -->
-          <h3 class="subtitle">Interests</h3>
-          <section class="mdc-card">
+          <section>
+            <h2>Interests</h2>
             <ul>
               <li>
                 <div class="mdc-card-content">
-                  <h4>Reading</h4>
-                  <blockquote>As an avid reader, I have a large collection of books in my home
-                    library. I read some fiction, but mostly non-fiction with topics ranging
+                  <strong>Reading</strong><br>
+                  <blockquote>I read some fiction, but mostly non-fiction with topics ranging
                     from history, politics, and theology to science, technology and
                     current affairs.
                   </blockquote>
@@ -461,12 +502,11 @@
                     <span class="mdc-button__label">See my reading list</span>
                   </a>
                 </div>
-                <hr>
               </li>
 
               <li>
                 <div class="mdc-card-content">
-                  <h4>Art/Blogging</h4>
+                  <strong>Art &amp; Blogging</strong><br>
                   <blockquote>Occasional writer and artist. I sometimes write short stories and
                     poetry, and indulge in oil painting and pencil sketching.
                   </blockquote>
@@ -474,20 +514,23 @@
                 <div class="mdc-card__action-icons">
                   <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://essword.com/" target="_blank">
                     <span class="mdc-button__ripple"></span>
-                    <span class="mdc-button__label">Visit my blog</span>
+                    <span class="mdc-button__label">Read my blog</span>
                   </a>
                 </div>
               </li>
             </ul>
           </section>
-        </div>
-      </div>
 
-      <footer>
-        <span class="copyright"></span>
-      </footer>
-    </main>
-  </div>
+          <!-- Contact -->
+          <section>
+            <h2>Contact</h2>
+            <p>Please visit the <a href="/contact.html">contact page</a> for further information.</p>
+          </section>
+        </div>
+      </article>
+      <footer></footer>
+    </div>
+  </main>
 
   <!-- jQuery (must be above all other scripts) -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
