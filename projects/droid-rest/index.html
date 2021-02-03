@@ -169,7 +169,7 @@ import co.aspirasoft.apis.rest.HttpTask
 val payload = Payload()
 payload.message = "Hello, world!"
 
-val builder = HttpTask.Builder&lt;RequestData, Message&gt;(RequestData::class.java)
+val builder = HttpTask.Builder&lt;Payload, Response&gt;(RequestData::class.java)
 builder.setMethod(HttpMethod.POST) // supported methods: GET, POST
 builder.setRequestUrl("response-handler.php") // a script on the server which handles this request
 builder.setPayload(payload)
