@@ -26,6 +26,13 @@
   <link href="/css/style.css" rel="stylesheet">
   <link href="/css/project.css" rel="stylesheet">
 
+  <!-- Syntax Highlighting for Code Samples -->
+  <link href="/css/code.css" rel="stylesheet">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
   <!-- AdSense script -->
   <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
@@ -65,19 +72,21 @@
       </header>
 
       <div class="col-md-8">
-
-        <!-- Cover Photo -->
-        <!-- <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." /> -->
-
-        <section class="project-details">
+        <section>
           <!-- Overview -->
           <p>
             DroidREST is a client-side Android library, which provides a RESTful interface for Android applications to exchange POJO objects with a remote server.
           </p>
-          <br>
+        </section>
 
-          <!-- Features -->
-          <h3 class="text-uppercase">Key Features</h3>
+        <!-- Media -->
+        <!-- <section>
+          <img class="project-portfolio-img" src="portfolio.png" alt="Feature image for the project, explaining its main functions." />
+        </section> -->
+
+        <!-- Features -->
+        <section>
+          <h2>Key Features</h2>
           <ul class="mdc-list">
             <li class="mdc-list-item" tabindex="0">
               <span class="mdc-list-item__text">Make HTTP GET requests to a remote web server.</span>
@@ -92,10 +101,115 @@
               <span class="mdc-list-item__text">Receive POJO class objects in HTTP response.</span>
             </li>
           </ul>
-          <br>
+        </section>
 
-          <!-- Platforms -->
-          <h3 class="text-uppercase">Supported Plaforms</h3>
+        <section>
+          <h2>How to use</h2>
+          <p>The easiest way to add DroidREST to your project is to add the following dependency to your Android app's <code>build.gradle</code> file:</p>
+          <pre><code class="groovy">dependencies {
+    // ...
+    implementation "co.aspirasoft.apis:rest:$latest_version"
+}</code></pre>
+          <p>Look for the <a href="#download">download badge</a> to find out the latest release version. You might also need to add the following packaging options to your gradle file to resolve any merge conflics.</p>
+          <pre><code class="groovy">android {
+    // ...
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+}</code></pre>
+
+          <h3>Connecting to a web server</h3>
+          <p>To use DroidREST, you must add the <code>android.permission.INTERNET</code> permission to your app's manifest. Without this, your app won't be able to connect to the network.</p>
+          <p>Before you can make any HTTP requests, you have to establish a connection with your server. The following Kotlin snippet creates a singleton class to define the path of the remote server.</p>
+          <pre><code class="kotlin">import co.aspirasoft.apis.rest.HttpServer
+
+object WebServer : HttpServer("https://url/of/the/server/")</code></pre>
+
+          <h3>Exchanging simple objects with the server</h3>
+          <p>
+            Now, we see how to exchange simple objects with the server. It is important to note here that, in a single HTTP request, DroidREST serializes a Kotlin (or Java) object into JSON and sends it to the server. The server sends back a JSON
+            response, from which it tries to build an instance of another class, that is returned to the client.
+          </p>
+
+          <p>Start by creating a <code>Payload</code> class to hold our request payload. This class is a container for any data we want to send, which in this case is a simple string.
+          </p>
+          <pre><code class="kotlin">class Payload {
+    var message: String = ""
+    // other data ...
+}</code></pre>
+          <p>Similarly, create another class <code>Response</code> which defines the structure of the response we expect from the server. An instance of this class will be received in the <code>ResponseListener</code> if the request is
+            successfully sent, and
+            server's response is parsed without errors.</p>
+          <pre><code class="kotlin">class Response {
+    var uppercaseMessage: String = ""
+    // other data ...
+}</code></pre>
+
+          <p>Next, define a listener for receiving the server's response.</p>
+          <pre><code>import co.aspirasoft.apis.rest.ResponseListener
+
+val responseListener = object: ResponseListener&lt;Response&gt; {
+    override fun onRequestSuccessful(response: Response) {
+        // request successful, see the response here
+    }
+
+    override fun onRequestFailed(ex: Exception) {
+        // handle errors
+    }
+}</code></pre>
+
+          <p>Finally, build a <code>HttpTask</code> which executes the request asyncronously.</p>
+          <pre><code>import co.aspirasoft.apis.rest.HttpMethod
+import co.aspirasoft.apis.rest.HttpTask
+
+val payload = Payload()
+payload.message = "Hello, world!"
+
+val builder = HttpTask.Builder&lt;RequestData, Message&gt;(RequestData::class.java)
+builder.setMethod(HttpMethod.POST) // supported methods: GET, POST
+builder.setRequestUrl("response-handler.php") // a script on the server which handles this request
+builder.setPayload(payload)
+
+val task = builder.build(WebServer)
+task.startAsync(responseListener)</code></pre>
+
+          <h3>Handling the request on the server</h3>
+          <p>Below is a snippet of PHP code to handle this request on the server. It receives the request from the Kotlin code above, converts the message in the payload to uppercase, and sends it back. Notice that we use <code>Payload</code> and
+            <code>Response</code> classes in this code, but they are not defined here. A more complete server-side example can be found <a href="https://github.com/saifkhichi96/droid-rest/blob/master/demo-server-side.php" rel="noopener"
+              target="_blank">here</a>.
+          </p>
+          <pre><code class="php">&lt;?php
+// Read the request payload
+$request = null;
+if (isset($_GET["payload"])) { // GET request
+    $request = json_decode($_GET["payload"]);
+}
+else if (isset($_POST["payload"])) { // POST request
+    $request = json_decode($_POST["payload"]);
+}
+
+// If a valid payload is found
+if ($request != null) {
+    $payload = recast(new Payload(), $request);
+
+    // Build a response with received message converted to uppercase
+    $response = new Response()
+    $response->uppercaseMessage = strtoupper($payload->message);
+
+    // Send the response back as JSON
+    header("Content-type: application/json");
+    echo json_encode($response->getJsonData());
+}
+?&gt;</code></pre>
+        </section>
+
+        <!-- Platforms -->
+        <section>
+          <h2>Supported Plaforms</h2>
           <div class="mdc-chip-set" role="grid">
             <div class="mdc-chip" role="row">
               <div class="mdc-chip__ripple"></div>
@@ -106,10 +220,11 @@
               </span>
             </div>
           </div>
-          <br>
+        </section>
 
-          <!-- Tools -->
-          <h3 class="text-uppercase">Programming Languages</h3>
+        <!-- Tools -->
+        <section>
+          <h2>Programming Languages</h2>
           <div class="mdc-chip-set" role="grid">
             <div class="mdc-chip" role="row">
               <div class="mdc-chip__ripple"></div>
@@ -149,10 +264,9 @@
         </section>
 
         <section>
-          <h2>Get it now</h2>
-          <p>Please visit the project's <a href="https://github.com/saifkhichi96/droid-rest" rel="noopener" target="_blank">Github page</a> for usage instructions. The project is available for use with Maven/Gradle build systems, and is uploaded
-            <a href="https://bintray.com/aspirasoft/maven/droid-rest" rel="noopener" target="_blank">here</a>.
-          </p>
+          <h2 id="download">Get it now</h2>
+          <p>DroidREST can be used as a Maven and Gradle library via JCenter. It is published on Bintray.</p>
+          <a href='https://bintray.com/saifkhichi96/maven/droid-rest/_latestVersion' rel="noopener" target="_blank"><img src='https://api.bintray.com/packages/saifkhichi96/maven/droid-rest/images/download.svg'></a>
         </section>
       </div>
     </article>
