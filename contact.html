@@ -110,7 +110,7 @@
           </form>
 
           <!-- Contact Success Message -->
-          <div class="mdc-card--outlined message-sent-success" style="padding: 16px;">
+          <div class="mdc-card--outlined message-sent-success highlight" style="padding: 16px;">
             Thank you for your message. I will write back to you soon.
           </div>
         </section>
@@ -227,7 +227,6 @@
         const clientEmail = emailField.value.trim();
         const messageSubject = subjectField.value.trim();
         const messageContent = messageField.value.trim();
-        const messageTimestamp = Math.floor(Date.now() / 1000);
 
         if (clientName == "") {
           nameField.valid = false
@@ -249,7 +248,7 @@
                 email: clientEmail,
                 subject: messageSubject,
                 message: messageContent,
-                timestamp: messageTimestamp
+                timestamp: firebase.database.ServerValue.TIMESTAMP
               }, (error) => {
                 firebase.auth().currentUser.delete()
                 if (error) {

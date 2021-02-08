@@ -628,3 +628,9 @@ ul,
   font-weight: bolder;
   text-transform: uppercase;
 }
+
+.highlight {
+  background: var(--colorAccentLight);
+  border-radius: 4px;
+  padding: var(--content-padding);
+}
