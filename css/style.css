@@ -634,3 +634,23 @@ ul,
   border-radius: 4px;
   padding: var(--content-padding);
 }
+
+/* Print Styles */
+@media print {
+
+  .mdc-top-app-bar,
+  .breadcrumbs,
+  footer {
+    display: none;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  article section {
+    page-break-inside: avoid;
+  }
+
+}
