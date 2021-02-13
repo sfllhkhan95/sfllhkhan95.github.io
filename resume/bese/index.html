@@ -68,8 +68,13 @@
         <button class="material-icons mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);" onclick="back();">arrow_back</button>
         <span class="mdc-top-app-bar__title"><a href="/"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
       </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-        <button onclick="downloadTranscript()" class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download Transcript" style="color: var(--textColorPrimary);">file_download</button>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <div class="mdc-touch-target-wrapper">
+          <button class="mdc-top-app-bar__action-item mdc-icon-button" onclick="print()" aria-label="Download Transcript">
+            <span class="mdc-button__label"><i class="material-icons">print</i></span>
+            <span class="mdc-button__touch"></span>
+          </button>
+        </div>
       </section>
     </div>
   </header>
@@ -528,16 +533,6 @@
   <script src="/js/navigation.js"></script>
 
   <!-- Page specific scripts -->
-  <script>
-    function downloadTranscript() {
-      let file = 'assets/experience/bese/transcript.pdf'
-      firebase.storage().ref(file).getDownloadURL().then(function(url) {
-        window.location = url
-      }).catch(function(e) {
-        console.error(e);
-      });
-    }
-  </script>
 </body>
 
 </html>
