@@ -18,6 +18,9 @@
   <!-- Page Title -->
   <title>Contact Me | Saif Khan</title>
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
+
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -40,7 +43,7 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);" onclick="back();">arrow_back</button>
+        <button class="material-icons mdc-icon-button" aria-label="Open navigation menu" onclick="back();">arrow_back</button>
         <span class="mdc-top-app-bar__title"><a href="/"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
       </section>
     </div>
@@ -100,8 +103,8 @@
             </label>
             <br>
 
-            <div style="text-align: right">
-              <a class="mdc-button mdc-button--unelevated" id="send-button" href="#">
+            <div class="mdc-touch-target-wrapper" style="text-align: right">
+              <a class="mdc-button mdc-button--unelevated" href="#" id="send-button">
                 <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label">Send</span>
                 <span class="mdc-button__touch"></span>
@@ -143,11 +146,11 @@
             </p>
 
             <a href="https://wa.me/491727223577" rel="noopener" target="_blank" style="padding-right: 8px;">
-              <img src="img/ic_whatsapp.png" height="24px">
+              <i class="fab fa-github fa-2x" style="color: var(--mdc-theme-on-primary)"></i>
             </a>
 
             <a href="https://linkedin.com/in/saifkhichi96" rel="noopener" target="_blank" style="padding-right: 8px;">
-              <img src="img/ic_linkedin.png" height="24px">
+              <i class="fab fa-linkedin fa-2x" style="color: var(--mdc-theme-on-primary)"></i>
             </a>
           </div>
         </section>

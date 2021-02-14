@@ -11,7 +11,7 @@
 }
 
 .calendar {
-  border: 1px solid var(--colorSurfaceShadow);
+  border: 1px solid var(--mdc-theme-overlay);
   min-height: 0;
   box-sizing: border-box;
   width: 100%;
@@ -22,7 +22,7 @@
 .calendar-graph text.wday,
 .calendar-graph text.month {
   font-size: 10pt;
-  fill: var(--colorSurfaceShadow);
+  fill: var(--mdc-theme-overlay);
 }
 
 .calendar-graph {
@@ -35,7 +35,7 @@
 }
 
 .contrib-column {
-  border-color: var(--colorSurfaceShadow);
+  border-color: var(--mdc-theme-overlay);
   display: inline-flex;
   flex-direction: column;
   font-size: 11pt;
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--textColorPrimary);
+  color: var(--mdc-theme-on-primary);
   font-size: 8pt;
   height: 24px;
   overflow: hidden;
@@ -62,7 +62,7 @@
 }
 
 .contrib-number {
-  color: var(--textColorPrimary);
+  color: var(--mdc-theme-on-primary);
   font-size: 14pt;
   line-height: 1;
   height: 14pt;

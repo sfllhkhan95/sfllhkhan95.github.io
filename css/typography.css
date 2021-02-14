@@ -3,14 +3,12 @@
 
 body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  color: var(--textColorPrimary);
   font-size: 12pt;
   font-weight: 300;
   line-height: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--textColorPrimary);
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
@@ -52,20 +50,17 @@ h5, h5 {
 
 h1.subtitle, h2.subtitle, h3.subtitle,
 h4.subtitle, h5.subtitle, h6.subtitle {
-  color: var(--textColorSecondary);
   font-size: 90%;
   opacity: 0.75;
   text-transform: uppercase;
 }
 
 b, strong, sub, sup {
-  color: var(--textColorPrimary);
   font-weight: 400;
   margin: 0;
 }
 
 a, a:hover, a:focus {
-  color: var(--colorAccent);
   font-weight: 400;
   text-decoration: none;
   margin: 0;
@@ -77,22 +72,18 @@ a.light, a.light:hover, a.light:focus {
 }
 
 small, i {
-  color: var(--textColorPrimary);
   font-weight: 200;
   margin: 0;
 }
 
 p {
-  color: var(--textColorPrimary);
   margin: 0px;
   margin-bottom: 16px;
 }
 
 blockquote {
-  color: var(--textColorSecondary);
   font-weight: 200;
   font-style: italic;
-  margin: 4px;
   text-align: justify;
 }
 
@@ -114,6 +105,14 @@ button {
 
 .text-left * {
   text-align: left;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-right * {
+  text-align: right;
 }
 
 .text-center {

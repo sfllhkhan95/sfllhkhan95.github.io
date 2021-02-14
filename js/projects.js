@@ -33,8 +33,8 @@ $(function() {
   /** Callback to when a platform filter is selected. Filters view to
   show only projects for the selected platform. */
   function onFilterClicked(filter) {
-    $('.mdc-chip__text').removeClass('active');
-    filter.find('.mdc-chip__text').addClass('active');
+    $('.mdc-chip').removeClass('active');
+    filter.find('.mdc-chip__text').parent().parent().addClass('active');
 
     data = filter.attr('data-filter');
     $workGrid.isotope({

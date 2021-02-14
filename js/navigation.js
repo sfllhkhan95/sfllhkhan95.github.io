@@ -25,7 +25,7 @@ $(function() {
 });
 
 // Spread breadcrumbs
-$('.breadcrumbs').html("<li class='breadcrumb-item'><a href='/'>Home</a></li>")
+$('.breadcrumbs').html("<li class='breadcrumb-item'><a class='muted' href='/'>Home</a></li>")
 var pages = location.href.split("://")[1].split('#')[0].split('?')[0].split("/").filter(function(el) {
   return el != "" && el != "index.html";
 });
@@ -37,7 +37,7 @@ for (var i = 1, len = pages.length; i < len; i++) {
   if (i == pages.length - 1) {
     var newHtml = oldHtml + "<li class='breadcrumb-item active'><span>" + page + "</span></li>"
   } else {
-    var newHtml = oldHtml + "<li class='breadcrumb-item'><a href='" + url + "'>" + page + "</a></li>"
+    var newHtml = oldHtml + "<li class='breadcrumb-item'><a class='muted' href='" + url + "'>" + page + "</a></li>"
   }
   $('.breadcrumbs').html(newHtml);
 }

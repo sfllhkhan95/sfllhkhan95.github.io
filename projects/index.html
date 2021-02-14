@@ -34,13 +34,17 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);">menu</button>
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
         <span class="mdc-top-app-bar__title"><a href="/"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-        <a class="mdc-button mdc-button--outlined" href="/contact.html">
-          <span class="mdc-button__label">Get a Quote</span>
-        </a>
+        <div class="mdc-touch-target-wrapper">
+          <a class="mdc-button mdc-button--outlined mdc-button--touch" href="/contact.html">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Get a Quote</span>
+            <span class="mdc-button__touch"></span>
+          </a>
+        </div>
       </section>
     </div>
   </header>
@@ -122,10 +126,10 @@
         <div class="portfolio" id="portfolio">
           <!-- Filters -->
           <ul class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
-            <li class="mdc-chip" role="row" data-filter=".all">
+            <li class="mdc-chip active" role="row" data-filter=".all">
               <div class="mdc-chip__ripple"></div>
               <span role="gridcell">
-                <span role="button" tabindex="0" class="mdc-chip__text active">all platforms</span>
+                <span role="button" tabindex="0" class="mdc-chip__text">all platforms</span>
               </span>
             </li>
             <li class="mdc-chip" role="row" data-filter=".mobile">
@@ -150,8 +154,8 @@
 
           <!-- Apps -->
           <section>
-            <h2 class="text-uppercase subtitle">Apps</h2>
-            <hr class="small" />
+            <h2 class="subtitle">Apps</h2>
+            <br>
             <div class="grid filters-content">
 
               <a href="/projects/acacia-joinery/" class="portfolio-item all app mobile">
@@ -370,7 +374,7 @@
           <!-- Games -->
           <section>
             <h2 class="text-uppercase subtitle">Games</h2>
-            <hr class="small" />
+            <br>
             <div class="grid filters-content">
 
               <a href="/projects/bouncy/" class="portfolio-item all game mobile desktop">
@@ -505,7 +509,7 @@
           <!-- APIs -->
           <section>
             <h2 class="text-uppercase subtitle">APIs</h2>
-            <hr class="small" />
+            <br>
             <div class="grid filters-content">
 
               <a href="/projects/droid-rest/" class="portfolio-item all api mobile">

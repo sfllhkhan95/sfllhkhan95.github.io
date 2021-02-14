@@ -41,24 +41,6 @@
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <link href="/css/github.css" rel="stylesheet">
-
-  <style>
-    pwa-install {
-      --install-button-color: #854fee;
-      background: #854fee;
-      border-radius: 4px;
-      margin: 0;
-      width: 100%;
-    }
-
-    .main-content section {
-      margin-bottom: 24px;
-    }
-
-    main-content. section.mdc-card {
-      padding: 16px;
-    }
-  </style>
 </head>
 
 <body>
@@ -66,13 +48,17 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);">menu</button>
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
         <span class="mdc-top-app-bar__title"><a href="#"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <a class="mdc-button" href="/resume/">
-          <span class="mdc-button__label" style="text-transform: none;">See my Resume</span>
-        </a>
+        <div class="mdc-touch-target-wrapper">
+          <a class="mdc-button mdc-button mdc-button--touch" href="/resume/">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Get CV</span>
+            <span class="mdc-button__touch"></span>
+          </a>
+        </div>
       </section>
     </div>
   </header>
@@ -123,8 +109,6 @@
 
           <a class="mdc-list-item" href="#" id="install-button">
             <pwa-install id="a2hs" installbuttontext="Install Web App"></pwa-install>
-          </a>
-          <a class="mdc-list-item" href="#">
           </a>
         </nav>
       </div>
@@ -214,7 +198,7 @@
           <section>
             <h2 class="subtitle">Coding Stats</h2>
             <p>Summary of my recent GitHub activity. See my
-              <a href="https://github.com/saifkhichi96/" style="color: var(--textColorPrimary);">GitHub profile</a> for details.
+              <a href="https://github.com/saifkhichi96/" style="color: var(--mdc-theme-on-primary);">GitHub profile</a> for details.
             <div class="calendar-container">
               <div class="calendar"></div>
             </div>

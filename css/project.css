@@ -26,16 +26,15 @@
 
 .project-tag {
   display: inline-block;
-  background-color: var(--colorPrimary);
+  background-color: var(--mdc-theme-primary);
   border-radius: 16px;
-  color: var(--textColorPrimary);
+  color: var(--mdc-theme-on-primary);
   font-size: 10px;
   font-weight: bold;
   padding: 2px 8px;
 }
 
 .project-tag .material-icons {
-  color: var(--colorDisabled);
   font-size: 10px;
   margin-right: 4px;
   vertical-align: middle;

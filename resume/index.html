@@ -62,8 +62,8 @@
 
     @media (max-width: 840px) {
       .bio {
-        background: var(--colorPrimary);
-        box-shadow: 0px 0px 2px var(--colorDisabled);
+        background: var(--mdc-theme-primary);
+        box-shadow: 0px 0px 2px var(--mdc-theme-overlay);
         border-radius: 4px;
         padding: var(--content-padding);
       }
@@ -99,7 +99,7 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu" style="color: var(--textColorPrimary);">menu</button>
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
         <span class="mdc-top-app-bar__title"><a href="/"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
@@ -308,16 +308,17 @@
                 <div class="content">
                   <div class="mdc-card-content">
                     <small class="date">2019 - present</small>
-                    <h3 class="name">Master of Computer Science</h3>
+                    <a href="mscs/">
+                      <h3 class="name">Master of Computer Science</h3>
+                    </a>
                     <b>Technische Universität Kaiserslautern (TUK)</b>
                     <address>Kaiserslautern, Germany</address>
 
-                    <div class="mdc-card mdc-card--outlined" style="padding: 16px; margin-top: 8px;">
+                    <div class="details">
                       <span>
-                        <i class="fas fa-spinner"></i> In-Progress &#xb7;
-                        <a href="mscs/" style="color: black;">See Master Courses</a>
+                        <i class="fas fa-spinner"></i>&nbsp; In-Progress
                       </span>
-                      <br>
+                      <br><br>
                       <u>Specialisations</u>
                       <ul class="mdc-list">
                         <li class="mdc-list-item__text">Intelligent Systems</li>
@@ -355,17 +356,18 @@
                 <div class="content">
                   <div class="mdc-card-content">
                     <small class="date">2014 - 2018</small>
-                    <h3 class="name">Bachelor of Software Engineering</h3>
+                    <a href="bese/">
+                      <h3 class="name">Bachelor of Software Engineering</h3>
+                    </a>
                     <b>National University of Sciences and Technology (NUST)</b>
                     <address>Islamabad, Pakistan</address>
                   </div>
 
-                  <div class="mdc-card mdc-card--outlined" style="padding: 16px; margin-top: 8px;">
+                  <div class="details">
                     <span>
-                      <i class="fas fa-user-graduate"></i> 3.78 / 4.0 CGPA &#xb7;
-                      <a href="bese/" style="color: black;">See Bachelor Courses</a>
+                      <i class="fas fa-user-graduate"></i>&nbsp; 3.78 / 4.0 CGPA
                     </span>
-                    <br>
+                    <br><br>
                     <u>Co-Curricular Activities</u>
                     <ul class="mdc-list">
                       <!-- NEC Manager -->
