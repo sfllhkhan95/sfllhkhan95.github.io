@@ -38,6 +38,14 @@ body,
   color: var(--mdc-theme-on-surface);
 }
 
+.google-auto-placed,
+iframe,
+ins,
+ins * {
+  background-color: var(--mdc-theme-surface) !important;
+  color: var(--mdc-theme-on-surface) !important;
+}
+
 .main-content {
   background-color: var(--mdc-theme-background);
   color: var(--mdc-theme-on-surface);
