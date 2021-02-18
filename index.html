@@ -41,6 +41,51 @@
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <link href="/css/github.css" rel="stylesheet">
+
+  <style>
+    .main-content article {
+      position: relative;
+    }
+
+    .main-content article::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url('/img/banner/home-banner.png');
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: auto;
+      opacity: .25;
+      content: "";
+    }
+
+    article .mdc-card {
+      background: none;
+    }
+
+    .header-image:before {
+      background-image: url('/img/banner/home-right.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      min-height: 256px;
+      height: auto;
+      width: 100%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .main-content article::before {
+        background-image: url('/img/banner/home-banner-dark.png');
+        opacity: .5;
+      }
+
+      .header-image {
+        background-image: url('/img/banner/home-right-dark.png');
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -156,8 +201,8 @@
           </div>
 
           <!-- Header Image -->
-          <div class="col-md-4 home_right_img">
-            <img class="img-responsive" src="/img/banner/home-right.png" alt="Clipart of a programmer, as the main banner image for the portfolio.">
+          <div class="col-md-4">
+            <div class="header-image"></div>
           </div>
         </header>
 
@@ -294,6 +339,9 @@
         });
       }
     });
+  </script>
+  <script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="saifkhichi96" data-description="Support me on Buy me a coffee!"
+    data-message="You can support my work by buying me a coffee :-)" data-color="#BD5FFF" data-position="Right" data-x_margin="16" data-y_margin="16">
   </script>
 </body>
 
