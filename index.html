@@ -54,7 +54,7 @@
       bottom: 0;
       right: 0;
       background-image: url('/img/banner/home-banner.png');
-      background-position: top;
+      background-position: top left;
       background-repeat: no-repeat;
       background-size: auto;
       opacity: .25;
@@ -65,23 +65,13 @@
       background: none;
     }
 
-    .header-image:before {
-      background-image: url('/img/banner/home-right.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      min-height: 256px;
-      height: auto;
-      width: 100%;
-    }
-
     @media (prefers-color-scheme: dark) {
       .main-content article::before {
         background-image: url('/img/banner/home-banner-dark.png');
         opacity: .5;
       }
 
-      .header-image {
+      .home_right_img {
         background-image: url('/img/banner/home-right-dark.png');
       }
     }
@@ -202,7 +192,7 @@
 
           <!-- Header Image -->
           <div class="col-md-4">
-            <div class="header-image"></div>
+            <div class="home_right_img"></div>
           </div>
         </header>
 

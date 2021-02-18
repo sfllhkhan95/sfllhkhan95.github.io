@@ -35,6 +35,21 @@
       margin: 16px;
     }
 
+    .mdc-list-item {
+      height: auto;
+      margin-bottom: 8px;
+    }
+
+    .mdc-list-item__text {
+      white-space: normal;
+      text-align: left;
+    }
+
+    .fas,
+    .far {
+      color: var(--mdc-theme-background);
+    }
+
     .very-good {
       color: #7cb342;
     }
@@ -97,9 +112,197 @@
         <address>Kaiserslautern, Germany</address>
         2019-2021 (expected)
         </p>
+      </section>
 
-        <h2>Grade</h2>
-        <p>I scored a Cumulative Grade Point Average (CGPA) of <b>3.78</b>.</p>
+      <!-- Course List -->
+      <div>
+        <h2>Summary of Coursework</h2>
+        <p>A short introduction of my senior project, and a list of all the courses I studied in this degree, and my final grade in each course.</p>
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <!-- Intelligent Systems -->
+            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+              <h3 class="section-heading">Intelligent Systems</h3>
+
+              <ul class="mdc-list">
+                <!-- DIP -->
+                <li class="mdc-list-item" tabindex="0">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check good"></i>
+                    2D Image Processing
+                  </span>
+                </li>
+
+                <!-- 3DCV -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check satisfactory"></i>
+                    3D Computer Vision
+                  </span>
+                </li>
+
+                <!-- AMLDS -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Applications of Machine Learning and Data Science
+                  </span>
+                </li>
+
+                <!-- ML1 -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check satisfactory"></i>
+                    Machine Learning 1: Foundations
+                  </span>
+                </li>
+
+                <!-- HMM -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Methods for Modeling and Capturing Human Motion
+                  </span>
+                </li>
+
+                <!-- VDL -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check satisfactory"></i>
+                    Very Deep Learning
+                  </span>
+                </li>
+
+                <!-- VDL -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Seminar: Image Processing and Augmented Reality
+                  </span>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Software Engineering -->
+            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+              <h3 class="section-heading">Software Engineering</h3>
+
+              <ul class="mdc-list">
+                <!-- ASSE -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check satisfactory"></i>
+                    Automotive Software and Systems Engineering
+                </li>
+
+                <!-- FSE -->
+                <li class="mdc-list-item" tabindex="0">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check good"></i>
+                    Foundations of Software Engineering
+                  </span>
+                </li>
+
+                <!-- RE -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check good"></i>
+                    Requirements Engineering
+                  </span>
+                </li>
+
+                <!-- PLE -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check very-good"></i>
+                    Product Line Engineering
+                  </span>
+                </li>
+
+                <!-- SRES -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check satisfactory"></i>
+                    Safety &amp; Reliability of Embedded Systems
+                  </span>
+                </li>
+
+                <!-- SQA -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Software Quality Assurance
+                  </span>
+                </li>
+
+                <!-- SSA -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check very-good"></i>
+                    System and Software Architecture
+                  </span>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Visualization and Scientific Computing -->
+            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+              <h3 class="section-heading">Visualization and Scientific Computing</h3>
+
+              <ul class="mdc-list">
+                <!-- DV -->
+                <li class="mdc-list-item" tabindex="0">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check very-good"></i>
+                    Data Visualization
+                  </span>
+                </li>
+
+                <!-- HCI -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check sufficient"></i>
+                    Human-Computer Interaction
+                  </span>
+                </li>
+
+                <!-- SV -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Scientific Visualization
+                  </span>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Misc Courses -->
+            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+              <h3 class="section-heading">Miscellaneous</h3>
+
+              <ul class="mdc-list">
+                <li class="mdc-list-item" tabindex="0">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Complexity Theory
+                  </span>
+                </li>
+
+                <!-- Deutschabendkurs-A1 -->
+                <li class="mdc-list-item">
+                  <span class="mdc-list-item__text">
+                    <i class="fas fa-check very-good"></i>
+                    German Language A1
+                  </span>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <h2>Grading Scheme</h2>
         TU Kaiserslautern <a rel="noopener" target="_blank" href="https://www.uni-kl.de/en/international/master/prospective-students/master-programs/the-german-academic-system/exams/">grades on a scale of 1 to 5</a>, with the following distribution:
         <ul>
           <li><b>1.0–1.5</b> very good</li>
@@ -108,164 +311,7 @@
           <li><b>3.6–4.0</b> sufficient</li>
           <li><b>5.0</b> not sufficient</li>
         </ul>
-      </section>
-
-      <!-- Course List -->
-      <section>
-        <h2>Summary of Coursework</h2>
-        <p>A short introduction of my senior project, and a list of all the courses I studied in this degree, and my final grade in each course.</p>
-        <div class="mdc-layout-grid">
-          <div class="mdc-layout-grid__inner">
-            <!-- Intelligent Systems -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
-              <h3 class="section-heading">Intelligent Systems</h3>
-
-              <ul class="mdc-list mdc-list--two-line">
-                <!-- DIP -->
-                <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">2D Image Processing</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle good"></i> <b>Good</b></span>
-                  </span>
-                </li>
-
-                <!-- 3DCV -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">3D Computer Vision</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
-                  </span>
-                </li>
-
-                <!-- ML1 -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Machine Learning 1: Foundations</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle satisfactory"></i> <b>Satisfactory</b></span>
-                  </span>
-                </li>
-
-                <!-- SWM -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Social Web Mining</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
-                  </span>
-                </li>
-
-                <!-- VDL -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Very Deep Learning</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle satisfactory"></i> <b>Satisfactory</b></span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Software Engineering -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
-              <h3 class="section-heading">Software Engineering</h3>
-
-              <ul class="mdc-list mdc-list--two-line">
-                <!-- FSE -->
-                <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Foundations of Software Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle good"></i> <b>Good</b></span>
-                  </span>
-                </li>
-
-                <!-- RE -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Requirements Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle good"></i> <b>Good</b></span>
-                  </span>
-                </li>
-
-                <!-- SSA -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">System and Software Architecture</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle very-good"></i> <b>Very Good</b></span>
-                  </span>
-                </li>
-
-                <!-- SRES -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Safety &amp; Reliability of Embedded Systems</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle satisfactory"></i> <b>Satisfactory</b></span>
-                  </span>
-                </li>
-
-                <!-- PLE -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Product Line Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle very-good"></i> <b>Very Good</b></span>
-                  </span>
-                </li>
-
-                <!-- ASSE -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Automotive Software and Systems Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Visualization and Scientific Computing -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
-              <h3 class="section-heading">Visualization and Scientific Computing</h3>
-
-              <ul class="mdc-list mdc-list--two-line">
-                <!-- DV -->
-                <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Data Visualization</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle very-good"></i> <b>Very Good</b></span>
-                  </span>
-                </li>
-
-                <!-- HCI -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Human-Computer Interaction</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle sufficient"></i> <b>Sufficient</b></span>
-                  </span>
-                </li>
-
-                <!-- SV -->
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">Scientific Visualization</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-spinner"></i></span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Misc Courses -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
-              <h3 class="section-heading">Miscellaneous</h3>
-
-              <ul class="mdc-list mdc-list--two-line">
-                <!-- Deutschabendkurs-A1 -->
-                <li class="mdc-list-item" tabindex="0">
-                  <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">German Language A1</span>
-                    <span class="mdc-list-item__secondary-text"><b><i class="fas fa-check-circle very-good"></i></b></span>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      </aside>
     </article>
     <footer></footer>
   </main>

@@ -260,9 +260,15 @@ ul,
   margin-bottom: var(--content-padding);
 }
 
-.about-section .home_right_img img {
-  max-width: 100%;
+.about-section .home_right_img {
+  background-image: url('/img/banner/home-right.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 320px;
   height: auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 840px) {
