@@ -30,11 +30,6 @@
 
   <!-- Custom styles for this page -->
   <style>
-    .mdc-card .section-heading {
-      text-align: center;
-      margin: 16px;
-    }
-
     .mdc-list-item {
       height: auto;
       margin-bottom: 8px;
@@ -43,11 +38,6 @@
     .mdc-list-item__text {
       white-space: normal;
       text-align: left;
-    }
-
-    .fas,
-    .far {
-      color: var(--mdc-theme-background);
     }
 
     .very-good {
@@ -110,7 +100,8 @@
         <p>
           <a href="https://www.uni-kl.de/" rel="noopener" target="_blank">Technische Universität Kaiserslautern (TUK)</a><br>
         <address>Kaiserslautern, Germany</address>
-        2019-2021 (expected)
+        2019-2021 (expected)<br>
+        Grade: <b>Pending</b> <sup><a href="#grading-scheme">&#10013;</a></sup>
         </p>
       </section>
 
@@ -118,10 +109,10 @@
       <div>
         <h2>Summary of Coursework</h2>
         <p>A short introduction of my senior project, and a list of all the courses I studied in this degree, and my final grade in each course.</p>
-        <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid" style="padding: 0;">
           <div class="mdc-layout-grid__inner">
             <!-- Intelligent Systems -->
-            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <section class="mdc-layout-grid__cell">
               <h3 class="section-heading">Intelligent Systems</h3>
 
               <ul class="mdc-list">
@@ -184,7 +175,7 @@
             </section>
 
             <!-- Software Engineering -->
-            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <section class="mdc-layout-grid__cell">
               <h3 class="section-heading">Software Engineering</h3>
 
               <ul class="mdc-list">
@@ -246,7 +237,7 @@
             </section>
 
             <!-- Visualization and Scientific Computing -->
-            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <section class="mdc-layout-grid__cell">
               <h3 class="section-heading">Visualization and Scientific Computing</h3>
 
               <ul class="mdc-list">
@@ -277,7 +268,7 @@
             </section>
 
             <!-- Misc Courses -->
-            <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <section class="mdc-layout-grid__cell">
               <h3 class="section-heading">Miscellaneous</h3>
 
               <ul class="mdc-list">
@@ -301,7 +292,7 @@
         </div>
       </div>
 
-      <aside>
+      <div class="highlight" id="grading-scheme">
         <h2>Grading Scheme</h2>
         TU Kaiserslautern <a rel="noopener" target="_blank" href="https://www.uni-kl.de/en/international/master/prospective-students/master-programs/the-german-academic-system/exams/">grades on a scale of 1 to 5</a>, with the following distribution:
         <ul>
@@ -311,7 +302,7 @@
           <li><b>3.6–4.0</b> sufficient</li>
           <li><b>5.0</b> not sufficient</li>
         </ul>
-      </aside>
+      </div>
     </article>
     <footer></footer>
   </main>

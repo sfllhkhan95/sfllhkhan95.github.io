@@ -30,9 +30,14 @@
 
   <!-- Custom styles for this page -->
   <style>
-    .section-heading {
-      text-align: center;
-      margin: 16px;
+    .mdc-list-item {
+      height: auto;
+      margin-bottom: 8px;
+    }
+
+    .mdc-list-item__text {
+      white-space: normal;
+      text-align: left;
     }
 
     .grade-a {
@@ -94,159 +99,152 @@
         <p>
           <a href="http://www.nust.edu.pk/" rel="noopener" target="_blank">National University of Sciences &amp; Technology (NUST)</a>
         <address>Islamabad, Pakistan</address>
-        2014-2018
+        2014-2018<br>
+        Grade: <b>3.78 CGPA</b> <sup><a href="#grading-scheme">&#10013;</a></sup>
         </p>
 
-        <h2>Grade</h2>
-        <p>I scored a Cumulative Grade Point Average (CGPA) of <b>3.78</b>.</p>
-        <p>
-          NUST grades on a scale from 1 to 4, with 1 being the lowest and 4 being the highest grade point. A minimum of 2.0 Cumulative Grade Point Average (CGPA) is required to successfully complete the degree.
-        </p>
+      </section>
+
+      <!-- FYP -->
+      <section>
+        <h2 class="section-heading">Final-Year Project</h2>
+        <b>Automatic Signature Verification</b><br>
+        <small><i class="fas fa-medal grade-a"></i> Best Senior Project Nominee</small>
+        <blockquote style="font-style: normal;">
+          Signature verification is the process of using machine learning methods to
+          validate the authenticity of an individual's signature. Signatures can be of one
+          of the two types; on-line or off-line, and this project focuses on off-line
+          signature verification. Aim of this project is to design an algorithm which can
+          distinguish between genuine and forged signatures using writer independent features,
+          and to develop a system using this algorithm which can be used to verify signatures on
+          bank cheques. We intend to build a complete end-to-end hardware/software system
+          which can be used to acquire signatures from bank cheques, perform signature
+          verification, and display the results. For this purpose, various deep learning
+          techniques were developed and tested on standard datasets for off-line signature
+          verification, as well as on a dataset collected by ourselves.
+        </blockquote>
+        <br>
+        <ul>
+          <li class="mdc-list-item__text">Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ" rel="noopener" target="_blank">Dr.
+              Muhammad Imran Malik</a></li>
+          <li class="mdc-list-item__text">Co-Advisor: <a href="https://scholar.google.de/citations?user=XKmKkY8AAAAJ" rel="noopener" target="_blank">Dr.
+              Muhammad Shahzad</a></li>
+        </ul>
       </section>
 
       <!-- Course List -->
       <section>
         <h2>Summary of Coursework</h2>
-        <p>A short introduction of my senior project, and a list of all the courses I studied in this degree, and my final grade in each course.</p>
-        <div class="mdc-layout-grid">
+        <p>List of all the courses I studied in this degree. Colored checkmarks denote grade achieved in each course, with <b class="grade-a">green</b> for the highest and <b class="grade-d">red</b> for the lowest grade.</p>
+
+        <div class="mdc-layout-grid" style="padding: 0;">
           <div class="mdc-layout-grid__inner">
-            <!-- FYP -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
-              <h3 class="section-heading">Final-Year Project</h3>
-              <div class="section-heading">
-                <b>SE-499 Final-Year Project</b>
-                <h4>Automatic Signature Verification</h4>
-
-                <span class="material-icons">emoji_events</span><br>
-                <small>Best Senior Project Nominee</small>
-              </div>
-              <div style="padding: 16px;">
-                <p>Signature verification is the process of using machine learning methods to
-                  validate the authenticity of an individual's signature. Signatures can be of one
-                  of the two types; on-line or off-line, and this project focuses on off-line
-                  signature verification. Aim of this project is to design an algorithm which can
-                  distinguish between genuine and forged signatures using writer independent features,
-                  and to develop a system using this algorithm which can be used to verify signatures on
-                  bank cheques. We intend to build a complete end-to-end hardware/software system
-                  which can be used to acquire signatures from bank cheques, perform signature
-                  verification, and display the results. For this purpose, various deep learning
-                  techniques were developed and tested on standard datasets for off-line signature
-                  verification, as well as on a dataset collected by ourselves.</p>
-                <ul>
-                  <li class="mdc-list-item__text">Advisor: <a href="https://scholar.google.com/citations?user=W0u4ORoAAAAJ" rel="noopener" target="_blank">Dr.
-                      Muhammad Imran Malik</a></li>
-                  <li class="mdc-list-item__text">Co-Advisor: <a href="https://scholar.google.de/citations?user=XKmKkY8AAAAJ" rel="noopener" target="_blank">Dr.
-                      Muhammad Shahzad</a></li>
-                </ul>
-              </div>
-            </div>
-
             <!-- CS Courses -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <div class="mdc-layout-grid__cell">
               <h3 class="section-heading">Computer Science</h3>
 
-              <ul class="mdc-list mdc-list--two-line">
+              <ul class="mdc-list">
                 <!-- CS-100 -->
                 <li class="mdc-list-item" tabindex="0">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-100 Fundamentals of ICT</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Fundamentals of ICT
                   </span>
                 </li>
 
                 <!-- CS-110 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-110 Fundamentals of Computer Programming</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Fundamentals of Computer Programming
                   </span>
                 </li>
 
                 <!-- CS-212 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-212 Object-Oriented Programming</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Object-Oriented Programming
                   </span>
                 </li>
 
                 <!-- CS-220 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-220 Database Systems</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Database Systems
                   </span>
                 </li>
 
                 <!-- CS-250 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-250 Data Structures and Algorithms</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Data Structures and Algorithms
                   </span>
                 </li>
 
                 <!-- CS-251 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-251 Design and Analysis of Algorithms</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Design and Analysis of Algorithms
                   </span>
                 </li>
 
                 <!-- CS-260 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-260 Human-Computer Interaction</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Human-Computer Interaction
                   </span>
                 </li>
 
                 <!-- CS-330 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-330 Operating Systems</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Operating Systems
                   </span>
                 </li>
 
                 <!-- CS-332 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-332 Distributed Computing</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Distributed Computing
                   </span>
                 </li>
 
                 <!-- CS-344 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-344 Web Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Web Engineering
                   </span>
                 </li>
 
                 <!-- CS-361 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-361 Computer Graphics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Computer Graphics
                   </span>
                 </li>
 
                 <!-- CS-471 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-471 Machine Learning</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Machine Learning
                   </span>
                 </li>
 
                 <!-- CS-474 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CS-474 Computer Vision</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Computer Vision
                   </span>
                 </li>
 
@@ -254,260 +252,260 @@
             </div>
 
             <!-- SE Courses -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <div class="mdc-layout-grid__cell">
               <h3 class="section-heading">Software Engineering</h3>
 
-              <ul class="mdc-list mdc-list--two-line">
+              <ul class="mdc-list">
                 <!-- SE-200 -->
                 <li class="mdc-list-item" tabindex="0">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-200 Software Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Software Engineering
                   </span>
                 </li>
 
                 <!-- SE-210 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-210 Software Design and Architecture</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Software Design and Architecture
                   </span>
                 </li>
 
                 <!-- SE-311 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-311 Software Requirements Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Software Requirements Engineering
                   </span>
                 </li>
 
                 <!-- SE-312 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-312 Software Construction</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Software Construction
                   </span>
                 </li>
 
                 <!-- SE-320 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-320 Formal Methods</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Formal Methods
                   </span>
                 </li>
 
                 <!-- SE-321 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-321 Software Quality Engineering</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Software Quality Engineering
                   </span>
                 </li>
 
                 <!-- SE-430 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">SE-430 Software Project Management</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Software Project Management
                   </span>
                 </li>
               </ul>
             </div>
 
             <!-- MATH Courses -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <div class="mdc-layout-grid__cell">
               <h3 class="section-heading">Mathematics</h3>
 
-              <ul class="mdc-list mdc-list--two-line">
+              <ul class="mdc-list">
                 <!-- MATH-111 -->
                 <li class="mdc-list-item" tabindex="0">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MATH-111 Calculus I</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Calculus I
                   </span>
                 </li>
 
                 <!-- MATH-112 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MATH-112 Calculus II</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Calculus II
                   </span>
                 </li>
 
                 <!-- MATH-161 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MATH-161 Discrete Mathematics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Discrete Mathematics
                   </span>
                 </li>
 
                 <!-- MATH-222 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MATH-222 Linear Algebra</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Linear Algebra
                   </span>
                 </li>
 
                 <!-- MATH-351 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MATH-351 Numerical Methods</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Numerical Methods
                   </span>
                 </li>
 
                 <!-- MATH-361 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MATH-361 Probability and Statistics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Probability and Statistics
                   </span>
                 </li>
               </ul>
             </div>
 
             <!-- EE Courses -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <div class="mdc-layout-grid__cell">
               <h3 class="section-heading">Electrical Engineering</h3>
 
-              <ul class="mdc-list mdc-list--two-line">
+              <ul class="mdc-list">
                 <!-- EE-212 -->
                 <li class="mdc-list-item" tabindex="0">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">EE-212 Basic Electronics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Basic Electronics
                   </span>
                 </li>
 
                 <!-- EE-221 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">EE-221 Digital Logic Design</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Digital Logic Design
                   </span>
                 </li>
 
                 <!-- EE-321 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">EE-321 Computer Architecture & Organisation</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Computer Architecture & Organisation
                   </span>
                 </li>
 
                 <!-- EE-353 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">EE-353 Computer Networks</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Computer Networks
                   </span>
                 </li>
               </ul>
             </div>
 
             <!-- Misc Courses -->
-            <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <div class="mdc-layout-grid__cell">
               <h3 class="section-heading">Miscellaneous</h3>
 
-              <ul class="mdc-list mdc-list--two-line">
+              <ul class="mdc-list">
                 <!-- CSL-401 -->
                 <li class="mdc-list-item" tabindex="0">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">CSL-401 Community Service</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>Qualified</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Community Service
                   </span>
                 </li>
 
                 <!-- ECO-130 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">ECO-130 Engineering Economics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-c"></i> <b>C+</b></span>
+                    <i class="fas fa-check grade-c"></i>
+                    Engineering Economics
                   </span>
                 </li>
 
                 <!-- FIN-100 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">FIN-100 Principles of Accounting</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Principles of Accounting
                   </span>
                 </li>
 
                 <!-- HRL-241 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">HRM-241 Organisational Behaviour</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Organisational Behaviour
                   </span>
                 </li>
 
                 <!-- HU-101 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">HU-101 Islamic Studies</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Islamic Studies
                   </span>
                 </li>
 
                 <!-- HU-107 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">HU-107 Pakistan Studies</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Pakistan Studies
                   </span>
                 </li>
 
                 <!-- HU-109 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">HU-109 Communication Skills</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Communication Skills
                   </span>
                 </li>
 
                 <!-- HU-212 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">HU-212 Technical & Business Writing</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Technical & Business Writing
                   </span>
                 </li>
 
                 <!-- HU-222 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">HU-222 Professional Ethics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Professional Ethics
                   </span>
                 </li>
 
                 <!-- MGT-164 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MGT-164 Introduction to Management</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Introduction to Management
                   </span>
                 </li>
 
                 <!-- MGT-271 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">MGT-271 Entrepreneurship</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-b"></i> <b>B+</b></span>
+                    <i class="fas fa-check grade-b"></i>
+                    Entrepreneurship
                   </span>
                 </li>
 
                 <!-- PHY-101 -->
                 <li class="mdc-list-item">
                   <span class="mdc-list-item__text">
-                    <span class="mdc-list-item__primary-text">PHY-101 Applied Physics</span>
-                    <span class="mdc-list-item__secondary-text"><i class="fas fa-check-circle grade-a"></i> <b>A</b></span>
+                    <i class="fas fa-check grade-a"></i>
+                    Applied Physics
                   </span>
                 </li>
               </ul>
@@ -515,7 +513,12 @@
           </div>
         </div>
       </section>
-
+      <div class="highlight" id="grading-scheme">
+        <h2>Grading Scheme</h2>
+        <p>
+          NUST grades on a scale from 1 to 4, with 1 being the lowest and 4 being the highest grade point. A minimum of 2.0 Cumulative Grade Point Average (CGPA) is required to successfully complete the degree.
+        </p>
+      </div>
     </article>
     <footer></footer>
   </main>
