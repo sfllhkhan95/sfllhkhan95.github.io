@@ -936,6 +936,12 @@ pwa-install {
   max-width: 100%;
 }
 
+.reading-section * {
+  border-color: var(--mdc-theme-overlay) !important;
+  color: var(--mdc-theme-on-primary) !important;
+  text-align: left !important;
+}
+
 /*
  |---------------------------------------------------------
  | Code styles

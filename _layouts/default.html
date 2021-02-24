@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang }}">
 
 <head>
-  <!-- General meta -->
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -12,6 +12,9 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <!-- Website icon -->
+  <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
@@ -23,13 +26,20 @@
   <!-- Material Icons from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
   <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#854fee' }}" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- AdSense script -->
+  <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Installable PWA -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
+
   {% include analytics_head.html %}
 </head>
 
@@ -113,22 +123,176 @@
         </div>
 
         <aside class="col-md-4">
-          <section class="site-info">
-            <h2 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h2>
-            <p class="site-description">{{ site.description }}</p>
-          </section>
-
           <section id="search-container">
-            <h3>Search</h3>
+            <h2>Search</h2>
             <input style="width: 100%; padding: 8px; border-color: var(--mdc-theme-overlay); border-radius: 4px;" type="text" id="search-input" placeholder="Search through the blog posts..." autocomplete="off">
             <ul class="mdc-list mdc-list--two-line" id="results-container"></ul>
           </section>
 
-          <section>
-            <h3>Social Links</h3>
-            <div class="text-left">
-              {% include svg-icons.html %}
+          <!-- More -->
+          <section class="reading-section">
+            <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+            <style type="text/css" media="screen">
+              .gr_custom_container_1614209301 {
+                /* customize your Goodreads widget container here*/
+                border: 1px solid gray;
+                border-radius: 10px;
+                padding: 10px 5px 10px 5px;
+                background-color: transparent;
+                color: #000000;
+
+              }
+
+              .gr_custom_header_1614209301 {
+                /* customize your Goodreads header here*/
+                border-bottom: 1px solid gray;
+                width: 100%;
+                margin-bottom: 5px;
+                text-align: center;
+                font-size: 120%
+              }
+
+              .gr_custom_each_container_1614209301 {
+                /* customize each individual book container here */
+                width: 100%;
+                clear: both;
+                margin-bottom: 10px;
+                overflow: auto;
+                padding-bottom: 4px;
+                border-bottom: 1px solid #aaa;
+              }
+
+              .gr_custom_book_container_1614209301 {
+                /* customize your book covers here */
+                overflow: hidden;
+                height: 60px;
+                float: left;
+                margin-right: 4px;
+                width: 39px;
+              }
+
+              .gr_custom_author_1614209301 {
+                /* customize your author names here */
+                font-size: 10px;
+              }
+
+              .gr_custom_tags_1614209301 {
+                /* customize your tags here */
+                font-size: 10px;
+                color: gray;
+              }
+
+              .gr_custom_rating_1614209301 {
+                /* customize your rating stars here */
+                float: right;
+              }
+            </style>
+
+            <div id="gr_custom_widget_1614209301">
+              <div class="gr_custom_container_1614209301">
+                <h2 class="gr_custom_header_1614209301">
+                  <a style="text-decoration: none;" rel="nofollow" href="https://www.goodreads.com/review/list/26736309-saif?shelf=currently-reading&amp;utm_medium=api&amp;utm_source=custom_widget">Currently Reading</a>
+                </h2>
+                <div class="gr_custom_each_container_1614209301">
+                  <div class="gr_custom_book_container_1614209301">
+                    <a title="The Jewish Americans: A History In Their Own Words, 1650 1950" rel="nofollow" href="https://www.goodreads.com/review/show/3654621038?utm_medium=api&amp;utm_source=custom_widget"><img
+                        alt="The Jewish Americans: A History In Their Own Words, 1650 1950" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605890459l/2332002._SX50_.jpg" /></a>
+                  </div>
+                  <div class="gr_custom_rating_1614209301">
+                    <span class=" staticStars notranslate"><img src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+                  </div>
+                  <div class="gr_custom_title_1614209301">
+                    <a rel="nofollow" href="https://www.goodreads.com/review/show/3654621038?utm_medium=api&amp;utm_source=custom_widget">The Jewish Americans: A History In Their Own Words, 1650 1950</a>
+                  </div>
+                  <div class="gr_custom_author_1614209301">
+                    by <a rel="nofollow" href="https://www.goodreads.com/author/show/26404.Milton_Meltzer">Milton Meltzer</a>
+                  </div>
+                  <div class="gr_custom_review_1614209301">
+
+                  </div>
+                  <div class="gr_custom_tags_1614209301">
+                    tagged:
+                    currently-reading
+                  </div>
+                </div>
+                <div class="gr_custom_each_container_1614209301">
+                  <div class="gr_custom_book_container_1614209301">
+                    <a title="Arastoo / ارسطو" rel="nofollow" href="https://www.goodreads.com/review/show/3637588697?utm_medium=api&amp;utm_source=custom_widget"><img alt="Arastoo / ارسطو" border="0"
+                        src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605007616l/55877040._SX50_.jpg" /></a>
+                  </div>
+                  <div class="gr_custom_rating_1614209301">
+                    <span class=" staticStars notranslate"><img src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+                  </div>
+                  <div class="gr_custom_title_1614209301">
+                    <a rel="nofollow" href="https://www.goodreads.com/review/show/3637588697?utm_medium=api&amp;utm_source=custom_widget">Arastoo / ارسطو</a>
+                  </div>
+                  <div class="gr_custom_author_1614209301">
+                    by <a rel="nofollow" href="https://www.goodreads.com/author/show/7159878.Shahid_Mukhtar">Shahid Mukhtar</a>
+                  </div>
+                  <div class="gr_custom_tags_1614209301">
+                    tagged:
+                    currently-reading
+                  </div>
+                </div>
+                <div class="gr_custom_each_container_1614209301">
+                  <div class="gr_custom_book_container_1614209301">
+                    <a title="Jerusalem: The Biography" rel="nofollow" href="https://www.goodreads.com/review/show/3096473697?utm_medium=api&amp;utm_source=custom_widget"><img alt="Jerusalem: The Biography" border="0"
+                        src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375906605l/9477628._SY75_.jpg" /></a>
+                  </div>
+                  <div class="gr_custom_rating_1614209301">
+                    <span class=" staticStars notranslate"><img src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+                  </div>
+                  <div class="gr_custom_title_1614209301">
+                    <a rel="nofollow" href="https://www.goodreads.com/review/show/3096473697?utm_medium=api&amp;utm_source=custom_widget">Jerusalem: The Biography</a>
+                  </div>
+                  <div class="gr_custom_author_1614209301">
+                    by <a rel="nofollow" href="https://www.goodreads.com/author/show/371093.Simon_Sebag_Montefiore">Simon Sebag Montefiore</a>
+                  </div>
+                  <div class="gr_custom_tags_1614209301">
+                    tagged:
+                    currently-reading
+                  </div>
+                </div>
+                <div class="gr_custom_each_container_1614209301">
+                  <div class="gr_custom_book_container_1614209301">
+                    <a title="Almiya Tareekh / المیہ تاریخ" rel="nofollow" href="https://www.goodreads.com/review/show/2839850005?utm_medium=api&amp;utm_source=custom_widget"><img alt="Almiya Tareekh / المیہ تاریخ" border="0"
+                        src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401075141l/6542740._SX50_.jpg" /></a>
+                  </div>
+                  <div class="gr_custom_rating_1614209301">
+                    <span class=" staticStars notranslate"><img src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt=""
+                        src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+                  </div>
+                  <div class="gr_custom_title_1614209301">
+                    <a rel="nofollow" href="https://www.goodreads.com/review/show/2839850005?utm_medium=api&amp;utm_source=custom_widget">Almiya Tareekh / المیہ تاریخ</a>
+                  </div>
+                  <div class="gr_custom_author_1614209301">
+                    by <a rel="nofollow" href="https://www.goodreads.com/author/show/2960412.Mubarak_Ali">Mubarak Ali</a>
+                  </div>
+                  <div class="gr_custom_tags_1614209301">
+                    tagged:
+                    currently-reading
+                  </div>
+                </div>
+                <br style="clear: both" />
+                <center>
+                  <a rel="nofollow" href="https://www.goodreads.com/"><img alt="goodreads.com" style="border:0" src="https://s.gr-assets.com/images/widget/widget_logo.gif" /></a>
+                </center>
+                <noscript>
+                  Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Saif, and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+                </noscript>
+              </div>
+
             </div>
+            <script
+              src="https://www.goodreads.com/review/custom_widget/26736309.Currently%20Reading?cover_position=left&cover_size=small&num_books=5&order=d&shelf=currently-reading&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=date_added&widget_bg_color=0000&widget_bg_transparent=true&widget_border_width=1&widget_id=1614209301&widget_text_color=000000&widget_title_size=medium&widget_width=full"
+              type="text/javascript" charset="utf-8"></script>
           </section>
 
 

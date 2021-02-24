@@ -8,8 +8,8 @@
     {% assign url = item.url | relative_url %}
     {% endif %}
 
-    <li class="muted">
-      <a href="{{ url }}">{{ item.title }}</a>
+    <li>
+      <a class="muted" href="{{ url }}">{{ item.title }}</a>
     </li>
     {% endfor %}
   </ul>
