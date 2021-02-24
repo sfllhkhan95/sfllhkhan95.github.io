@@ -12,11 +12,25 @@ author: Saif Khan
 description: Mobile Developer, ML Engineer and occasional blogger.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.saifkhichi.com/img/me.jpg
+avatar: /img/me.jpg
 
 #
 # Flags below are optional
 #
+
+logo: /img/logo.png
+
+navigation_footer:
+- title: Home
+  url: /
+- title: Experience
+  url: /resume/
+- title: Projects
+  url: /projects/
+- title: Research
+  url: /research/
+- title: Contact
+  url: /contact.html
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -30,7 +44,7 @@ footer-links:
   pinterest:
   rss: rss
   twitter: saifkhichi96
-  stackoverflow:
+  stackoverflow: 4690466
   youtube: /channel/UCj4yPuKHi9pZ9WbKbfh5MEQ
   googleplus: # anything in your profile username that comes after plus.google.com/
   playconsole:
