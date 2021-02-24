@@ -2,11 +2,29 @@
 layout: default
 ---
 
-<article class="page">
-
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
+<!-- Page Summary -->
+<section class="project-summary">
+  <div>
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p class="project-type">{% if page.date %}{{ page.date | date: "%B %e, %Y" }}{% endif %}</p>
+    {% if page.last_modified_at %}
+    <p class="project-type" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    {% endif %}
+    <div class="project-tags">
+      {% if post %}
+      {% assign categories = post.categories %}
+      {% else %}
+      {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <a href="{{site.baseurl}}/categories/#{{category|slugize}}"><span class="project-tag">{{category}}</span></a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
   </div>
-</article>
+</section>
+
+<!-- Page Content -->
+<div>
+  {{ content }}
+</div>

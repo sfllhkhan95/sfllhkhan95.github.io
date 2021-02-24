@@ -1,57 +1,148 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    {% seo title=false %}
-    {% include meta.html %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<head>
+  <!-- General meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="theme-color" content="#000000">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
-    {% include analytics_head.html %}
-  </head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  {% seo title=false %}
+  {% include meta.html %}
 
-  <body>
-    <div id="bar"></div>
-    <div class="wrapper-container">
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-            <div class="site-info">
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p> 
-            </div>
+  <!-- Material Components for Web -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-            <nav>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/getting-started">Getting Started</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
-              <a href="{{ site.baseurl }}/about">About</a>
-            </nav>
-          </header>
-        </div>
+  <!-- Material Icons from Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+  <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#854fee' }}" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+  {% include analytics_head.html %}
+</head>
+
+<body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+  <!-- Top App Bar -->
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+        <span class="mdc-top-app-bar__title"><a href="/"><img src="/img/logo.png" alt="The website logo." /></a></span>
+      </section>
+    </div>
+  </header>
+
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <!-- Drawer -->
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title">Saif's Portfolio</h3>
+        <h6 class="mdc-drawer__subtitle"><a href="/contact.html">Get in Touch</a></h6>
       </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+            <span class="mdc-list-item__text">Home</span>
+          </a>
+          <a class="mdc-list-item" href="/projects/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+            <span class="mdc-list-item__text">Projects</span>
+          </a>
+          <a class="mdc-list-item" href="/services/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>
+            <span class="mdc-list-item__text">Services</span>
+          </a>
+          <a class="mdc-list-item" href="/resume/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>
+            <span class="mdc-list-item__text">Resume</span>
+          </a>
+          <hr class="mdc-list-divider" />
 
-      <div class="wrapper-main">
-        <div id="main" role="main" class="container">
+          <a class="mdc-list-item" href="/blog/">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>
+            <span class="mdc-list-item__text">Blog</span>
+          </a>
+          <a class="mdc-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan" rel="noopener" target="_blank">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>
+            <span class="mdc-list-item__text">Books</span>
+            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
+          </a>
+          <a class="mdc-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ" rel="noopener" target="_blank">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>
+            <span class="mdc-list-item__text">Videos</span>
+            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
+          </a>
+          <hr class="mdc-list-divider" />
+
+          <a class="mdc-list-item" href="#" id="install-button">
+            <pwa-install id="a2hs" installbuttontext="Install Web App"></pwa-install>
+          </a>
+        </nav>
+      </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+
+    <!-- Content -->
+    <div class="main-content">
+      <article class="about-section">
+        <header>
+          <!-- Breadcrumbs -->
+          <section>
+            <nav class="breadcrumbs" aria-label="breadcrumb">
+              <li class='breadcrumb-item'><a class='muted' href='/'>Home</a></li>
+              <li class='breadcrumb-item'><a class='muted' href='/blog/'>Blog</a></li>
+            </nav>
+          </section>
+        </header>
+
+        <div class="col-md-8">
           {{ content }}
         </div>
-      </div>
 
-      <div class="wrapper-footer">
-        <div class="container">
-          <footer class="footer">
-            {% include svg-icons.html %}
-          </footer>
-        </div>
-      </div>
+        <aside class="col-md-4">
+          <div class="site-info">
+            <h2 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h2>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <div id="search-container">
+            <h3>Search</h3>
+            <input style="width: 100%; padding: 8px; border-color: var(--mdc-theme-overlay); border-radius: 4px;" type="text" id="search-input" placeholder="Search through the blog posts..." autocomplete="off">
+            <ul class="mdc-list mdc-list--two-line" id="results-container"></ul>
+          </div>
+
+          <script src="{{ site.baseurl }}/assets/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+          <script>
+            SimpleJekyllSearch({
+              searchInput: document.getElementById('search-input'),
+              resultsContainer: document.getElementById('results-container'),
+              searchResultTemplate: '<li class="mdc-list-item"><span class="mdc-list-item__ripple"></span><span class="mdc-list-item__text"><span class="mdc-list-item__primary-text"><a href="{url}">{title}</a></span><span class="mdc-list-item__secondary-text">{date}</span></span></li>',
+              json: '{{ site.baseurl }}/search.json'
+            });
+          </script>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+        </aside>
+      </article>
+      {% include site-footer.html %}
     </div>
+  </main>
+  {% include analytics.html %}
 
-    {% include analytics.html %}
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <!-- Other global scripts -->
+  <script type="text/javascript" src="{{ "/assets/scripts/navigation.js" | relative_url }}"></script>
+</body>
+
 </html>

@@ -9,4 +9,4 @@ In this blog post, I will show you how to quickly create a custom splash screen 
 > The launch screen is a user’s first experience of your app.
 
 ## Source Code
-<script src="https://gist.github.com/saifkhichi96/653778bf0332b1bf6a888a171dbb190b.js"></script>
+<script src="https://gist.github.com/saifkhichi96/653778bf0332b1bf6a888a171dbb190b.js?file=styles.xml"></script>

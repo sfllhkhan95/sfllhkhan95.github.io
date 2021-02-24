@@ -2,38 +2,39 @@
 layout: default
 ---
 
-<article class="post detailed">
-  <h1>{{ page.title }}</h1>
-
+<!-- Post Summary -->
+<section class="project-summary">
   <div>
-    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p class="project-type">{% if page.date %}{{ page.date | date: "%B %e, %Y" }}{% endif %}</p>
     {% if page.last_modified_at %}
-    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    <p class="project-type" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
     {% endif %}
-    <div class="post-tags">
+    <div class="project-tags">
       {% if post %}
-        {% assign categories = post.categories %}
+      {% assign categories = post.categories %}
       {% else %}
-        {% assign categories = page.categories %}
+      {% assign categories = page.categories %}
       {% endif %}
       {% for category in categories %}
-        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
+      <a href="{{site.baseurl}}/categories/#{{category|slugize}}"><span class="project-tag">{{category}}</span></a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>
   </div>
-    
-  <div class="entry">
-    {{ content }}
-  </div>
+</section>
 
-  <div>
-    <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
-  </div>
+<div>
+  {{ content }}
+</div>
 
-  <!--<div class="date">
+<div>
+  <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}"
+      target="_blank">Facebook</a></p>
+</div>
+
+<!--<div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>-->
 
-  {% include disqus.html %}
-</article>
+{% include disqus.html %}

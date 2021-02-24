@@ -1,0 +1,17 @@
+<nav>
+  {% include svg-icons.html %}
+  <ul class="sitemap">
+    {% for item in site.navigation_footer %}
+
+    {% if item.url contains '://' %}
+    {% assign url = item.url %}
+    {% else %}
+    {% assign url = item.url | relative_url %}
+    {% endif %}
+
+    <li class="muted">
+      <a href="{{ url }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
