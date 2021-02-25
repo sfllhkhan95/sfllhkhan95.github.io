@@ -1,0 +1,51 @@
+---
+layout: page
+---
+
+<ul class="mdc-list">
+  {% for post in paginator.posts %}
+  <li class="mdc-card mdc-card--outlined" style="margin-bottom: 16px;">
+    <div class="mdc-card__content" style="padding: 16px;">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="project-type">{{ post.date | date: "%B %e, %Y" }}</p>
+      <blockquote>
+        {{ post.excerpt }}
+      </blockquote>
+    </div>
+
+    <div class="mdc-card__actions">
+      <a class="mdc-button mdc-card__action mdc-card__action--button" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Read More</span>
+      </a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+  <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+  {% if page == paginator.page %}
+  <span class="webjeda">{{ page }}</span>
+  {% elsif page == 1 %}
+  <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+  {% else %}
+  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+  {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+  <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

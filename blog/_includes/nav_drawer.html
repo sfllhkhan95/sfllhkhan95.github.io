@@ -1,0 +1,28 @@
+<nav class="mdc-list">
+  {% if site.navigation_main %}
+  {% for item in site.navigation_main %}
+  {% if item.url contains '://' %}
+  {% assign url = item.url %}
+  {% else %}
+  {% assign url = item.url | relative_url %}
+  {% endif %}
+
+  {% if item.url == page.url %}
+  <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{ item.icon }}</i>
+    <span class="mdc-list-item__text">{{ item.title }}</span>
+  </a>
+  {% else %}
+  <a class="mdc-list-item" href="{{ url }}">
+    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{ item.icon }}</i>
+    <span class="mdc-list-item__text">{{ item.title }}</span>
+  </a>
+  {% endif %}
+  {% endfor %}
+  <hr class="mdc-list-divider" style="margin: 0 8px;" />
+  {% endif %}
+  <a class="mdc-list-item" href="#" id="install-button">
+    <pwa-install id="a2hs" installbuttontext="Install Web App"></pwa-install>
+  </a>
+  <p class="mdc-list-item mdc-list-item--activated" style="opacity: 0;"></p>
+</nav>
