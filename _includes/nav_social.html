@@ -59,7 +59,7 @@
 {% endif %}
 
 {% if site.footer-links.stackoverflow %}
-<a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}" rel="noopener" target="_blank" style="padding-right: 4px;">
+<a href="http://stackoverflow.com/users/{{ site.footer-links.stackoverflow }}" rel="noopener" target="_blank" style="padding-right: 4px;">
   <i class="fab fa-stack-overflow" style="color: var(--mdc-theme-on-primary)"></i>
 </a>
 {% endif %}
@@ -67,12 +67,6 @@
 {% if site.footer-links.youtube %}
 <a href="https://youtube.com/{{ site.footer-links.youtube }}" rel="noopener" target="_blank" style="padding-right: 4px;">
   <i class="fab fa-youtube-square" style="color: var(--mdc-theme-on-primary)"></i>
-</a>
-{% endif %}
-
-{% if site.footer-links.googleplus %}
-<a href="https://plus.google.com/{{ site.footer-links.googleplus }}" rel="noopener" target="_blank" style="padding-right: 4px;">
-  <i class="fab fa-google-plus-square" style="color: var(--mdc-theme-on-primary)"></i>
 </a>
 {% endif %}
 

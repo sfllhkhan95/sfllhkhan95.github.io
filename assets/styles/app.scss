@@ -1,284 +1,9 @@
+---
+---
 
-:root {
-  /* Secondary Colors (same in all themes) */
-  --mdc-theme-secondary: #854fee;
-  --mdc-theme-secondary-variant: #4e20ba;
-  --mdc-theme-on-secondary: #ffffff;
-  /* Background and Surfaces (different in light/dark) */
-  --mdc-theme-background: #e7e7e7;
-  --mdc-theme-surface: #ffffff;
-  --mdc-theme-on-surface: #000000;
-  --mdc-theme-overlay: #ede7f688;
-  /* Primary Colors (different in light/dark)*/
-  --mdc-theme-primary: #fafafa;
-  --mdc-theme-primary-variant: #c7c7c7;
-  --mdc-theme-on-primary: #000000;
-  --mdc-theme-secondary-light: #ede7f6;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Background and Surfaces (different in light/dark) */
-    --mdc-theme-background: #100F13;
-    --mdc-theme-surface: #18161C;
-    --mdc-theme-on-surface: #ffffff;
-    --mdc-theme-overlay: #2F293A88;
-    /* Primary Colors (different in light/dark)*/
-    --mdc-theme-primary: #121212;
-    --mdc-theme-primary-variant: #000000;
-    --mdc-theme-on-primary: #ffffff;
-    --mdc-theme-secondary-light: #12005e88;
-  }
-}
-
-body,
-.mdc-top-app-bar,
-.mdc-drawer,
-.mdc-card {
-  background-color: var(--mdc-theme-surface);
-  color: var(--mdc-theme-on-surface);
-}
-
-.main-content {
-  background-color: var(--mdc-theme-background);
-  color: var(--mdc-theme-on-surface);
-}
-
-.main-content article,
-.main-content aside,
-.main-content .footer {
-  background-color: var(--mdc-theme-surface);
-  color: var(--mdc-theme-on-surface);
-}
-
-.mdc-drawer,
-.material-icons,
-.mdc-icon-button,
-.mdc-list,
-.mdc-list-item,
-.mdc-list-item .mdc-list-item__primary-text,
-.mdc-list-item .mdc-list-item__secondary-text,
-.mdc-drawer .mdc-list-item,
-.mdc-drawer .mdc-list-item__graphic {
-  color: var(--mdc-theme-on-primary);
-}
-
-.mdc-drawer .mdc-list-item--activated {
-  background: var(--mdc-theme-overlay);
-  color: var(--mdc-theme-secondary) !important;
-}
-
-.mdc-drawer .mdc-list-item--activated,
-.mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic, {
-  color: var(--mdc-theme-secondary) !important;
-}
-
-.mdc-floating-label,
-.mdc-text-field__input,
-.mdc-drawer__title {
-  color: var(--mdc-theme-on-primary) !important;
-}
-
-.mdc-icon-button:hover .material-icons {
-  color: var(--mdc-theme-secondary);
-}
-
-.mdc-button--unelevated {
-  background-color: var(--mdc-theme-secondary) !important;
-}
-
-.mdc-button .mdc-button__label {
-  color: var(--mdc-theme-secondary);
-}
-
-.mdc-button--unelevated .mdc-button__label {
-  color: var(--mdc-theme-on-secondary);
-}
-
-.mdc-card--outlined,
-.mdc-button--outlined {
-  border-color: var(--mdc-theme-overlay) !important;
-}
-
-.mdc-button--outlined .mdc-button__label {
-  color: var(--mdc-theme-secondary);
-}
-
-.mdc-chip {
-  background-color: var(--mdc-theme-surface);
-  border: 1px solid var(--mdc-theme-overlay);
-  color: var(--mdc-theme-on-primary);
-}
-
-.mdc-chip:focus,
-.mdc-chip:hover {
-  background-color: var(--mdc-theme-background);
-}
-
-.mdc-tab {
-  background-color: var(mdc-theme-surface);
-}
-
-.mdc-tab .mdc-tab__text-label,
-.mdc-tab .mdc-tab__icon {
-  color: var(--mdc-theme-on-primary);
-}
-
-.mdc-tab--active .mdc-tab__text-label,
-.mdc-tab--active .mdc-tab__icon {
-  color: var(--mdc-theme-secondary);
-}
-
-.mdc-chip.active {
-  background-color: var(--mdc-theme-overlay);
-  color: var(--mdc-theme-secondary);
-}
-
-hr {
-  background-color: var(--mdc-theme-overlay);
-}
-
-a {
-  color: var(--mdc-theme-secondary);
-}
-
-a:focus,
-a:hover {
-  color: var(--mdc-theme-secondary-variant);
-}
-
-a.muted {
-  color: var(--mdc-theme-on-primary);
-}
-
-a.muted:focus,
-a.muted:hover {
-  color: var(--mdc-theme-secondary);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200&display=swap');
-
-body {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  font-size: 12pt;
-  font-weight: 300;
-  line-height: normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  margin: 0;
-}
-
-h1 {
-  margin-bottom: 24px;
-}
-
-h2, h3, h4 {
-  margin-bottom: 4px;
-}
-
-h5, h6 {
-  margin-bottom: 0px;
-}
-
-h1 {
-  font-size: 22pt;
-}
-
-h2 {
-  font-size: 11pt;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 12pt;
-}
-
-h4 {
-  font-size: 10pt;
-  text-transform: uppercase;
-}
-
-h5, h5 {
-  font-size: 10pt;
-}
-
-h1.subtitle, h2.subtitle, h3.subtitle,
-h4.subtitle, h5.subtitle, h6.subtitle {
-  font-size: 90%;
-  opacity: 0.75;
-  text-transform: uppercase;
-}
-
-b, strong, sub, sup {
-  font-weight: 400;
-  margin: 0;
-}
-
-a, a:hover, a:focus {
-  font-weight: 400;
-  text-decoration: none;
-  margin: 0;
-}
-
-a.light, a.light:hover, a.light:focus {
-  font-weight: 300;
-  margin: 0;
-}
-
-small, i {
-  font-weight: 200;
-  margin: 0;
-}
-
-p {
-  margin: 0px;
-  margin-bottom: 16px;
-}
-
-blockquote {
-  font-weight: 200;
-  font-style: italic;
-  text-align: justify;
-}
-
-button {
-  text-transform: uppercase;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-title {
-  text-transform: capitalize;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
-.text-left * {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-right * {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-center * {
-  text-align: center;
-}
+@import "colors";
+@import "typography";
+@import "code";
 
 :root {
   /* corner radius of the content card */
@@ -498,6 +223,20 @@ ul,
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+input {
+  background-color: var(--mdc-theme-background);
+  border: 1px solid var(--mdc-theme-overlay);
+  border-radius: 4px;
+  color: var(--mdc-theme-on-primary);
+  padding: 8px;
+  width: 100%;
+}
+
+input:focus {
+  outline-style: none;
+  border: 1px solid var(--mdc-theme-secondary);
 }
 
 /******************************************************************************/
@@ -873,7 +612,7 @@ ul,
   text-transform: uppercase;
 }
 
-.highlight {
+.highlighted {
   background: var(--mdc-theme-overlay);
   border-radius: 4px;
   padding: var(--content-padding);
@@ -934,55 +673,6 @@ pwa-install {
 .mdc-data-table {
   width: 100%;
   max-width: 100%;
-}
-
-.reading-section * {
-  border-color: var(--mdc-theme-overlay) !important;
-  color: var(--mdc-theme-on-primary) !important;
-  text-align: left !important;
-}
-
-/*
- |---------------------------------------------------------
- | Code styles
- |---------------------------------------------------------
- */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-@import url('https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/atom-one-dark.min.css');
-
-.gist-file,
-.gist-file * {
-  border-color: var(--mdc-theme-overlay) !important;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 11pt;
-}
-
-.gist-meta {
-  display: none;
-}
-
-.gist-data *,
-.gist-meta {
-  background-color: var(--mdc-theme-surface) !important;
-}
-
-.gist-data .blob-num,
-.gist-meta {
-  color: var(--mdc-theme-on-primary) !important;
-}
-
-code {
-  border-radius: 2px;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 11pt;
-  padding: 1px 4px;
-}
-
-pre code {
-  box-sizing: border-box;
-  display: block;
-  padding: 16px !important;
-  width: 100%;
 }
 
 /* Print Styles */

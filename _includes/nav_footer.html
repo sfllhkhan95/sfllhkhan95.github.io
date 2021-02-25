@@ -1,6 +1,8 @@
+{% if site.navigation_footer %}
+{% if site.navigation_main %}
 <nav>
   <ul class="sitemap">
-    {% for item in site.navigation_footer %}
+    {% for item in site.navigation_main %}
 
     {% if item.url contains '://' %}
     {% assign url = item.url %}
@@ -14,3 +16,5 @@
     {% endfor %}
   </ul>
 </nav>
+{% endif %}
+{% endif %}

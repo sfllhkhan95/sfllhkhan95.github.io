@@ -1,0 +1,49 @@
+/*
+ *------------------------------------------------
+ * code syntax highlighting styles
+ *------------------------------------------------
+ */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/atom-one-dark.min.css');
+
+.code,
+.gist-file,
+code {
+  border-radius: 2px;
+}
+
+.code,
+.gist-file *,
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 11pt;
+}
+
+.code,
+code {
+  padding: 1px 4px;
+}
+
+.gist-data,
+pre code {
+  background-color: var(--mdc-theme-overlay);
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 16px !important;
+}
+
+.gist-file,
+.gist-file * {
+  background-color: var(--mdc-theme-surface) !important;
+  border-color: var(--mdc-theme-overlay) !important;
+}
+
+.gist-data .blob-num,
+.gist-meta {
+  color: var(--mdc-theme-on-primary) !important;
+}
+
+.gist-meta {
+  display: none;
+}

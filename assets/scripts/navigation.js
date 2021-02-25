@@ -24,7 +24,6 @@ $(function() {
   console.log("Navigation setup complete!");
 });
 
-// Import copyright notice
 $('#last-modified').html(document.lastModified);
 
 function back() {
