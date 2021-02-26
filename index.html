@@ -79,33 +79,18 @@ keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
 
 <div class="col-md-8">
   <!-- Featured Projects -->
-  <section>
-    <h2 class="subtitle">Featured Projects</h2>
-    <p>I am always working on many exciting programming projects, some of which are listed below:</p>
-    <div class="mdc-card mdc-card--outlined">
-      <div class="mdc-card__content">
-        <ul style="padding: 16px 16px 0px 16px;">
-          <li>
-            <a href="https://github.com/saifkhichi96/signature-extraction">Signature Extraction from Bank Checks</a><br>
-            <p>A segmentation model trained to extract handwritten signatures from bank checks.</p>
-            <hr class="mdc-list-divider">
-          </li>
-          <li>
-            <a href="projects/doodle">Doodle Paint App</a><br>
-            <p>
-              A simple paint application for Android, written in Java and Kotlin programming languages.
-            </p>
-            <hr class="mdc-list-divider">
-          </li>
-        </ul>
-      </div>
-      <div class="mdc-card__actions">
-        <div class="mdc-card__action-icons">
-          <a class="mdc-button mdc-card__action mdc-card__action--button" href="projects/">
-            <span class="mdc-button__ripple"></span>
-            <span class="mdc-button__label">See all projects</span>
-          </a>
-        </div>
+  <section class="mdc-card">
+    <div class="mdc-card__content" style="padding: 16px;">
+      <h2>Featured Projects</h2>
+      <p>I am always working on many exciting programming projects, some of which are listed below:</p>
+      {% include list_projects_featured.html %}
+    </div>
+    <div class="mdc-card__actions">
+      <div class="mdc-card__action-icons">
+        <a class="mdc-button mdc-card__action mdc-card__action--button" href="projects/">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">See all projects</span>
+        </a>
       </div>
     </div>
   </section>
@@ -117,73 +102,34 @@ keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
 <div class="col-md-4">
   <!-- Recent Work -->
   <section>
-    <h2 class="subtitle">Recent updates</h2>
+    <h2>Recent updates</h2>
     <ul class="mdc-list mdc-list--two-line">
-      <li class="mdc-list-item" tabindex="0" onclick="window.location='projects/tiled'">
+      <a class="mdc-list-item" tabindex="0" href="/projects/tiled/">
         <span class="mdc-list-item__ripple"></span>
         <span class="mdc-list-item__text">
           <span class="mdc-list-item__primary-text">Tiled, for making tilemaps on Android</span>
           <span class="mdc-list-item__secondary-text">Released a new library.</span>
         </span>
-      </li>
-      <li class="mdc-list-item" onclick="window.location='projects/scribe'">
+      </a>
+      <a class="mdc-list-item" href="/projects/scribe/">
         <span class="mdc-list-item__ripple"></span>
         <span class="mdc-list-item__text">
           <span class="mdc-list-item__primary-text">Scribe, an API to write PDF on Android</span>
           <span class="mdc-list-item__secondary-text">Released a new library.</span>
         </span>
-      </li>
+      </a>
     </ul>
   </section>
 
   <!-- Blog -->
   <section>
     <h2>Blog posts</h2>
-    <ul class="mdc-list mdc-list--two-line">
-      {% for post in paginator.posts %}
-      <li class="mdc-list-item">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <span class="mdc-list-item__ripple"></span>
-          <span class="mdc-list-item__text">
-            <span class="mdc-list-item__primary-text">{{ post.title }}</span>
-            <span class="mdc-list-item__secondary-text">{{ post.date | date: "%B %e, %Y" }}</span>
-          </span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-
-    <!-- pagination -->
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-      {% else %}
-      <span>&laquo; Prev</span>
-      {% endif %}
-
-      {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-      <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-      {% else %}
-      <span>Next &raquo;</span>
-      {% endif %}
-    </div>
-    {% endif %}
+    {% include list_posts.html %}
   </section>
 
   <!-- More -->
   <section>
-    <h2 class="subtitle">More from me</h2>
+    <h2>More from me</h2>
     <ul class="mdc-list">
       <li class="mdc-list-item" tabindex="0">
         <a class="mdc-button" href="/resume/">

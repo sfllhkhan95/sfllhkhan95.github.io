@@ -299,9 +299,13 @@ input:focus {
   margin-bottom: var(--content-padding);
 }
 
-.about-section .home_right_img img {
-  max-width: 100%;
-  height: auto;
+.home_right_img {
+  background-image: url('/assets/images/banner/home-right.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  width: 100%;
+  height: 320px;
 }
 
 @media (max-width: 840px) {
