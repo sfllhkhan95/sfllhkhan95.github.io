@@ -619,11 +619,6 @@ input:focus {
   padding: var(--content-padding);
 }
 
-pwa-install {
-  --install-button-color: var(--mdc-theme-secondary);
-  background: var(--mdc-theme-secondary);
-  border-radius: 16px;
-  width: 100%;
 }
 
 .project-summary {
@@ -674,6 +669,45 @@ pwa-install {
 .mdc-data-table {
   width: 100%;
   max-width: 100%;
+}
+
+pwa-install {
+  --install-button-color: var(--mdc-theme-secondary);
+  display: none;
+  margin-left: 8px;
+}
+
+pwa-install::part(openButton) {
+  background-color: #0000;
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+}
+
+pwa-install * {
+  color: var(--mdc-theme-on-surface) !important;
+  vertical-align: middle;
+}
+
+pwa-install:hover * {
+  color: var(--mdc-theme-secondary) !important;
+}
+
+.mdc-snackbar {
+  z-index: 99999;
+}
+
+.mdc-snackbar__surface::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#bmc-wbtn {
+  z-index: 0 !important;
 }
 
 /* Print Styles */

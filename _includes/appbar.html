@@ -9,9 +9,9 @@
       {% endif %}
       <span class="mdc-top-app-bar__title"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.name }}" /></a></span>
     </section>
-    {% if page.menuitem %}
-    {% if page.menuaction %}
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      {% if page.menuitem %}
+      {% if page.menuaction %}
       <div class="mdc-touch-target-wrapper">
         <button class="mdc-top-app-bar__action-item {% if page.menuicon %}mdc-icon-button{% else %}mdc-button mdc-button--outlined{% endif %}" onclick="{{ page.menuaction }}" aria-label="Download Transcript">
           <span class="mdc-button__ripple"></span>
@@ -25,8 +25,15 @@
           <span class="mdc-button__touch"></span>
         </button>
       </div>
+      {% endif %}
+      {% endif %}
+      <div class="mdc-touch-target-wrapper">
+        <pwa-install id="a2hs" installbuttontext="Install">
+          <span class="mdc-button__ripple"></span>
+          <i class="material-icons">get_app</i>
+          <span class="mdc-button__touch"></span>
+        </pwa-install>
+      </div>
     </section>
-    {% endif %}
-    {% endif %}
   </div>
 </header>

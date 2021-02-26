@@ -5,6 +5,10 @@ keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
 ---
 
 <style>
+  pwa-install {
+    display: block;
+  }
+
   .main-content article {
     position: relative;
   }
@@ -213,24 +217,22 @@ keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
 <script src="{{ site.baseurl }}/assets/scripts/firebase.js"></script>
 
-<!-- Page specific scripts -->
+<!-- PWA -->
 <script src="{{ site.baseurl }}/assets/scripts/webapp.js"></script>
 <script type="module">
-  // This is the "Offline page" service worker
-  // Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
   const el = document.createElement('pwa-update');
   document.body.appendChild(el);
-
-  $(function() {
-    const pwaInstall = $('#a2hs');
-    if (pwaInstall.is(":visible")) {
-      pwaInstall.hide();
-      $('#install-button').click(function() {
-        pwaInstall.install();
-      });
+</script>
+<script>
+  function install() {
+    const ref = document.getElementById("a2hs");
+    if (!ref.getInstalledStatus()) {
+      ref.openPrompt();
+    } else {
+      showSnackbar("You have already installed the app.");
     }
-  });
+  }
 </script>
 <script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="saifkhichi96" data-description="Support me on Buy me a coffee!" data-message="You can support my work by buying me a coffee :-)"
   data-color="#BD5FFF" data-position="Right" data-x_margin="16" data-y_margin="16">

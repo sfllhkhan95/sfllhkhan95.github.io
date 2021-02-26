@@ -152,3 +152,30 @@ a.muted:focus,
 a.muted:hover {
   color: var(--mdc-theme-secondary);
 }
+
+.mdc-snackbar__surface {
+  background-color: var(--mdc-theme-background);
+}
+
+.mdc-snackbar__label {
+  color: var(--mdc-theme-on-surface) !important;
+  z-index: 100000;
+}
+
+.mdc-snackbar__actions * {
+  color: var(--mdc-theme-secondary) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mdc-snackbar__surface {
+    background-color: var(--mdc-theme-secondary-variant);
+  }
+
+  .mdc-snackbar__actions * {
+    color: var(--mdc-theme-on-secondary) !important;
+  }
+}
+
+.mdc-snackbar__surface::before {
+  background-color: var(--mdc-theme-overlay);
+}
