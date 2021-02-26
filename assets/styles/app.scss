@@ -420,13 +420,15 @@ input:focus {
   height: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
+  min-height: 100vh;
+}
+
+.portfolio section {
+  margin-bottom: 0 !important;
 }
 
 .portfolio .filters {
   display: inline-block;
-  margin: auto;
-  padding-bottom: var(--content-padding)
 }
 
 .portfolio .filters li {
@@ -438,16 +440,10 @@ input:focus {
 
 .portfolio .grid {
   margin: auto;
-  margin-bottom: var(--content-padding);
-}
-
-.portfolio .grid:after {
-  content: '';
-  clear: both;
 }
 
 .portfolio .grid .portfolio-item {
-  float: left;
+  display: inline-block;
   width: 128px;
   border-radius: var(--card-radius);
   margin: 8px;

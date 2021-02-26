@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html amp lang="{{ site.lang }}">
+<html {% unless page.noamp %} amp {% endunless %} lang="{{ site.lang }}">
 
 <head>
   <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  {% unless page.noamp %} <script async src="https://cdn.ampproject.org/v0.js"></script> {% endunless %}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
@@ -50,6 +50,7 @@
   {% include adsense_head.html %}
   {% include analytics_head.html %}
 
+  {% unless page.noamp %}
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -118,6 +119,7 @@
       }
     </style>
   </noscript>
+  {% endunless %}
 </head>
 
 <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">

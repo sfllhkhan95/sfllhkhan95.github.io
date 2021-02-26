@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+noamp: true
 permalink: /projects/
 title: Coding Projects
 description: This page provides a current list of my completed programming projects. These include mobile apps, games, websites, desktop software, APIs, and more.
@@ -9,7 +10,7 @@ menuaction : window.location='/contact/'
 ---
 
 <script>
-  $('h1').addClass('hide-when-small')
+  $('section .breadcrumbs').parent().parent().addClass('hide-when-small')
 </script>
 
 <header>
@@ -23,7 +24,7 @@ menuaction : window.location='/contact/'
   </section>
 </header>
 
-<div class="portfolio" id="portfolio">
+<section class="portfolio" id="portfolio">
   <!-- Filters -->
   <ul class="mdc-chip-set mdc-chip-set--choice filters portfolio-filter" role="grid">
     <li class="mdc-chip active" role="row" data-filter=".all">
@@ -54,8 +55,10 @@ menuaction : window.location='/contact/'
 
   <!-- Apps -->
   <section>
-    <h2 class="subtitle">Apps</h2>
-    <br>
+    <h2 class="text-left subtitle">
+      <hr class="mdc-list-divider" />Apps
+      <br>
+    </h2>
     <div class="grid filters-content">
 
       <a href="/projects/acacia-joinery/" class="portfolio-item all app mobile">
@@ -273,8 +276,10 @@ menuaction : window.location='/contact/'
 
   <!-- Games -->
   <section>
-    <h2 class="text-uppercase subtitle">Games</h2>
-    <br>
+    <h2 class="text-left subtitle">
+      <hr class="mdc-list-divider" />Games
+      <br>
+    </h2>
     <div class="grid filters-content">
 
       <a href="/projects/bouncy/" class="portfolio-item all game mobile desktop">
@@ -408,10 +413,10 @@ menuaction : window.location='/contact/'
 
   <!-- APIs -->
   <section>
-    <h2 class="text-uppercase subtitle">APIs</h2>
-    <br>
+    <h2 class="text-left subtitle">
+      <hr class="mdc-list-divider" />APIs
+    </h2>
     <div class="grid filters-content">
-
       <a href="/projects/droid-rest/" class="portfolio-item all api mobile">
         <div class="mdc-card">
           <div class="project-icon mdc-card__primary-action">
@@ -484,14 +489,16 @@ menuaction : window.location='/contact/'
 
     </div>
   </section>
-</div>
+</section>
 
-<div class="text-center">
+<section class="text-center">
   <div class="callout">
     Do you have a project?
   </div>
-  I can help! Learn more about the <a href="/services/">services I offer</a> and <a href="/contact/">contact me</a> with your project requirements to get a quote.
-</div>
+  <p>
+    I can help! Learn more about the <a href="/services/">services I offer</a> and <a href="/contact/">contact me</a> with your project requirements to get a quote.
+  </p>
+</section>
 
 <div class="mdc-tab-bar bottom-navigation" role="tablist">
   <div class="mdc-tab-scroller">
@@ -536,5 +543,5 @@ menuaction : window.location='/contact/'
 </div>
 
 <!-- Page specific scripts -->
-<script src="{{ site.baseurl }}/assets/vendors/isotope/isotope-min.js"></script>
-<script src="{{ site.baseurl }}/assets/scripts/projects.js"></script>
+<script async src="{{ site.baseurl }}/assets/vendors/isotope/isotope-min.js"></script>
+<script async src="{{ site.baseurl }}/assets/scripts/projects.js"></script>
