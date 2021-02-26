@@ -1,26 +1,79 @@
 {
+  "lang": "en",
   "short_name": "Saif's Portfolio",
   "name": "Saif Khan's Portfolio",
-  "description": "Work portfolio of Muhammad Saif Ullah Khan.",
+  "description": "Work portfolio and a blog by Saif Khan.",
   "icons": [
     {
-      "src": "/favicon-96x96.png",
+      "src": "/assets/images/icons/16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/assets/images/icons/32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/assets/images/icons/96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/assets/images/icons-256.png",
+      "src": "/assets/images/icons/256.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "256x256"
     },
     {
-      "src": "/assets/images/icons-512.png",
+      "src": "/assets/images/icons/512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/assets/images/icons/maskable-48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/maskable-72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/maskable-96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/maskable-128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/maskable-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/maskable-384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/maskable-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": "/?source=pwa",
-  "background_color": "#ffffff",
+  "start_url": "/",
+  "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#854fee"
