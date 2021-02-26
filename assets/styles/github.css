@@ -1,0 +1,73 @@
+.calendar-container {
+  margin-right: 16px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    margin-right: 0px;
+    padding: 0;
+  }
+}
+
+.calendar {
+  border: 1px solid var(--mdc-theme-overlay);
+  min-height: 0;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+}
+
+.calendar-graph text.wday,
+.calendar-graph text.month {
+  font-size: 10pt;
+  fill: var(--mdc-theme-overlay);
+}
+
+.calendar-graph {
+  padding: 0;
+  margin: 0;
+}
+
+.calendar .width-full {
+  display: none;
+}
+
+.contrib-column {
+  border-color: var(--mdc-theme-overlay);
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 11pt;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  text-align: center;
+  width: 33%;
+}
+
+.contrib-column .text-muted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mdc-theme-on-primary);
+  font-size: 8pt;
+  height: 24px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.contrib-column .text-muted ~ .text-muted {
+  align-items: flex-start;
+}
+
+.contrib-number {
+  color: var(--mdc-theme-on-primary);
+  font-size: 14pt;
+  line-height: 1;
+  height: 14pt;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 2px 0;
+  font-weight: bolder;
+}

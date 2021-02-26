@@ -1,0 +1,257 @@
+# ============================================================================
+# This file contains configuration flags to customize your site
+# ============================================================================
+# 1. Site Metadata
+# 2. Site Navigation
+# 3. Social Menu
+# 4. Google AdSense
+# 5. Google Analytics
+# ============================================================================
+
+
+# ----------------------------------------------------------------------------
+# 1. Site Metadata (all fields mandatory)
+# ----------------------------------------------------------------------------
+
+# Name of your site (displayed in the header)
+name:                      Saif's Portfolio
+
+# Name of the author
+author:                    Saif Khan
+
+# Short bio or description (displayed on the homepage)
+description:               Work portfolio and a blog.
+
+about:                     Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>.
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar:                    /assets/images/logo.png
+
+# Manifest and favicon
+manifest:                  /manifest.json
+favicon:                   /favicon.ico
+
+# Your site language code (see: https://www.w3schools.com/tags/ref_language_codes.asp)
+lang:                      en-US
+
+# If you're hosting your GitHub pages site at your User repository
+# (http://yourusername.github.io), leave baseurl empty: "", OR if you're hosting
+# it at a Project repo instead (http://yourusername.github.io/repository-name)
+# then set the baseurl to: "/repository-name"
+baseurl:                   ""
+
+# Your website URL (e.g. http://yourusername.github.io or http://www.domain.com)
+# Used for Sitemap.xml and your RSS feed
+url:                       http://www.saifkhichi.com/
+enforce_ssl:               https://www.saifkhichi.com/
+
+
+# ----------------------------------------------------------------------------
+# Services
+# ----------------------------------------------------------------------------
+services:
+- title:                   App development
+  description:             Beautifully designed mobile applications, specifically tailored for your unique needs.
+  icon:                    android
+- title:                   Algorithm design
+  description:             Optimized algorithms to solve basic problems to complex machine learning tasks.
+  icon:                    memory
+- title:                   Game design
+  description:             Cross-platform 2D/3D games developed with beautiful assets and latest available tools.
+  icon:                    videogame_asset
+- title:                   Graphics design
+  description:             Aesthetic designs for book covers, beautiful logos, expressive icons, and much more.
+  icon:                    design_services
+- title:                   UI/ux design
+  description:             Intuitive UIs that speak for themselves, using Google's material design guidelines.
+  icon:                    widgets
+- title:                   Web development
+  description:             Portfolios, company profiles, app landing pages; any static/dynamic web app you need.
+  icon:                    public
+
+skills:
+  - type:                  Programming Languages
+    items:
+      - name:              Python
+      - name:              Kotlin
+      - name:              Java
+      - name:              JavaScript
+
+  - type:                  Databases
+    items:
+      - name:              NoSQL
+      - name:              MySQL
+      - name:              SQLite
+
+  - type:                  Tools
+    items:
+      - name:              Firebase Services
+      - name:              Google Cloud Services
+      - name:              OpenCV
+      - name:              PyTorch
+      - name:              Tensorflow
+
+spoken_languages:
+- name:                    English
+  proficiency:             Bilingual
+- name:                    German
+  proficiency:             Basic
+- name:                    Urdu
+  proficiency:             Native
+- name:                    Hindi
+  proficiency:             Spoken-only, reading in Roman script
+- name:                    Other Regional Languages
+  proficiency:             Saraiki, Punjabi
+
+interests:
+- name:                    Reading
+  description:             I read some fiction, but mostly non-fiction with topics ranging from history, politics, and theology to science, technology and current affairs.
+  url:                     https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan
+- name:                    Art &amp; Blogging
+  description:             Occasional writer and artist. I sometimes write short stories and poetry, and indulge in oil painting and pencil sketching.
+  url:                     /blog/
+
+experience:
+- institute:               Technische Universität Kaiserslautern (TUK)
+  location:                Kaiserslautern, Germany
+  position:                Master of Computer Science
+  time:                    2019 - present
+  type:                    0
+  url:                     /resume/mscs/
+  details:
+    title:                 Specialisations
+    items:
+      - name:              Intelligent Systems
+        description:
+      - name:              Visualization and Scientific Computing
+        description:
+- institute:               Active Institute of Science, Arts &amp; Technology (AISAT)
+  location:                Kaiserslautern, Germany
+  position:                Software Developer / Graphics Designer
+  time:                    09/2018 - 02/2019
+  type:                    1
+  url:
+- institute:               National University of Sciences and Technology (NUST)
+  location:                Islamabad, Pakistan
+  position:                Bachelor of Software Engineering
+  score:                   3.78 / 4.0 CGPA
+  time:                    2014 - 2018
+  type:                    0
+  url:                     /resume/bese/
+  details:
+    title:                 Co-Curricular Activities
+    items:
+      - name:              NUST Entreprenuers Club (NEC)
+        description:       10/2016 - 04/2017<br>As manager app development, I led a team developing a campus-wide social networking system and successfully designed and delivered the first functional prototype.
+      - name:              NUST International Model United Nations (NIMUN) 2017
+        description:       10/2016 - 02/2017<br>As an IT team member in the student organising committee, I was responsible for developing the Android version of the event's official mobile app, as well as a mobile app for the security team.
+      - name:              Beijing Forum Islamabad 2016
+        description:       04/2016 - 05/2016<br>As a member of the student organising committee for Beijing Forum '16, a global conference whose first international chapter was hosted in Islamabad, I was responsible for developing the official mobile app for the event to be used by the attendees.
+
+# ----------------------------------------------------------------------------
+# 1. Site Navigation (optional, can remove or leave fileds empty)
+# ----------------------------------------------------------------------------
+
+# Includes links in the sidebar (use icon names from https://material.io/icons/)
+navigation_main:
+- title:                   Home
+  icon:                    home
+  url:                     /
+- title:                   Experience
+  icon:                    work
+  url:                     /resume/
+- title:                   Projects
+  icon:                    dashboard
+  url:                     /projects/
+- title:                   Research
+  icon:                    science
+  url:                     /research/
+- title:                   Services
+  icon:                    extension
+  url:                     /services/
+- title:                   Contact
+  icon:                    contact_support
+  url:                     /contact/
+
+navigation_footer:         true
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email:                   saifkhichi96@gmail.com
+  facebook:
+  flickr:
+  github:                  saifkhichi96
+  instagram:               saifkhichi96
+  linkedin:                saifkhichi96
+  pinterest:
+  rss:                     rss
+  twitter:                 saifkhichi96
+  stackoverflow:           4690466
+  youtube:                 /channel/UCj4yPuKHi9pZ9WbKbfh5MEQ
+  playconsole:
+
+# Includes links to your site's privacy policy and terms of service in the footer
+privacy:                   "/privacy/"
+terms:                     "/tos/"
+
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus:                    saifkhichi
+
+# Enter your Google AdSense ad client code (e.g. ca-pub-XXXXXXXXXXXXXXXX) to activate Ads
+google_adsense:            ca-pub-6293532072634065
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+# google_analytics:        UA-43339302-11
+
+# For newer "GA4" analytics, use the following instead of the "UA" entry above
+# google_analytics_ga4:    G-GABC1DEFG
+
+# Enter your domain verification key to verify ownership of domain to Google
+# (https://cloud.google.com/identity/docs/verify-domain-web)
+domain_verify:             a756de613e3e91e14743d6a24b29a35c
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+permalink:                 /:title/
+
+# The release of Jekyll Now that you're using
+version:                   v1.2.0
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input:                   GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter:      rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class:             'highlight'
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style:                   :compressed # You might prefer not to minify using :expanded
+
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap  # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed     # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+include:                   ['_pages']
+
+paginate:                  6
+paginate_path:             /page:num/
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

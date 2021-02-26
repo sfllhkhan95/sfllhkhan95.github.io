@@ -1,0 +1,32 @@
+<!-- Top App Bar -->
+<header class="mdc-top-app-bar">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      {% if page.id %}
+      <button class="material-icons mdc-icon-button" aria-label="Go to previous page." onclick="back();">arrow_back</button>
+      {% else %}
+      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+      {% endif %}
+      <span class="mdc-top-app-bar__title"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.name }}" /></a></span>
+    </section>
+    {% if page.menuitem %}
+    {% if page.menuaction %}
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      <div class="mdc-touch-target-wrapper">
+        <button class="mdc-top-app-bar__action-item {% if page.menuicon %}mdc-icon-button{% else %}mdc-button mdc-button--outlined{% endif %}" onclick="{{ page.menuaction }}" aria-label="Download Transcript">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">
+            {% if page.menuicon %}
+            <i class="material-icons">{{ page.menuicon }}</i>
+            {% else %}
+            {{ page.menuitem }}
+            {% endif %}
+          </span>
+          <span class="mdc-button__touch"></span>
+        </button>
+      </div>
+    </section>
+    {% endif %}
+    {% endif %}
+  </div>
+</header>

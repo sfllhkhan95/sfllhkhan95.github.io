@@ -1,338 +1,237 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+description: Personal website of Muhammad Saif Ullah Khan, containing a complete portfolio, work history, and other details.
+keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Muhammad Saif Ullah Khan">
-  <meta name="description" content="Personal website of Muhammad Saif Ullah Khan, containing a complete portfolio, work history, and other details.">
-  <meta name="keywords" content="portfolio, developer, freelancer, saif khan, saifkhichi96">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <meta name="theme-color" content="#854fee">
-  <!-- Website icon -->
-  <link rel="shortcut icon" href="/favicon.ico">
+<style>
+  .main-content article {
+    position: relative;
+  }
 
-  <!-- Domain Verification Key -->
-  <meta name="p:domain_verify" content="a756de613e3e91e14743d6a24b29a35c" />
+  .main-content article::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('/assets/images/banner/home-banner.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: .25;
+    content: "";
+  }
 
-  <!-- Page Title -->
-  <title>Portfolio Home | Saif Khan</title>
+  article .mdc-card {
+    background: none;
+  }
 
-  <!-- Material Components for Web -->
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-
-  <!-- Material Icons from Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-  <!-- Custom styles for this page -->
-  <link href="/css/style.css" rel="stylesheet">
-
-  <!-- Manifest -->
-  <link rel="manifest" href="/manifest.json">
-
-  <!-- AdSense script -->
-  <script data-ad-client="ca-pub-6293532072634065" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-  <!-- Installable PWA -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
-
-  <!-- Prepare a container for your calendar. -->
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  <link href="/css/github.css" rel="stylesheet">
-
-  <style>
-    .main-content article {
-      position: relative;
-    }
-
+  @media (prefers-color-scheme: dark) {
     .main-content article::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-image: url('/img/banner/home-banner.png');
-      background-position: top left;
-      background-repeat: no-repeat;
-      background-size: auto;
-      opacity: .25;
-      content: "";
+      background-image: url('/assets/images/banner/home-banner-dark.png');
+      opacity: .5;
     }
 
-    article .mdc-card {
-      background: none;
+    .home_right_img {
+      background-image: url('/assets/images/banner/home-right-dark.png');
     }
+  }
+</style>
 
-    @media (prefers-color-scheme: dark) {
-      .main-content article::before {
-        background-image: url('/img/banner/home-banner-dark.png');
-        opacity: .5;
-      }
+<header>
+  <!-- Introduction -->
+  <div class="col-md-8">
+    <section class="about-summary">
+      <p class="text-uppercase greeting">Hell0</p>
+      <h1 class="text-uppercase introduction">I am <strong>{{ site.author }}</strong></h1>
+      <p>
+        {{ site.about }}
+      </p>
+    </section>
 
-      .home_right_img {
-        background-image: url('/img/banner/home-right-dark.png');
-      }
-    }
-  </style>
-</head>
+    <!-- Callout Actions -->
+    <section class="text-left">
+      <div class="mdc-touch-target-wrapper">
+        <a class="mdc-button mdc-button--unelevated mdc-button--touch" href="/contact/" style="margin-right: 8px;">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">Contact Me</span>
+          <span class="mdc-button__touch"></span>
+        </a>
+      </div>
 
-<body>
-  <!-- Top App Bar -->
-  <header class="mdc-top-app-bar">
-    <div class="mdc-top-app-bar__row">
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
-        <span class="mdc-top-app-bar__title"><a href="#"><img src="/img/logo.png" alt="Brand logo of Saif Khan's Portfolio" /></a></span>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <div class="mdc-touch-target-wrapper">
-          <a class="mdc-button mdc-button mdc-button--touch" href="/resume/">
+      <div class="mdc-touch-target-wrapper">
+        <a class="mdc-button mdc-button--outlined mdc-button--touch" href="/projects/">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">Explore my Work</span>
+          <span class="mdc-button__touch"></span>
+        </a>
+      </div>
+    </section>
+    <br>
+  </div>
+
+  <!-- Header Image -->
+  <div class="col-md-4">
+    <div class="home_right_img"></div>
+  </div>
+</header>
+
+<div class="col-md-8">
+  <!-- Featured Projects -->
+  <section>
+    <h2 class="subtitle">Featured Projects</h2>
+    <p>I am always working on many exciting programming projects, some of which are listed below:</p>
+    <div class="mdc-card mdc-card--outlined">
+      <div class="mdc-card__content">
+        <ul style="padding: 16px 16px 0px 16px;">
+          <li>
+            <a href="https://github.com/saifkhichi96/signature-extraction">Signature Extraction from Bank Checks</a><br>
+            <p>A segmentation model trained to extract handwritten signatures from bank checks.</p>
+            <hr class="mdc-list-divider">
+          </li>
+          <li>
+            <a href="projects/doodle">Doodle Paint App</a><br>
+            <p>
+              A simple paint application for Android, written in Java and Kotlin programming languages.
+            </p>
+            <hr class="mdc-list-divider">
+          </li>
+        </ul>
+      </div>
+      <div class="mdc-card__actions">
+        <div class="mdc-card__action-icons">
+          <a class="mdc-button mdc-card__action mdc-card__action--button" href="projects/">
             <span class="mdc-button__ripple"></span>
-            <span class="mdc-button__label">Get CV</span>
-            <span class="mdc-button__touch"></span>
+            <span class="mdc-button__label">See all projects</span>
           </a>
         </div>
-      </section>
-    </div>
-  </header>
-
-  <main class="mdc-top-app-bar--fixed-adjust">
-    <!-- Drawer -->
-    <aside class="mdc-drawer mdc-drawer--modal">
-      <div class="mdc-drawer__header">
-        <h3 class="mdc-drawer__title">Saif's Portfolio</h3>
-        <h6 class="mdc-drawer__subtitle"><a href="/contact.html">Get in Touch</a></h6>
       </div>
-      <div class="mdc-drawer__content">
-        <nav class="mdc-list">
-          <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-            <span class="mdc-list-item__text">Home</span>
-          </a>
-          <a class="mdc-list-item" href="/projects/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
-            <span class="mdc-list-item__text">Projects</span>
-          </a>
-          <a class="mdc-list-item" href="/services/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>
-            <span class="mdc-list-item__text">Services</span>
-          </a>
-          <a class="mdc-list-item" href="/resume/">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">work</i>
-            <span class="mdc-list-item__text">Resume</span>
-          </a>
-          <hr class="mdc-list-divider" />
-
-          <a class="mdc-list-item" href="/blog/">
-            <i class=" material-icons mdc-list-item__graphic" aria-hidden="true">local_library</i>
-            <span class="mdc-list-item__text">Blog</span>
-            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
-          </a>
-          <a class="mdc-list-item" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan" rel="noopener" target="_blank">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_books</i>
-            <span class="mdc-list-item__text">Books</span>
-            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
-          </a>
-          <a class="mdc-list-item" href="https://www.youtube.com/channel/UCj4yPuKHi9pZ9WbKbfh5MEQ" rel="noopener" target="_blank">
-            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">video_library</i>
-            <span class="mdc-list-item__text">Videos</span>
-            <i class="material-icons" style="position: absolute; right: 8px;">launch</i>
-          </a>
-          <hr class="mdc-list-divider" />
-
-          <a class="mdc-list-item" href="#" id="install-button">
-            <pwa-install id="a2hs" installbuttontext="Install Web App"></pwa-install>
-          </a>
-        </nav>
-      </div>
-    </aside>
-    <div class="mdc-drawer-scrim"></div>
-
-    <!-- Content -->
-    <div class="main-content">
-      <article class="about-section">
-        <header>
-          <!-- Breadcrumbs -->
-          <section>
-            <nav class="breadcrumbs" aria-label="breadcrumb"></nav>
-          </section>
-
-          <!-- Introduction -->
-          <div class="col-md-8">
-            <section class="about-summary">
-              <p class="text-uppercase greeting">Hell0</p>
-              <h1 class="text-uppercase introduction">I am <strong>saif khan</strong></h1>
-              <p>
-                Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>.
-              </p>
-            </section>
-
-            <!-- Callout Actions -->
-            <section class="text-left">
-              <div class="mdc-touch-target-wrapper">
-                <a class="mdc-button mdc-button--unelevated mdc-button--touch" href="/contact.html" style="margin-right: 8px;">
-                  <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">Contact Me</span>
-                  <span class="mdc-button__touch"></span>
-                </a>
-              </div>
-
-              <div class="mdc-touch-target-wrapper">
-                <a class="mdc-button mdc-button--outlined mdc-button--touch" href="/projects/">
-                  <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">Explore my Work</span>
-                  <span class="mdc-button__touch"></span>
-                </a>
-              </div>
-            </section>
-            <br>
-          </div>
-
-          <!-- Header Image -->
-          <div class="col-md-4">
-            <div class="home_right_img"></div>
-          </div>
-        </header>
-
-        <div class="col-md-8">
-          <!-- Featured Projects -->
-          <section>
-            <h2 class="subtitle">Featured Projects</h2>
-            <p>I am always working on many exciting programming projects, some of which are listed below:</p>
-            <div class="mdc-card mdc-card--outlined calendar-container">
-              <div class="mdc-card__content">
-                <ul style="padding: 16px 16px 0px 16px;">
-                  <li>
-                    <a href="https://github.com/saifkhichi96/signature-extraction">Signature Extraction from Bank Checks</a><br>
-                    <p>A segmentation model trained to extract handwritten signatures from bank checks.</p>
-                    <hr class="mdc-list-divider">
-                  </li>
-                  <li>
-                    <a href="projects/doodle">Doodle Paint App</a><br>
-                    <p>
-                      A simple paint application for Android, written in Java and Kotlin programming languages.
-                    </p>
-                    <hr class="mdc-list-divider">
-                  </li>
-                </ul>
-              </div>
-              <div class="mdc-card__actions">
-                <div class="mdc-card__action-icons">
-                  <a class="mdc-button mdc-card__action mdc-card__action--button" href="projects/">
-                    <span class="mdc-button__ripple"></span>
-                    <span class="mdc-button__label">See all projects</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- GitHub contributions -->
-          <section>
-            <h2 class="subtitle">Coding Stats</h2>
-            <p>Summary of my recent GitHub activity. See my
-              <a href="https://github.com/saifkhichi96/" style="color: var(--mdc-theme-on-primary);">GitHub profile</a> for details.
-            <div class="calendar-container">
-              <div class="calendar"></div>
-            </div>
-          </section>
-        </div>
-
-        <div class="col-md-4">
-          <!-- Recent Work -->
-          <section>
-            <h2 class="subtitle">Recent updates</h2>
-            <ul class="mdc-list mdc-list--two-line">
-              <li class="mdc-list-item" tabindex="0" onclick="window.location='projects/tiled'">
-                <span class="mdc-list-item__ripple"></span>
-                <span class="mdc-list-item__text">
-                  <span class="mdc-list-item__primary-text">Tiled, for making tilemaps on Android</span>
-                  <span class="mdc-list-item__secondary-text">Released a new library.</span>
-                </span>
-              </li>
-              <li class="mdc-list-item" onclick="window.location='projects/scribe'">
-                <span class="mdc-list-item__ripple"></span>
-                <span class="mdc-list-item__text">
-                  <span class="mdc-list-item__primary-text">Scribe, an API to write PDF on Android</span>
-                  <span class="mdc-list-item__secondary-text">Released a new library.</span>
-                </span>
-              </li>
-            </ul>
-          </section>
-
-          <!-- More -->
-          <section>
-            <h2 class="subtitle">More from me</h2>
-            <ul class="mdc-list">
-              <li class="mdc-list-item" tabindex="0">
-                <a class="mdc-button" href="/blog/">
-                  <span class=" mdc-button__ripple"></span>
-                  <span class="mdc-button__label">Read my blog</span>
-                </a>
-              </li>
-              <li class="mdc-list-item">
-                <a class="mdc-button" href="#">
-                  <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">See my paintings</span>
-                </a>
-              </li>
-              <li class="mdc-list-item">
-                <a class="mdc-button" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan" rel="noopener" target="_blank">
-                  <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">See my reading list</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </article>
-      <footer></footer>
     </div>
-  </main>
+  </section>
 
-  <!-- jQuery (must be above all other scripts) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- GitHub contributions -->
+  {% include github.html %}
+</div>
 
-  <!-- Firebase services -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
-  <script src="/js/firebase.js"></script>
+<div class="col-md-4">
+  <!-- Recent Work -->
+  <section>
+    <h2 class="subtitle">Recent updates</h2>
+    <ul class="mdc-list mdc-list--two-line">
+      <li class="mdc-list-item" tabindex="0" onclick="window.location='projects/tiled'">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">
+          <span class="mdc-list-item__primary-text">Tiled, for making tilemaps on Android</span>
+          <span class="mdc-list-item__secondary-text">Released a new library.</span>
+        </span>
+      </li>
+      <li class="mdc-list-item" onclick="window.location='projects/scribe'">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">
+          <span class="mdc-list-item__primary-text">Scribe, an API to write PDF on Android</span>
+          <span class="mdc-list-item__secondary-text">Released a new library.</span>
+        </span>
+      </li>
+    </ul>
+  </section>
 
-  <!-- Other global scripts -->
-  <script src="/js/navigation.js"></script>
+  <!-- Blog -->
+  <section>
+    <h2>Blog posts</h2>
+    <ul class="mdc-list mdc-list--two-line">
+      {% for post in paginator.posts %}
+      <li class="mdc-list-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__text">
+            <span class="mdc-list-item__primary-text">{{ post.title }}</span>
+            <span class="mdc-list-item__secondary-text">{{ post.date | date: "%B %e, %Y" }}</span>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
 
-  <!-- Page specific scripts -->
-  <script src="/js/webapp.js"></script>
-  <script type="module">
-    // Load GitHub contributions calendar
-    $(function() {
-      new GitHubCalendar(".calendar", "saifkhichi96", {
-        responsive: true
+    <!-- pagination -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% else %}
+      <span>&laquo; Prev</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+      {% elsif page == 1 %}
+      <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% else %}
+      <span>Next &raquo;</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- More -->
+  <section>
+    <h2 class="subtitle">More from me</h2>
+    <ul class="mdc-list">
+      <li class="mdc-list-item" tabindex="0">
+        <a class="mdc-button" href="/resume/">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">Ge my CV</span>
+        </a>
+      </li>
+      <li class="mdc-list-item">
+        <a class="mdc-button" href="#">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">See my paintings</span>
+        </a>
+      </li>
+      <li class="mdc-list-item">
+        <a class="mdc-button" href="https://www.goodreads.com/user/show/26736309-muhammad-saif-ullah-khan" rel="noopener" target="_blank">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">See my reading list</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<!-- Firebase services -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+<script src="{{ site.baseurl }}/assets/scripts/firebase.js"></script>
+
+<!-- Page specific scripts -->
+<script src="{{ site.baseurl }}/assets/scripts/webapp.js"></script>
+<script type="module">
+  // This is the "Offline page" service worker
+  // Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);
+
+  $(function() {
+    const pwaInstall = $('#a2hs');
+    if (pwaInstall.is(":visible")) {
+      pwaInstall.hide();
+      $('#install-button').click(function() {
+        pwaInstall.install();
       });
-    });
-
-    // This is the "Offline page" service worker
-    // Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
-    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-    const el = document.createElement('pwa-update');
-    document.body.appendChild(el);
-
-    $(function() {
-      const pwaInstall = $('#a2hs');
-      if (pwaInstall.is(":visible")) {
-        pwaInstall.hide();
-        $('#install-button').click(function() {
-          pwaInstall.install();
-        });
-      }
-    });
-  </script>
-  <script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="saifkhichi96" data-description="Support me on Buy me a coffee!"
-    data-message="You can support my work by buying me a coffee :-)" data-color="#BD5FFF" data-position="Right" data-x_margin="16" data-y_margin="16">
-  </script>
-</body>
-
-</html>
+    }
+  });
+</script>
+<script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="saifkhichi96" data-description="Support me on Buy me a coffee!" data-message="You can support my work by buying me a coffee :-)"
+  data-color="#BD5FFF" data-position="Right" data-x_margin="16" data-y_margin="16">
+</script>

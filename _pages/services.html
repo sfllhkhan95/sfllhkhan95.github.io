@@ -1,0 +1,28 @@
+---
+layout: page
+permalink: /services/
+title: Services
+description: This page provides a details of different freelancing services I offer.
+keywords: services, programming, freelancing, saif khan, saifkhichi96
+---
+
+<!-- Page Title and Description -->
+<section class="hide-when-small">
+  <p>
+    Available for freelance work on projects in one of the categories listed below. You can see my <a href="/projects/">past projects</a> to learn more about my work experience related to the offered services.<br>
+    <br>
+    Do you have a project? Drop me a message to <a href="/contact/">get a quote now</a>.
+  </p>
+</section>
+
+<section class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    {% for service in site.services %}
+    <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined service-item">
+      <span class="material-icons">{{ service.icon }}</span>
+      <h2>{{ service.title }}</h2>
+      <p>{{ service.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+{% if page.excerpt %}
+<meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+{% elsif page.description %}
+<meta property="og:description" content="{{ page.description }}" />
+{% else %}
+<meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+<meta name="author" content="{{ site.name }}" />
+
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="twitter:title" content="{{ page.title }}" />
+{% endif %}
+
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}">
+<meta property="og:keywords" content="{{ page.keywords }}" />
+<meta property="twitter:keywords" content="{{ page.keywords }}" />
+{% endif %}
+
+{% if page.icon %}
+<meta property="og:image" content="{{ site.baseurl }}{{ page.icon }}" />
+<meta property="twitter:image" content="{{ site.baseurl }}{{ page.icon }}" />
+{% else %}
+<meta property="og:image" content="{{ site.baseurl }}{{ site.avatar }}" />
+<meta property="twitter:image" content="{{ site.baseurl }}{{ site.avatar }}" />
+{% endif %}

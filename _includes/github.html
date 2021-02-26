@@ -1,0 +1,19 @@
+{% if site.footer-links.github %}
+<section class="mdc-card mdc-card--outlined" style="border: 0;">
+  <h2 class="subtitle">Coding Stats</h2>
+  <p>
+    Summary of my recent GitHub activity. See my
+    <a href="https://github.com/{{ site.footer-links.github }}/" style="color: var(--mdc-theme-on-primary);">GitHub profile</a> for details.
+  </p>
+  <div class="calendar"></div>
+</section>
+
+<script type="application/javascript">
+  (function() {
+    // Load GitHub contributions calendar
+    new GitHubCalendar(".calendar", "{{ site.footer-links.github }}", {
+      responsive: true
+    });
+  })();
+</script>
+{% endif %}

@@ -1,0 +1,275 @@
+---
+layout: default
+permalink: /resume/
+title: Education and Work History
+description: A downloadable, online resume which provides a summary of my technical skills, eductaion and work background.
+keywords: resume, education, jobs, saif khan, saifkhichi96
+menuitem: Print
+menuaction: print()
+menuicon: print
+---
+
+<style>
+  .bio {
+    display: flex;
+    float: left;
+  }
+
+  .bio>div {
+    display: inline-block;
+    float: left;
+  }
+
+  .bio .name {
+    font-size: 18pt;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .bio .tagline {
+    font-size: 14pt;
+    font-weight: normal;
+  }
+
+  .bio img {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+    margin-right: var(--content-padding);
+  }
+
+  @media (max-width: 840px) {
+    .bio {
+      background: var(--mdc-theme-primary);
+      box-shadow: 0px 0px 2px var(--mdc-theme-overlay);
+      border-radius: 4px;
+      padding: var(--content-padding);
+    }
+
+    .bio img {
+      width: 96px;
+      height: 96px;
+      border-radius: 48px;
+
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bio {
+      display: block;
+      text-align: center;
+    }
+
+    .bio .summary {
+      text-align: justify;
+    }
+
+    .bio>div {
+      display: block;
+      float: none;
+    }
+  }
+</style>
+
+<!-- Page Title and Description -->
+<section class="bio">
+  <img src="/assets/images/me.jpg" class="img-responsive" alt="A portrait of Muhammad Saif Ullah Khan." />
+  <div>
+    <p class="name">Muhammad Saif Ullah Khan</p>
+    <p class="tagline">Mobile Developer and ML Engineer</p>
+    <p class="summary">
+      Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>. Self-directed leader who fosters a collaborative
+      and supportive team environment. Dedicated, hard-working and open to new experiences.
+    </p>
+  </div>
+</section>
+
+<div class="col-md-8">
+  <!-- Skills and Abilities-->
+  <section>
+    <h2>Technical Skills</h2>
+    {% if site.skills %}
+    <ul class="mdc-list">
+      {% for skillset in site.skills %}
+      <li>
+        {{ skillset.type }}
+        <ul class="mdc-chip-set">
+          {% for skill in skillset.items %}
+          <li class="mdc-chip">
+            <span>
+              <span role="button" class="mdc-chip__text">{{ skill.name }}</span>
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <p>Please note that this list is not exhaustive, and only mentions the skills I am most familiar with.</p>
+
+    <ul class="highlight">
+      <li>
+        Sound knowledge of <strong>object-oriented concepts</strong>, basic
+        <strong>design
+          patterns</strong> and <strong>good programming
+          practices</strong>.
+      </li>
+      <br>
+
+      <li>
+        Ability to <strong>work independently</strong> as well as <strong>with
+          others</strong>. Experienced in <strong>leading teams</strong> and
+        <strong>managing projects</strong>.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Experience-->
+  {% if site.spoken_languages %}
+  <section>
+    <h2>Experience Summary</h2>
+    <ul>
+      {% for item in site.experience %}
+      <li class="experience-item">
+        <div class="timeline">
+          <span class="dot material-icons">{% if item.type == 0 %}school{% else %}apartment{% endif %}</span><br />
+          <span class="bar">&nbsp;</span>
+        </div>
+        <div class="content">
+          <div class="mdc-card-content">
+            <small class="date">{{ item.time }}</small>
+            {% if item.url %}
+            {% if item.url contains '://' %}
+            {% assign url = item.url %}
+            {% else %}
+            {% assign url = item.url | relative_url %}
+            {% endif %}
+            {% else %}
+            {% assign url = '#' %}
+            {% endif %}
+            <a href="{{ url }}">
+              <h3 class="name">{{ item.position }} </h3>
+            </a>
+            <b>{{ item.institute }}</b>
+            <address>{{ item.location }}</address>
+
+            {% if item.score %}
+            <span>
+              <i class="fas fa-user-graduate"></i>&nbsp; {{ item.score }}
+            </span>
+            {% endif %}
+
+            {% if item.details %}
+            <div class="details">
+              {% if item.details %}
+              <u>{{ item.details.title }}</u>
+              <ul class="mdc-list">
+                <!-- NEC Manager -->
+                {% for subitem in item.details.items %}
+                <li>
+                  {% if subitem.description %}
+                  <details>
+                    <summary>{{ subitem.name }}</summary>
+                    <blockquote>{{ subitem.description }}</blockquote>
+                  </details>
+                  {% else %}
+                  {{ subitem.name }}
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>
+
+<div class="col-md-4">
+  <!-- Accomplishments -->
+  <section>
+    <h2>Achievements &amp; Projects</h2>
+    <ul>
+      <li>The final project of my Bachelor degree, called <a href="/projects/authentica">Signature Verification</a> was
+        nominated for gold medal in our department.
+        <hr class="mdc-list-divider">
+      </li>
+
+      <li>Wrote an object-oriented binding for the OpenGL/GLUT in C++ language, called <a href="/projects/smartgl">SmartGL</a>,
+        to easily create GUI apps on the Windows platform.
+        <hr class="mdc-list-divider">
+      </li>
+
+      <li>Multiple APIs and packages, written in Java, Kotlin and Python langauges, published on <a href="https://bintray.com/saifkhichi96/maven" rel="noopener" target="_blank">JCenter</a> and <a href="https://pypi.org/user/saifkhichi96/"
+          rel="noopener" target="_blank">PyPI</a>.
+        <hr class="mdc-list-divider">
+      </li>
+
+      <li>Several well-performing games and applications published on <a href="https://play.google.com/store/apps/developer?id=Saif+Khichi" rel="noopener" target="_blank">Google Play Store</a>
+        <hr class="mdc-list-divider">
+      </li>
+
+      <li>Won the first prize, along with my team, in a local hackathon <a href="#">NUST Pakathon 2015</a>.
+        <hr class="mdc-list-divider">
+      </li>
+
+      <li>Successfully led a team to participate in <a href="#">LUMS PsiFi 2014</a>.
+        <hr class="mdc-list-divider">
+      </li>
+    </ul>
+    <div class="mdc-card__actions">
+      <div class="mdc-card__action-icons">
+        <a class="mdc-button mdc-card__action mdc-card__action--button" href="/projects">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">See all projects</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  {% if site.spoken_languages %}
+  <section>
+    <h2>Languages</h2>
+    <ul class="mdc-list mdc-list--two-line">
+      {% for language in site.spoken_languages %}
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          <span class="mdc-list-item__primary-text">{{ language.name }}</span>
+          <span class="mdc-list-item__secondary-text">{{ language.proficiency }}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Interests -->
+  {% if site.interests %}
+  <section>
+    <h2>Interests</h2>
+    <ul class="mdc-list mdc-list--two-line">
+      {% for interest in site.interests %}
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__text">
+          <span class="mdc-list-item__primary-text">{{ interest.name }}</span>
+          <span class="mdc-list-item__secondary-text">{{ interest.description }}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <p>Please visit the <a href="/contact/">contact page</a> for further information.</p>
+  </section>
+</div>
