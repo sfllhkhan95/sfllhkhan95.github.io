@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html amp lang="{{ site.lang }}">
 
 <head>
   <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
   {% seo title=false %}
@@ -27,7 +28,7 @@
   <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#854fee' }}" />
 
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
+  <script async src="https://kit.fontawesome.com/a8beec66c1.js" crossorigin="anonymous"></script>
 
   <!-- Material Components for Web -->
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -48,6 +49,75 @@
   {% include github_head.html %}
   {% include adsense_head.html %}
   {% include analytics_head.html %}
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
 </head>
 
 <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
@@ -138,10 +208,10 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/scripts/firebase.js"></script>
+  <script async src="{{ site.baseurl }}/assets/scripts/firebase.js"></script>
 
   <!-- Other global scripts -->
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/scripts/navigation.js"></script>
+  <script async src="{{ site.baseurl }}/assets/scripts/navigation.js"></script>
 </body>
 
 </html>

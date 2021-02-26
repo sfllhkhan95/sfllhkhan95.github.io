@@ -3,7 +3,7 @@
  * code syntax highlighting styles
  *------------------------------------------------
  */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/atom-one-dark.min.css');
 
 .code,
@@ -15,7 +15,7 @@ code {
 .code,
 .gist-file *,
 code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Roboto Mono', monospace !important;
   font-size: 11pt;
 }
 
