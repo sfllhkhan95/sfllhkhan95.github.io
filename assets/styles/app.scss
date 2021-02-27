@@ -522,12 +522,21 @@ input:focus {
   display: block;
 }
 
-@media (max-width: 992px) {
-  .portfolio {
-    padding-bottom: 48px;
+@media (max-width: 1024px) {
+  .portfolio .grid .portfolio-item {
+    width: 112px;
   }
+}
 
-  .portfolio .subtitle, .portfolio hr.small {
+@media (max-width: 930px) {
+  .portfolio .grid .portfolio-item {
+    width: 96px;
+  }
+}
+
+@media (max-width: 840px) {
+  .portfolio .subtitle,
+  .portfolio hr.small {
     display: none;
   }
 
@@ -537,7 +546,7 @@ input:focus {
   }
 
   .portfolio .grid .portfolio-item {
-    width: 92px;
+    width: 88px;
   }
 
   .bottom-navigation {
@@ -549,9 +558,27 @@ input:focus {
   }
 }
 
-@media (max-width: 992px) {
-  .nav {
-    padding: 0 0;
+@media (max-width: 360px) {
+  .portfolio .grid .portfolio-item {
+    width: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio .grid .portfolio-item {
+    width: 72px;
+  }
+}
+
+@media (max-width: 296px) {
+  .portfolio .grid .portfolio-item {
+    width: 64px;
+  }
+}
+
+@media (max-width: 272px) {
+  .portfolio .grid .portfolio-item {
+    width: 56px;
   }
 }
 
@@ -702,8 +729,6 @@ input:focus {
 
 pwa-install {
   --install-button-color: var(--mdc-theme-secondary);
-  display: none;
-  margin-left: 8px;
 }
 
 pwa-install::part(openButton) {
