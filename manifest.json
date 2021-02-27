@@ -2,9 +2,9 @@
   "lang": "en",
   "short_name": "Saif's Portfolio",
   "name": "Saif Khan's Portfolio",
+  "categories": ["business", "education", "personalization", "productivity"],
   "description": "Work portfolio and a blog by Saif Khan.",
-  "icons": [
-    {
+  "icons": [{
       "src": "/assets/images/icons/16.png",
       "type": "image/png",
       "sizes": "16x16"
@@ -72,9 +72,104 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "screenshots": [{
+      "src": "/assets/images/screenshots/desktop-1.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "label": "The homepage viewed on a Desktop screen."
+    },
+    {
+      "src": "/assets/images/screenshots/desktop-2.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "label": "The projects list page viewed on a Desktop screen."
+    },
+    {
+      "src": "/assets/images/screenshots/desktop-3.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "label": "The resume page viewed on a Desktop screen."
+    },
+    {
+      "src": "/assets/images/screenshots/desktop-4.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "label": "The contact page viewed on a Desktop screen."
+    },
+    {
+      "src": "/assets/images/screenshots/mobile-1.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "label": "The homepage viewed on a mobile screen.",
+      "platform": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/mobile-2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "label": "The projects list page viewed on a mobile screen.",
+      "platform": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/mobile-3.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "label": "The resume page viewed on a mobile screen.",
+      "platform": "narrow"
+    },
+    {
+      "src": "/assets/images/screenshots/mobile-4.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "label": "The contact page viewed on a mobile screen.",
+      "platform": "narrow"
+    }
+  ],
+  "shortcuts": [{
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "View the list of projects I have worked on",
+      "url": "/projects/",
+      "icons": [{
+        "src": "/assets/images/icons/shortcut-projects.png",
+        "sizes": "96x96"
+      }]
+    },
+    {
+      "name": "View Services",
+      "short_name": "Services",
+      "description": "View the list of services I offer",
+      "url": "/services/",
+      "icons": [{
+        "src": "/assets/images/icons/shortcut-services.png",
+        "sizes": "96x96"
+      }]
+    },
+    {
+      "name": "View Resume",
+      "short_name": "Resume",
+      "description": "View my education and work history",
+      "url": "/resume/",
+      "icons": [{
+        "src": "/assets/images/icons/shortcut-resume.png",
+        "sizes": "96x96"
+      }]
+    },
+    {
+      "name": "Talk to Me",
+      "short_name": "Contact",
+      "description": "Contact me with your questions or proposals",
+      "url": "/contact/",
+      "icons": [{
+        "src": "/assets/images/icons/shortcut-contact.png",
+        "sizes": "96x96"
+      }]
+    }
+  ],
   "background_color": "#fafafa",
   "display": "standalone",
+  "orientation": "natural",
   "scope": "/",
+  "start_url": "/",
   "theme_color": "#854fee"
 }
