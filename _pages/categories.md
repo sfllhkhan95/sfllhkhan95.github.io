@@ -4,16 +4,12 @@ permalink: /categories/
 title: Categories
 ---
 
-
-<div id="archives">
 {% for category in site.categories %}
-  <div>
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-
-    <h2 class="category-head">{{ category_name }}</h2>
-    <a name="{{ category_name | slugize }}"></a>
-    <ul class="mdc-list">
+<section>
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  <a name="{{ category_name | slugize | replace: ",", "" }}"></a>
+  <h2 class="text-left subtitle">{{ category_name | replace: ",", "" }}</h2>
+  <ul class="mdc-list filters-content">
     {% for post in site.categories[category_name] %}
     <li class="mdc-list-item">
       <a href="{{ site.baseurl }}{{ post.url }}">
@@ -22,7 +18,6 @@ title: Categories
       </a>
     </li>
     {% endfor %}
-    </ul>
-  </div>
+  </ul>
+</section>
 {% endfor %}
-</div>

@@ -158,8 +158,7 @@
                 {% assign categories = page.categories %}
                 {% endif %}
                 {% for category in categories %}
-                <a href="{{site.baseurl}}/categories/#{{category|slugize}}"><span class="project-tag">{{category}}</span></a>
-                {% unless forloop.last %}&nbsp;{% endunless %}
+                <a href="{{site.baseurl}}/categories/#{{category|slugize|replace:",",""}}"><span class="project-tag">{{ category | replace: ",", "" }}</span></a>
                 {% endfor %}
               </div>
             </div>
