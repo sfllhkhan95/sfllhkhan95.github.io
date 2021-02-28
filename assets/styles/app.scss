@@ -685,6 +685,13 @@ input:focus {
   float: left;
 }
 
+.project-logo {
+  border-radius: 8px;
+  margin-right: 16px;
+  height: 80px;
+  width: 80px;
+}
+
 .project-title {
   padding: 0;
   margin: 0;
@@ -703,6 +710,7 @@ input:focus {
   font-size: 10px;
   font-weight: bold;
   padding: 2px 8px;
+  text-transform: uppercase;
 }
 
 .project-tag .material-icons {
@@ -719,6 +727,7 @@ input:focus {
 }
 
 .project-portfolio-img {
+  border-radius: 8px;
   width: 100%;
 }
 

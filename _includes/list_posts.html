@@ -1,5 +1,8 @@
 <div class="mdc-list mdc-list--two-line">
-  {% for post in paginator.posts %}
+  {% assign posts = paginator.posts %}
+  {% for post in posts %}
+  {% assign categories = post.categories %}
+  {% unless categories contains 'project' %}
   <a class="mdc-list-item" href="{{ site.baseurl }}{{ post.url }}">
     <span class="mdc-list-item__ripple"></span>
     <span class="mdc-list-item__text">
@@ -7,6 +10,7 @@
       <span class="mdc-list-item__secondary-text">{{ post.date | date: "%B %e, %Y" }}</span>
     </span>
   </a>
+  {% endunless %}
   {% endfor %}
 </div>
 

@@ -150,7 +150,9 @@
             {% endif %}
             <div>
               <h1 class="project-title">{{ page.title }}</h1>
+              {% unless page.icon %}
               <span class="project-type">{% if page.date %}{{ page.date | date: "%B %e, %Y" }}{% endif %}</span>
+              {% endunless %}
               <div class="project-tags">
                 {% if post %}
                 {% assign categories = post.categories %}
@@ -158,9 +160,12 @@
                 {% assign categories = page.categories %}
                 {% endif %}
                 {% for category in categories %}
-                <a href="{{site.baseurl}}/categories/#{{category|slugize|replace:",",""}}"><span class="project-tag">{{ category | replace: ",", "" }}</span></a>
+                <a href="{{site.baseurl}}/categories/#{{category|slugize|replace:",",""}}"><span class="project-tag"><i class="material-icons">sell</i>{{ category | replace: ",", "" }}</span></a>
                 {% endfor %}
               </div>
+              {% if page.device %}
+              <p class="project-type"><span class="material-icons">devices</span>&nbsp; {{ page.device }}</p>
+              {% endif %}
             </div>
             <br>
             {% if page.id %}

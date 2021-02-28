@@ -16,11 +16,9 @@
 <meta property="twitter:title" content="{{ page.title }}" />
 {% endif %}
 
-{% if page.keywords %}
-<meta name="keywords" content="{{ page.keywords }}">
-<meta property="og:keywords" content="{{ page.keywords }}" />
-<meta property="twitter:keywords" content="{{ page.keywords }}" />
-{% endif %}
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %}{% if page.categories %}{{ page.categories }}{% endif %}{% if page.device %},{{ page.device }}{% endif %},{{ site.author }}">
+<meta property="og:keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %}{% if page.categories %}{{ page.categories }}{% endif %}{% if page.device %},{{ page.device }}{% endif %},{{ site.author }}" />
+<meta property="twitter:keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %}{% if page.categories %}{{ page.categories }}{% endif %}{% if page.device %},{{ page.device }}{% endif %},{{ site.author }}" />
 
 {% if page.icon %}
 <meta property="og:image" content="{{ site.baseurl }}{{ page.icon }}" />
