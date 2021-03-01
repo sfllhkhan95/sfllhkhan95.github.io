@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "messages": {
+      ".read": "auth != null && auth.provider != 'anonymous'",
+      ".write": "auth != null"
+    },
+    ".read": "auth != null && auth.provider != 'anonymous'",
+    ".write": "auth != null && auth.provider != 'anonymous'"
+  }
+}

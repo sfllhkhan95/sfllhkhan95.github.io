@@ -1,10 +1,238 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.saifkhichi.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.saifkhichi.com//" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-03-01T16:41:41+01:00</updated><id>http://www.saifkhichi.com//feed.xml</id><title type="html">Saif’s Portfolio</title><subtitle>Work portfolio and a blog.</subtitle><author><name>Saif Khan</name></author><entry><title type="html">How to Create a Splash Screen in Android</title><link href="http://www.saifkhichi.com//blog/create-splash-screen-android" rel="alternate" type="text/html" title="How to Create a Splash Screen in Android" /><published>2021-02-24T00:00:00+01:00</published><updated>2021-02-24T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/create-splash-screen-android</id><content type="html" xml:base="http://www.saifkhichi.com//blog/create-splash-screen-android">&lt;p&gt;In this blog post, I will show you how to quickly create a custom splash screen for your Android apps. But before we do that, we need to know what a splash screen, or a launch screen, is and why we need it. To quote Google’s &lt;a href=&quot;https://material.io/design/communication/launch-screen.html&quot;&gt;Material Design&lt;/a&gt; guidelines:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.saifkhichi.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.saifkhichi.com//" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-03-01T21:34:09+01:00</updated><id>http://www.saifkhichi.com//feed.xml</id><title type="html">Saif’s Portfolio</title><subtitle>Work portfolio and a blog.</subtitle><author><name>Saif Khan</name></author><entry><title type="html">How to Create a Splash Screen in Android</title><link href="http://www.saifkhichi.com//blog/create-splash-screen-android" rel="alternate" type="text/html" title="How to Create a Splash Screen in Android" /><published>2021-02-24T00:00:00+01:00</published><updated>2021-02-24T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/create-splash-screen-android</id><content type="html" xml:base="http://www.saifkhichi.com//blog/create-splash-screen-android">&lt;p&gt;In this blog post, I will show you how to quickly create a custom splash screen for your Android apps. But before we do that, we need to know what a splash screen, or a launch screen, is and why we need it. To quote Google’s &lt;a href=&quot;https://material.io/design/communication/launch-screen.html&quot;&gt;Material Design&lt;/a&gt; guidelines:&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;The launch screen is a user’s first experience of your app.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;source-code&quot;&gt;Source Code&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/saifkhichi96/653778bf0332b1bf6a888a171dbb190b.js?file=styles.xml&quot;&gt;&lt;/script&gt;</content><author><name>Saif Khan</name></author><category term="Code" /><summary type="html">In this blog post, I will show you how to quickly create a custom splash screen for your Android apps.</summary></entry><entry><title type="html">A Simple Environmental Lesson I Learned in Hunza Valley</title><link href="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza" rel="alternate" type="text/html" title="A Simple Environmental Lesson I Learned in Hunza Valley" /><published>2020-02-15T00:00:00+01:00</published><updated>2020-02-15T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/environmental-lesson-from-hunza</id><content type="html" xml:base="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza"></content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">A few kilometres down the road from Sost in Upper Hunza, Gilgit-Baltistan, we are on our way to Khunjerab Pass. As we reach the region of Khunjerab National Park, a smiling, uniformed official standing next to an unassuming makeshift hut by the roadside signals us to stop.</summary></entry><entry><title type="html">Burial Suit That Turns You Into Mushrooms</title><link href="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms" rel="alternate" type="text/html" title="Burial Suit That Turns You Into Mushrooms" /><published>2020-01-25T00:00:00+01:00</published><updated>2020-01-25T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms</id><content type="html" xml:base="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms">&lt;p&gt;&lt;strong&gt;With Infinity Burial Suit by Jae Rhim Lee, now you can embark on your next great adventure as a mushroom!&lt;/strong&gt;&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/saifkhichi96/653778bf0332b1bf6a888a171dbb190b.js?file=styles.xml&quot;&gt;&lt;/script&gt;</content><author><name>Saif Khan</name></author><category term="Code" /><summary type="html">In this blog post, I will show you how to quickly create a custom splash screen for your Android apps.</summary></entry><entry><title type="html">Coronavirus Economics: Pakistan Responds by Going Green</title><link href="http://www.saifkhichi.com//blog/coronavirus-economics-pakistan-responds-by-going-green" rel="alternate" type="text/html" title="Coronavirus Economics: Pakistan Responds by Going Green" /><published>2020-05-01T00:00:00+02:00</published><updated>2020-05-01T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/coronavirus-economics-pakistan-responds-by-going-green</id><content type="html" xml:base="http://www.saifkhichi.com//blog/coronavirus-economics-pakistan-responds-by-going-green">&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Earlier this week, Prime Minister Imran Khan's government approved the 'Green Stimulus' package as a part of its ongoing efforts to increase Pakistan's green cover.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Pakistan is one the six countries expected to be &lt;a href=&quot;https://www.un.org.pk/environment-day/&quot;&gt;most affected by global warming&lt;/a&gt;, experiencing more than 150 extreme weather events in the last decade. In August 2017, Pakistan became the &lt;a href=&quot;https://www.weforum.org/agenda/2018/07/pakistan-s-billion-tree-tsunami-is-astonishing/&quot;&gt;first country in the world to complete its &lt;em&gt;Bonn Challenge&lt;/em&gt; pledge of planting one billion trees&lt;/a&gt;. From 2014 to 2017, about 350,000 hectares of trees were added by plantation and natural regeneration in the northern Khyber Pakhtunkhwa province governed by Imran Khan's party. When Khan ascended to the Prime Minister's office in August 2018, he pledged to plant a further 10 billion trees all over the country.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Dubbed the 10 Billion Tree Tsunami, the &lt;a href=&quot;https://news.trust.org/item/20190321124827-fk3qq&quot;&gt;ambitious five-year project has always been multi-pronged&lt;/a&gt;. It addresses the adverse effects of climate change including rising temperatures, floods, droughts and extreme weathers. At the same time, it also supports the economy by creating thousands of new jobs.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A quarter of Pakistan's population lives below the national poverty line, with &lt;a href=&quot;https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2019&amp;amp;locations=PK&quot;&gt;unemployment rate in 2019 already standing at 4.5%&lt;/a&gt; before coronavirus forced the country to shutdown. Pakistan has been walking a tightrope these past few months, with its lower and lower-middle classes faced with extreme choices of &quot;&lt;a href=&quot;https://nation.com.pk/04-Apr-2020/pakistan-faced-with-dilemma-of-starvation-and-lockdown-pm-imran-khan&quot;&gt;death by either the virus or hunger&lt;/a&gt;&quot;, as the Prime Minister put it. A recent report by the Pakistan Institute of Development Economics states that the COVID-19 lockdown could force&amp;nbsp;&lt;a rel=&quot;noreferrer noopener&quot; href=&quot;https://www.pide.org.pk/pdf/PIDE-COVID-Bulletin-13.pdf&quot; target=&quot;_blank&quot;&gt;up to 19 million people getting laid off&lt;/a&gt;. For thousands of people who have already lost their jobs to the lockdown, the only options are to either go hungry or resort to begging.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Under the &lt;a href=&quot;https://dailytimes.com.pk/604285/pm-okays-green-stimulus-package-to-extend-green-cover-create-jobs/&quot;&gt;new Green Stimulus package&lt;/a&gt;, initially aiming to create 65,000 job opportunities, unemployed day laborers are now being given jobs as &quot;jungle workers&quot;, planting saplings under the 10 Billion Tree Tsunami programme. The Ministry of Climate Change is also working on a plan to engage the international community under the &lt;a href=&quot;http://www.undp.org/content/dam/sdfinance/doc/Debt%20for%20Nature%20Swaps%20_%20UNDP.pdf&quot;&gt;Debt for Nature Swap&lt;/a&gt; programme to convert part of the country’s debt into grant for greater environment protection activities. This is an ingenious idea which effectively uses funds allocated for fighting the current global crisis by directly supporting the worst-affected families, while at the same time preparing for the next global crisis: climate change.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Something tells me that &lt;a href=&quot;https://www.unicef.org/coronavirus/join-greta&quot;&gt;Greta Thunberg will be proud&lt;/a&gt; of Pakistan.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Saif Khan</name></author><category term="Trending" /><summary type="html">Earlier this week, Prime Minister Imran Khan's government approved the 'Green Stimulus' package as a part of its ongoing efforts to increase Pakistan's green cover.</summary></entry><entry><title type="html">Il Duce and the Forgotten Tramp</title><link href="http://www.saifkhichi.com//blog/il-duce-and-the-forgotten-tramp" rel="alternate" type="text/html" title="Il Duce and the Forgotten Tramp" /><published>2020-04-15T00:00:00+02:00</published><updated>2020-04-15T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/il-duce-and-the-forgotten-tramp</id><content type="html" xml:base="http://www.saifkhichi.com//blog/il-duce-and-the-forgotten-tramp">&lt;!-- wp:quote {&quot;className&quot;:&quot;is-style-default&quot;} --&gt;
+&lt;blockquote class=&quot;wp-block-quote is-style-default&quot;&gt;&lt;p&gt;This story is based on true events of a tactical deception operation codenamed &lt;a href=&quot;https://www.bbc.com/news/magazine-11887115&quot;&gt;Mincemeat&lt;/a&gt; carried out by the British forces against Nazi Germany during World War II.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- /wp:quote --&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;} --&gt;
+&lt;h2 class=&quot;has-text-align-center&quot;&gt;Part 1&lt;br /&gt;&lt;strong&gt;Discovery&lt;/strong&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It was a pleasant spring day in the year 1943. The sun shone brightly over the port city of Huelva in southwestern Spain. While the month of April was nearing its end, the blazing war all around remained incessant as ever. The budding flowers on the trees had blossomed over the past few weeks, and as &lt;a href=&quot;https://books.google.de/books?id=991oOoyimssC&amp;amp;lpg=PP1&amp;amp;dq=isbn%3A9781408809211&amp;amp;pg=PP1#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;José&lt;/a&gt; walked towards the beach, he could almost forget about the fighting which had now spread across three continents.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The salty ocean smell rode the wind blowing in from the Gulf of Cádiz. Warm weather had brought hordes of tuna and marlin out into the shallow waters, indifferent to the widespread violence in the human world. José was happy about it, as he depended on the fish for his livelihood. It was only nine in the morning. He hoped to make good use of the day and catch a decent number of fish.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As he walked towards his usual spot, he started as he spied something in his periphery lying just out of the water a little distance away. He was too far away to make out what it was, but it looked too big to be the fish that he knew swam in these waters. The beach was deserted with not many people about at this hour. Curious, he redirected his feet to investigate what it was. As he drew nearer, his feet ground to a sudden halt when he realised it was a &lt;em&gt;who&lt;/em&gt; and not a &lt;em&gt;what&lt;/em&gt;. Heart pounding, he broke into a run and skidded to a halt right next to a face-down corpse lying in the sand. It must have washed ashore sometime during the night, José thought.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The putrid stench of decaying flesh mingled with the ocean breeze. The body had probably spent several days in water before floating. The reality of the war which had remained elusive to José because of his country's &lt;a href=&quot;https://books.google.de/books?id=Yp8PflGFt0wC&amp;amp;lpg=PP1&amp;amp;pg=PP1#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;nominal neutrality&lt;/a&gt; suddenly came crashing down on him. In midst of one of the most brutal wars the world has ever seen, dead men turning up on random shores was probably not a big deal, he told himself.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Trying not to throw up, José cautiously extended a hand to turn the body over. His heart suddenly leapt in his chest when he noticed what the dead man was wearing. If he was not mistaken, it was the uniform of the British navy. Not caring about the unbearable smell or the maggots crawling out of the man's face anymore, José dug into the pockets of his trench coat to find something which will confirm his suspicion.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;William Martin, born 1907 in Cardiff, Wales. Captain (Acting Major) of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Royal_Marines&quot;&gt;Royal Marines&lt;/a&gt; of the United Kingdom.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;José could clearly read the name and rank on the laminated identity card he found inside the wallet in one of the coat's inner pockets. It was then that he saw a delicate briefcase lying just next to the dead Captain, a &lt;a href=&quot;https://en.wikipedia.org/wiki/Operation_Mincemeat#Developing_the_plan;_the_corpse's_new_identity&quot;&gt;leather-covered chain&lt;/a&gt; attaching it to his belt. Weak with excitement, he sat back in the sand and stared at his discovery in wonder. He had a feeling that he had caught the biggest fish of his life.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;} --&gt;
+&lt;h2 class=&quot;has-text-align-center&quot; id=&quot;block-d40aacb5-5a8e-45dd-a7eb-0529c81bd9fc&quot;&gt;Part 2&lt;br /&gt;&lt;strong&gt;Excitement&lt;/strong&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Adolf Clauss was pacing angrily in a dimly lit bedroom. Earlier today, he was jarred out of reading the morning copy of &lt;em&gt;El Nuevo Dia&lt;/em&gt; by the harsh telephone tone. It was Santiago on other side of the line. Santiago was a low-ranking officer in Spanish navy, and a German sympathiser. Clauss had met him when &lt;em&gt;&lt;a href=&quot;https://spartacus-educational.com/GERabwehr.htm&quot;&gt;Abwehr&lt;/a&gt;&lt;/em&gt; had first stationed him in Huelva, and Santiago had immediately offered to be his eyes and ears inside the Spanish navy headquarters.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Clauss could barely contain his excitement by the time Santiago had finished telling him about how a dead officer of the British navy had been found by a local fisherman yesterday. His name was Captain Martin, and the Spaniards had concluded that he was a diplomatic courier meant to convey unofficial correspondence between some Allied officials, and the prospect of finding something useful in these documents which Germany could use to its advantage made Clauss giddy. An autopsy carried out in presence of the &lt;a href=&quot;https://books.google.de/books?id=5z3o4ZovHBwC&amp;amp;pg=PT327&amp;amp;lpg=PT327&amp;amp;dq=Francis+Haselden+british+vice-consul&amp;amp;source=bl&amp;amp;ots=EijX09_fMK&amp;amp;sig=ACfU3U3P3RZfbF-94jvUOLGdzpFUz-V9jQ&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ved=2ahUKEwiAhb2R7OzoAhVMUhUIHZUQBF8Q6AEwAnoECAsQKQ#v=onepage&amp;amp;q=Francis%20Haselden%20british%20vice-consul&amp;amp;f=false&quot;&gt;British vice-consul&lt;/a&gt; had confirmed the cause of death as &quot;asphyxiation through immersion in the sea&quot;. He had immediately talked to the commander of the Spanish navy in Huelva, soliciting a quick look at the documents. But his request had been unceremoniously denied and another call from Santiago an hour ago had informed him that the briefcase found with the late Captain was being forwarded to Madrid where Spanish officials would decide what to do with it. Clauss knew that Spain was not a direct player in the war, and he did not want to miss out on the opportunity which had presented itself before them just so Spain could maintain the facade of its neutrality.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Knowing he didn't have any chance to convince the Spaniards otherwise, Clauss had already dispatched a message ahead to Kühlenthal,&amp;nbsp;his counterpart in Madrid and a fellow &lt;em&gt;Abwehr&lt;/em&gt; agent. Now, all he could do was wait. He abruptly ceased his relentless pacing and sat down on his bed. It was going to be long night.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&quot;wp-block-separator&quot; /&gt;
+
+&lt;!-- /wp:separator --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A week had passed. Clauss had finally received a message from Kühlenthal and he was currently seated behind the large mahogany desk in his office, decrypting the encoded letter, a column of sunlight streaming in from the large windows. It had rained during the night, first time this week, and the window was thrown open to let in the cool, damp air. He heaved a sigh as he finished decoding the message, and sat back in his chair, pushing his reading glasses up his nose. The corners of his mouth twitched, and then his mouth broke into a wide smile as he read the letter. Oh, this was &lt;em&gt;toll&lt;/em&gt;!&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;When Kühlenthal had not been able to persuade the Spanish authorities to hand over the documents, he had enlisted the help of Admiral Canaris, the head of &lt;em&gt;Abwehr&lt;strong&gt; &lt;/strong&gt;&lt;/em&gt;himself. Upon Canaris's insistence, the Spaniards had finally relented and even outdid themselves by coming up with a method to read the contents of the sealed correspondence without breaking the wax seal. And what the documents had revealed proved that once again, Führer was right in his suspicions and should have gone with his gut instead of agreeing to Il Duce.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The Allied forces, fresh from their victory of North Africa, were heading towards Europe with two possible targets. The Führer was concerned that the Allies would invade the Balkans as it was the source of &lt;a href=&quot;https://ww2-weapons.com/german-arms-production/&quot;&gt;German war industry&lt;/a&gt;. But Il Duce had managed to convince him that Sicily was the more likely target with its strategic location on the Mediterranean Sea. Consequently, the Führer had directed his forces to pour reinforcements into the Italian island. This was a mistake, as the contents of the late &lt;a href=&quot;https://www.newyorker.com/magazine/2010/05/10/pandoras-briefcase&quot;&gt;Captain Martin's briefcase&lt;/a&gt; had revealed. The Allies were feinting in Sicily. The real goal had always been to go into Greece and the Balkans, and trap the German forces between the British and American invaders and the Soviets.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Admiral Canaris had immediately set off from Madrid to personally deliver the documents to the Führer in Germany, Kühlenthal wrote in his letter. Clauss closed his eyes and let out a snort of laughter. &lt;em&gt;They thought they could fool the Führer! &lt;/em&gt;He was really looking forward to see the look on the Allied forces' faces when they realise their ploy had backfired.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&quot;wp-block-separator&quot; /&gt;
+
+&lt;!-- /wp:separator --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;He should never have listened to Mussolini, Hitler thought with a self-satisfied grin as he read the documents Admiral Canaris had brought him. Well, there was still time to change things. Mussolini can fend for himself.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The very next week, German reinforcements had started pulling back from Sicily on Hitler's orders, as they relocated to Greece, Sardinia and Corsica. Within a few weeks, his forces were all set to defend the Allied invasion of the Balkans.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;} --&gt;
+&lt;h2 class=&quot;has-text-align-center&quot; id=&quot;block-d40aacb5-5a8e-45dd-a7eb-0529c81bd9fc&quot;&gt;Part 3&lt;br /&gt;&lt;strong&gt;Realisation&lt;/strong&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:quote --&gt;
+&lt;blockquote class=&quot;wp-block-quote&quot;&gt;&lt;p&gt;Mincemeat swallowed rod, line and sinker by the right people and from the best information they look like acting on it.&lt;/p&gt;&lt;cite&gt;British &lt;a href=&quot;https://www.britannica.com/biography/Winston-Churchill&quot;&gt;Prime Minister Churchill&lt;/a&gt; was informed of the operation's success&lt;/cite&gt;&lt;/blockquote&gt;
+&lt;!-- /wp:quote --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As July started, the last of Nazi German reinforcements had joined their fellow soldiers in the Balkans. Even as the Allied forces finally mounted their attack on Sicily, dozens of air jets carrying German forces left Sicily to reinforce Sardinia. Hitler was convinced this was the feint he had read about in the documents his intelligence has unearthed. He kept his armies on a tether in anticipation of the attack he was sure will come. But it never did.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The Allies had always intended to &lt;a href=&quot;https://www.historyplace.com/worldwar2/defeat/italy-invaded.htm&quot;&gt;invade Sicily&lt;/a&gt;. And with all the reinforcements gone, Sicily was vulnerable. By the time Hitler realised his mistakes, there was nothing he could do. There was no Captain (Acting Major) William Martin of the Royal Marines. It had all been a part of an elaborate scheme playing on Hitler's preconceived notions. The British had dressed up a &lt;a href=&quot;http://omgfacts.com/the-homeless-man-who-helped-win-wwii/&quot;&gt;homeless &quot;ne'er-do-well&quot; man&lt;/a&gt; by the name of Glyndwr Michael, who had died from ingesting rat poison, for the part. The Germans had fallen for the ruse with almost puerile ease.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Left to fight for himself, it didn't take long to defeat Il Duce Benito Mussolini. As the battle for Sicily went horribly wrong for the Axis, Mussolini was removed from power, imprisoned and two years later, &lt;a href=&quot;https://www.history.com/news/mussolinis-final-hours-70-years-ago&quot;&gt;executed by a firing squad&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;And thus, the forgotten tramp from Wales became a part of the chain which led to the eventual downfall of Il Duce, or &quot;the Leader&quot; of Italy.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">It was a pleasant spring day in the year 1943. The sun shone brightly over the port city of Huelva in southwestern Spain. While the month of April was nearing its end, the blazing war all around remained incessant as ever.</summary></entry><entry><title type="html">A Simple Environmental Lesson I Learned in Hunza Valley</title><link href="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza" rel="alternate" type="text/html" title="A Simple Environmental Lesson I Learned in Hunza Valley" /><published>2020-02-15T00:00:00+01:00</published><updated>2020-02-15T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/environmental-lesson-from-hunza</id><content type="html" xml:base="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza">&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;17 August 2018, around noon.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A few kilometres down the road from Sost in Upper Hunza, Gilgit-Baltistan, we are on our way to Khunjerab Pass. As we reach the region of Khunjerab National Park, a smiling, uniformed official, let's call him the Smiling Guy, standing next to an unassuming makeshift hut by the roadside signals us to stop.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;I assume it is some kind of check post or a toll plaza, but something feels different. Our car pulls up near the Smiling Guy. Windows are rolled down. He peers into the window I'm sitting near and greets us. Before we can ask what is going on, he produces a plastic bag from somewhere and hands it over. I glance down at the bag which I am holding now. I can just make out the words 'recyclable plastic' at the bottom of the bag. I look back up.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&quot;&lt;em&gt;If you eat anything or want to get rid of any wrappers or stuff while you are up there, please put them in this bag and hand it over back to us on your way back&lt;/em&gt;&quot;, the Smiling Guy explains.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Interesting! I nod slowly, thinking.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&quot;&lt;em&gt;We dispose them off in an environment friendly way&lt;/em&gt;&quot;, he finishes before retreating. Windows are rolled back up. We start moving again. I am impressed.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Fast forward a couple of hours. We are on our way back to Karimabad where we had been staying. We have handed back the trash bags from earlier. I have more bags lined up to collect any further garbage.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We are traveling in two cars. I had been trying to enforce a garbage-in-bag-until-I-find-a-trashcan policy in our car even before we met Smiling Guy, but with little success. Since then, I had redoubled my efforts and expanded them to the second car too, asking them not to throw stuff on roadsides or out of car windows. There was absolute policy compliance in our car. The memory of the Smiling Guy was still fresh.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:jetpack/layout-grid {&quot;column1DesktopSpan&quot;:9,&quot;column1TabletSpan&quot;:5,&quot;column1MobileSpan&quot;:4,&quot;column2DesktopSpan&quot;:3,&quot;column2TabletSpan&quot;:3,&quot;column2MobileSpan&quot;:4,&quot;column3DesktopOffset&quot;:21,&quot;column3TabletOffset&quot;:6,&quot;column3MobileOffset&quot;:2,&quot;className&quot;:&quot;column1-desktop-grid__span-9 column1-desktop-grid__row-1 column2-desktop-grid__span-3 column2-desktop-grid__start-10 column2-desktop-grid__row-1 column1-tablet-grid__span-5 column1-tablet-grid__row-1 column2-tablet-grid__span-3 column2-tablet-grid__start-6 column2-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1 column2-mobile-grid__span-4 column2-mobile-grid__row-2&quot;} --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-9 column1-desktop-grid__row-1 column2-desktop-grid__span-3 column2-desktop-grid__start-10 column2-desktop-grid__row-1 column1-tablet-grid__span-5 column1-tablet-grid__row-1 column2-tablet-grid__span-3 column2-tablet-grid__start-6 column2-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1 column2-mobile-grid__span-4 column2-mobile-grid__row-2&quot;&gt;&lt;!-- wp:jetpack/layout-grid-column --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none&quot;&gt;&lt;!-- wp:image {&quot;id&quot;:306,&quot;sizeSlug&quot;:&quot;large&quot;} --&gt;
+&lt;figure class=&quot;wp-block-image size-large&quot;&gt;&lt;img src=&quot;/assets/images/blog/environmental-lesson-from-hunza/1.jpg&quot; alt=&quot;&quot; class=&quot;wp-image-306&quot; /&gt;&lt;figcaption&gt;Somewhere off the road between Attabad Lake and Khunjerab National Park in Hunza Valley.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;!-- /wp:jetpack/layout-grid-column --&gt;
+
+&lt;!-- wp:jetpack/layout-grid-column --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none&quot;&gt;&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;So yeah, we were on our way back...&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It is now past midday. The sun has gone down a little. Weather is great. It is pretty outside. We stop by a roadside to take a break.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid-column --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We are surrounded by green and golden fields on every side, with bare mountains encircling them. All of us are milling about, capturing photos, talking or just taking it all in.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;I spy one guy, let's call him the Garbage Guy, from the second car taking out the trash bag in their car and dumping it by the roadside. I am standing at some distance when this happens, and I yell to get his attention. Then I ask him to put the trash back in the car. Our next stop, last one before home, is Attabad Lake. We will be there soon. We can dispose the garbage in the bins near the lake.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The Garbage Guy takes the bag back from roadside. I go back to my wandering around, satisfied that all is well now. But it isn't. The Garbage Guy just takes his trash a bit further off the road where I cannot see him, and leaves it there.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;But other people can.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Two local men are walking past on opposite side of the road. One of them, who looks my own age, let's call him Mr. Clean, spots Garbage Guy playing dirty. He cuts across the empty road, making a beeline for the Garbage Guy. This gets my attention, and I realise my earlier request had been ignored. Mr. Clean apparently tells the Garbage Guy to not litter as I watch from afar. This time, I keep watching until the trash is back inside the car. Mr. Clean thanks Garbage Guy and walks away.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Again, I am impressed. My respect for the people of Hunza just skyrocketed. And now, I understand something.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The town of Karimabad, and all other towns on way up to Khunjerab Pass, and the roadsides elsewhere, they always looked much too clean when compared to other tourist hotspots such as the Galiyat or Lake Saif al-Malook. I had always wondered, but now I realised why.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:jetpack/layout-grid {&quot;column1DesktopSpan&quot;:10,&quot;column1DesktopOffset&quot;:1,&quot;column1TabletSpan&quot;:8,&quot;column1MobileSpan&quot;:4,&quot;column2DesktopOffset&quot;:5,&quot;className&quot;:&quot;column1-desktop-grid__span-10 column1-desktop-grid__start-2 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1&quot;} --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-10 column1-desktop-grid__start-2 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1&quot;&gt;&lt;!-- wp:jetpack/layout-grid-column --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none&quot;&gt;&lt;!-- wp:image {&quot;id&quot;:305,&quot;sizeSlug&quot;:&quot;large&quot;} --&gt;
+&lt;figure class=&quot;wp-block-image size-large&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/assets/images/blog/environmental-lesson-from-hunza/2.jpg&quot; alt=&quot;&quot; class=&quot;wp-image-305&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+&lt;br /&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;,&quot;className&quot;:&quot;margin-top-half entry-title&quot;} --&gt;
+&lt;h2 class=&quot;callout&quot;&gt;It all boils down to one word: Responsibility&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid-column --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The local people take it upon themselves to keep their surroundings clean. Instead of erecting billboards asking tourists not to litter, the people of Hunza take the lead. And the visitors have no choice but to fall in line.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This is what we need to do in our own cities. Instead of reverting to old habits as soon as we re-enter our natural habitats, we need to make some effort. We need to take charge. All of us!&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">A few kilometres down the road from Sost in Upper Hunza, Gilgit-Baltistan, we are on our way to Khunjerab Pass. As we reach the region of Khunjerab National Park, a smiling, uniformed official standing next to an unassuming makeshift hut by the roadside signals us to stop.</summary></entry><entry><title type="html">Burial Suit That Turns You Into Mushrooms</title><link href="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms" rel="alternate" type="text/html" title="Burial Suit That Turns You Into Mushrooms" /><published>2020-01-25T00:00:00+01:00</published><updated>2020-01-25T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms</id><content type="html" xml:base="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms">&lt;p&gt;&lt;strong&gt;With Infinity Burial Suit by Jae Rhim Lee, now you can embark on your next great adventure as a mushroom!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Death, an inevitable truth that no matter how we choose to overlook, is going to catch up to us sooner or later. Every individual, no matter what their religious beliefs and opinion about life after death, has to go on, leaving behind fond (or otherwise) memories for their loved ones. But memories are not the only thing that stay long after we are gone. Among other impressions, we leave behind our dead bodies, which our loved ones would hopefully want to dispose of in a respectable fashion instead of just letting them be where they may. Different cultures adopt different means for disposal of the dead, ranging from the most common traditional burial to increasingly popular cremation. Other techniques including &lt;a href=&quot;http://www.mylearning.org/a-step-by-step-guide-to-egyptian-mummification/p-1681/&quot;&gt;mummification&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Plastination&quot;&gt;plastination&lt;/a&gt;, and &lt;a href=&quot;http://www.cryonics.org/&quot;&gt;cryonics&lt;/a&gt; have been (and are) used for preservation of bodies for long after death.&lt;/p&gt;
 
@@ -28,7 +256,51 @@
 
 &lt;p&gt;Expecting to start shipping this summer, Lee’s company &lt;a href=&quot;http://www.coeio.com/&quot;&gt;Coeio&lt;/a&gt; offers the ultimate green funeral for both people and pets in form of Infinity Burial Suit and Infinity Burial Pod respectively. Dennis White, a 63-year-old suffering from a rare neurological disease, is expected to become the first person to be buried in the mushroom suit (see the documentary ‘&lt;a href=&quot;https://vimeo.com/145882693&quot;&gt;Suiting Dennis&lt;/a&gt;’ for his complete story).&lt;/p&gt;
 
-&lt;p&gt;The company is now offering early access to the Infinite Burial Suit and is getting names for the &lt;a href=&quot;http://www.coeio.com/#signup&quot;&gt;waiting list&lt;/a&gt;.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Tech" /><summary type="html">Mushrooms are known as one of the world’s greatest decomposers. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet.</summary></entry><entry><title type="html">Boost Your Mortgage Business with These Helpful Tips</title><link href="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business" rel="alternate" type="text/html" title="Boost Your Mortgage Business with These Helpful Tips" /><published>2019-08-15T00:00:00+02:00</published><updated>2019-08-15T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business</id><content type="html" xml:base="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business">&lt;p&gt;The Great Recession of late 2000s was one of the biggest economic catastrophes in recent history. The housing crash which primarily led to this decline took the marketing powers away from mortgage brokers who were at their peak before this recession. Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years. National Mortgage News, Mortgage Professionals of America and the American Banker have all reported how mortgage professionals are not only returning but taking back their share of the originations from banks.&lt;/p&gt;
+&lt;p&gt;The company is now offering early access to the Infinite Burial Suit and is getting names for the &lt;a href=&quot;http://www.coeio.com/#signup&quot;&gt;waiting list&lt;/a&gt;.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Tech" /><summary type="html">Mushrooms are known as one of the world’s greatest decomposers. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet.</summary></entry><entry><title type="html">Atif Mian and the Religious Intolerance in Pakistan</title><link href="http://www.saifkhichi.com//blog/atif-main-and-an-intolerant-pakistan" rel="alternate" type="text/html" title="Atif Mian and the Religious Intolerance in Pakistan" /><published>2019-12-15T00:00:00+01:00</published><updated>2019-12-15T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/atif-main-and-an-intolerant-pakistan</id><content type="html" xml:base="http://www.saifkhichi.com//blog/atif-main-and-an-intolerant-pakistan">&lt;p&gt;Early into his new office, Prime Minister Imran Khan’s administration nominated Atif Mian for a post in the newly formed Economic Advisory Council (EAC) to assist the nearly-bankrupt government on issues of finance and economics. A few days later, the whole country had erupted into protests fueled by the far-right religious and political parties.&lt;/p&gt;
+
+&lt;h2 id=&quot;who-is-atif-mian&quot;&gt;Who is Atif Mian&lt;/h2&gt;
+
+&lt;p&gt;Professor of Economics, Public Policy and Finance at Princeton University. Director of the Julis-Rabinowitz Center for Public Policy and Finance at the Woodrow Wilson School. Holding a bachelors degree in Mathematics with Computer Science and Ph.D. in Economics from MIT. Former professor at University of California, Berkeley and the University of Chicago Booth School of business. Author of a &lt;a href=&quot;http://www.princeton.edu/~atif/houseofdebt.htm&quot;&gt;critically acclaimed&lt;/a&gt; book, &lt;a href=&quot;http://www.princeton.edu/~atif/houseofdebt.htm&quot;&gt;&lt;em&gt;House of Debt&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But the only credentials which mattered to a huge majority in Pakistan was that Atif Mian, a Pakistani-American living in the States since he was 18, belongs to the minority Ahmadiyya Muslim community.&lt;/p&gt;
+
+&lt;h2 id=&quot;ahmadiyya-faith-and-pakistan&quot;&gt;Ahmadiyya Faith and Pakistan&lt;/h2&gt;
+
+&lt;p&gt;The Ordinance XX of the Constitution of Pakistan categorizes members of Ahmadiyya community as non-Muslims and forbids the usage of Islamic terms in reference to its members. Promulgated under the regime of General &lt;a href=&quot;https://en.wikipedia.org/wiki/Muhammad_Zia-ul-Haq&quot;&gt;Muhammad Zia-ul-Haq&lt;/a&gt; on 26 April 1984 as part of his &lt;a href=&quot;https://www.dw.com/en/pakistans-islamization-before-and-after-dictator-zia-ul-haq/a-19480315&quot;&gt;purported “Islamization” of the country&lt;/a&gt;, this legal ordinance bars the followers of Ahmadi faith from publicly practicing the Islamic faith, praying in mosques or possessing religious texts of Islam.&lt;/p&gt;
+
+&lt;p&gt;The late General Zia, a far-right military dictator and self-styled &lt;em&gt;Ameer-ul-Momineen&lt;/em&gt;, the Commander of the Faithful, is &lt;a href=&quot;https://timesofindia.indiatimes.com/india/zia-helped-tablighis-grow-in-pakistan/articleshow/1986383.cms&quot;&gt;singlehandedly responsible&lt;/a&gt; for setting in motion the creeping radicalization which has now engulfed the whole country. Among the baggage that didn’t go up in flames with &lt;a href=&quot;https://www.dawn.com/news/1427540&quot;&gt;Zia’s plane&lt;/a&gt;, Ordinance XX remains arguably the one with most repercussions to date.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-eac-controversy&quot;&gt;The EAC Controversy&lt;/h2&gt;
+
+&lt;p&gt;Thanks to this non-Muslim classification and the prevalent zealotry in the nation when it comes to matters of cricket and religion, Pakistani politicians have to walk a tightrope when dealing with Ahmadi community.&lt;/p&gt;
+
+&lt;p&gt;Imran Khan, who assumed the office of Prime Minister on 18 August 2018, is no stranger to controversy. Merely a few weeks into his new government, amid fears of bankruptcy and faced with a huge current account deficit, Prime Minister Khan constituted an Economic Advisory Committee (EAC) comprising of some of the best known successful economists of Pakistan. One of over a dozen public and private sector members was Atif Mian who, like everyone else, was selected because of his impeccable track record.&lt;/p&gt;
+
+&lt;p&gt;It didn’t take long for many around the country to unite in outrage over this nomination, including politicians, religious leaders, far-right groups and even general public. Even as some of the more outspoken members of Khan’s cabinet defended the nomination by rightly terming the mindset of its opposition “extremist”, others tried to distance themselves from the decision. It didn’t take long for the government to succumb to mounting pressure. Atif Mian was asked to step down within a week of his nomination. In the battle of extremisms against rationality, bigotry and ignorance won.&lt;/p&gt;
+
+&lt;h2 id=&quot;misguided-hatred-of-minorities&quot;&gt;Misguided Hatred of Minorities&lt;/h2&gt;
+
+&lt;p&gt;Witnessing this whole alarming Atif Mian debacle was extremely disappointing, to say the least.&lt;/p&gt;
+
+&lt;p&gt;The ease of exploiting public perception in Pakistan regarding matters of faith comes from an over-reliance on religious leadership for interpretation of Islamic doctrines instead of direct consultation of the original sources: Koran and the Sunnah. This over-reliance in turn is caused by inability of a large part of the masses to read, or the tendency to only “recite” the Koran in its original Arabic language despite knowing next to nothing about Arabic.&lt;/p&gt;
+
+&lt;p&gt;One would think that since the Constitution has declared Ahmadi community a non-Muslim minority, then Pakistanis will learn to give them at least the rights of a minority as defined in the same constitution. But that is evidently not the case.&lt;/p&gt;
+
+&lt;p&gt;Atif Mian, an excellent economist and one of the few renowned individuals who are considered experts in this field, was nominated for an economy-related committee. He was not, for example, asked to lead prayers at Faisal Mosque or to chair meetings of Ministry of Religious Affairs! But many Pakistanis lost sight of this simple distinction in their bid to prove what good Muslims and followers of Prophet Mohammad they are.&lt;/p&gt;
+
+&lt;p&gt;Well, sorry to disappoint them, but they are really not.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-lesson-in-history-the-battle-of-badr&quot;&gt;A Lesson in History: The Battle of Badr&lt;/h2&gt;
+
+&lt;p&gt;The Battle of Badr, fought in second year of the Prophet’s migration to Medina, was the first major battle between the Muslims and their Meccan enemies who they had escaped from. When, with odds stacked against them by 1-to-3, the ragtag group of Muslims achieved a resounding victory, they took over seventy (70) non-Muslim prisoners.&lt;/p&gt;
+
+&lt;p&gt;What did the Prophet decide the price for their freedom was to be? The learned among them were asked to teach ten Muslims, and then they were free to go. Let me emphasize that this group of captives did not even believe in One God, let alone in the finality of Mohammad’s Prophethood. Yet, they were not only asked to teach Muslims but also told that they would earn their freedom by doing this.&lt;/p&gt;
+
+&lt;p&gt;This tells us that the Prophet chose these men to do the job not for their faith but rather for their qualifications. A lesson which maps directly to contemporary situations such as Atif Mian’s nomination. The clear distinction between faith and merit, as demonstrated by the Prophet himself, paves way for such nominations. And as his followers, those who protest against such steps need to reconsider what they are really standing up for.&lt;/p&gt;
+
+&lt;p&gt;To the Pakistanis who are vehemently opposed to the inclusion of non-Muslims in the society, I ask why do they not cry foul when Pakistan approaches non-Muslim nations with pleas of financial assistance. What is more hypocritical than being okay about borrowing money from the same non-Muslims who you are not ready to let in on committees aiming to save your economy?&lt;/p&gt;
+
+&lt;p&gt;Ignorance and half-knowledge can be dangerous. Educate yourself. Or, in the first words God ever spoke to Prophet Mohammad, “Read”!&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">Early into his new office, Prime Minister Imran Khan's administration nominated Atif Mian for a post in the newly formed Economic Advisory Council (EAC) to assist the nearly-bankrupt government on issues of finance and economics. A few days later, the whole country had erupted into spontaneous protests from the far-right groups.</summary></entry><entry><title type="html">Boost Your Mortgage Business with These Helpful Tips</title><link href="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business" rel="alternate" type="text/html" title="Boost Your Mortgage Business with These Helpful Tips" /><published>2019-08-15T00:00:00+02:00</published><updated>2019-08-15T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business</id><content type="html" xml:base="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business">&lt;p&gt;The Great Recession of late 2000s was one of the biggest economic catastrophes in recent history. The housing crash which primarily led to this decline took the marketing powers away from mortgage brokers who were at their peak before this recession. Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years. National Mortgage News, Mortgage Professionals of America and the American Banker have all reported how mortgage professionals are not only returning but taking back their share of the originations from banks.&lt;/p&gt;
 
 &lt;h2 id=&quot;put-the-customer-first&quot;&gt;Put the Customer First&lt;/h2&gt;
 &lt;p&gt;There are many reasons why people are flocking away from banks and towards local professionals. Lack of corporate culture is one of them. Banks follow a culture which is focused more on making a sale, of mortgage loans in this case, than on helping their clientele with their financial goals. On the other hand, financial professionals with their greater training are able to make this connection with the clients. This subsequently lets them sell more loans. Banks’ marketing campaigns notwithstanding, their culture about making a profit rather than the consumers. This is all the leverage mortgage brokers need. Combined with greater understanding of customers’s needs, luring borrowers back to themselves becomes easier.&lt;/p&gt;
@@ -129,183 +401,4 @@ Voldemort returns to the castle at head of a victorious army. That is, until Har
 
 &lt;p&gt;But not Bellatrix. She fights as fiercely as Voldemort himself. As one of Bellatrix’s Killing Curses misses Ginny Weasley by inches, the motherly Mrs. Weasley challenges Bellatrix and duels her to death.&lt;/p&gt;
 
-&lt;p&gt;These are some of the most iconic moments from the Battle. As we conclude the article, we would like to ask everyone to raise their wands and observe a minute of silence in memory of the fallen warriors of the Battle of Hogwarts; Severus Snape, Fred Weasley, Remus Lupin, Nymphadora Tonks, Colin Creevy, Lavender Brown, and all others who laid their lives defending the world from the darkest wizard of all times.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Books" /><summary type="html">Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.</summary></entry><entry><title type="html">10 Reasons Why Chocolate is Your Best Friend</title><link href="http://www.saifkhichi.com//blog/10-reasons-why-chocolate-is-your-best-friend" rel="alternate" type="text/html" title="10 Reasons Why Chocolate is Your Best Friend" /><published>2016-07-02T00:00:00+02:00</published><updated>2016-07-02T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/10-reasons-why-chocolate-is-your-best-friend</id><content type="html" xml:base="http://www.saifkhichi.com//blog/10-reasons-why-chocolate-is-your-best-friend">&lt;p&gt;Chocolate, one of the only foods that are equally revered around the globe, has a history that can be traced as back as 1900 B.C. It is made from the roasted and ground seeds of cacao trees. The intense bitter taste of cacao seeds is latent in chocolate even after fermentation, sweetening and flavoring with vanilla and milk, which incidentally is also the reason why it is universally loved. You would find chocolate lovers everywhere justifying their over-consumption of chocolate with the statement that it is good for health. They may not be that far off the mark because scientific researchers have concluded that there is more to chocolate than only sugar and calories.&lt;/p&gt;
-
-&lt;p&gt;In this article, I will explore ten reasons why chocolate may be good for you.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-chocolate-makes-you-feel-better&quot;&gt;1. Chocolate makes you feel better&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/1.jpg&quot; alt=&quot;Chocolate makes you feel better&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the Harry Potter saga, eating chocolate after an encounter with a Dementor, which is a foul creature that feasts on happiness and creates depression, helps regain composure and makes you feel better. This is true in real life, too. Yes, chocolate does really make you feel better. Researchers say chocolate contains phenyl ethylamine (PEA), also known by the name of Love Drug. This is the same chemical which your brain produces when you are falling in love, and is known for its cognitive enhancement and mood boosting effects. Eating chocolate also releases serotonin, a mood-stabilizer, in your brain.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-it-is-a-rich-source-of-minerals&quot;&gt;2. It is a rich source of minerals&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/2.jpg&quot; alt=&quot;It is a rich source of minerals&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Chocolate, especially dark chocolate, is very nutritious and rich in minerals, including iron, calcium, magnesium, copper, manganese, potassium, phosphorus, zinc and selenium. If you eat a 100 gram bar of high quality dark chocolate, it may as well take care of over half of your mineral requirements of the day. Of course, 100 gram is a huge amount which comes with decent amount of calories and sugar, something you should not be eating daily. Moderation should be practiced when eating chocolate, just as with any other food.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-it-helps-maintain-healthy-brain-function&quot;&gt;3. It helps maintain healthy brain function&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/3.png&quot; alt=&quot;It helps maintain healthy brain function&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Dark chocolate may help improve your brain function. Flavonols found in cocoa are known for their health benefits, especially for the brain. They increase blood flow to the brain, help reduce cognitive impairment, and increase verbal fluency in elderly people. Stimulants including caffeine and theobromine are also found in cocoa, and are good for short-term brain function improvement.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-it-makes-you-better-at-math&quot;&gt;4. It makes you better at math&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/4.jpg&quot; alt=&quot;It makes you better at math&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you often struggle with math, then this is good news for you! Eating a bar of chocolate may help you wrap your mind around differential equations and formal notations more easily. Recent studies by British psychologists have shown that eating chocolate improved the mental math skills of the subjects. This is attributed to the brain-stimulating effects of the flavonols found in cocoa. The researchers concluded that eating chocolate during exam revision may help students perform better in examinations.&lt;/p&gt;
-
-&lt;h2 id=&quot;5-it-reduces-the-risk-of-stroke&quot;&gt;5. It reduces the risk of stroke&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/5.jpg&quot; alt=&quot;It reduces the risk of stroke&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The antioxidant properties of flavonoids found in chocolate help combat strokes, according to researchers. In one study, Swedish experts found that eating more than 45 grams of chocolate per week reduced risk of stroke in women by 20 percent. In another study by researchers from Finland, men who regularly consumed chocolate had 17 percent less risk of suffering from a stroke than those who didn’t.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-it-protects-skin-against-sun-damage&quot;&gt;6. It protects skin against sun damage&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/6.jpg&quot; alt=&quot;It protects skin against sun damage&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Though it may still be a good idea to use sun cream when going out, antioxidants and bioactive components found in cocoa have been found to reduce the risks sunlight poses to our skin. Studies suggest that flavonals in cocoa may help increase blood flow to the skin, and keep the skin hydrated. The increased blood flow in topmost layers of skin provides healthy oxygenation to the skin, and equips it better to protect itself from UV light and sunburns.&lt;/p&gt;
-
-&lt;h2 id=&quot;7-it-helps-prevent-or-delay-cell-damage&quot;&gt;7. It helps prevent or delay cell damage&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/7.png&quot; alt=&quot;It helps prevent or delay cell damage&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Antioxidants are well-known for their health benefits, one of them being the reduced risk of cell damage. This is because antioxidants interfere with chain reactions and prematurely terminate them, thus preventing them from generating harmful radicals. Chocolate also contains polyphenols, which help avert degenerative diseases.&lt;/p&gt;
-
-&lt;h2 id=&quot;8-it-reduces-the-risk-of-cardiovascular-diseases&quot;&gt;8. It reduces the risk of cardiovascular diseases&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/8.jpg&quot; alt=&quot;It reduces the risk of cardiovascular diseases&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Chocolate, when consumed regularly, is known to improve the cardiovascular performance. Many observational studies have shown that regular consumption of chocolate cuts the chance of a heart attack significantly. It prevents blood platelets from clotting easily, and improves blood circulation by avoiding blood thickening. Chocolate also monitors cholesterol levels in our body, by oxidizing the LDL (so-called ‘bad’ cholesterol) and increasing levels of ‘good’ cholesterol.&lt;/p&gt;
-
-&lt;h2 id=&quot;9-it-is-a-cough-suppressant&quot;&gt;9. It is a cough suppressant&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/9.jpg&quot; alt=&quot;It is a cough suppressant&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Are you tired of nasty-tasting cough syrups that you have to stuff down your throat on regular basis? You would then be pleased to know that there exists a better, tastier ‘medicine’ for your coughs. You probably already suspected it, didn’t you? Chocolate is a proven cough suppressant, a property probably derived from theobromine found in cocoa.&lt;/p&gt;
-
-&lt;h2 id=&quot;10-it-makes-you-not-fat&quot;&gt;10. It makes you not fat&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/10.jpg&quot; alt=&quot;It makes you not fat&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Okay, so this one is surprising, and my favorite. You’d expect all those calories and sugar to blow up your physique, but this is not really what happens. Well, not always, and certainly not when you take care not over-eat chocolate. Chocolate is known to reduce your appetite, which results in you actually eating less. Studies have shown that melting block of chocolate twenty minutes before a meal may make you eat less food and consequently not let you become fat. Dark chocolate reduces your appetite and thus your calorie intake, more than milk chocolate.&lt;/p&gt;
-
-&lt;p&gt;There, now you see what I meant when I said chocolate was your best friend. This, however is no reason to start hoarding up chocolates, because chocolates found commonly in grocery stores are highly processed and are lacking many useful components. They are also loaded with lot of sugars. To get the best out of it, I would suggest regularly eating dark chocolate. That too with moderation because too much of a good thing is never good.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Food" /><summary type="html">Chocolate, one of the only foods that are equally revered around the globe. You would find chocolate lovers everywhere justifying their over-consumption of chocolate with the statement that it is good for health, and they may not be that far off the mark. In this article, I explore ten reasons why chocolate is good for you.</summary></entry><entry><title type="html">From Indifference to Passion</title><link href="http://www.saifkhichi.com//blog/from-indifference-to-passion" rel="alternate" type="text/html" title="From Indifference to Passion" /><published>2013-12-12T00:00:00+01:00</published><updated>2013-12-12T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/from-indifference-to-passion</id><content type="html" xml:base="http://www.saifkhichi.com//blog/from-indifference-to-passion">&lt;h2 id=&quot;the-initiation&quot;&gt;The Initiation&lt;/h2&gt;
-
-&lt;p&gt;30th October 2011. This was the day that changed my outlook on life and gave me a purpose.&lt;/p&gt;
-
-&lt;p&gt;My whole thinking process was revolutionized, and I set afoot on a way that led me to a firmer belief in my own abilities, and shattered the idols of fear within my heart. I was politically aroused, and became part of a movement that had set out with a mission of saving my country, my Pakistan; a movement that aimed to scratch off the rust that was eating through the very soul of my country, and re-make it into what it was originally intended to be; a movement that had set out to make a Naya Pakistan!&lt;/p&gt;
-
-&lt;p&gt;30th October 2011. This was the day when the wind of change began. And like thousands of Pakistanis, it roused me from my callous slumber.&lt;/p&gt;
-
-&lt;p&gt;I belong to a well-known political family of Southern Punjab, the Khichi family of the Chauhan Rajput clan, based in the Vehari district. For as long as the formation of Pakistan, my ancestors have been in and out of the ever-changing governments, holding at least one position of power at any given time. My family had taken an active part in Pakistan Movement and had associated itself strongly with Quaid e Azam Muhammad Ali Jinnah, and his sister Fatima Jinnah after him. This led to an unconditional affiliation with All India Muslim League from the very beginning which after the demise of Fatima Jinnah, transformed into a loyalty for Pakistan Muslim League (Nawaz) and its chief Mian Nawaz Sharif for whatever reasons my forbearers had thought justified.&lt;/p&gt;
-
-&lt;p&gt;From the time I was born, in the year 1995, I would hear the lion, symbol of Nawaz Sharif’s political party, roaring in every corner of my household. My elders were always working with and singing praises of this PML-N and its chief, with my grandfather and later, uncle contesting and winning elections on PML-N tickets. I remember being inflated on seeing the lion symbolized beside the green posters, flyers and banners that bore the picture of my grandfather, Haji Mehmood Khan Khichi, for his election campaigns. Whenever someone alluded to the lion, my thoughts instantly wandered to the PML-N, such was the impression that had been ingrained on my mind by the conduct of my family. I considered Mian Nawaz Sharif as deserving to be Quaid-e-Azam’s successor, and did not, at that time, even know that this PML-N was not really the same political party which Quaid-e-Azam had been a part of and which had played so vital a role in bringing about the existence of Pakistan.&lt;/p&gt;
-
-&lt;p&gt;In the year 1999, when the then army chief, General Pervez Musharraf overthrew Nawaz Sharif’s government and established himself as the sole head of the country, I was of a blithe age of four, and thus with little knowledge and interest in the matter. I knew nothing of and cared little for either politics, or history and current affairs. Mian Nawaz Sharif was expelled from Pakistan after a short term of imprisonment, and returned years after, on 25th November 2007.&lt;/p&gt;
-
-&lt;p&gt;All these years, I listened to my family’s opinion on the matter routinely on dinner table; the shortcomings of Musharraf and his government, the [supposed] happy days of Nawaz Sharif’s rule, and how Pakistan Muslim League (Nawaz) was the only political party working in the country’s interests. I had no opinion on the matter myself, for I gave it little importance and no thought at all. Naturally, I believed that my family had the right picture, and felt the same reverence for Nawaz Sharif that my family did.&lt;/p&gt;
-
-&lt;p&gt;With the time being, my knowledge of the matters I previously knew little of was gradually  increasing through the books I read and the conversations I now listened to with a greater interest and understanding. I was by now familiar with some history, and knew Zulfikar Ali Bhutto, who had been hanged by General Zia, as brave and unflinching champion of the commoners, and respected his daughter Benazir Bhutto, Chairwoman of Pakistan People’s Party, Nawaz Sharif’s political opponent and the first woman Prime Minister in any Muslim country. I knew now that apart from being the Prime Minister twice, Nawaz Sharif had also been the Chief Minister of Punjab.&lt;/p&gt;
-
-&lt;p&gt;Sometimes, when I spared a thought for the condition of the province that had been ruled by PML-N for about twenty years, I would see a huge question mark on eligibility of Nawaz Sharif as a ruler. Exposure to factors outside my family had enlightened me to the side of picture that had up to now remained obscure and my naturally-induced admiration of Mian Nawaz Sharif had somewhat diminished. But at twelve years of age, I was still too young to care about what sort of ruler Pakistan needed and question anyone’s eligibility.&lt;/p&gt;
-
-&lt;p&gt;On 27th December 2007, only two months after her return, Benazir Bhutto was shot dead during a rally for upcoming general elections, in the same ‘Liaquat Bagh’ of Rawalpindi where first Prime Minster of Pakistan Liaquat Ali Khan was martyred. Consequently, PPP won the general elections of 2008, as Benazir’s martyrdom had diverted the nation’s sympathies to the Bhutto family which had suffered so much for [supposedly] the country. Benazir’s husband, the notorious Asif Ali Zardari, whom many people suspected as having a hand in his wife’s fate, came up with her will which named him as the Chairman of Pakistan People’s Party (So much for being champions of democracy!). With the success of his party, he established himself as the President of Pakistan. Consider the irony; the person who was now the President of Pakistan was until now serving sentences in prisons for God knows what crimes he had committed. But instead of confronting the criminal who was now the President, Nawaz Sharif gave him free hand, and even helped him in any way he could (for the sake of democracy, of course) while the former plundered the country for next five years of his term. This made me realize more than anything that I was mistaken when I thought that Nawaz Sharif was working for the country. He served no one’s but his own interests, and wanted nothing but to keep his own self sated. Six years of exile had rusted Nawaz Sharif’s politics, and to get it all shiny again, he befriended the husband of the woman who was his staunchest opponent, a person he knew to be clever, selfish crook. Nawaz Sharif consorted with the criminal he should have confronted, resorting to using his brother Shahbaz Sharif’s power who had been elected the Chief Minister of Punjab to loot their share of the plunder. This was selfishness at its peak, which no amount of justification from his supporters could veil from me. In the five years of Zardari’s term, Nawaz Sharif gradually lost all the respect I had ever had for him.&lt;/p&gt;
-
-&lt;p&gt;In younger days, I pictured Nawaz Sharif as leader, but now I realized that he too was and is only a politician; loyal to his own self alone, and wanting power not for the betterment of the country, but like everybody else, for his own pleasure and profit. He was a businessman by profession; of course he considered politics a business too, and served only to increase his bank balance.&lt;/p&gt;
-
-&lt;p&gt;PML-N had lost my respect, and the little respect I had for PPP died with Benazir Bhutto. Where I had been previously indifferent to politics, I now became averse to it. I wanted God to send someone who would change the country’s fate and make it what it was meant to be, someone who would use his power for the country and not for only himself.&lt;/p&gt;
-
-&lt;p&gt;It seemed like God finally heard me out, when on 30th October 2011, I listened for the first time to a person who was the Chairman of Pakistan Tehreek-e-Insaf, a political party which had been formed in 1996 and about whose existence I was up to now oblivious. I knew him as the former Captain of Pakistan Cricket Team who had led his team to victory in the Cricket World Cup of 1992, and now I realized that he may be the person who was destined to lead Pakistan to another, much more desirable victory very soon. I chose him as my Captain when I found out how he considered Quaid-e-Azam his political role model and Allama Iqbal his ideological leader. He was Imran Khan!&lt;/p&gt;
-
-&lt;p&gt;Pakistan Tehreek-e-Insaf, the name was new to me. I knew Imran Khan as a cricketer, but was not aware of his role in politics. I had heard of Shaukat Khanum Memorial Cancer Hospital, a first-of-its-kind cancer hospital which ran on charity and treated thousands of cancer patients free of cost every year, but I did not know that Shaukat Khanum was Imran Khan’s mother who had died of cancer, motivating her son to build an international standard hospital entirely on charity, with nothing but his will and trust on God, so that Pakistanis did not have to go abroad for cancer treatment. On 30th October 2011, when I saw him speaking at a mammoth gathering in Lahore, I instantly knew this was the person I was looking for. This was the person who will lead us out of this darkness. This was the person who was to be my leader, my Captain.&lt;/p&gt;
-
-&lt;p&gt;It was the same place where Pakistan Resolution had been passed in 1940; the Manto Park of Lahore, the ground where Minar-e-Pakistan stands, reminding us of what Pakistan had been resolved to be. The ground was filled with millions of charged people of every age and shape, decked with red and green of PTI’s flag. Imran Khan stepped up to the dais, and began;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;In the name of Allah, the Most Merciful, the Most Beneficent
-Oh God, we kneel before you alone, and seek only your help&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;He began with telling his audience that God had empowered them by giving them a free will, and if they intended to do something good, and strove for it, God will eventually give them success. He talked for three-quarters of an hour, and he spoke all my thoughts. By the end of his speech, I was convinced that if I wanted to see my country changed, I’d have to play a part in bringing about that change. As Imran Khan reminded his audience, God says in Quran that he does not change the fate of the nation which does not strive to change itself. I thought that if I remained silent any longer, I’d be equally responsible for the condition my country was in. My country needed me. Then I remembered Allama Iqbal’s verse, in which he says;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Afraad Ke Hathon Main Hai Aqwaam Ki Taqdeer
-Har Fard Hai Millat Ke Muqaddar Ka Siyyara
-[A nation’s fate is in the hands of its people, as
-each person is responsible for the nation’s destiny.]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Thus, from that time onwards, my indifference to politics turned into a fierce passion and determination to change my country for good, and I resolved to play any part that might be expected of me. Imran Khan ended his speech with a cry of&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Tabdeeli Aa Nahi Rahi, Tabdeeli Aa Gayi Hai
-[Change is not coming, it has already come]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;and I enthusiastically agreed with him. Change had already come; in me, and in thousands of young people like myself, and we had woken from our apathetic stupor. I had realised that it was the time to let go of the fears, believe in myself, and make myself useful. This was the change that Imran Khan had brought about, and with the sleeping youth rising, I could see Pakistan on the doorstep of a revolution.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-investigation&quot;&gt;The Investigation&lt;/h2&gt;
-
-&lt;p&gt;I spent the next two years leading up to the May 2013 educating myself about who Imran Khan was.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Read Pakistan: A Personal History by Imran Khan.&lt;/li&gt;
-  &lt;li&gt;Read In the Line of Fire by Pervez Musharraf.&lt;/li&gt;
-  &lt;li&gt;Watched his old interviews.&lt;/li&gt;
-  &lt;li&gt;Scourged the Internet and various books for subjects pertaining to his life, including:
-    &lt;ul&gt;
-      &lt;li&gt;his familial background,&lt;/li&gt;
-      &lt;li&gt;his education,&lt;/li&gt;
-      &lt;li&gt;his cricketing career,&lt;/li&gt;
-      &lt;li&gt;his failed marriage to Jemima Khan,&lt;/li&gt;
-      &lt;li&gt;his relationship with his children Sulaiman Khan and Isa Khan,&lt;/li&gt;
-      &lt;li&gt;his philanthropic work in Shaukat Khanum and NUML Knowledge City,&lt;/li&gt;
-      &lt;li&gt;his relationships with public figures such as Diana, Mandela, etc.,&lt;/li&gt;
-      &lt;li&gt;his relationship with religion, and influence on Kristiane Backer,&lt;/li&gt;
-      &lt;li&gt;allegations about his relationship with late Sita White and her daughter Tyrian,&lt;/li&gt;
-      &lt;li&gt;allegations of a Jewish lobby,&lt;/li&gt;
-      &lt;li&gt;allegations of him being a radical extremist,&lt;/li&gt;
-      &lt;li&gt;allegations about his inconsistency and u-turns,&lt;/li&gt;
-      &lt;li&gt;allegations of a covert support by General Pasha and military establishment,&lt;/li&gt;
-      &lt;li&gt;allegations of entitlement and arrogance,&lt;/li&gt;
-      &lt;li&gt;rise and fall of his relationship with General Musharraf,&lt;/li&gt;
-      &lt;li&gt;his stance about military operations to fight extremism.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-resolution&quot;&gt;The Resolution&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Feelings leading up to 11 May 2013&lt;/li&gt;
-  &lt;li&gt;Being shut down for being “too young” and therefore not knowing anything&lt;/li&gt;
-  &lt;li&gt;Support of young people in the family&lt;/li&gt;
-  &lt;li&gt;Differences with the elders&lt;/li&gt;
-  &lt;li&gt;Expectations from Imran Khan&lt;/li&gt;
-  &lt;li&gt;The near-catastrophe of 7 May&lt;/li&gt;
-  &lt;li&gt;Post 7 May feelings&lt;/li&gt;
-  &lt;li&gt;People lining outside SKMC to donate blood to Khan&lt;/li&gt;
-  &lt;li&gt;Khan wanting to go back to the people as soon as he regained his senses&lt;/li&gt;
-  &lt;li&gt;Not being able to do that, his address from the hospital bed&lt;/li&gt;
-  &lt;li&gt;“I did what I could. Now it’s your turn”.&lt;/li&gt;
-  &lt;li&gt;The final address of 9 May&lt;/li&gt;
-  &lt;li&gt;The elections and subsequent victory in the KPK province&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-evolution&quot;&gt;The Evolution&lt;/h2&gt;
-
-&lt;p&gt;This chapter talks about the period after 2013 General Elections and PTI’s government in the KPK province…&lt;/p&gt;
-
-&lt;h2 id=&quot;the-revolution&quot;&gt;The Revolution&lt;/h2&gt;
-
-&lt;p&gt;Events leading up to the 2018 General Elections, including Panama Leaks, investigations, the landslide victory and first year in government…&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">An unfinished tale of a political reawakening.</summary></entry><entry><title type="html">Morning Beauty</title><link href="http://www.saifkhichi.com//blog/morning-beauty" rel="alternate" type="text/html" title="Morning Beauty" /><published>2011-10-17T00:00:00+02:00</published><updated>2011-10-17T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/morning-beauty</id><content type="html" xml:base="http://www.saifkhichi.com//blog/morning-beauty">&lt;p&gt;Shining stars, gleaming moon &lt;br /&gt;
-All there, obscuring gloom&lt;/p&gt;
-
-&lt;p&gt;Brightening sky, rising sun &lt;br /&gt;
-Birds fly, animals run&lt;/p&gt;
-
-&lt;p&gt;Cool breeze, gentle wind &lt;br /&gt;
-Ruffled reed, and green bunches&lt;/p&gt;
-
-&lt;p&gt;Butterflies fluttering in garden &lt;br /&gt;
-Singing hymns of Lord, the One&lt;/p&gt;
-
-&lt;p&gt;Alas, o poor man, alas! &lt;br /&gt;
-You’re sleeping still in bunk&lt;/p&gt;
-
-&lt;p&gt;Abandoning morning beauty &lt;br /&gt;
-That is ready to stun&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Poetry" /><summary type="html">A short, silly poem about mornings.</summary></entry></feed>
+&lt;p&gt;These are some of the most iconic moments from the Battle. As we conclude the article, we would like to ask everyone to raise their wands and observe a minute of silence in memory of the fallen warriors of the Battle of Hogwarts; Severus Snape, Fred Weasley, Remus Lupin, Nymphadora Tonks, Colin Creevy, Lavender Brown, and all others who laid their lives defending the world from the darkest wizard of all times.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Books" /><summary type="html">Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.</summary></entry></feed>
