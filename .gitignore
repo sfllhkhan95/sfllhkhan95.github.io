@@ -15,7 +15,8 @@ projects/*/*/docs/
 projects/*/*/*.psd
 
 # Jekyll
-_site
+_site/
+docs/
 .DS_Store
 .jekyll
 .jekyll-metadata
@@ -25,7 +26,6 @@ Gemfile.lock
 node_modules
 package.json
 *.gem
-*.gemspec
 .jekyll-cache
 
 
