@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.saifkhichi.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.saifkhichi.com//" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-03-01T16:41:41+01:00</updated><id>http://www.saifkhichi.com//feed.xml</id><title type="html">Saif’s Portfolio</title><subtitle>Work portfolio and a blog.</subtitle><author><name>Saif Khan</name></author><entry><title type="html">How to Create a Splash Screen in Android</title><link href="http://www.saifkhichi.com//blog/create-splash-screen-android" rel="alternate" type="text/html" title="How to Create a Splash Screen in Android" /><published>2021-02-24T00:00:00+01:00</published><updated>2021-02-24T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/create-splash-screen-android</id><content type="html" xml:base="http://www.saifkhichi.com//blog/create-splash-screen-android">&lt;p&gt;In this blog post, I will show you how to quickly create a custom splash screen for your Android apps. But before we do that, we need to know what a splash screen, or a launch screen, is and why we need it. To quote Google’s &lt;a href=&quot;https://material.io/design/communication/launch-screen.html&quot;&gt;Material Design&lt;/a&gt; guidelines:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The launch screen is a user’s first experience of your app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;source-code&quot;&gt;Source Code&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/saifkhichi96/653778bf0332b1bf6a888a171dbb190b.js?file=styles.xml&quot;&gt;&lt;/script&gt;</content><author><name>Saif Khan</name></author><category term="Code" /><summary type="html">In this blog post, I will show you how to quickly create a custom splash screen for your Android apps.</summary></entry><entry><title type="html">A Simple Environmental Lesson I Learned in Hunza Valley</title><link href="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza" rel="alternate" type="text/html" title="A Simple Environmental Lesson I Learned in Hunza Valley" /><published>2020-02-15T00:00:00+01:00</published><updated>2020-02-15T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/environmental-lesson-from-hunza</id><content type="html" xml:base="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza"></content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">A few kilometres down the road from Sost in Upper Hunza, Gilgit-Baltistan, we are on our way to Khunjerab Pass. As we reach the region of Khunjerab National Park, a smiling, uniformed official standing next to an unassuming makeshift hut by the roadside signals us to stop.</summary></entry><entry><title type="html">Burial Suit That Turns You Into Mushrooms</title><link href="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms" rel="alternate" type="text/html" title="Burial Suit That Turns You Into Mushrooms" /><published>2020-01-25T00:00:00+01:00</published><updated>2020-01-25T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms</id><content type="html" xml:base="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms">&lt;p&gt;&lt;strong&gt;With Infinity Burial Suit by Jae Rhim Lee, now you can embark on your next great adventure as a mushroom!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Death, an inevitable truth that no matter how we choose to overlook, is going to catch up to us sooner or later. Every individual, no matter what their religious beliefs and opinion about life after death, has to go on, leaving behind fond (or otherwise) memories for their loved ones. But memories are not the only thing that stay long after we are gone. Among other impressions, we leave behind our dead bodies, which our loved ones would hopefully want to dispose of in a respectable fashion instead of just letting them be where they may. Different cultures adopt different means for disposal of the dead, ranging from the most common traditional burial to increasingly popular cremation. Other techniques including &lt;a href=&quot;http://www.mylearning.org/a-step-by-step-guide-to-egyptian-mummification/p-1681/&quot;&gt;mummification&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Plastination&quot;&gt;plastination&lt;/a&gt;, and &lt;a href=&quot;http://www.cryonics.org/&quot;&gt;cryonics&lt;/a&gt; have been (and are) used for preservation of bodies for long after death.&lt;/p&gt;
+
+&lt;p&gt;From an environmentalist’s perspective, the choice of how you have your dead body dealt with may be the determining factor of how greener or not an impression you make on Earth’s environment. No matter how cautious you’ve been in life about hygiene, and how you have recycled and reused resources to minimize waste and keep the planet clean, you could still undo much of your effort in death. Much as death, it is also a fact that human body is full of toxins. And the choice of how this toxic wonderland, that your body is, is disposed of matters!&lt;/p&gt;
+
+&lt;h2 id=&quot;burial-vs-cremation-debate&quot;&gt;Burial vs. Cremation Debate&lt;/h2&gt;
+&lt;p&gt;Neil Young, a Canadian musician in one of his songs wrote, “It’s better to burn out than to fade away”, a line which gained fame partly due to being quoted in &lt;a href=&quot;http://kurtcobainssuicidenote.com/&quot;&gt;Kurt Cobain’s suicide note&lt;/a&gt;. While maybe not what Young may have originally intended, this infamous line has become part of the burial vs. cremation debate and is occasionally used in defense of cremation. But for many environmentalists who think natural way of decomposing into compost is a better way to go, it is actually better to fade away than to burn out. The bitter fact though is, neither burial nor cremation is the best way to go, each having its own effect on the already fragile environment of our home planet.&lt;/p&gt;
+
+&lt;p&gt;Cremation, which needs huge amount of energy to fuel the combustion, contributes to the greenhouse effect. It also causes mercury pollution and global warming. This, however, does not automatically mean that burial is any better. The dead bodies are pumped with embalming chemicals such as formaldehydes, which along with other toxins in the body, enter into the ground if burial is the preferred method of disposal. In fact, most cemeteries around the world have high levels of arsenic pollutants which leak into water table and poison the ground water.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-better-proposal--the-infinity-burial&quot;&gt;A Better Proposal – The Infinity Burial&lt;/h2&gt;
+&lt;p&gt;Jae Rhim Lee, an artist and a TED fellow, came up with the idea of using the potential of fungus to consume the industrial toxins in deceased bodies and break them down into fundamental nutrients before releasing them back to soil to help combat pollution. To achieve this end, Lee has been working on the Infinity Burial Project for the past couple of years which has conceived what is essentially a jumpsuit that you clothe the deceased in before burial, and which turns into mushrooms that ‘eat’ the body.&lt;/p&gt;
+
+&lt;p&gt;Mushrooms are known as one of the &lt;a href=&quot;http://discovermagazine.com/2013/julyaug/13-mushrooms-clean-up-oil-spills-nuclear-meltdowns-and-human-health&quot;&gt;world’s greatest decomposers&lt;/a&gt;. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet. Jae Rhim Lee, capitalizing on what was already known about mushrooms’ decomposing prowess, took it upon herself to engineer a breed that would feed on dead body cells. During development of what she called the Infinity Mushroom, she used her own nail clippings, hair, blood, and skin to teach the mushrooms to recognize and consume her body tissue, with the aim of breaking down industrial waste stored in her body. This led to her, along with her project partner Mike Ma, engineering what they call the Infinity Burial Suit. It is a jumpsuit embroidered with threads of these specifically engineered mushroom spores. The deceased is buried in this suit which remediates body toxins and helps break down the body. The mushroom spores in the embroidery ‘consume’ the dead cells and sprout into mushrooms.&lt;/p&gt;
+
+&lt;p&gt;The idea at first sounds creepy, for indeed we expect to eat our food, and not the other way around. Something which Lee pointed out in her 2011 &lt;a href=&quot;https://www.ted.com/talks/jae_rhim_lee?language=en&quot;&gt;TED Talk&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“We want to eat–not be eaten–by our food, right? But as I watch the mushrooms grow and digest my body, I imagine the Infinity Mushroom as a symbol of a new way of thinking about death, and the relationship between my body and the environment.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Expecting to start shipping this summer, Lee’s company &lt;a href=&quot;http://www.coeio.com/&quot;&gt;Coeio&lt;/a&gt; offers the ultimate green funeral for both people and pets in form of Infinity Burial Suit and Infinity Burial Pod respectively. Dennis White, a 63-year-old suffering from a rare neurological disease, is expected to become the first person to be buried in the mushroom suit (see the documentary ‘&lt;a href=&quot;https://vimeo.com/145882693&quot;&gt;Suiting Dennis&lt;/a&gt;’ for his complete story).&lt;/p&gt;
+
+&lt;p&gt;The company is now offering early access to the Infinite Burial Suit and is getting names for the &lt;a href=&quot;http://www.coeio.com/#signup&quot;&gt;waiting list&lt;/a&gt;.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Tech" /><summary type="html">Mushrooms are known as one of the world’s greatest decomposers. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet.</summary></entry><entry><title type="html">Boost Your Mortgage Business with These Helpful Tips</title><link href="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business" rel="alternate" type="text/html" title="Boost Your Mortgage Business with These Helpful Tips" /><published>2019-08-15T00:00:00+02:00</published><updated>2019-08-15T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business</id><content type="html" xml:base="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business">&lt;p&gt;The Great Recession of late 2000s was one of the biggest economic catastrophes in recent history. The housing crash which primarily led to this decline took the marketing powers away from mortgage brokers who were at their peak before this recession. Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years. National Mortgage News, Mortgage Professionals of America and the American Banker have all reported how mortgage professionals are not only returning but taking back their share of the originations from banks.&lt;/p&gt;
+
+&lt;h2 id=&quot;put-the-customer-first&quot;&gt;Put the Customer First&lt;/h2&gt;
+&lt;p&gt;There are many reasons why people are flocking away from banks and towards local professionals. Lack of corporate culture is one of them. Banks follow a culture which is focused more on making a sale, of mortgage loans in this case, than on helping their clientele with their financial goals. On the other hand, financial professionals with their greater training are able to make this connection with the clients. This subsequently lets them sell more loans. Banks’ marketing campaigns notwithstanding, their culture about making a profit rather than the consumers. This is all the leverage mortgage brokers need. Combined with greater understanding of customers’s needs, luring borrowers back to themselves becomes easier.&lt;/p&gt;
+
+&lt;p&gt;As a mortgage broker, your goal may be to sell as many loans as possible. But to do that, focusing on your relationship with the customer instead of actual transaction can help you increase the number of loans you sell. Be empathetic to client needs because you are after all helping them with one of the biggest financial decisions they will ever make. Mortgage is important to them, and an opportunity for you to relate to your customers on an emotional level. Making an emotional connection with your customers can help you gain their trust, upon which long-term relationships can be built.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-power-of-social-media&quot;&gt;The Power of Social Media&lt;/h2&gt;
+&lt;p&gt;Social media with its ability to support marketing efforts has proven to be of great value to mortgage professionals. Ever since they started making a comeback, local brokers have seen this potential. Social media is one of the greatest tool in your arsenal. Be where your competitors are not by establishing your online presence.&lt;/p&gt;
+
+&lt;p&gt;Online platforms offer a huge potential because of their instantaneous and huge reach, Facebook leading the way with 2.2 billion monthly active users (https://www.dreamgrow.com/top-15-most-popular-social-networking-sites/). Facebook influenced 52% of the consumers’ offline and online purchases in 2015, with more than 50 million small businesses having their presence on the social media giant (https://web.facebook.com/sheryl/posts/10156250899685177?_rdc=1&amp;amp;_rdr).
+Effective social media campaigns can take your business miles ahead. The 3Ys strategy which says that your customers should know YOU, like YOU and trust YOU should be your guidepost when marketing, especially online. The reason customers turn to lenders instead of banks is the sense of personal connection. Knowing this, the worst damage you can to your marketing efforts is making your campaigns cliché and robotic.&lt;/p&gt;
+
+&lt;p&gt;In today’s digital world of low attention spans, going beyond merely posting about industry rates and news can stop many social media users mid-scroll. Visual content is 40 times more likely to be catch interest than other types of content, according to HubSpot (https://blog.hubspot.com/marketing/visual-content-marketing-strategy). Instead of automated posts and standard marketing slogans, investing a little effort into knowing what the customers actually care about can make all the difference.&lt;/p&gt;
+
+&lt;h2 id=&quot;patience-is-the-key&quot;&gt;Patience is the Key&lt;/h2&gt;
+&lt;p&gt;If you are a new mortgage broker, breaking into the market will take you time. If you are an established professional who has just now started building their online presence, online engagement may initially be less than what you are used to expect. Give it some time. Identify your customers, and then sit back and study them so that you can get the most out of your marketing efforts. Not everything is about ROI, or at least about instant ROI! Think of it more as a marathon, a long-term effort, than a sprint. If you are looking for swift success, you are bound to be disappointed. There is no one tactic which works for everyone, so the best strategy is to try everything and find out what works for you.&lt;/p&gt;
+
+&lt;p&gt;To conclude, the best way to be a great mortgage professional is to be your own customer, and to focus on what your clients need as opposed to what you want.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Lifestyle" /><summary type="html">Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years.</summary></entry><entry><title type="html">Check out these new NOVOMATIC SLOT MACHINES!</title><link href="http://www.saifkhichi.com//blog/check-out-these-new-novomatic-slot-machines" rel="alternate" type="text/html" title="Check out these new NOVOMATIC SLOT MACHINES!" /><published>2019-07-15T00:00:00+02:00</published><updated>2019-07-15T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/check-out-these-new-novomatic-slot-machines</id><content type="html" xml:base="http://www.saifkhichi.com//blog/check-out-these-new-novomatic-slot-machines">&lt;p&gt;Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free. With games of all types, novomatic machines have something to offer for everyone from people looking to spend some quality time with casual gameplay to those wanting to make some extra money while at it. Therefore, if you are looking for online casino slot games, play online novomatic which are the best bet you can make.&lt;/p&gt;
+
+&lt;p&gt;Before 2009, Novomatic specialised in land-based casino games but their focus has shifted to online casino slot games since then. Being highly configurable, novomatic slot machines are best suited to catch interest of gamblers of every kind. Also, these casino slot games have an added advantage in their ability of being accessible from any PC or mobile device.&lt;/p&gt;
+
+&lt;h2 id=&quot;popular-titles&quot;&gt;Popular Titles&lt;/h2&gt;
+&lt;p&gt;In this section, we discover some of the most popular titles, which are readily accessible on all devices. Pharaoh’s Gold 2, Book of Ra, Sizzling Hot and Banana Splash are some of the most well-received titles. With the types of reviews these titles have received, they are sure to not disappoint you.&lt;/p&gt;
+
+&lt;p&gt;However, if you are looking for something out of the box, then the following less-conventional titles may be the ones for you. They might not be the most popular, but boring they are not:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hoffmania&lt;/li&gt;
+  &lt;li&gt;Cindereela&lt;/li&gt;
+  &lt;li&gt;Attila&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;payment-methods&quot;&gt;Payment Methods&lt;/h2&gt;
+&lt;p&gt;New novomatic slot machines are everywhere now. Here is a list of reliable payment methods which are accepted by most of the online casino slot games:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Paypal&lt;/li&gt;
+  &lt;li&gt;Skrill&lt;/li&gt;
+  &lt;li&gt;Visa&lt;/li&gt;
+  &lt;li&gt;Trustly&lt;/li&gt;
+  &lt;li&gt;Neteller&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Hence, with the type of fame novomatic enjoys, novomatic slot machines should sound familiar to experienced players. They may not have titles to rival some the flashiest games of the gambling industry, but novomatic slot machines offer a consistent and reliable experience which is quite honestly one of the best you will ever encounter.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Tech" /><summary type="html">Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free.</summary></entry><entry><title type="html">His Last Speech</title><link href="http://www.saifkhichi.com//blog/his-last-speech" rel="alternate" type="text/html" title="His Last Speech" /><published>2019-06-15T00:00:00+02:00</published><updated>2019-06-15T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/his-last-speech</id><content type="html" xml:base="http://www.saifkhichi.com//blog/his-last-speech"></content><author><name>Saif Khan</name></author><category term="Story" /><summary type="html">His eyes swept the bright, prolific auditorium before him, taking in the young, eager faces, all with their eyes set on him.</summary></entry><entry><title type="html">Remembering the Battle of Hogwarts</title><link href="http://www.saifkhichi.com//blog/remembering-the-battle-of-hogwarts" rel="alternate" type="text/html" title="Remembering the Battle of Hogwarts" /><published>2018-05-02T00:00:00+02:00</published><updated>2018-05-02T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/remembering-the-battle-of-hogwarts</id><content type="html" xml:base="http://www.saifkhichi.com//blog/remembering-the-battle-of-hogwarts">&lt;p&gt;Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.&lt;/p&gt;
+
+&lt;p&gt;Folks on Twitter and Facebook are marking the day with the hashtag &lt;a href=&quot;https://twitter.com/search?q=%23BattleOfHogwarts19&amp;amp;src=typd&quot;&gt;#BattleOfHogwarts19&lt;/a&gt;. In this article, we recall some of the most memorable moments from the battle which decided the fate of the Wizarding World.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-man-who-trusted-you&quot;&gt;“A man who trusted you!”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/1.jpg&quot; alt=&quot;&amp;quot;A man who trusted you!&amp;quot;&quot; /&gt;
+Admit it, we all get goosebumps when Harry Potter finally confronts Severus Snape about the murder of Albus Dumbledore.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tell them how you looked him in the eyes, a man who trusted you, and killed him.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Harry, and the whole of Order of Phoenix, successfully breached Snape’s exhaustive security measures and entered the Hogwarts castle via a secret passage from the Hog’s Head bar in the nearby village.&lt;/p&gt;
+
+&lt;h2 id=&quot;coward&quot;&gt;“Coward!”&lt;/h2&gt;
+&lt;p&gt;And then McGonagall put herself between Harry and Snape, forcing him to flee the castle. Snape flew out a window, leaving his cronies Amycus and Alecto Carrow Stunned in the Great Hall.&lt;/p&gt;
+
+&lt;p&gt;Watch Maggie Smith and Daniel Radcliffe being badass, and Alan Rickman in his element in video of this scene below:&lt;/p&gt;
+
+&lt;p&gt;This scene plays out slightly differently in the books. Snape duels Professors Flitwick, Slughorn and McGonagall all at once before fleeing through a window, leaving a Snape-shaped hole in it. McGonagall boos at him, calling out “&lt;em&gt;Coward!&lt;/em&gt;” as he flees.&lt;/p&gt;
+
+&lt;h2 id=&quot;ive-always-wanted-to-use-that-spell&quot;&gt;“I’ve always wanted to use that spell.”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/3.jpg&quot; alt=&quot;&amp;quot;I've always wanted to use that spell.&amp;quot;&quot; /&gt;
+And then, Voldemort arrived. He gave the castle’s defenders an hour to hand Harry over to him. McGonagall used it to rally the castle’s defenders. Including the suits of armor!&lt;/p&gt;
+
+&lt;p&gt;Such nostalgia! Every time we re-watch this scene, the pride in Professor McGonagall’s eyes has us crying our hearts out. Mrs. Weasley thinks McGonagall has gone mad, though.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-have-your-mothers-eyes&quot;&gt;“You have your mother’s eyes”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/4.jpg&quot; alt=&quot;&quot; /&gt;
+Fast-forwarding to Severus Snape’s death in the Shrieking Shack (or the boathouse, if you prefer the movies) where we witness what we could never have imagined even in our wildest dreams. Severus Snape crying with actual tears and talking to Harry with something akin to tenderness in his voice.&lt;/p&gt;
+
+&lt;p&gt;Snape leaves Harry his memories, and asks him to “look at him” as Hermione and Ron silently look on. He was bitten by Nagini on the Dark Lord’s orders who believed Snape to be the master of Elder Wand.&lt;/p&gt;
+
+&lt;h2 id=&quot;after-all-this-time&quot;&gt;“After all this time?”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/5.jpg&quot; alt=&quot;&quot; /&gt;
+Harry takes Snape’s memories to the Pensieve in the Headmaster’s office. We learn that Dumbledore had been raising Harry as a pig for slaughter. Harry has a piece of Voldemort’s soul and must die for Voldemort to be killed.&lt;/p&gt;
+
+&lt;p&gt;Snape is furious when he learns this, and reminds Dumbledore they were supposed to have been protecting Lily Evans’ son, not preparing him for death! He conjures up a doe Patronus from his wand, the same as Lily’s. Same Patronuses are a mark of true love in the Wizarding World.&lt;/p&gt;
+
+&lt;h2 id=&quot;until-the-very-end&quot;&gt;“Until the very end”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/6.jpg&quot; alt=&quot;&quot; /&gt;
+Harry goes into the Forbidden Forest where Voldemort is waiting for him and greets death as an old friend. &lt;a href=&quot;http://www.telegraph.co.uk/culture/harry-potter/11882434/JK-Rowling-explains-how-Harry-Potter-got-his-Invisibility-Cloak.html&quot;&gt;Like Ignotus Peverell&lt;/a&gt;. He finally works out how to open the snitch Dumbledore left him in his will, and uses the Resurrection Stone inside to call images of his parents, Sirius, and Lupin from death.&lt;/p&gt;
+
+&lt;p&gt;Harry asks them to stay close to him as he walks to meet his death. He finds Voldemort and the Death Eaters in Aragog’s clearing and Voldemort uses a Killing Curse on him.&lt;/p&gt;
+
+&lt;h2 id=&quot;draco-is-he-alive&quot;&gt;“Draco, is he alive?”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/7.jpg&quot; alt=&quot;&quot; /&gt;
+Voldemort sends Narcissa Malfoy to confirm whether Harry is really dead this time. Narcissa however no longer cares about Voldemort’s victory by now. All she wants is to return to the castle and find her son. Her love for her son has overpowered her fear of the Dark Lord.&lt;/p&gt;
+
+&lt;p&gt;So she lies. After confirming Draco’s well-being from Harry in a whisper, &lt;a href=&quot;https://www.quora.com/At-the-end-of-Deathly-Hallows-if-Harry-was-a-horcrux-how-could-he-survive-Voldemort-attacking-him-with-the-Avada-Kedavra-curse-in-the-forest&quot;&gt;who survived the Killing Curse yet again&lt;/a&gt;, she announces that Harry is dead. Voldemort, who had recovered from aftereffects of his curse moments ago, is not able to detect the lie in his moment of weakness.&lt;/p&gt;
+
+&lt;h2 id=&quot;not-my-daughter-you-b&quot;&gt;“Not my daughter, you b&lt;em&gt;**&lt;/em&gt;!”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/8.jpg&quot; alt=&quot;&quot; /&gt;
+Voldemort returns to the castle at head of a victorious army. That is, until Harry reveals that he is alive. Narcissa has fled with her husband and son by then. Many other Death Eaters desert Voldemort on seeing Harry alive.&lt;/p&gt;
+
+&lt;p&gt;But not Bellatrix. She fights as fiercely as Voldemort himself. As one of Bellatrix’s Killing Curses misses Ginny Weasley by inches, the motherly Mrs. Weasley challenges Bellatrix and duels her to death.&lt;/p&gt;
+
+&lt;p&gt;These are some of the most iconic moments from the Battle. As we conclude the article, we would like to ask everyone to raise their wands and observe a minute of silence in memory of the fallen warriors of the Battle of Hogwarts; Severus Snape, Fred Weasley, Remus Lupin, Nymphadora Tonks, Colin Creevy, Lavender Brown, and all others who laid their lives defending the world from the darkest wizard of all times.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Books" /><summary type="html">Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.</summary></entry><entry><title type="html">10 Reasons Why Chocolate is Your Best Friend</title><link href="http://www.saifkhichi.com//blog/10-reasons-why-chocolate-is-your-best-friend" rel="alternate" type="text/html" title="10 Reasons Why Chocolate is Your Best Friend" /><published>2016-07-02T00:00:00+02:00</published><updated>2016-07-02T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/10-reasons-why-chocolate-is-your-best-friend</id><content type="html" xml:base="http://www.saifkhichi.com//blog/10-reasons-why-chocolate-is-your-best-friend">&lt;p&gt;Chocolate, one of the only foods that are equally revered around the globe, has a history that can be traced as back as 1900 B.C. It is made from the roasted and ground seeds of cacao trees. The intense bitter taste of cacao seeds is latent in chocolate even after fermentation, sweetening and flavoring with vanilla and milk, which incidentally is also the reason why it is universally loved. You would find chocolate lovers everywhere justifying their over-consumption of chocolate with the statement that it is good for health. They may not be that far off the mark because scientific researchers have concluded that there is more to chocolate than only sugar and calories.&lt;/p&gt;
+
+&lt;p&gt;In this article, I will explore ten reasons why chocolate may be good for you.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-chocolate-makes-you-feel-better&quot;&gt;1. Chocolate makes you feel better&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/1.jpg&quot; alt=&quot;Chocolate makes you feel better&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the Harry Potter saga, eating chocolate after an encounter with a Dementor, which is a foul creature that feasts on happiness and creates depression, helps regain composure and makes you feel better. This is true in real life, too. Yes, chocolate does really make you feel better. Researchers say chocolate contains phenyl ethylamine (PEA), also known by the name of Love Drug. This is the same chemical which your brain produces when you are falling in love, and is known for its cognitive enhancement and mood boosting effects. Eating chocolate also releases serotonin, a mood-stabilizer, in your brain.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-it-is-a-rich-source-of-minerals&quot;&gt;2. It is a rich source of minerals&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/2.jpg&quot; alt=&quot;It is a rich source of minerals&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Chocolate, especially dark chocolate, is very nutritious and rich in minerals, including iron, calcium, magnesium, copper, manganese, potassium, phosphorus, zinc and selenium. If you eat a 100 gram bar of high quality dark chocolate, it may as well take care of over half of your mineral requirements of the day. Of course, 100 gram is a huge amount which comes with decent amount of calories and sugar, something you should not be eating daily. Moderation should be practiced when eating chocolate, just as with any other food.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-it-helps-maintain-healthy-brain-function&quot;&gt;3. It helps maintain healthy brain function&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/3.png&quot; alt=&quot;It helps maintain healthy brain function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dark chocolate may help improve your brain function. Flavonols found in cocoa are known for their health benefits, especially for the brain. They increase blood flow to the brain, help reduce cognitive impairment, and increase verbal fluency in elderly people. Stimulants including caffeine and theobromine are also found in cocoa, and are good for short-term brain function improvement.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-it-makes-you-better-at-math&quot;&gt;4. It makes you better at math&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/4.jpg&quot; alt=&quot;It makes you better at math&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you often struggle with math, then this is good news for you! Eating a bar of chocolate may help you wrap your mind around differential equations and formal notations more easily. Recent studies by British psychologists have shown that eating chocolate improved the mental math skills of the subjects. This is attributed to the brain-stimulating effects of the flavonols found in cocoa. The researchers concluded that eating chocolate during exam revision may help students perform better in examinations.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-it-reduces-the-risk-of-stroke&quot;&gt;5. It reduces the risk of stroke&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/5.jpg&quot; alt=&quot;It reduces the risk of stroke&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The antioxidant properties of flavonoids found in chocolate help combat strokes, according to researchers. In one study, Swedish experts found that eating more than 45 grams of chocolate per week reduced risk of stroke in women by 20 percent. In another study by researchers from Finland, men who regularly consumed chocolate had 17 percent less risk of suffering from a stroke than those who didn’t.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-it-protects-skin-against-sun-damage&quot;&gt;6. It protects skin against sun damage&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/6.jpg&quot; alt=&quot;It protects skin against sun damage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Though it may still be a good idea to use sun cream when going out, antioxidants and bioactive components found in cocoa have been found to reduce the risks sunlight poses to our skin. Studies suggest that flavonals in cocoa may help increase blood flow to the skin, and keep the skin hydrated. The increased blood flow in topmost layers of skin provides healthy oxygenation to the skin, and equips it better to protect itself from UV light and sunburns.&lt;/p&gt;
+
+&lt;h2 id=&quot;7-it-helps-prevent-or-delay-cell-damage&quot;&gt;7. It helps prevent or delay cell damage&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/7.png&quot; alt=&quot;It helps prevent or delay cell damage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Antioxidants are well-known for their health benefits, one of them being the reduced risk of cell damage. This is because antioxidants interfere with chain reactions and prematurely terminate them, thus preventing them from generating harmful radicals. Chocolate also contains polyphenols, which help avert degenerative diseases.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-it-reduces-the-risk-of-cardiovascular-diseases&quot;&gt;8. It reduces the risk of cardiovascular diseases&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/8.jpg&quot; alt=&quot;It reduces the risk of cardiovascular diseases&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Chocolate, when consumed regularly, is known to improve the cardiovascular performance. Many observational studies have shown that regular consumption of chocolate cuts the chance of a heart attack significantly. It prevents blood platelets from clotting easily, and improves blood circulation by avoiding blood thickening. Chocolate also monitors cholesterol levels in our body, by oxidizing the LDL (so-called ‘bad’ cholesterol) and increasing levels of ‘good’ cholesterol.&lt;/p&gt;
+
+&lt;h2 id=&quot;9-it-is-a-cough-suppressant&quot;&gt;9. It is a cough suppressant&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/9.jpg&quot; alt=&quot;It is a cough suppressant&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Are you tired of nasty-tasting cough syrups that you have to stuff down your throat on regular basis? You would then be pleased to know that there exists a better, tastier ‘medicine’ for your coughs. You probably already suspected it, didn’t you? Chocolate is a proven cough suppressant, a property probably derived from theobromine found in cocoa.&lt;/p&gt;
+
+&lt;h2 id=&quot;10-it-makes-you-not-fat&quot;&gt;10. It makes you not fat&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/10-reasons-why-chocolate-is-your-best-friend/10.jpg&quot; alt=&quot;It makes you not fat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Okay, so this one is surprising, and my favorite. You’d expect all those calories and sugar to blow up your physique, but this is not really what happens. Well, not always, and certainly not when you take care not over-eat chocolate. Chocolate is known to reduce your appetite, which results in you actually eating less. Studies have shown that melting block of chocolate twenty minutes before a meal may make you eat less food and consequently not let you become fat. Dark chocolate reduces your appetite and thus your calorie intake, more than milk chocolate.&lt;/p&gt;
+
+&lt;p&gt;There, now you see what I meant when I said chocolate was your best friend. This, however is no reason to start hoarding up chocolates, because chocolates found commonly in grocery stores are highly processed and are lacking many useful components. They are also loaded with lot of sugars. To get the best out of it, I would suggest regularly eating dark chocolate. That too with moderation because too much of a good thing is never good.&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Food" /><summary type="html">Chocolate, one of the only foods that are equally revered around the globe. You would find chocolate lovers everywhere justifying their over-consumption of chocolate with the statement that it is good for health, and they may not be that far off the mark. In this article, I explore ten reasons why chocolate is good for you.</summary></entry><entry><title type="html">From Indifference to Passion</title><link href="http://www.saifkhichi.com//blog/from-indifference-to-passion" rel="alternate" type="text/html" title="From Indifference to Passion" /><published>2013-12-12T00:00:00+01:00</published><updated>2013-12-12T00:00:00+01:00</updated><id>http://www.saifkhichi.com//blog/from-indifference-to-passion</id><content type="html" xml:base="http://www.saifkhichi.com//blog/from-indifference-to-passion">&lt;h2 id=&quot;the-initiation&quot;&gt;The Initiation&lt;/h2&gt;
+
+&lt;p&gt;30th October 2011. This was the day that changed my outlook on life and gave me a purpose.&lt;/p&gt;
+
+&lt;p&gt;My whole thinking process was revolutionized, and I set afoot on a way that led me to a firmer belief in my own abilities, and shattered the idols of fear within my heart. I was politically aroused, and became part of a movement that had set out with a mission of saving my country, my Pakistan; a movement that aimed to scratch off the rust that was eating through the very soul of my country, and re-make it into what it was originally intended to be; a movement that had set out to make a Naya Pakistan!&lt;/p&gt;
+
+&lt;p&gt;30th October 2011. This was the day when the wind of change began. And like thousands of Pakistanis, it roused me from my callous slumber.&lt;/p&gt;
+
+&lt;p&gt;I belong to a well-known political family of Southern Punjab, the Khichi family of the Chauhan Rajput clan, based in the Vehari district. For as long as the formation of Pakistan, my ancestors have been in and out of the ever-changing governments, holding at least one position of power at any given time. My family had taken an active part in Pakistan Movement and had associated itself strongly with Quaid e Azam Muhammad Ali Jinnah, and his sister Fatima Jinnah after him. This led to an unconditional affiliation with All India Muslim League from the very beginning which after the demise of Fatima Jinnah, transformed into a loyalty for Pakistan Muslim League (Nawaz) and its chief Mian Nawaz Sharif for whatever reasons my forbearers had thought justified.&lt;/p&gt;
+
+&lt;p&gt;From the time I was born, in the year 1995, I would hear the lion, symbol of Nawaz Sharif’s political party, roaring in every corner of my household. My elders were always working with and singing praises of this PML-N and its chief, with my grandfather and later, uncle contesting and winning elections on PML-N tickets. I remember being inflated on seeing the lion symbolized beside the green posters, flyers and banners that bore the picture of my grandfather, Haji Mehmood Khan Khichi, for his election campaigns. Whenever someone alluded to the lion, my thoughts instantly wandered to the PML-N, such was the impression that had been ingrained on my mind by the conduct of my family. I considered Mian Nawaz Sharif as deserving to be Quaid-e-Azam’s successor, and did not, at that time, even know that this PML-N was not really the same political party which Quaid-e-Azam had been a part of and which had played so vital a role in bringing about the existence of Pakistan.&lt;/p&gt;
+
+&lt;p&gt;In the year 1999, when the then army chief, General Pervez Musharraf overthrew Nawaz Sharif’s government and established himself as the sole head of the country, I was of a blithe age of four, and thus with little knowledge and interest in the matter. I knew nothing of and cared little for either politics, or history and current affairs. Mian Nawaz Sharif was expelled from Pakistan after a short term of imprisonment, and returned years after, on 25th November 2007.&lt;/p&gt;
+
+&lt;p&gt;All these years, I listened to my family’s opinion on the matter routinely on dinner table; the shortcomings of Musharraf and his government, the [supposed] happy days of Nawaz Sharif’s rule, and how Pakistan Muslim League (Nawaz) was the only political party working in the country’s interests. I had no opinion on the matter myself, for I gave it little importance and no thought at all. Naturally, I believed that my family had the right picture, and felt the same reverence for Nawaz Sharif that my family did.&lt;/p&gt;
+
+&lt;p&gt;With the time being, my knowledge of the matters I previously knew little of was gradually  increasing through the books I read and the conversations I now listened to with a greater interest and understanding. I was by now familiar with some history, and knew Zulfikar Ali Bhutto, who had been hanged by General Zia, as brave and unflinching champion of the commoners, and respected his daughter Benazir Bhutto, Chairwoman of Pakistan People’s Party, Nawaz Sharif’s political opponent and the first woman Prime Minister in any Muslim country. I knew now that apart from being the Prime Minister twice, Nawaz Sharif had also been the Chief Minister of Punjab.&lt;/p&gt;
+
+&lt;p&gt;Sometimes, when I spared a thought for the condition of the province that had been ruled by PML-N for about twenty years, I would see a huge question mark on eligibility of Nawaz Sharif as a ruler. Exposure to factors outside my family had enlightened me to the side of picture that had up to now remained obscure and my naturally-induced admiration of Mian Nawaz Sharif had somewhat diminished. But at twelve years of age, I was still too young to care about what sort of ruler Pakistan needed and question anyone’s eligibility.&lt;/p&gt;
+
+&lt;p&gt;On 27th December 2007, only two months after her return, Benazir Bhutto was shot dead during a rally for upcoming general elections, in the same ‘Liaquat Bagh’ of Rawalpindi where first Prime Minster of Pakistan Liaquat Ali Khan was martyred. Consequently, PPP won the general elections of 2008, as Benazir’s martyrdom had diverted the nation’s sympathies to the Bhutto family which had suffered so much for [supposedly] the country. Benazir’s husband, the notorious Asif Ali Zardari, whom many people suspected as having a hand in his wife’s fate, came up with her will which named him as the Chairman of Pakistan People’s Party (So much for being champions of democracy!). With the success of his party, he established himself as the President of Pakistan. Consider the irony; the person who was now the President of Pakistan was until now serving sentences in prisons for God knows what crimes he had committed. But instead of confronting the criminal who was now the President, Nawaz Sharif gave him free hand, and even helped him in any way he could (for the sake of democracy, of course) while the former plundered the country for next five years of his term. This made me realize more than anything that I was mistaken when I thought that Nawaz Sharif was working for the country. He served no one’s but his own interests, and wanted nothing but to keep his own self sated. Six years of exile had rusted Nawaz Sharif’s politics, and to get it all shiny again, he befriended the husband of the woman who was his staunchest opponent, a person he knew to be clever, selfish crook. Nawaz Sharif consorted with the criminal he should have confronted, resorting to using his brother Shahbaz Sharif’s power who had been elected the Chief Minister of Punjab to loot their share of the plunder. This was selfishness at its peak, which no amount of justification from his supporters could veil from me. In the five years of Zardari’s term, Nawaz Sharif gradually lost all the respect I had ever had for him.&lt;/p&gt;
+
+&lt;p&gt;In younger days, I pictured Nawaz Sharif as leader, but now I realized that he too was and is only a politician; loyal to his own self alone, and wanting power not for the betterment of the country, but like everybody else, for his own pleasure and profit. He was a businessman by profession; of course he considered politics a business too, and served only to increase his bank balance.&lt;/p&gt;
+
+&lt;p&gt;PML-N had lost my respect, and the little respect I had for PPP died with Benazir Bhutto. Where I had been previously indifferent to politics, I now became averse to it. I wanted God to send someone who would change the country’s fate and make it what it was meant to be, someone who would use his power for the country and not for only himself.&lt;/p&gt;
+
+&lt;p&gt;It seemed like God finally heard me out, when on 30th October 2011, I listened for the first time to a person who was the Chairman of Pakistan Tehreek-e-Insaf, a political party which had been formed in 1996 and about whose existence I was up to now oblivious. I knew him as the former Captain of Pakistan Cricket Team who had led his team to victory in the Cricket World Cup of 1992, and now I realized that he may be the person who was destined to lead Pakistan to another, much more desirable victory very soon. I chose him as my Captain when I found out how he considered Quaid-e-Azam his political role model and Allama Iqbal his ideological leader. He was Imran Khan!&lt;/p&gt;
+
+&lt;p&gt;Pakistan Tehreek-e-Insaf, the name was new to me. I knew Imran Khan as a cricketer, but was not aware of his role in politics. I had heard of Shaukat Khanum Memorial Cancer Hospital, a first-of-its-kind cancer hospital which ran on charity and treated thousands of cancer patients free of cost every year, but I did not know that Shaukat Khanum was Imran Khan’s mother who had died of cancer, motivating her son to build an international standard hospital entirely on charity, with nothing but his will and trust on God, so that Pakistanis did not have to go abroad for cancer treatment. On 30th October 2011, when I saw him speaking at a mammoth gathering in Lahore, I instantly knew this was the person I was looking for. This was the person who will lead us out of this darkness. This was the person who was to be my leader, my Captain.&lt;/p&gt;
+
+&lt;p&gt;It was the same place where Pakistan Resolution had been passed in 1940; the Manto Park of Lahore, the ground where Minar-e-Pakistan stands, reminding us of what Pakistan had been resolved to be. The ground was filled with millions of charged people of every age and shape, decked with red and green of PTI’s flag. Imran Khan stepped up to the dais, and began;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In the name of Allah, the Most Merciful, the Most Beneficent
+Oh God, we kneel before you alone, and seek only your help&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;He began with telling his audience that God had empowered them by giving them a free will, and if they intended to do something good, and strove for it, God will eventually give them success. He talked for three-quarters of an hour, and he spoke all my thoughts. By the end of his speech, I was convinced that if I wanted to see my country changed, I’d have to play a part in bringing about that change. As Imran Khan reminded his audience, God says in Quran that he does not change the fate of the nation which does not strive to change itself. I thought that if I remained silent any longer, I’d be equally responsible for the condition my country was in. My country needed me. Then I remembered Allama Iqbal’s verse, in which he says;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Afraad Ke Hathon Main Hai Aqwaam Ki Taqdeer
+Har Fard Hai Millat Ke Muqaddar Ka Siyyara
+[A nation’s fate is in the hands of its people, as
+each person is responsible for the nation’s destiny.]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thus, from that time onwards, my indifference to politics turned into a fierce passion and determination to change my country for good, and I resolved to play any part that might be expected of me. Imran Khan ended his speech with a cry of&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tabdeeli Aa Nahi Rahi, Tabdeeli Aa Gayi Hai
+[Change is not coming, it has already come]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and I enthusiastically agreed with him. Change had already come; in me, and in thousands of young people like myself, and we had woken from our apathetic stupor. I had realised that it was the time to let go of the fears, believe in myself, and make myself useful. This was the change that Imran Khan had brought about, and with the sleeping youth rising, I could see Pakistan on the doorstep of a revolution.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-investigation&quot;&gt;The Investigation&lt;/h2&gt;
+
+&lt;p&gt;I spent the next two years leading up to the May 2013 educating myself about who Imran Khan was.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Read Pakistan: A Personal History by Imran Khan.&lt;/li&gt;
+  &lt;li&gt;Read In the Line of Fire by Pervez Musharraf.&lt;/li&gt;
+  &lt;li&gt;Watched his old interviews.&lt;/li&gt;
+  &lt;li&gt;Scourged the Internet and various books for subjects pertaining to his life, including:
+    &lt;ul&gt;
+      &lt;li&gt;his familial background,&lt;/li&gt;
+      &lt;li&gt;his education,&lt;/li&gt;
+      &lt;li&gt;his cricketing career,&lt;/li&gt;
+      &lt;li&gt;his failed marriage to Jemima Khan,&lt;/li&gt;
+      &lt;li&gt;his relationship with his children Sulaiman Khan and Isa Khan,&lt;/li&gt;
+      &lt;li&gt;his philanthropic work in Shaukat Khanum and NUML Knowledge City,&lt;/li&gt;
+      &lt;li&gt;his relationships with public figures such as Diana, Mandela, etc.,&lt;/li&gt;
+      &lt;li&gt;his relationship with religion, and influence on Kristiane Backer,&lt;/li&gt;
+      &lt;li&gt;allegations about his relationship with late Sita White and her daughter Tyrian,&lt;/li&gt;
+      &lt;li&gt;allegations of a Jewish lobby,&lt;/li&gt;
+      &lt;li&gt;allegations of him being a radical extremist,&lt;/li&gt;
+      &lt;li&gt;allegations about his inconsistency and u-turns,&lt;/li&gt;
+      &lt;li&gt;allegations of a covert support by General Pasha and military establishment,&lt;/li&gt;
+      &lt;li&gt;allegations of entitlement and arrogance,&lt;/li&gt;
+      &lt;li&gt;rise and fall of his relationship with General Musharraf,&lt;/li&gt;
+      &lt;li&gt;his stance about military operations to fight extremism.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-resolution&quot;&gt;The Resolution&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Feelings leading up to 11 May 2013&lt;/li&gt;
+  &lt;li&gt;Being shut down for being “too young” and therefore not knowing anything&lt;/li&gt;
+  &lt;li&gt;Support of young people in the family&lt;/li&gt;
+  &lt;li&gt;Differences with the elders&lt;/li&gt;
+  &lt;li&gt;Expectations from Imran Khan&lt;/li&gt;
+  &lt;li&gt;The near-catastrophe of 7 May&lt;/li&gt;
+  &lt;li&gt;Post 7 May feelings&lt;/li&gt;
+  &lt;li&gt;People lining outside SKMC to donate blood to Khan&lt;/li&gt;
+  &lt;li&gt;Khan wanting to go back to the people as soon as he regained his senses&lt;/li&gt;
+  &lt;li&gt;Not being able to do that, his address from the hospital bed&lt;/li&gt;
+  &lt;li&gt;“I did what I could. Now it’s your turn”.&lt;/li&gt;
+  &lt;li&gt;The final address of 9 May&lt;/li&gt;
+  &lt;li&gt;The elections and subsequent victory in the KPK province&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-evolution&quot;&gt;The Evolution&lt;/h2&gt;
+
+&lt;p&gt;This chapter talks about the period after 2013 General Elections and PTI’s government in the KPK province…&lt;/p&gt;
+
+&lt;h2 id=&quot;the-revolution&quot;&gt;The Revolution&lt;/h2&gt;
+
+&lt;p&gt;Events leading up to the 2018 General Elections, including Panama Leaks, investigations, the landslide victory and first year in government…&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Ramblings" /><summary type="html">An unfinished tale of a political reawakening.</summary></entry><entry><title type="html">Morning Beauty</title><link href="http://www.saifkhichi.com//blog/morning-beauty" rel="alternate" type="text/html" title="Morning Beauty" /><published>2011-10-17T00:00:00+02:00</published><updated>2011-10-17T00:00:00+02:00</updated><id>http://www.saifkhichi.com//blog/morning-beauty</id><content type="html" xml:base="http://www.saifkhichi.com//blog/morning-beauty">&lt;p&gt;Shining stars, gleaming moon &lt;br /&gt;
+All there, obscuring gloom&lt;/p&gt;
+
+&lt;p&gt;Brightening sky, rising sun &lt;br /&gt;
+Birds fly, animals run&lt;/p&gt;
+
+&lt;p&gt;Cool breeze, gentle wind &lt;br /&gt;
+Ruffled reed, and green bunches&lt;/p&gt;
+
+&lt;p&gt;Butterflies fluttering in garden &lt;br /&gt;
+Singing hymns of Lord, the One&lt;/p&gt;
+
+&lt;p&gt;Alas, o poor man, alas! &lt;br /&gt;
+You’re sleeping still in bunk&lt;/p&gt;
+
+&lt;p&gt;Abandoning morning beauty &lt;br /&gt;
+That is ready to stun&lt;/p&gt;</content><author><name>Saif Khan</name></author><category term="Poetry" /><summary type="html">A short, silly poem about mornings.</summary></entry></feed>
