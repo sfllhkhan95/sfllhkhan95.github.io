@@ -1,5 +1,0 @@
-# Group 1
-User-agent: *
-Allow: /
-
-Sitemap: http://www.saifkhichi.com/sitemap.xml
