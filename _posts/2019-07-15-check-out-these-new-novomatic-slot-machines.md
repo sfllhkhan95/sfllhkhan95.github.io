@@ -2,7 +2,9 @@
 layout: post
 title:  Check out these new NOVOMATIC SLOT MACHINES!
 categories: Tech
+cover: true
 excerpt: Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free.
+permalink: /blog/:title
 ---
 
 Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free. With games of all types, novomatic machines have something to offer for everyone from people looking to spend some quality time with casual gameplay to those wanting to make some extra money while at it. Therefore, if you are looking for online casino slot games, play online novomatic which are the best bet you can make.

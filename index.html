@@ -1,7 +1,7 @@
 ---
 layout: default
 description: Personal website of Muhammad Saif Ullah Khan, containing a complete portfolio, work history, and other details.
-keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
+keywords: portfolio, developer, freelancer, saifkhichi96
 ---
 
 <style>
@@ -79,7 +79,7 @@ keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
 
 <div class="col-md-8">
   <!-- Featured Projects -->
-  <section class="mdc-card">
+  <section class="mdc-card highlighted"  style="padding: 0 !important;">
     <div class="mdc-card__content" style="padding: 16px;">
       <h2>Featured Projects</h2>
       <p>I am always working on many exciting programming projects, some of which are listed below:</p>
@@ -100,31 +100,22 @@ keywords: portfolio, developer, freelancer, saif khan, saifkhichi96
 </div>
 
 <div class="col-md-4">
-  <!-- Recent Work -->
-  <section>
-    <h2>Recent updates</h2>
-    <ul class="mdc-list mdc-list--two-line">
-      <a class="mdc-list-item" tabindex="0" href="/projects/tiled/">
-        <span class="mdc-list-item__ripple"></span>
-        <span class="mdc-list-item__text">
-          <span class="mdc-list-item__primary-text">Tiled, for making tilemaps on Android</span>
-          <span class="mdc-list-item__secondary-text">Released a new library.</span>
-        </span>
-      </a>
-      <a class="mdc-list-item" href="/projects/scribe/">
-        <span class="mdc-list-item__ripple"></span>
-        <span class="mdc-list-item__text">
-          <span class="mdc-list-item__primary-text">Scribe, an API to write PDF on Android</span>
-          <span class="mdc-list-item__secondary-text">Released a new library.</span>
-        </span>
-      </a>
-    </ul>
-  </section>
 
   <!-- Blog -->
-  <section>
-    <h2>Blog posts</h2>
-    {% include list_posts.html %}
+  <section class="mdc-card">
+    <div class="mdc-card__content" style="padding: 16px;">
+      <h2>Recent posts</h2>
+      {% include widget_search.html %}
+      {% include list_posts.html %}
+    </div>
+    <div class="mdc-card__actions">
+      <div class="mdc-card__action-icons">
+        <a class="mdc-button mdc-card__action mdc-card__action--button" href="/blog/">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">See all posts</span>
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- More -->

@@ -189,7 +189,7 @@ footer-links:
   twitter:                 saifkhichi96
   stackoverflow:           4690466
   youtube:                 /channel/UCj4yPuKHi9pZ9WbKbfh5MEQ
-  playconsole:
+  playconsole:       7722501168179136426
 
 # Includes links to your site's privacy policy and terms of service in the footer
 privacy:                   "/privacy/"
@@ -226,11 +226,6 @@ version:                   v1.2.0
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input:                   GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter:      rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class:             'highlight'
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -242,11 +237,25 @@ plugins:
   - jekyll-feed     # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-paginate-v2
 
 include:                   ['_pages']
 
-paginate:                  6
-paginate_path:             /page:num/
+collections:
+  projects:
+    output:                true
+    permalink:             /projects/:path/
+
+pagination:
+  enabled:                 true
+  per_page:                10
+  permalink:               /:num/
+  sort_reverse:            true
+  sort_field:              'date'
+  title:                   ':title'
+  trail:
+    before:                2
+    after:                 2
 
 # Exclude these files from your production _site
 exclude:

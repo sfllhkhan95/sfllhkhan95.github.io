@@ -68,8 +68,19 @@ layout: default
       <a href='https://bintray.com/{{ page.bintray }}/_latestVersion' rel="noopener" target="_blank"><img src='https://api.bintray.com/packages/{{ page.bintray }}/images/download.svg'></a>
       {% endif %}
       {% unless page.android or page.bintray %}
-      <p>Not available for public use.</p>
+      <p>No download link.</p>
       {% endunless %}
+    </div>
+  </section>
+
+  <section>
+  </section>
+
+  <section class="mdc-card mdc-card--outlined">
+    <div class="mdc-card--content highlighted" style="padding: 16px;">
+      <h2>Featured Projects</h2>
+      <br>
+      {% include list_projects_featured.html %}
     </div>
   </section>
 </aside>

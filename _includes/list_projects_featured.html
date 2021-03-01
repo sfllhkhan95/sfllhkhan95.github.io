@@ -1,16 +1,14 @@
-<div class="mdc-list mdc-list--two-line">
-  <a class="mdc-list-item" tabindex="0" href="https://github.com/saifkhichi96/signature-extraction">
-    <span class="mdc-list-item__ripple"></span>
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">Signature Extraction from Bank Checks</span>
-      <span class="mdc-list-item__secondary-text">I am always working on many exciting programming projects, sA segmentation model trained to extract handwritten signatures from bank checks.</span>
-    </span>
-  </a>
-  <a class="mdc-list-item" href="/projects/doodle/">
-    <span class="mdc-list-item__ripple"></span>
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">Doodle Paint App</span>
-      <span class="mdc-list-item__secondary-text">A simple paint application for Android, written in Java and Kotlin programming languages.</span>
-    </span>
-  </a>
+<div>
+  {% for page in site.projects %}
+  {% assign categories = page.categories %}
+  {% if categories contains 'featured' %}
+  <section class="project-summary" style="display: flex;">
+    <img style="border: 1px solid var(--mdc-theme-overlay); border-radius: 8px; margin-right: 8px;" width="64px" height="64px" src="{{ site.baseurl}}{{ page.icon }}" alt="{{ page.title }}" />
+    <div style="width: calc(100% - 72px)">
+      <h3 class="project-title"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
+      <div>{{ page.excerpt }}</div>
+    </div>
+  </section>
+  {% endif %}
+  {% endfor %}
 </div>
