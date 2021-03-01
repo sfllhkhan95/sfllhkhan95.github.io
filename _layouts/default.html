@@ -143,35 +143,46 @@
             </nav>
           </section>
 
+          {% if page.cover %}
+          <div class="page-cover" style="background-image: url('{{ site.baseurl }}/assets/images/{{ page.url }}/0.jpg')">
+          {% endif %}
+
           <!-- Summary -->
-          <section class="project-summary">
-            {% if page.icon %}
-            <img class="project-logo" src="{{ site.baseurl}}{{ page.icon }}" alt="{{ page.title }}" />
-            {% endif %}
-            <div>
-              <h1 class="project-title">{{ page.title }}</h1>
-              {% unless page.icon %}
-              <span class="project-type">{% if page.date %}{{ page.date | date: "%B %e, %Y" }}{% endif %}</span>
-              {% endunless %}
-              <div class="project-tags">
-                {% if post %}
-                {% assign categories = post.categories %}
-                {% else %}
-                {% assign categories = page.categories %}
-                {% endif %}
-                {% for category in categories %}
-                <a href="{{site.baseurl}}/categories/#{{category|slugize|replace:",",""}}"><span class="project-tag"><i class="material-icons">sell</i>{{ category | replace: ",", "" }}</span></a>
-                {% endfor %}
-              </div>
-              {% if page.device %}
-              <p class="project-type"><span class="material-icons">devices</span>&nbsp; {{ page.device }}</p>
+          <section class="{% if page.cover %}align-bottom{% endif %}">
+            <div class="project-summary">
+              {% if page.icon %}
+              <img class="project-logo" src="{{ site.baseurl}}{{ page.icon }}" alt="{{ page.title }}" />
               {% endif %}
+              <div>
+                <h1 class="project-title">{{ page.title }}</h1>
+                {% unless page.icon %}
+                <span class="project-type">{% if page.date %}{{ page.date | date: "%B %e, %Y" }}{% endif %}</span>
+                {% endunless %}
+                <div class="project-tags">
+                  {% if post %}
+                  {% assign categories = post.categories %}
+                  {% else %}
+                  {% assign categories = page.categories %}
+                  {% endif %}
+                  {% for category in categories %}
+                  <a href="{{site.baseurl}}/categories/#{{category|slugize|replace:",",""}}"><span class="project-tag"><i class="material-icons">sell</i>{{ category | replace: ",", "" }}</span></a>
+                  {% endfor %}
+                </div>
+                {% if page.device %}
+                <p class="project-type"><span class="material-icons">devices</span>&nbsp; {{ page.device }}</p>
+                {% endif %}
+              </div>
             </div>
-            <br>
             {% if page.id %}
-            {% include widget_share.html %}
+            <div>
+              {% include widget_share.html %}
+            </div>
             {% endif %}
           </section>
+
+          {% if page.cover %}
+          </div>
+          {% endif %}
         </header>
 
         <!-- Page Content -->

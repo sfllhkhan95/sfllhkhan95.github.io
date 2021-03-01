@@ -1,0 +1,151 @@
+---
+layout: default
+title: The S Word
+description: Paint the town red.
+keywords: blog, coding
+permalink: /blog/
+pagination:
+  enabled: true
+---
+
+<style>
+  .post-container {
+    border: 1px solid var(--mdc-theme-overlay);
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .post {
+    display: flex;
+    width: 100%;
+  }
+
+  .post-container:nth-of-type(odd) .post {
+    flex-direction: row-reverse;
+  }
+
+  .post-img {
+    margin-right: 8px;
+    border-radius: 8px;
+    width: 50%;
+    min-height: 240px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .post-container:nth-of-type(odd) .post .post-img {
+    margin-left: 8px;
+    margin-right: 0;
+    flex-direction: row-reverse;
+  }
+
+  .post-details {
+    width: 50%;
+    text-align: center;
+  }
+
+  .post-date {
+    font-size: 10pt !important;
+    text-transform: uppercase;
+  }
+
+  .post-title {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+
+  .post-excerpt {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  @media (max-width: 840px) {
+    .post {
+      display: block;
+    }
+
+    .post-img {
+      margin-left: 0 !important;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .post-details {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="col-md-8">
+  {% assign posts = paginator.posts %}
+  {% for post in posts %}
+  {% assign categories = post.categories %}
+  <section class="post-container">
+    <div class="post">
+      <div class="post-img"
+            style="background-image: url('{{ site.baseurl }}/assets/images/{{ post.url }}/0.jpg')">
+      </div>
+      <div class="post-details">
+        <div class="project-tags">
+          {% assign categories = post.categories %}
+          {% for category in categories %}
+          <a href="{{site.baseurl}}/categories/#{{category|slugize|replace:",",""}}"><span class="project-tag"><i class="material-icons">sell</i>{{ category | replace: ",", "" }}</span></a>
+          {% endfor %}
+        </div>
+        <div class="post-date">{{ post.date | date: "%B %e, %Y" }}</div>
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-excerpt">{{ post.excerpt }}</p>
+        <div class="mdc-touch-target-wrapper">
+          <a class="mdc-button mdc-button--unelevated" href="{{ site.baseurl }}{{ post.url }}">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Read More</span>
+            <span class="mdc-button__touch"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <ul class="pagination" style="display: flex; width: 100%; justify-content: space-evenly;">
+    <li>
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% else %}
+      <span>&laquo; Prev</span>
+      {% endif %}
+    </li>
+
+    {% if paginator.page_trail %}
+      {% for trail in paginator.page_trail %}
+        <li {% if page.url == trail.path %}class="selected"{% endif %}>
+            <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+        </li>
+      {% endfor %}
+    {% endif %}
+
+    <li>
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% else %}
+      <span>Next &raquo;</span>
+      {% endif %}
+    </li>
+  </ul>
+  {% endif %}
+</div>
+
+<div class="col-md-4">
+  {% include widget_search.html %}
+
+  {% include widget_goodreads.html %}
+</div>

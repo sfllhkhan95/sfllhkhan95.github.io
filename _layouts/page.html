@@ -8,6 +8,14 @@ layout: default
 </div>
 
 <aside class="col-md-4">
-  {% include widget_search.html %}
-  {% include widget_goodreads.html %}
+  <section>
+    <h2>Featured Projects</h2>
+    {% include list_projects_featured.html %}
+  </section>
+
+  <section>
+    <h2>Recent posts</h2>
+    {% include widget_search.html %}
+    {% include list_posts.html %}
+  </section>
 </aside>
