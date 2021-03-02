@@ -8,7 +8,7 @@ device: Mobile App
 client: This is a personal project developed under brand name AspiraSoft.
 code: aspirasoft/tasbih
 license: MIT
-excerpt: Tasbih is a rosary app with a collection of Muslim prayers in Arabic and English, and includes a digital counter to keep track of your prayers.
+description: Tasbih is a rosary app with a collection of Muslim prayers in Arabic and English, and includes a digital counter to keep track of your prayers.
 icon: /assets/images/projects/tasbih-logo.png
 ---
 

@@ -4,8 +4,8 @@ title:  Bouncy
 categories: game
 keywords: arcade, bounce, snow bros
 device: Cross-Platform
-excerpt: Bouncy, part of the 'Classics&#58; Reimagined' series, combines the arcade game Snow Bros. and Bounce (classic Nokia game) into a single game.
-feature: /assets/images/projects/bouncy-cover.png
+description: Bouncy, part of the 'Classics&#58; Reimagined' series, combines the arcade game Snow Bros. and Bounce (classic Nokia game) into a single game.
+image: /assets/images/projects/bouncy-cover.png
 icon: /assets/images/projects/bouncy-logo.png
 ---
 

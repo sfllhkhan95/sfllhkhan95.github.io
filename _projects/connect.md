@@ -5,8 +5,8 @@ categories: app
 keywords: social network, nust
 client: This project was an initiative of <a href="https://www.facebook.com/NEC.NUST/" rel="noopener" target="_blank">NUST Entrepreneurs Club</a>, where I was the project manager and headed the development team.
 device: Mobile App
-excerpt: NUST Connect is a social networking mobile application for the community of NUST university.
-feature: /assets/images/projects/connect-cover.png
+description: NUST Connect is a social networking mobile application for the community of NUST university.
+image: /assets/images/projects/connect-cover.png
 icon: /assets/images/projects/connect-logo.png
 ---
 

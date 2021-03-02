@@ -6,7 +6,7 @@ keywords: rest api, java
 bintray: saifkhichi96/maven/droid-rest
 code: saifkhichi96/droid-rest
 device: Library
-excerpt: DroidREST is a client-side Android library, which provides a RESTful interface for Android applications to exchange POJO objects with a remote server.
+description: DroidREST is a client-side Android library, which provides a RESTful interface for Android applications to exchange POJO objects with a remote server.
 icon: /assets/images/projects/droid-rest-logo.png
 license: MIT
 ---

@@ -4,7 +4,7 @@ title: Scanner
 categories: app
 keywords: tools, qr codes
 device: Mobile App
-excerpt: Scanner is a simple barcode scanning and generation app which allows you to scan different types of barcodes and generate QR codes from different types of data.
+description: Scanner is a simple barcode scanning and generation app which allows you to scan different types of barcodes and generate QR codes from different types of data.
 icon: /assets/images/projects/scanner-logo.png
 ---
 

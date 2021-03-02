@@ -5,8 +5,8 @@ categories: game
 keywords: arcade
 android: pk.aspirasoft.dodge
 device: Mobile App
-excerpt: Escape the onslaught by the drones flying overhead as you try to make your way towards your goal.
-feature: /assets/images/projects/dodge-cover.png
+description: Escape the onslaught by the drones flying overhead as you try to make your way towards your goal.
+image: /assets/images/projects/dodge-cover.png
 icon: /assets/images/projects/dodge-logo.png
 ---
 

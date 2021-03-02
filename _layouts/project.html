@@ -12,7 +12,7 @@ layout: default
 <div class="col-md-8">
   <!-- Overview -->
   <section>
-    <p>{{ page.excerpt }}</p>
+    <p>{{ page.description }}</p>
   </section>
 
   <!-- Media -->
@@ -20,9 +20,9 @@ layout: default
   <section class="embed-container">
     <iframe src="https://www.youtube-nocookie.com/embed/{{ page.demo }}?controls=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
   </section>
-  {% elsif page.feature %}
+  {% elsif page.image %}
   <section>
-    <img class="project-portfolio-img" src="{{ page.feature }}" alt="{{ page.title }}" />
+    <img class="project-portfolio-img" src="{{ page.image }}" alt="{{ page.title }}" />
   </section>
   {% endif %}
 

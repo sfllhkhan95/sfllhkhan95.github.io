@@ -4,7 +4,7 @@ title: RECatalyst
 categories: app, featured
 keywords: developer tool, requirements engineering
 device: Mobile App
-excerpt: A collaborative tool for software management with focus on requirements engineering.
+description: A collaborative tool for software management with focus on requirements engineering.
 icon: /assets/images/projects/recatalyst-logo.png
 ---
 

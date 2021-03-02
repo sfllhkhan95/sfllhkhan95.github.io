@@ -5,7 +5,7 @@ categories: app, featured
 keywords: digital learning, smart school
 client: This project was requested by a private client from India as a general solution which can be implemented in grade schools.
 device: Mobile App
-excerpt: Cygnus is an online learning management system for smart schools, in shape of a mobile app, developed for a client in India.
+description: Cygnus is an online learning management system for smart schools, in shape of a mobile app, developed for a client in India.
 icon: /assets/images/projects/cygnus-logo.png
 ---
 

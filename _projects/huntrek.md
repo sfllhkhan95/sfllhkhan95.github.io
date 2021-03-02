@@ -4,7 +4,7 @@ title: Huntrek&#58; AR Scavenger Hunt
 categories: game
 keywords: scavanger hunt, augmented reality
 device: Mobile App
-excerpt: Huntrek is a scavanger hunt game, where player can go looking for treasure chests out in the real world.
+description: Huntrek is a scavanger hunt game, where player can go looking for treasure chests out in the real world.
 icon: /assets/images/projects/huntrek-logo.png
 ---
 

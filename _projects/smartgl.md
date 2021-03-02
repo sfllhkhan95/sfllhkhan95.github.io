@@ -6,7 +6,7 @@ keywords: graphics, opengl
 device: Library
 code: saifkhichi96/smartgl
 license: MIT
-excerpt: SmartGL is a object-oriented wrapper for OpenGL graphics library, based on OpenGL Utility Toolkit.
+description: SmartGL is a object-oriented wrapper for OpenGL graphics library, based on OpenGL Utility Toolkit.
 icon: /assets/images/projects/smartgl-logo.png
 ---
 

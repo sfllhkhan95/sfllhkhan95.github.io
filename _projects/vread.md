@@ -5,8 +5,8 @@ categories: app
 keywords: social network, books, reading
 device: Web App
 client: This is a personal project which I developed as a semester project for the courses of Web Engineering and Human-Computer Interaction during my <a href="/resume/bese/">undergraduate studies</a> at NUST.
-excerpt: vRead is mobile-first social platform for book readers, where users can connect with their fellow bookaholics.
-feature: /assets/images/projects/vread-cover.png
+description: vRead is mobile-first social platform for book readers, where users can connect with their fellow bookaholics.
+image: /assets/images/projects/vread-cover.png
 icon: /assets/images/projects/vread-logo.png
 ---
 

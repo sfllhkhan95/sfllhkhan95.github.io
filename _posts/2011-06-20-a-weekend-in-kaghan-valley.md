@@ -3,7 +3,7 @@ layout: post
 title:  There and Back Again - Holiday in the Valley of Kaghan
 categories: Travel
 cover: true
-excerpt: A short, silly poem about mornings.
+description: A short, silly poem about mornings.
 permalink: /blog/:title
 ---
 

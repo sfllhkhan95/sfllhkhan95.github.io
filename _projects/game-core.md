@@ -7,7 +7,7 @@ bintray: saifkhichi96/maven/game-core
 code: saifkhichi96/game-core
 license: MIT
 device: Library
-excerpt: GameCore provides API for writing simple Java games and native Android games.
+description: GameCore provides API for writing simple Java games and native Android games.
 icon: /assets/images/projects/game-core-logo.png
 ---
 

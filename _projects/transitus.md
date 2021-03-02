@@ -4,8 +4,8 @@ title: Transitus
 categories: app
 keywords: college, education
 device: Mobile App
-excerpt: Transitus prepares high-school and college graduates for the next step in their journey.
-feature: /assets/images/projects/transitus-cover.png
+description: Transitus prepares high-school and college graduates for the next step in their journey.
+image: /assets/images/projects/transitus-cover.png
 icon: /assets/images/projects/transitus-logo.png
 ---
 

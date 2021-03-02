@@ -4,7 +4,7 @@ title: Servus
 categories: app
 keywords: tools
 device: Mobile App
-excerpt:
+description:
 icon: /assets/images/projects/servus-logo.png
 ---
 

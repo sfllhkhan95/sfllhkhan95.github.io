@@ -7,7 +7,7 @@ code: saifkhichi96/authentica
 client: This is a personal project, based on the work I did during the final-year project of my <a href="/resume/bese/">undergraduate studies</a> at NUST.
 demo: i8i6sC14x1c
 device: Cross-Platform
-excerpt: Authentica is a signature verification system which allows banks to verify signatures on bank checks.
+description: Authentica is a signature verification system which allows banks to verify signatures on bank checks.
 icon: /assets/images/projects/authentica-logo.png
 ---
 

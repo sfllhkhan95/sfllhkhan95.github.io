@@ -14,7 +14,7 @@ title: Categories
     <li class="mdc-list-item">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <span class="mdc-list-item__ripple"></span>
-        <span class="mdc-list-item__text">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</span>
+        <span class="mdc-list-item__text">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.description |strip_html}}{%endif%}</span>
       </a>
     </li>
     {% endfor %}

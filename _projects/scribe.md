@@ -6,7 +6,7 @@ keywords: pdf generation, android
 bintray: saifkhichi96/maven/scribe
 code: aspirasoft/scribe
 device: Library
-excerpt: Scribe is a Kotlin library for PDF generation in Android apps.
+description: Scribe is a Kotlin library for PDF generation in Android apps.
 icon: /assets/images/projects/scribe-logo.png
 license: MIT
 ---

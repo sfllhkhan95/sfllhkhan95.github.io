@@ -6,8 +6,8 @@ keywords: cafe, food
 android: com.bytexcite.khaapa
 client: This project was created for a student-run cafeteria at university, the Khaapa at NUST-SEECS.
 device: Mobile App
-excerpt: The legendary Khaapa of SEECS has yet again fallen into the hands of the SE batch and this time it's SE5B.
-feature: /assets/images/projects/cafe-manager-cover.png
+description: The legendary Khaapa of SEECS has yet again fallen into the hands of the SE batch and this time it's SE5B.
+image: /assets/images/projects/cafe-manager-cover.png
 icon: /assets/images/projects/cafe-manager-logo.png
 ---
 

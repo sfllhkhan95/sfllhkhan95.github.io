@@ -101,7 +101,7 @@ pagination:
         </div>
         <div class="post-date">{{ post.date | date: "%B %e, %Y" }}</div>
         <h2 class="post-title">{{ post.title }}</h2>
-        <p class="post-excerpt">{{ post.excerpt }}</p>
+        <p class="post-excerpt">{{ post.description }}</p>
         <div class="mdc-touch-target-wrapper">
           <a class="mdc-button mdc-button--unelevated" href="{{ site.baseurl }}{{ post.url }}">
             <span class="mdc-button__ripple"></span>

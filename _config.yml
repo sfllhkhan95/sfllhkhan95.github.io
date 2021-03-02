@@ -13,19 +13,36 @@
 # 1. Site Metadata (all fields mandatory)
 # ----------------------------------------------------------------------------
 
-# Name of your site (displayed in the header)
-name:                      Saif's Portfolio
+# Your site's title
+title:                     Saif Khan
+
+# A short description
+tagline:                   Mobile Developer and ML Engineer
+
+# A longer description used for the description meta tag
+description:               Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>.
 
 # Name of the author
-author:                    Saif Khan
+author:                    Muhammad Saif Ullah Khan
 
-# Short bio or description (displayed on the homepage)
-description:               Work portfolio and a blog.
-
-about:                     Versatile software engineer skilled in <b>mobile development</b>, <b>machine learning</b>, and <b>computer vision</b>.
+# For showing Twitter cards
+twitter:
+  username: saifkhichi96
+  card: summary
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar:                    /assets/images/logo.png
+logo:                      /assets/images/logo.png
+
+# For specifying social profiles
+social:
+  name: Muhammad Saif Ullah Khan
+  links:
+    - https://twitter.com/saifkhichi96
+    - https://www.linkedin.com/in/saifkhichi96
+    - https://github.com/saifkhichi96
+
+# For verifying ownership via Google Search Console (https://cloud.google.com/identity/docs/verify-domain-web)
+google_site_verification:  a756de613e3e91e14743d6a24b29a35c
 
 # Manifest and favicon
 manifest:                  /manifest.json
@@ -208,10 +225,6 @@ google_adsense:            ca-pub-6293532072634065
 
 # For newer "GA4" analytics, use the following instead of the "UA" entry above
 # google_analytics_ga4:    G-GABC1DEFG
-
-# Enter your domain verification key to verify ownership of domain to Google
-# (https://cloud.google.com/identity/docs/verify-domain-web)
-domain_verify:             a756de613e3e91e14743d6a24b29a35c
 
 #
 # !! You don't need to change any of the configuration flags below !!

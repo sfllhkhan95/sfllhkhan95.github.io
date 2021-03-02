@@ -4,27 +4,18 @@
 <head>
   <meta charset="utf-8">
   {% unless page.noamp %} <script async src="https://cdn.ampproject.org/v0.js"></script> {% endunless %}
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }} - {{ site.tagline }}</title>
   {% seo title=false %}
   {% include meta.html %}
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-  <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.tagline }}" href="{{ site.baseurl }}/feed.xml" />
 
   <!-- Website icon -->
   <link rel="shortcut icon" href="{{ site.baseurl}}{{ site.favicon }}">
 
-  <!-- Domain Verification Key -->
-  {% if site.domain_verify %}
-  <meta name="p:domain_verify" content="{{ site.domain_verify }}" />
-  <meta name="google-site-verification" content="{{ site.domain_verify }}" />
-  {% endif %}
-
   <!-- Manifest -->
-  <link rel="manifest" href="{{ site.baseurl }}{{ site.manifest }}">
+  <link rel="manifest" href="{{ site.baseurl }}/{{ site.manifest }}">
   <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#854fee' }}" />
 
   <!-- Font Awesome -->

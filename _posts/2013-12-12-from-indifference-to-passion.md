@@ -3,7 +3,7 @@ layout: post
 title:  From Indifference to Passion
 categories: Ramblings
 cover: true
-excerpt: An unfinished tale of a political reawakening.
+description: An unfinished tale of a political reawakening.
 permalink: /blog/:title
 ---
 

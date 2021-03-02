@@ -8,7 +8,7 @@ client: Doodle is an personal, <b>open-source project</b> which started out as a
 code: saifkhichi96/paint
 license: MIT
 device: Mobile App
-excerpt: Doodle is a simple paint application for Android, written in Java and Kotlin programming languages.
+description: Doodle is a simple paint application for Android, written in Java and Kotlin programming languages.
 demo: 05itwsYAJkU
 icon: /assets/images/projects/doodle-logo.png
 ---

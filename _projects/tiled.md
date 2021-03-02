@@ -7,7 +7,7 @@ bintray: saifkhichi96/maven/tiled
 code: aspirasoft/tiled
 demo: KlIh_w0GX58
 device: Library
-excerpt: Tiled is a lightweight API for easily creating tilemaps in Android. It is useful for applications and games which need to display tile-based graphics.
+description: Tiled is a lightweight API for easily creating tilemaps in Android. It is useful for applications and games which need to display tile-based graphics.
 icon: /assets/images/projects/tiled-logo.png
 license: MIT
 ---

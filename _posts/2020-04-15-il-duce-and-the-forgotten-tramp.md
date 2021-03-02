@@ -3,7 +3,7 @@ layout: post
 title:  Il Duce and the Forgotten Tramp
 categories: Ramblings
 cover: true
-excerpt: It was a pleasant spring day in the year 1943. The sun shone brightly over the port city of Huelva in southwestern Spain. While the month of April was nearing its end, the blazing war all around remained incessant as ever.
+description: It was a pleasant spring day in the year 1943. The sun shone brightly over the port city of Huelva in southwestern Spain. While the month of April was nearing its end, the blazing war all around remained incessant as ever.
 permalink: /blog/:title
 ---
 

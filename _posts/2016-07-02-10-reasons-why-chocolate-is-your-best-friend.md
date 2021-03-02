@@ -3,7 +3,7 @@ layout: post
 title:  10 Reasons Why Chocolate is Your Best Friend
 categories: Food
 cover: true
-excerpt: Chocolate, one of the only foods that are equally revered around the globe. You would find chocolate lovers everywhere justifying their over-consumption of chocolate with the statement that it is good for health, and they may not be that far off the mark. In this article, I explore ten reasons why chocolate is good for you.
+description: Chocolate, one of the only foods that are equally revered around the globe. You would find chocolate lovers everywhere justifying their over-consumption of chocolate with the statement that it is good for health, and they may not be that far off the mark. In this article, I explore ten reasons why chocolate is good for you.
 permalink: /blog/:title
 ---
 

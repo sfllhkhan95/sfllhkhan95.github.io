@@ -3,7 +3,7 @@ layout: post
 title:  Burial Suit That Turns You Into Mushrooms
 categories: Tech
 cover: true
-excerpt: Mushrooms are known as one of the world’s greatest decomposers. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet.
+description: Mushrooms are known as one of the world’s greatest decomposers. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet.
 permalink: /blog/:title
 ---
 
