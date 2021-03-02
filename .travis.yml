@@ -21,7 +21,7 @@ deploy:
   provider: pages
   local_dir: _site/
   token: $TRAVIS_DEPLOY_TOKEN
-  keep_history: false
+  keep_history: true
   target_branch: gh-pages
   fqdn: www.saifkhichi.com
   on:
