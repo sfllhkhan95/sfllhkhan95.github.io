@@ -16,7 +16,6 @@ projects/*/*/*.psd
 
 # Jekyll
 _site/
-docs/
 .DS_Store
 .jekyll
 .jekyll-metadata
