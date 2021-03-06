@@ -6,6 +6,7 @@ keywords: infinite runner
 device: Desktop App
 client: This is a personal project which I developed as a semester project for the course of Object-Oriented Programming during my <a href="/resume/bese/">undergraduate studies</a> at NUST.
 description: University Run is a 2D infinite runner game, set in NUST, Pakistan. The gameplay consists of a student running away from an evil teacher.
+cover: true
 image: /assets/images/projects/university-run-cover.png
 icon: /assets/images/projects/university-run-logo.png
 ---

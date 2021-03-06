@@ -6,8 +6,8 @@
   {% unless page.noamp %} <script async src="https://cdn.ampproject.org/v0.js"></script> {% endunless %}
 
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }} - {{ site.tagline }}</title>
+{% include meta.html %}
   {% seo title=false %}
-  {% include meta.html %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.tagline }}" href="{{ site.baseurl }}/feed.xml" />
 

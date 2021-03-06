@@ -3,6 +3,7 @@ layout: post
 title:  Check out these new NOVOMATIC SLOT MACHINES!
 categories: Tech
 cover: true
+image: /assets/images/blog/check-out-these-new-novomatic-slot-machines/0.jpg
 description: Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free.
 permalink: /blog/:title
 ---

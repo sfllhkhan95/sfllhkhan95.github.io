@@ -3,6 +3,7 @@ layout: post
 title:  Atif Mian and the Religious Intolerance in Pakistan
 categories: Ramblings
 cover: true
+image: /assets/images/blog/atif-main-and-an-intolerant-pakistan/0.jpg
 description: Early into his new office, Prime Minister Imran Khan's administration nominated Atif Mian for a post in the newly formed Economic Advisory Council (EAC) to assist the nearly-bankrupt government on issues of finance and economics. A few days later, the whole country had erupted into spontaneous protests from the far-right groups.
 permalink: /blog/:title
 ---

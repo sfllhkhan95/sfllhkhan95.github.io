@@ -89,9 +89,12 @@ pagination:
   {% assign categories = post.categories %}
   <section class="post-container">
     <div class="post">
-      <div class="post-img"
-            style="background-image: url('{{ site.baseurl }}/assets/images/{{ post.url }}/0.jpg')">
-      </div>
+      {% if post.cover %}
+      {% assign image = post.image %}
+      {% else %}
+      {% assign image = '/assets/images/blog/default.png' %}
+      {% endif %}
+      <div class="post-img" style="background-image: url('{{ image }}')"></div>
       <div class="post-details">
         <div class="project-tags">
           {% assign categories = post.categories %}

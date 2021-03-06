@@ -5,6 +5,7 @@ categories: app
 keywords: data collection, pdf generator, email
 client: <a href="https://www.acaciajoinery.com.au/" rel="noopener" target="_blank">Acacia Joinery</a> is an architectural company based in Bellambi, Australia.
 device: Mobile App
+cover: true
 image: /assets/images/projects/acacia-joinery-cover.png
 description: Acacia Joinery is a mobile application for an architectural firm based in Bellambi, Australia.
 icon: /assets/images/projects/acacia-joinery-logo.png

@@ -3,6 +3,7 @@ layout: post
 title:  Morning Beauty
 categories: Poetry
 cover: true
+image: /assets/images/blog/morning-beauty/0.jpg
 description: A short, silly poem about mornings.
 permalink: /blog/:title
 ---

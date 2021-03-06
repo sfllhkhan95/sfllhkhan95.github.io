@@ -6,6 +6,7 @@ keywords: hangman, puzzle, classic
 android: co.aspirasoft.hangman
 device: Cross-Platform
 description: Build your vocabulary with this classic hangman game on your mobile or tablet! This game is part of the Classics Reimagined series.
+cover: true
 image: /assets/images/projects/hangman-cover.png
 icon: /assets/images/projects/hangman-logo.png
 ---

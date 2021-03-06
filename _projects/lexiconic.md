@@ -5,6 +5,7 @@ categories: app
 keywords: dictionary, brain game
 device: Desktop App
 description: Lexiconic is an English dictionary with some mini-games for vocabulary and IQ.
+cover: true
 image: /assets/images/projects/lexiconic-cover.png
 icon: /assets/images/projects/lexiconic-logo.png
 ---

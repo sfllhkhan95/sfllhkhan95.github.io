@@ -28,7 +28,6 @@ author:                    Muhammad Saif Ullah Khan
 # For showing Twitter cards
 twitter:
   username: saifkhichi96
-  card: summary
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 logo:                      /assets/images/logo.png
@@ -229,6 +228,15 @@ google_adsense:            ca-pub-6293532072634065
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+
+# Front Matter defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      image: "/assets/images/icons/512.png"
 
 permalink:                 /:title/
 

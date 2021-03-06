@@ -5,6 +5,7 @@ categories: game
 device: Cross-Platform
 keywords: 2d platformer, java
 description: A 2D platformer game, inspired from Super Mario Bros, and developed in Java programming language.
+cover: true
 image: /assets/images/projects/jungle-run-cover.png
 icon: /assets/images/projects/jungle-run-logo.png
 ---

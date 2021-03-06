@@ -3,6 +3,7 @@ layout: post
 title:  Remembering the Battle of Hogwarts
 categories: Books
 cover: true
+image: /assets/images/blog/remembering-the-battle-of-hogwarts/0.jpg
 description: Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.
 permalink: /blog/:title
 ---

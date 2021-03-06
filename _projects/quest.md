@@ -6,6 +6,7 @@ android: pk.smartgames.kaptaansquest
 keywords: board, politics
 device: Cross-Platform
 description: Kaptaan's Quest is a snake-and-ladders board game, set in politcial landscape of Pakistan in 2014.
+cover: true
 image: /assets/images/projects/quest-cover.png
 icon: /assets/images/projects/quest-logo.png
 ---

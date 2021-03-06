@@ -3,6 +3,7 @@ layout: post
 title:  Boost Your Mortgage Business with These Helpful Tips
 categories: Lifestyle
 cover: true
+image: /assets/images/blog/tips-to-boost-mortgage-business/0.jpg
 description: Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years.
 permalink: /blog/:title
 ---

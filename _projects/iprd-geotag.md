@@ -6,6 +6,7 @@ keywords: remote work, location
 client: <a href="http://prdjharkhand.in/" rel="noopener" target="_blank">PRD Jharkhand</a> is the Information & Public Relations Department in the Indian state of Jharkhand.
 device: Mobile App
 description: IPRD Geotag is a location-based work monitoring Android application developed for PRD Jharkhand.
+cover: true
 image: /assets/images/projects/iprd-geotag-cover.png
 icon: /assets/images/projects/iprd-geotag-logo.png
 ---
