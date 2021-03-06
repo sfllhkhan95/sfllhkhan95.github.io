@@ -11,10 +11,13 @@
 <meta property="og:keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %}{% if page.categories %}{{ page.categories }}{% endif %}{% if page.device %},{{ page.device }}{% endif %},{{ site.author }}" />
 <meta property="twitter:keywords" content="{% if page.keywords %}{{ page.keywords }},{% endif %}{% if page.categories %}{{ page.categories }}{% endif %}{% if page.device %},{{ page.device }}{% endif %},{{ site.author }}" />
 
-{% if page.icon %}
-<meta property="og:image" content="{{ site.baseurl }}{{ page.icon }}" />
-<meta property="twitter:image" content="{{ site.baseurl }}{{ page.icon }}" />
+{% if page.cover %}
+<meta property="og:image" content="{{ site.url }}/assets/images/{{ page.url }}/0.jpg" />
+<meta property="twitter:image" content="{{ site.url }}/assets/images/{{ page.url }}/0.jpg" />
+{% elsif page.icon %}
+<meta property="og:image" content="{{ site.url }}{{ page.icon }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ page.icon }}" />
 {% else %}
-<meta property="og:image" content="{{ site.baseurl }}{{ site.logo }}" />
-<meta property="twitter:image" content="{{ site.baseurl }}{{ site.logo }}" />
+<meta property="og:image" content="{{ site.url }}{{ site.logo }}" />
+<meta property="twitter:image" content="{{ site.url }}{{ site.logo }}" />
 {% endif %}
