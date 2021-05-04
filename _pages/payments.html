@@ -1,0 +1,81 @@
+---
+layout: page
+permalink: /payments/
+title: Payments
+description: Clients can use this page to pay for the services they have received from me.
+keywords: services, payment, freelancing, saif khan, saifkhichi96
+---
+
+<!-- Page Title and Description -->
+<section>
+  <p>
+    As an alternate to Freelancing websites which might charge processing fees, I let clients pay me here directly for services which they have received from me. The client would be informed of the total invoice amount through our regular channel of communication, and then they can complete their payment here.<br>
+    <br>
+    I also accept payemnts via <a href="https://www.paypal.com/paypalme/saifkhichi06" target="_blank">PayPal</a>.
+  </p>
+</section>
+
+<section class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined service-item"
+    data-checkout-mode="payment"
+    data-price-id="prod_JQHYX7rRz77CvQ">
+      <h2>Standard Tier 1</h2>
+      <p>One-Time Payment</p>
+    </div>
+  </div>
+</section>
+
+<div id="error-message"></div>
+
+<section>
+  <p>
+    If necessary, and as agreed beforehand, I would release any pending deliverables once the payment has been processed. Clients are adviced to keep a copy of their payment confirmation until then.
+  </p>
+</section>
+
+
+<!-- Stripe Payements -->
+<script>
+  // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
+  var PUBLISHABLE_KEY = 'pk_live_51ILGVWJkkoNLLj3Np9qG2oL496IHDTcuRbYW2lmIVSjP0xCv5eQnnWcnJmLaWpBePl9uXGCA6bKFOFSSAx0Y3khL005i3riBZx';
+  // Replace with the domain you want your users to be redirected back to after payment
+  var DOMAIN = location.href.replace(/[^/]*$/, '');
+
+  if (PUBLISHABLE_KEY === 'pk_test_Tr8olTkdFnnJVywwhNPHwnHK00HkHV4tnP') {
+    console.log(
+      'Replace the hardcoded publishable key with your own publishable key: https://dashboard.stripe.com/test/apikeys'
+    );
+  }
+
+  var stripe = Stripe(PUBLISHABLE_KEY);
+
+  // Handle any errors from Checkout
+  var handleResult = function (result) {
+    if (result.error) {
+      var displayError = document.getElementById('error-message');
+      displayError.textContent = result.error.message;
+    }
+  };
+
+  document.querySelectorAll('.mdc-layout-grid__cell').forEach(function (button) {
+    button.addEventListener('click', function (e) {
+      var mode = e.target.dataset.checkoutMode;
+      var priceId = e.target.dataset.priceId;
+      var items = [{ price: priceId, quantity: 1 }];
+
+      // Make the call to Stripe.js to redirect to the checkout page
+      // with the sku or plan ID.
+      stripe
+        .redirectToCheckout({
+          mode: mode,
+          lineItems: items,
+          successUrl:
+            DOMAIN + '?checkout=true&session_id={CHECKOUT_SESSION_ID}',
+          cancelUrl:
+            DOMAIN + '?checkout=false&session_id={CHECKOUT_SESSION_ID}',
+        })
+        .then(handleResult);
+    });
+  });
+</script>
