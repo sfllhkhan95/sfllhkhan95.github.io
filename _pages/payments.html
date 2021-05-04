@@ -188,9 +188,9 @@ keywords: services, payment, freelancing, saif khan, saifkhichi96
           mode: mode,
           lineItems: items,
           successUrl:
-            DOMAIN + 'payment?checkout=true&order=' + invoiceField.value + '&session_id={CHECKOUT_SESSION_ID}',
+            DOMAIN + '?checkout=true&order=' + invoiceField.value + '&session_id={CHECKOUT_SESSION_ID}',
           cancelUrl:
-            DOMAIN + 'payment?checkout=false&order=' + invoiceField.value + '&session_id={CHECKOUT_SESSION_ID}',
+            DOMAIN + '?checkout=false&order=' + invoiceField.value + '&session_id={CHECKOUT_SESSION_ID}',
         })
         .then(handleResult);
     });
