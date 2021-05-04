@@ -17,11 +17,16 @@ keywords: services, payment, freelancing, saif khan, saifkhichi96
 
 <section class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined service-item"
-    data-checkout-mode="payment"
-    data-price-id="prod_JQHYX7rRz77CvQ">
+    <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined service-item">
       <h2>Standard Tier 1</h2>
       <p>One-Time Payment</p>
+      <button class="mdc-button mdc-button--unelevated mdc-button--touch"
+      data-checkout-mode="payment"
+      data-price-id="prod_JQHYX7rRz77CvQ">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Select</span>
+        <span class="mdc-button__touch"></span>
+      </button>
     </div>
   </div>
 </section>
@@ -43,12 +48,6 @@ keywords: services, payment, freelancing, saif khan, saifkhichi96
   // Replace with the domain you want your users to be redirected back to after payment
   var DOMAIN = location.href.replace(/[^/]*$/, '');
 
-  if (PUBLISHABLE_KEY === 'pk_test_Tr8olTkdFnnJVywwhNPHwnHK00HkHV4tnP') {
-    console.log(
-      'Replace the hardcoded publishable key with your own publishable key: https://dashboard.stripe.com/test/apikeys'
-    );
-  }
-
   var stripe = Stripe(PUBLISHABLE_KEY);
 
   // Handle any errors from Checkout
@@ -59,7 +58,7 @@ keywords: services, payment, freelancing, saif khan, saifkhichi96
     }
   };
 
-  document.querySelectorAll('.mdc-layout-grid__cell').forEach(function (button) {
+  document.querySelectorAll('button').forEach(function (button) {
     button.addEventListener('click', function (e) {
       var mode = e.target.dataset.checkoutMode;
       var priceId = e.target.dataset.priceId;
