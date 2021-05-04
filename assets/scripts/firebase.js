@@ -23,5 +23,7 @@ $.getScript("https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js", function
     firebase.analytics();
   });
 
+  $.getScript("https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js");
+  $.getScript("https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js");
   $.getScript("https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js");
 });

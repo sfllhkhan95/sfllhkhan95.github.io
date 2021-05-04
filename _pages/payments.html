@@ -1,86 +1,185 @@
 ---
-layout: page
+layout: default
 permalink: /payments/
 title: Payments
 description: Clients can use this page to pay for the services they have received from me.
 keywords: services, payment, freelancing, saif khan, saifkhichi96
 ---
 
-<!-- Page Title and Description -->
-<section>
-  <p>
-    As an alternate to Freelancing websites which might charge processing fees, I let clients pay me here directly for services which they have received from me. The client would be informed of the total invoice amount through our regular channel of communication, and then they can complete their payment here.<br>
-    <br>
-    I also accept payemnts via <a href="https://www.paypal.com/paypalme/saifkhichi06" target="_blank">PayPal</a>.
-  </p>
-</section>
+<style>
+  form h2 {
+    text-transform: none;
+    font-size: 13pt;
+  }
 
-<section class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-card mdc-card--outlined service-item">
-      <h2>Standard Tier 1</h2>
-      <p>One-Time Payment</p>
-      <br>
-      <button class="mdc-button mdc-button--unelevated mdc-button--touch">
+  .mdc-text-field {
+    height: 36px !important;
+    border-radius: 8px;
+    background-color: #0001;
+  }
+
+  .mdc-text-field input {
+    height: 36px !important;
+    padding: 8px 0px;
+    caret-color: var(--mdc-theme-on-surface) !important;
+  }
+
+  .mdc-text-field input:focus {
+    border: 0;
+  }
+
+  .mdc-button:disabled {
+    background: var(--mdc-theme-overlay) !important;
+  }
+</style>
+
+<div class="col-md-8">
+  <section>
+    <p>
+      I accept card payments for my services here. If you have an invoice, you can pay it below.
+    </p>
+  </section>
+  <form class="mdc-card mdc-card--outlined" style="padding: 16px;">
+    <h2>Invoice #</h2>
+    <p>Enter the unique 10-digit reference number for the invoice you want to pay.</p>
+    <label class="mdc-text-field" id="invoice-field">
+      <span class="mdc-text-field__ripple"></span>
+      <input class="mdc-text-field__input" type="text" minlength="10" maxlength="10" pattern="\d{10}" required>
+      <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-touch-target-wrapper" style="margin-top: 8px;">
+      <button class="mdc-button mdc-button--unelevated" id="load-button">
         <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">Pay with EUR</span>
-        <span class="mdc-button__touch"
-          data-checkout-mode="payment"
-          data-price-id="price_1InRjZJkkoNLLj3NHITIm3yx">
-        </span>
-      </button>
-      <button class="mdc-button mdc-button--outlined mdc-button--touch">
-        <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">Pay with INR</span>
-        <span class="mdc-button__touch"
-          data-checkout-mode="payment"
-          data-price-id="price_1InQzTJkkoNLLj3N7FwfFMWI">
-        </span>
-      </button>
-      <button class="mdc-button mdc-button--outlined mdc-button--touch">
-        <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">Pay with USD</span>
-        <span class="mdc-button__touch"
-          data-checkout-mode="payment"
-          data-price-id="price_1InRjZJkkoNLLj3N5cSZXfey">
-        </span>
+        <span class="mdc-button__label">Get Details</span>
+        <span class="mdc-button__touch"></span>
       </button>
     </div>
-  </div>
-</section>
 
-<div id="error-message"></div>
+    <div class="mdc-card mdc-card--outlined" id="hidden" style="border: 0 !important;">
+      <br>
+      <h2>Customer Name</h2>
+      <label class="mdc-text-field" id="name-field">
+        <span class="mdc-text-field__ripple"></span>
+        <input class="mdc-text-field__input" type="text" disabled>
+        <span class="mdc-line-ripple"></span>
+      </label>
 
-<section>
-  <p>
-    If necessary, and as agreed beforehand, I would release any pending deliverables once the payment has been processed. Clients are adviced to keep a copy of their payment confirmation until then.
-  </p>
-</section>
+      <br>
+      <h2>Amount</h2>
+      <label class="mdc-text-field" id="amount-field">
+        <span class="mdc-text-field__ripple"></span>
+        <span id="currency"></span>
+        <input class="mdc-text-field__input" type="text" style="padding-left: 8px;" disabled>
+        <span class="mdc-line-ripple"></span>
+      </label>
 
+      <br>
+      <button class="mdc-button mdc-button--unelevated" id="pay-button">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Pay with Card</span>
+        <span class="mdc-button__touch"></span>
+      </button>
+    </div>
+  </form>
+
+  <div id="error-message"></div>
+</div>
+
+<div class="col-md-4">
+  <section>
+    <p>
+      If necessary, and as agreed beforehand, I would release any pending deliverables once the payment has been processed. Clients are adviced to keep a copy of their payment confirmation until then.<br>
+      <br>
+      I also accept payemnts via <a href="https://www.paypal.com/paypalme/saifkhichi06" target="_blank">PayPal</a>.
+    </p>
+  </section>
+</div>
 
 <!-- Stripe Payements -->
 <script src="https://js.stripe.com/v3/"></script>
+
+<!-- Form Handler -->
 <script>
-  // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
-  var PUBLISHABLE_KEY = 'pk_live_51ILGVWJkkoNLLj3Np9qG2oL496IHDTcuRbYW2lmIVSjP0xCv5eQnnWcnJmLaWpBePl9uXGCA6bKFOFSSAx0Y3khL005i3riBZx';
-  // Replace with the domain you want your users to be redirected back to after payment
-  var DOMAIN = location.href.replace(/[^/]*$/, '');
+  $('#invoice-field').focus();
+  // 7611236780
+  $('#hidden').hide();
+  $(function() {
+    // Get UI elements
+    const invoiceField = new mdc.textField.MDCTextField(document.getElementById('invoice-field'));
+    const nameField = new mdc.textField.MDCTextField(document.getElementById('name-field'));
+    const amountField = new mdc.textField.MDCTextField(document.getElementById('amount-field'));
+    const loadButton = $('#load-button')
+    const payButton = $('#pay-button')
 
-  var stripe = Stripe(PUBLISHABLE_KEY);
+    // Load invoice details
+    loadButton.on('click', function() {
+      const invoiceId = invoiceField.value.trim();
+      if (invoiceId.length != 10) {
+        invoiceField.valid = false;
+      } else {
+        loadButton.prop("disabled", true);
+        firebase.auth().signOut()
+        firebase.auth().signInAnonymously()
+          .then(() => {
+            firebase.database().ref('orders/' + invoiceId).get()
+              .then((snapshot) => {
+                firebase.auth().currentUser.delete();
+                const data = snapshot.val();
+                if (data != null) {
+                  nameField.value = data['customer'];
+                  amountField.value = data['amount'];
+                  $('#currency').text(data['currency'].toUpperCase());
 
-  // Handle any errors from Checkout
-  var handleResult = function (result) {
-    if (result.error) {
-      var displayError = document.getElementById('error-message');
-      displayError.textContent = result.error.message;
-    }
-  };
+                  $('#hidden').show()
+                  $('#invoice-field input').prop("disabled", true);
+                  payButton.prop("disabled", false);
+                  loadButton.hide()
+                } else {
+                  loadButton.prop("disabled", false);
+                  invoiceField.valid = false;
+                }
+              });
+          });
+      }
+    });
 
-  document.querySelectorAll('button').forEach(function (button) {
-    button.addEventListener('click', function (e) {
-      var mode = e.target.dataset.checkoutMode;
-      var priceId = e.target.dataset.priceId;
-      var items = [{ price: priceId, quantity: 1 }];
+    // Open a secure payment page
+    payButton.on('click', function() {
+      var PUBLISHABLE_KEY = 'pk_live_51ILGVWJkkoNLLj3Np9qG2oL496IHDTcuRbYW2lmIVSjP0xCv5eQnnWcnJmLaWpBePl9uXGCA6bKFOFSSAx0Y3khL005i3riBZx';
+
+      // Replace with the domain you want your users to be redirected back to after payment
+      var DOMAIN = location.href.replace(/[^/]*$/, '');
+
+      var stripe = Stripe(PUBLISHABLE_KEY);
+
+      // Handle any errors from Checkout
+      var handleResult = function (result) {
+        if (result.error) {
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      };
+
+      const invoiceField = new mdc.textField.MDCTextField(document.getElementById('invoice-field'));
+      const amountField = new mdc.textField.MDCTextField(document.getElementById('amount-field'));
+
+      var mode = "payment";
+      var priceId = "price_1InXGeJkkoNLLj3NROUmxgtD"
+      switch ($("#currency").text()) {
+        case "PKR":
+          priceId = "price_1InXGeJkkoNLLj3No38ueQ2a";
+          break;
+        case "EUR":
+          priceId = "price_1InXGeJkkoNLLj3NpcXPFn69";
+          break;
+        case "INR":
+          priceId = "price_1InXGeJkkoNLLj3NWZarWEXL";
+          break;
+        case "USD":
+          priceId = "price_1InXGeJkkoNLLj3NROUmxgtD";
+          break;
+      }
+      var items = [{ price: priceId, quantity: parseInt(amountField.value) }];
 
       // Make the call to Stripe.js to redirect to the checkout page
       // with the sku or plan ID.
@@ -89,9 +188,9 @@ keywords: services, payment, freelancing, saif khan, saifkhichi96
           mode: mode,
           lineItems: items,
           successUrl:
-            DOMAIN + '?checkout=true&session_id={CHECKOUT_SESSION_ID}',
+            DOMAIN + 'payment?checkout=true&order=' + invoiceField.value + '&session_id={CHECKOUT_SESSION_ID}',
           cancelUrl:
-            DOMAIN + '?checkout=false&session_id={CHECKOUT_SESSION_ID}',
+            DOMAIN + 'payment?checkout=false&order=' + invoiceField.value + '&session_id={CHECKOUT_SESSION_ID}',
         })
         .then(handleResult);
     });
