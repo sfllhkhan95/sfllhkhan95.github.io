@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.saifkhichi.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.saifkhichi.com//" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-07-06T06:50:39+00:00</updated><id>http://www.saifkhichi.com//feed.xml</id><title type="html">Saif Khan</title><subtitle>Versatile software engineer skilled in &lt;b&gt;mobile development&lt;/b&gt;, &lt;b&gt;machine learning&lt;/b&gt;, and &lt;b&gt;computer vision&lt;/b&gt;.</subtitle><author><name>Muhammad Saif Ullah Khan</name></author><entry><title type="html">How to Create a Splash Screen in Android</title><link href="http://www.saifkhichi.com//blog/create-splash-screen-android" rel="alternate" type="text/html" title="How to Create a Splash Screen in Android" /><published>2021-02-24T00:00:00+00:00</published><updated>2021-02-24T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/create-splash-screen-android</id><content type="html" xml:base="http://www.saifkhichi.com//blog/create-splash-screen-android">&lt;p&gt;In this blog post, I will show you how to quickly create a custom splash screen for your Android apps. But before we do that, we need to know what a splash screen, or a launch screen, is and why we need it. To quote Google’s &lt;a href=&quot;https://material.io/design/communication/launch-screen.html&quot;&gt;Material Design&lt;/a&gt; guidelines:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The launch screen is a user’s first experience of your app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;source-code&quot;&gt;Source Code&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/saifkhichi96/653778bf0332b1bf6a888a171dbb190b.js?file=styles.xml&quot;&gt;&lt;/script&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Code" /><summary type="html">In this blog post, I will show you how to quickly create a custom splash screen for your Android apps. But before we do that, we need to know what a splash screen, or a launch screen, is and why we need it. To quote Google’s Material Design guidelines: The launch screen is a user’s first experience of your app.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/icons/512.png" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/icons/512.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Coronavirus Economics: Pakistan Responds by Going Green</title><link href="http://www.saifkhichi.com//blog/coronavirus-economics-pakistan-responds-by-going-green" rel="alternate" type="text/html" title="Coronavirus Economics: Pakistan Responds by Going Green" /><published>2020-05-01T00:00:00+00:00</published><updated>2020-05-01T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/coronavirus-economics-pakistan-responds-by-going-green</id><content type="html" xml:base="http://www.saifkhichi.com//blog/coronavirus-economics-pakistan-responds-by-going-green">&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Earlier this week, Prime Minister Imran Khan's government approved the 'Green Stimulus' package as a part of its ongoing efforts to increase Pakistan's green cover.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Pakistan is one the six countries expected to be &lt;a href=&quot;https://www.un.org.pk/environment-day/&quot;&gt;most affected by global warming&lt;/a&gt;, experiencing more than 150 extreme weather events in the last decade. In August 2017, Pakistan became the &lt;a href=&quot;https://www.weforum.org/agenda/2018/07/pakistan-s-billion-tree-tsunami-is-astonishing/&quot;&gt;first country in the world to complete its &lt;em&gt;Bonn Challenge&lt;/em&gt; pledge of planting one billion trees&lt;/a&gt;. From 2014 to 2017, about 350,000 hectares of trees were added by plantation and natural regeneration in the northern Khyber Pakhtunkhwa province governed by Imran Khan's party. When Khan ascended to the Prime Minister's office in August 2018, he pledged to plant a further 10 billion trees all over the country.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Dubbed the 10 Billion Tree Tsunami, the &lt;a href=&quot;https://news.trust.org/item/20190321124827-fk3qq&quot;&gt;ambitious five-year project has always been multi-pronged&lt;/a&gt;. It addresses the adverse effects of climate change including rising temperatures, floods, droughts and extreme weathers. At the same time, it also supports the economy by creating thousands of new jobs.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A quarter of Pakistan's population lives below the national poverty line, with &lt;a href=&quot;https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2019&amp;amp;locations=PK&quot;&gt;unemployment rate in 2019 already standing at 4.5%&lt;/a&gt; before coronavirus forced the country to shutdown. Pakistan has been walking a tightrope these past few months, with its lower and lower-middle classes faced with extreme choices of &quot;&lt;a href=&quot;https://nation.com.pk/04-Apr-2020/pakistan-faced-with-dilemma-of-starvation-and-lockdown-pm-imran-khan&quot;&gt;death by either the virus or hunger&lt;/a&gt;&quot;, as the Prime Minister put it. A recent report by the Pakistan Institute of Development Economics states that the COVID-19 lockdown could force&amp;nbsp;&lt;a rel=&quot;noreferrer noopener&quot; href=&quot;https://www.pide.org.pk/pdf/PIDE-COVID-Bulletin-13.pdf&quot; target=&quot;_blank&quot;&gt;up to 19 million people getting laid off&lt;/a&gt;. For thousands of people who have already lost their jobs to the lockdown, the only options are to either go hungry or resort to begging.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Under the &lt;a href=&quot;https://dailytimes.com.pk/604285/pm-okays-green-stimulus-package-to-extend-green-cover-create-jobs/&quot;&gt;new Green Stimulus package&lt;/a&gt;, initially aiming to create 65,000 job opportunities, unemployed day laborers are now being given jobs as &quot;jungle workers&quot;, planting saplings under the 10 Billion Tree Tsunami programme. The Ministry of Climate Change is also working on a plan to engage the international community under the &lt;a href=&quot;http://www.undp.org/content/dam/sdfinance/doc/Debt%20for%20Nature%20Swaps%20_%20UNDP.pdf&quot;&gt;Debt for Nature Swap&lt;/a&gt; programme to convert part of the country’s debt into grant for greater environment protection activities. This is an ingenious idea which effectively uses funds allocated for fighting the current global crisis by directly supporting the worst-affected families, while at the same time preparing for the next global crisis: climate change.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Something tells me that &lt;a href=&quot;https://www.unicef.org/coronavirus/join-greta&quot;&gt;Greta Thunberg will be proud&lt;/a&gt; of Pakistan.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Trending" /><summary type="html">Earlier this week, Prime Minister Imran Khan's government approved the 'Green Stimulus' package as a part of its ongoing efforts to increase Pakistan's green cover.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/coronavirus-economics-pakistan-responds-by-going-green/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/coronavirus-economics-pakistan-responds-by-going-green/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Il Duce and the Forgotten Tramp</title><link href="http://www.saifkhichi.com//blog/il-duce-and-the-forgotten-tramp" rel="alternate" type="text/html" title="Il Duce and the Forgotten Tramp" /><published>2020-04-15T00:00:00+00:00</published><updated>2020-04-15T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/il-duce-and-the-forgotten-tramp</id><content type="html" xml:base="http://www.saifkhichi.com//blog/il-duce-and-the-forgotten-tramp">&lt;!-- wp:quote {&quot;className&quot;:&quot;is-style-default&quot;} --&gt;
+&lt;blockquote class=&quot;wp-block-quote is-style-default&quot;&gt;&lt;p&gt;This story is based on true events of a tactical deception operation codenamed &lt;a href=&quot;https://www.bbc.com/news/magazine-11887115&quot;&gt;Mincemeat&lt;/a&gt; carried out by the British forces against Nazi Germany during World War II.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;!-- /wp:quote --&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;} --&gt;
+&lt;h2 class=&quot;has-text-align-center&quot;&gt;Part 1&lt;br /&gt;&lt;strong&gt;Discovery&lt;/strong&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It was a pleasant spring day in the year 1943. The sun shone brightly over the port city of Huelva in southwestern Spain. While the month of April was nearing its end, the blazing war all around remained incessant as ever. The budding flowers on the trees had blossomed over the past few weeks, and as &lt;a href=&quot;https://books.google.de/books?id=991oOoyimssC&amp;amp;lpg=PP1&amp;amp;dq=isbn%3A9781408809211&amp;amp;pg=PP1#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;José&lt;/a&gt; walked towards the beach, he could almost forget about the fighting which had now spread across three continents.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The salty ocean smell rode the wind blowing in from the Gulf of Cádiz. Warm weather had brought hordes of tuna and marlin out into the shallow waters, indifferent to the widespread violence in the human world. José was happy about it, as he depended on the fish for his livelihood. It was only nine in the morning. He hoped to make good use of the day and catch a decent number of fish.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As he walked towards his usual spot, he started as he spied something in his periphery lying just out of the water a little distance away. He was too far away to make out what it was, but it looked too big to be the fish that he knew swam in these waters. The beach was deserted with not many people about at this hour. Curious, he redirected his feet to investigate what it was. As he drew nearer, his feet ground to a sudden halt when he realised it was a &lt;em&gt;who&lt;/em&gt; and not a &lt;em&gt;what&lt;/em&gt;. Heart pounding, he broke into a run and skidded to a halt right next to a face-down corpse lying in the sand. It must have washed ashore sometime during the night, José thought.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The putrid stench of decaying flesh mingled with the ocean breeze. The body had probably spent several days in water before floating. The reality of the war which had remained elusive to José because of his country's &lt;a href=&quot;https://books.google.de/books?id=Yp8PflGFt0wC&amp;amp;lpg=PP1&amp;amp;pg=PP1#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;nominal neutrality&lt;/a&gt; suddenly came crashing down on him. In midst of one of the most brutal wars the world has ever seen, dead men turning up on random shores was probably not a big deal, he told himself.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Trying not to throw up, José cautiously extended a hand to turn the body over. His heart suddenly leapt in his chest when he noticed what the dead man was wearing. If he was not mistaken, it was the uniform of the British navy. Not caring about the unbearable smell or the maggots crawling out of the man's face anymore, José dug into the pockets of his trench coat to find something which will confirm his suspicion.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;William Martin, born 1907 in Cardiff, Wales. Captain (Acting Major) of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Royal_Marines&quot;&gt;Royal Marines&lt;/a&gt; of the United Kingdom.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;José could clearly read the name and rank on the laminated identity card he found inside the wallet in one of the coat's inner pockets. It was then that he saw a delicate briefcase lying just next to the dead Captain, a &lt;a href=&quot;https://en.wikipedia.org/wiki/Operation_Mincemeat#Developing_the_plan;_the_corpse's_new_identity&quot;&gt;leather-covered chain&lt;/a&gt; attaching it to his belt. Weak with excitement, he sat back in the sand and stared at his discovery in wonder. He had a feeling that he had caught the biggest fish of his life.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;} --&gt;
+&lt;h2 class=&quot;has-text-align-center&quot; id=&quot;block-d40aacb5-5a8e-45dd-a7eb-0529c81bd9fc&quot;&gt;Part 2&lt;br /&gt;&lt;strong&gt;Excitement&lt;/strong&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Adolf Clauss was pacing angrily in a dimly lit bedroom. Earlier today, he was jarred out of reading the morning copy of &lt;em&gt;El Nuevo Dia&lt;/em&gt; by the harsh telephone tone. It was Santiago on other side of the line. Santiago was a low-ranking officer in Spanish navy, and a German sympathiser. Clauss had met him when &lt;em&gt;&lt;a href=&quot;https://spartacus-educational.com/GERabwehr.htm&quot;&gt;Abwehr&lt;/a&gt;&lt;/em&gt; had first stationed him in Huelva, and Santiago had immediately offered to be his eyes and ears inside the Spanish navy headquarters.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Clauss could barely contain his excitement by the time Santiago had finished telling him about how a dead officer of the British navy had been found by a local fisherman yesterday. His name was Captain Martin, and the Spaniards had concluded that he was a diplomatic courier meant to convey unofficial correspondence between some Allied officials, and the prospect of finding something useful in these documents which Germany could use to its advantage made Clauss giddy. An autopsy carried out in presence of the &lt;a href=&quot;https://books.google.de/books?id=5z3o4ZovHBwC&amp;amp;pg=PT327&amp;amp;lpg=PT327&amp;amp;dq=Francis+Haselden+british+vice-consul&amp;amp;source=bl&amp;amp;ots=EijX09_fMK&amp;amp;sig=ACfU3U3P3RZfbF-94jvUOLGdzpFUz-V9jQ&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ved=2ahUKEwiAhb2R7OzoAhVMUhUIHZUQBF8Q6AEwAnoECAsQKQ#v=onepage&amp;amp;q=Francis%20Haselden%20british%20vice-consul&amp;amp;f=false&quot;&gt;British vice-consul&lt;/a&gt; had confirmed the cause of death as &quot;asphyxiation through immersion in the sea&quot;. He had immediately talked to the commander of the Spanish navy in Huelva, soliciting a quick look at the documents. But his request had been unceremoniously denied and another call from Santiago an hour ago had informed him that the briefcase found with the late Captain was being forwarded to Madrid where Spanish officials would decide what to do with it. Clauss knew that Spain was not a direct player in the war, and he did not want to miss out on the opportunity which had presented itself before them just so Spain could maintain the facade of its neutrality.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Knowing he didn't have any chance to convince the Spaniards otherwise, Clauss had already dispatched a message ahead to Kühlenthal,&amp;nbsp;his counterpart in Madrid and a fellow &lt;em&gt;Abwehr&lt;/em&gt; agent. Now, all he could do was wait. He abruptly ceased his relentless pacing and sat down on his bed. It was going to be long night.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&quot;wp-block-separator&quot; /&gt;
+
+&lt;!-- /wp:separator --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A week had passed. Clauss had finally received a message from Kühlenthal and he was currently seated behind the large mahogany desk in his office, decrypting the encoded letter, a column of sunlight streaming in from the large windows. It had rained during the night, first time this week, and the window was thrown open to let in the cool, damp air. He heaved a sigh as he finished decoding the message, and sat back in his chair, pushing his reading glasses up his nose. The corners of his mouth twitched, and then his mouth broke into a wide smile as he read the letter. Oh, this was &lt;em&gt;toll&lt;/em&gt;!&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;When Kühlenthal had not been able to persuade the Spanish authorities to hand over the documents, he had enlisted the help of Admiral Canaris, the head of &lt;em&gt;Abwehr&lt;strong&gt; &lt;/strong&gt;&lt;/em&gt;himself. Upon Canaris's insistence, the Spaniards had finally relented and even outdid themselves by coming up with a method to read the contents of the sealed correspondence without breaking the wax seal. And what the documents had revealed proved that once again, Führer was right in his suspicions and should have gone with his gut instead of agreeing to Il Duce.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The Allied forces, fresh from their victory of North Africa, were heading towards Europe with two possible targets. The Führer was concerned that the Allies would invade the Balkans as it was the source of &lt;a href=&quot;https://ww2-weapons.com/german-arms-production/&quot;&gt;German war industry&lt;/a&gt;. But Il Duce had managed to convince him that Sicily was the more likely target with its strategic location on the Mediterranean Sea. Consequently, the Führer had directed his forces to pour reinforcements into the Italian island. This was a mistake, as the contents of the late &lt;a href=&quot;https://www.newyorker.com/magazine/2010/05/10/pandoras-briefcase&quot;&gt;Captain Martin's briefcase&lt;/a&gt; had revealed. The Allies were feinting in Sicily. The real goal had always been to go into Greece and the Balkans, and trap the German forces between the British and American invaders and the Soviets.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Admiral Canaris had immediately set off from Madrid to personally deliver the documents to the Führer in Germany, Kühlenthal wrote in his letter. Clauss closed his eyes and let out a snort of laughter. &lt;em&gt;They thought they could fool the Führer! &lt;/em&gt;He was really looking forward to see the look on the Allied forces' faces when they realise their ploy had backfired.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&quot;wp-block-separator&quot; /&gt;
+
+&lt;!-- /wp:separator --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;He should never have listened to Mussolini, Hitler thought with a self-satisfied grin as he read the documents Admiral Canaris had brought him. Well, there was still time to change things. Mussolini can fend for himself.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The very next week, German reinforcements had started pulling back from Sicily on Hitler's orders, as they relocated to Greece, Sardinia and Corsica. Within a few weeks, his forces were all set to defend the Allied invasion of the Balkans.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;} --&gt;
+&lt;h2 class=&quot;has-text-align-center&quot; id=&quot;block-d40aacb5-5a8e-45dd-a7eb-0529c81bd9fc&quot;&gt;Part 3&lt;br /&gt;&lt;strong&gt;Realisation&lt;/strong&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:quote --&gt;
+&lt;blockquote class=&quot;wp-block-quote&quot;&gt;&lt;p&gt;Mincemeat swallowed rod, line and sinker by the right people and from the best information they look like acting on it.&lt;/p&gt;&lt;cite&gt;British &lt;a href=&quot;https://www.britannica.com/biography/Winston-Churchill&quot;&gt;Prime Minister Churchill&lt;/a&gt; was informed of the operation's success&lt;/cite&gt;&lt;/blockquote&gt;
+&lt;!-- /wp:quote --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As July started, the last of Nazi German reinforcements had joined their fellow soldiers in the Balkans. Even as the Allied forces finally mounted their attack on Sicily, dozens of air jets carrying German forces left Sicily to reinforce Sardinia. Hitler was convinced this was the feint he had read about in the documents his intelligence has unearthed. He kept his armies on a tether in anticipation of the attack he was sure will come. But it never did.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The Allies had always intended to &lt;a href=&quot;https://www.historyplace.com/worldwar2/defeat/italy-invaded.htm&quot;&gt;invade Sicily&lt;/a&gt;. And with all the reinforcements gone, Sicily was vulnerable. By the time Hitler realised his mistakes, there was nothing he could do. There was no Captain (Acting Major) William Martin of the Royal Marines. It had all been a part of an elaborate scheme playing on Hitler's preconceived notions. The British had dressed up a &lt;a href=&quot;http://omgfacts.com/the-homeless-man-who-helped-win-wwii/&quot;&gt;homeless &quot;ne'er-do-well&quot; man&lt;/a&gt; by the name of Glyndwr Michael, who had died from ingesting rat poison, for the part. The Germans had fallen for the ruse with almost puerile ease.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Left to fight for himself, it didn't take long to defeat Il Duce Benito Mussolini. As the battle for Sicily went horribly wrong for the Axis, Mussolini was removed from power, imprisoned and two years later, &lt;a href=&quot;https://www.history.com/news/mussolinis-final-hours-70-years-ago&quot;&gt;executed by a firing squad&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;And thus, the forgotten tramp from Wales became a part of the chain which led to the eventual downfall of Il Duce, or &quot;the Leader&quot; of Italy.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Ramblings" /><summary type="html">This story is based on true events of a tactical deception operation codenamed Mincemeat carried out by the British forces against Nazi Germany during World War II.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/il-duce-and-the-forgotten-tramp/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/il-duce-and-the-forgotten-tramp/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A Simple Environmental Lesson I Learned in Hunza Valley</title><link href="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza" rel="alternate" type="text/html" title="A Simple Environmental Lesson I Learned in Hunza Valley" /><published>2020-02-15T00:00:00+00:00</published><updated>2020-02-15T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/environmental-lesson-from-hunza</id><content type="html" xml:base="http://www.saifkhichi.com//blog/environmental-lesson-from-hunza">&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;17 August 2018, around noon.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A few kilometres down the road from Sost in Upper Hunza, Gilgit-Baltistan, we are on our way to Khunjerab Pass. As we reach the region of Khunjerab National Park, a smiling, uniformed official, let's call him the Smiling Guy, standing next to an unassuming makeshift hut by the roadside signals us to stop.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;I assume it is some kind of check post or a toll plaza, but something feels different. Our car pulls up near the Smiling Guy. Windows are rolled down. He peers into the window I'm sitting near and greets us. Before we can ask what is going on, he produces a plastic bag from somewhere and hands it over. I glance down at the bag which I am holding now. I can just make out the words 'recyclable plastic' at the bottom of the bag. I look back up.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&quot;&lt;em&gt;If you eat anything or want to get rid of any wrappers or stuff while you are up there, please put them in this bag and hand it over back to us on your way back&lt;/em&gt;&quot;, the Smiling Guy explains.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Interesting! I nod slowly, thinking.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&quot;&lt;em&gt;We dispose them off in an environment friendly way&lt;/em&gt;&quot;, he finishes before retreating. Windows are rolled back up. We start moving again. I am impressed.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Fast forward a couple of hours. We are on our way back to Karimabad where we had been staying. We have handed back the trash bags from earlier. I have more bags lined up to collect any further garbage.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We are traveling in two cars. I had been trying to enforce a garbage-in-bag-until-I-find-a-trashcan policy in our car even before we met Smiling Guy, but with little success. Since then, I had redoubled my efforts and expanded them to the second car too, asking them not to throw stuff on roadsides or out of car windows. There was absolute policy compliance in our car. The memory of the Smiling Guy was still fresh.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:jetpack/layout-grid {&quot;column1DesktopSpan&quot;:9,&quot;column1TabletSpan&quot;:5,&quot;column1MobileSpan&quot;:4,&quot;column2DesktopSpan&quot;:3,&quot;column2TabletSpan&quot;:3,&quot;column2MobileSpan&quot;:4,&quot;column3DesktopOffset&quot;:21,&quot;column3TabletOffset&quot;:6,&quot;column3MobileOffset&quot;:2,&quot;className&quot;:&quot;column1-desktop-grid__span-9 column1-desktop-grid__row-1 column2-desktop-grid__span-3 column2-desktop-grid__start-10 column2-desktop-grid__row-1 column1-tablet-grid__span-5 column1-tablet-grid__row-1 column2-tablet-grid__span-3 column2-tablet-grid__start-6 column2-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1 column2-mobile-grid__span-4 column2-mobile-grid__row-2&quot;} --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-9 column1-desktop-grid__row-1 column2-desktop-grid__span-3 column2-desktop-grid__start-10 column2-desktop-grid__row-1 column1-tablet-grid__span-5 column1-tablet-grid__row-1 column2-tablet-grid__span-3 column2-tablet-grid__start-6 column2-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1 column2-mobile-grid__span-4 column2-mobile-grid__row-2&quot;&gt;&lt;!-- wp:jetpack/layout-grid-column --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none&quot;&gt;&lt;!-- wp:image {&quot;id&quot;:306,&quot;sizeSlug&quot;:&quot;large&quot;} --&gt;
+&lt;figure class=&quot;wp-block-image size-large&quot;&gt;&lt;img src=&quot;/assets/images/blog/environmental-lesson-from-hunza/1.jpg&quot; alt=&quot;&quot; class=&quot;wp-image-306&quot; /&gt;&lt;figcaption&gt;Somewhere off the road between Attabad Lake and Khunjerab National Park in Hunza Valley.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;!-- /wp:jetpack/layout-grid-column --&gt;
+
+&lt;!-- wp:jetpack/layout-grid-column --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none&quot;&gt;&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;So yeah, we were on our way back...&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It is now past midday. The sun has gone down a little. Weather is great. It is pretty outside. We stop by a roadside to take a break.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid-column --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We are surrounded by green and golden fields on every side, with bare mountains encircling them. All of us are milling about, capturing photos, talking or just taking it all in.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;I spy one guy, let's call him the Garbage Guy, from the second car taking out the trash bag in their car and dumping it by the roadside. I am standing at some distance when this happens, and I yell to get his attention. Then I ask him to put the trash back in the car. Our next stop, last one before home, is Attabad Lake. We will be there soon. We can dispose the garbage in the bins near the lake.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The Garbage Guy takes the bag back from roadside. I go back to my wandering around, satisfied that all is well now. But it isn't. The Garbage Guy just takes his trash a bit further off the road where I cannot see him, and leaves it there.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;But other people can.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Two local men are walking past on opposite side of the road. One of them, who looks my own age, let's call him Mr. Clean, spots Garbage Guy playing dirty. He cuts across the empty road, making a beeline for the Garbage Guy. This gets my attention, and I realise my earlier request had been ignored. Mr. Clean apparently tells the Garbage Guy to not litter as I watch from afar. This time, I keep watching until the trash is back inside the car. Mr. Clean thanks Garbage Guy and walks away.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Again, I am impressed. My respect for the people of Hunza just skyrocketed. And now, I understand something.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The town of Karimabad, and all other towns on way up to Khunjerab Pass, and the roadsides elsewhere, they always looked much too clean when compared to other tourist hotspots such as the Galiyat or Lake Saif al-Malook. I had always wondered, but now I realised why.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:jetpack/layout-grid {&quot;column1DesktopSpan&quot;:10,&quot;column1DesktopOffset&quot;:1,&quot;column1TabletSpan&quot;:8,&quot;column1MobileSpan&quot;:4,&quot;column2DesktopOffset&quot;:5,&quot;className&quot;:&quot;column1-desktop-grid__span-10 column1-desktop-grid__start-2 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1&quot;} --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid alignfull column1-desktop-grid__span-10 column1-desktop-grid__start-2 column1-desktop-grid__row-1 column1-tablet-grid__span-8 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1&quot;&gt;&lt;!-- wp:jetpack/layout-grid-column --&gt;
+&lt;div class=&quot;wp-block-jetpack-layout-grid-column wp-block-jetpack-layout-grid__padding-none&quot;&gt;&lt;!-- wp:image {&quot;id&quot;:305,&quot;sizeSlug&quot;:&quot;large&quot;} --&gt;
+&lt;figure class=&quot;wp-block-image size-large&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/assets/images/blog/environmental-lesson-from-hunza/2.jpg&quot; alt=&quot;&quot; class=&quot;wp-image-305&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+&lt;br /&gt;
+
+&lt;!-- wp:heading {&quot;textAlign&quot;:&quot;center&quot;,&quot;className&quot;:&quot;margin-top-half entry-title&quot;} --&gt;
+&lt;h2 class=&quot;callout&quot;&gt;It all boils down to one word: Responsibility&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid-column --&gt;&lt;/div&gt;
+&lt;!-- /wp:jetpack/layout-grid --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The local people take it upon themselves to keep their surroundings clean. Instead of erecting billboards asking tourists not to litter, the people of Hunza take the lead. And the visitors have no choice but to fall in line.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This is what we need to do in our own cities. Instead of reverting to old habits as soon as we re-enter our natural habitats, we need to make some effort. We need to take charge. All of us!&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Ramblings" /><summary type="html">17 August 2018, around noon.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/environmental-lesson-from-hunza/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/environmental-lesson-from-hunza/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Burial Suit That Turns You Into Mushrooms</title><link href="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms" rel="alternate" type="text/html" title="Burial Suit That Turns You Into Mushrooms" /><published>2020-01-25T00:00:00+00:00</published><updated>2020-01-25T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms</id><content type="html" xml:base="http://www.saifkhichi.com//blog/burial-suit-that-turns-you-into-mushrooms">&lt;p&gt;&lt;strong&gt;With Infinity Burial Suit by Jae Rhim Lee, now you can embark on your next great adventure as a mushroom!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Death, an inevitable truth that no matter how we choose to overlook, is going to catch up to us sooner or later. Every individual, no matter what their religious beliefs and opinion about life after death, has to go on, leaving behind fond (or otherwise) memories for their loved ones. But memories are not the only thing that stay long after we are gone. Among other impressions, we leave behind our dead bodies, which our loved ones would hopefully want to dispose of in a respectable fashion instead of just letting them be where they may. Different cultures adopt different means for disposal of the dead, ranging from the most common traditional burial to increasingly popular cremation. Other techniques including &lt;a href=&quot;http://www.mylearning.org/a-step-by-step-guide-to-egyptian-mummification/p-1681/&quot;&gt;mummification&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Plastination&quot;&gt;plastination&lt;/a&gt;, and &lt;a href=&quot;http://www.cryonics.org/&quot;&gt;cryonics&lt;/a&gt; have been (and are) used for preservation of bodies for long after death.&lt;/p&gt;
+
+&lt;p&gt;From an environmentalist’s perspective, the choice of how you have your dead body dealt with may be the determining factor of how greener or not an impression you make on Earth’s environment. No matter how cautious you’ve been in life about hygiene, and how you have recycled and reused resources to minimize waste and keep the planet clean, you could still undo much of your effort in death. Much as death, it is also a fact that human body is full of toxins. And the choice of how this toxic wonderland, that your body is, is disposed of matters!&lt;/p&gt;
+
+&lt;h2 id=&quot;burial-vs-cremation-debate&quot;&gt;Burial vs. Cremation Debate&lt;/h2&gt;
+&lt;p&gt;Neil Young, a Canadian musician in one of his songs wrote, “It’s better to burn out than to fade away”, a line which gained fame partly due to being quoted in &lt;a href=&quot;http://kurtcobainssuicidenote.com/&quot;&gt;Kurt Cobain’s suicide note&lt;/a&gt;. While maybe not what Young may have originally intended, this infamous line has become part of the burial vs. cremation debate and is occasionally used in defense of cremation. But for many environmentalists who think natural way of decomposing into compost is a better way to go, it is actually better to fade away than to burn out. The bitter fact though is, neither burial nor cremation is the best way to go, each having its own effect on the already fragile environment of our home planet.&lt;/p&gt;
+
+&lt;p&gt;Cremation, which needs huge amount of energy to fuel the combustion, contributes to the greenhouse effect. It also causes mercury pollution and global warming. This, however, does not automatically mean that burial is any better. The dead bodies are pumped with embalming chemicals such as formaldehydes, which along with other toxins in the body, enter into the ground if burial is the preferred method of disposal. In fact, most cemeteries around the world have high levels of arsenic pollutants which leak into water table and poison the ground water.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-better-proposal--the-infinity-burial&quot;&gt;A Better Proposal – The Infinity Burial&lt;/h2&gt;
+&lt;p&gt;Jae Rhim Lee, an artist and a TED fellow, came up with the idea of using the potential of fungus to consume the industrial toxins in deceased bodies and break them down into fundamental nutrients before releasing them back to soil to help combat pollution. To achieve this end, Lee has been working on the Infinity Burial Project for the past couple of years which has conceived what is essentially a jumpsuit that you clothe the deceased in before burial, and which turns into mushrooms that ‘eat’ the body.&lt;/p&gt;
+
+&lt;p&gt;Mushrooms are known as one of the &lt;a href=&quot;http://discovermagazine.com/2013/julyaug/13-mushrooms-clean-up-oil-spills-nuclear-meltdowns-and-human-health&quot;&gt;world’s greatest decomposers&lt;/a&gt;. According to mycologist Paul Stamets, fungi can clean up everything from oil spills to nuclear meltdowns. He thinks mushrooms can come close to saving the planet. Jae Rhim Lee, capitalizing on what was already known about mushrooms’ decomposing prowess, took it upon herself to engineer a breed that would feed on dead body cells. During development of what she called the Infinity Mushroom, she used her own nail clippings, hair, blood, and skin to teach the mushrooms to recognize and consume her body tissue, with the aim of breaking down industrial waste stored in her body. This led to her, along with her project partner Mike Ma, engineering what they call the Infinity Burial Suit. It is a jumpsuit embroidered with threads of these specifically engineered mushroom spores. The deceased is buried in this suit which remediates body toxins and helps break down the body. The mushroom spores in the embroidery ‘consume’ the dead cells and sprout into mushrooms.&lt;/p&gt;
+
+&lt;p&gt;The idea at first sounds creepy, for indeed we expect to eat our food, and not the other way around. Something which Lee pointed out in her 2011 &lt;a href=&quot;https://www.ted.com/talks/jae_rhim_lee?language=en&quot;&gt;TED Talk&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“We want to eat–not be eaten–by our food, right? But as I watch the mushrooms grow and digest my body, I imagine the Infinity Mushroom as a symbol of a new way of thinking about death, and the relationship between my body and the environment.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Expecting to start shipping this summer, Lee’s company &lt;a href=&quot;http://www.coeio.com/&quot;&gt;Coeio&lt;/a&gt; offers the ultimate green funeral for both people and pets in form of Infinity Burial Suit and Infinity Burial Pod respectively. Dennis White, a 63-year-old suffering from a rare neurological disease, is expected to become the first person to be buried in the mushroom suit (see the documentary ‘&lt;a href=&quot;https://vimeo.com/145882693&quot;&gt;Suiting Dennis&lt;/a&gt;’ for his complete story).&lt;/p&gt;
+
+&lt;p&gt;The company is now offering early access to the Infinite Burial Suit and is getting names for the &lt;a href=&quot;http://www.coeio.com/#signup&quot;&gt;waiting list&lt;/a&gt;.&lt;/p&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Tech" /><summary type="html">With Infinity Burial Suit by Jae Rhim Lee, now you can embark on your next great adventure as a mushroom!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/burial-suit-that-turns-you-into-mushrooms/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/burial-suit-that-turns-you-into-mushrooms/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Atif Mian and the Religious Intolerance in Pakistan</title><link href="http://www.saifkhichi.com//blog/atif-main-and-an-intolerant-pakistan" rel="alternate" type="text/html" title="Atif Mian and the Religious Intolerance in Pakistan" /><published>2019-12-15T00:00:00+00:00</published><updated>2019-12-15T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/atif-main-and-an-intolerant-pakistan</id><content type="html" xml:base="http://www.saifkhichi.com//blog/atif-main-and-an-intolerant-pakistan">&lt;p&gt;Early into his new office, Prime Minister Imran Khan’s administration nominated Atif Mian for a post in the newly formed Economic Advisory Council (EAC) to assist the nearly-bankrupt government on issues of finance and economics. A few days later, the whole country had erupted into protests fueled by the far-right religious and political parties.&lt;/p&gt;
+
+&lt;h2 id=&quot;who-is-atif-mian&quot;&gt;Who is Atif Mian&lt;/h2&gt;
+
+&lt;p&gt;Professor of Economics, Public Policy and Finance at Princeton University. Director of the Julis-Rabinowitz Center for Public Policy and Finance at the Woodrow Wilson School. Holding a bachelors degree in Mathematics with Computer Science and Ph.D. in Economics from MIT. Former professor at University of California, Berkeley and the University of Chicago Booth School of business. Author of a &lt;a href=&quot;http://www.princeton.edu/~atif/houseofdebt.htm&quot;&gt;critically acclaimed&lt;/a&gt; book, &lt;a href=&quot;http://www.princeton.edu/~atif/houseofdebt.htm&quot;&gt;&lt;em&gt;House of Debt&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But the only credentials which mattered to a huge majority in Pakistan was that Atif Mian, a Pakistani-American living in the States since he was 18, belongs to the minority Ahmadiyya Muslim community.&lt;/p&gt;
+
+&lt;h2 id=&quot;ahmadiyya-faith-and-pakistan&quot;&gt;Ahmadiyya Faith and Pakistan&lt;/h2&gt;
+
+&lt;p&gt;The Ordinance XX of the Constitution of Pakistan categorizes members of Ahmadiyya community as non-Muslims and forbids the usage of Islamic terms in reference to its members. Promulgated under the regime of General &lt;a href=&quot;https://en.wikipedia.org/wiki/Muhammad_Zia-ul-Haq&quot;&gt;Muhammad Zia-ul-Haq&lt;/a&gt; on 26 April 1984 as part of his &lt;a href=&quot;https://www.dw.com/en/pakistans-islamization-before-and-after-dictator-zia-ul-haq/a-19480315&quot;&gt;purported “Islamization” of the country&lt;/a&gt;, this legal ordinance bars the followers of Ahmadi faith from publicly practicing the Islamic faith, praying in mosques or possessing religious texts of Islam.&lt;/p&gt;
+
+&lt;p&gt;The late General Zia, a far-right military dictator and self-styled &lt;em&gt;Ameer-ul-Momineen&lt;/em&gt;, the Commander of the Faithful, is &lt;a href=&quot;https://timesofindia.indiatimes.com/india/zia-helped-tablighis-grow-in-pakistan/articleshow/1986383.cms&quot;&gt;singlehandedly responsible&lt;/a&gt; for setting in motion the creeping radicalization which has now engulfed the whole country. Among the baggage that didn’t go up in flames with &lt;a href=&quot;https://www.dawn.com/news/1427540&quot;&gt;Zia’s plane&lt;/a&gt;, Ordinance XX remains arguably the one with most repercussions to date.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-eac-controversy&quot;&gt;The EAC Controversy&lt;/h2&gt;
+
+&lt;p&gt;Thanks to this non-Muslim classification and the prevalent zealotry in the nation when it comes to matters of cricket and religion, Pakistani politicians have to walk a tightrope when dealing with Ahmadi community.&lt;/p&gt;
+
+&lt;p&gt;Imran Khan, who assumed the office of Prime Minister on 18 August 2018, is no stranger to controversy. Merely a few weeks into his new government, amid fears of bankruptcy and faced with a huge current account deficit, Prime Minister Khan constituted an Economic Advisory Committee (EAC) comprising of some of the best known successful economists of Pakistan. One of over a dozen public and private sector members was Atif Mian who, like everyone else, was selected because of his impeccable track record.&lt;/p&gt;
+
+&lt;p&gt;It didn’t take long for many around the country to unite in outrage over this nomination, including politicians, religious leaders, far-right groups and even general public. Even as some of the more outspoken members of Khan’s cabinet defended the nomination by rightly terming the mindset of its opposition “extremist”, others tried to distance themselves from the decision. It didn’t take long for the government to succumb to mounting pressure. Atif Mian was asked to step down within a week of his nomination. In the battle of extremisms against rationality, bigotry and ignorance won.&lt;/p&gt;
+
+&lt;h2 id=&quot;misguided-hatred-of-minorities&quot;&gt;Misguided Hatred of Minorities&lt;/h2&gt;
+
+&lt;p&gt;Witnessing this whole alarming Atif Mian debacle was extremely disappointing, to say the least.&lt;/p&gt;
+
+&lt;p&gt;The ease of exploiting public perception in Pakistan regarding matters of faith comes from an over-reliance on religious leadership for interpretation of Islamic doctrines instead of direct consultation of the original sources: Koran and the Sunnah. This over-reliance in turn is caused by inability of a large part of the masses to read, or the tendency to only “recite” the Koran in its original Arabic language despite knowing next to nothing about Arabic.&lt;/p&gt;
+
+&lt;p&gt;One would think that since the Constitution has declared Ahmadi community a non-Muslim minority, then Pakistanis will learn to give them at least the rights of a minority as defined in the same constitution. But that is evidently not the case.&lt;/p&gt;
+
+&lt;p&gt;Atif Mian, an excellent economist and one of the few renowned individuals who are considered experts in this field, was nominated for an economy-related committee. He was not, for example, asked to lead prayers at Faisal Mosque or to chair meetings of Ministry of Religious Affairs! But many Pakistanis lost sight of this simple distinction in their bid to prove what good Muslims and followers of Prophet Mohammad they are.&lt;/p&gt;
+
+&lt;p&gt;Well, sorry to disappoint them, but they are really not.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-lesson-in-history-the-battle-of-badr&quot;&gt;A Lesson in History: The Battle of Badr&lt;/h2&gt;
+
+&lt;p&gt;The Battle of Badr, fought in second year of the Prophet’s migration to Medina, was the first major battle between the Muslims and their Meccan enemies who they had escaped from. When, with odds stacked against them by 1-to-3, the ragtag group of Muslims achieved a resounding victory, they took over seventy (70) non-Muslim prisoners.&lt;/p&gt;
+
+&lt;p&gt;What did the Prophet decide the price for their freedom was to be? The learned among them were asked to teach ten Muslims, and then they were free to go. Let me emphasize that this group of captives did not even believe in One God, let alone in the finality of Mohammad’s Prophethood. Yet, they were not only asked to teach Muslims but also told that they would earn their freedom by doing this.&lt;/p&gt;
+
+&lt;p&gt;This tells us that the Prophet chose these men to do the job not for their faith but rather for their qualifications. A lesson which maps directly to contemporary situations such as Atif Mian’s nomination. The clear distinction between faith and merit, as demonstrated by the Prophet himself, paves way for such nominations. And as his followers, those who protest against such steps need to reconsider what they are really standing up for.&lt;/p&gt;
+
+&lt;p&gt;To the Pakistanis who are vehemently opposed to the inclusion of non-Muslims in the society, I ask why do they not cry foul when Pakistan approaches non-Muslim nations with pleas of financial assistance. What is more hypocritical than being okay about borrowing money from the same non-Muslims who you are not ready to let in on committees aiming to save your economy?&lt;/p&gt;
+
+&lt;p&gt;Ignorance and half-knowledge can be dangerous. Educate yourself. Or, in the first words God ever spoke to Prophet Mohammad, “Read”!&lt;/p&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Ramblings" /><summary type="html">Early into his new office, Prime Minister Imran Khan’s administration nominated Atif Mian for a post in the newly formed Economic Advisory Council (EAC) to assist the nearly-bankrupt government on issues of finance and economics. A few days later, the whole country had erupted into protests fueled by the far-right religious and political parties.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/atif-main-and-an-intolerant-pakistan/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/atif-main-and-an-intolerant-pakistan/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Boost Your Mortgage Business with These Helpful Tips</title><link href="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business" rel="alternate" type="text/html" title="Boost Your Mortgage Business with These Helpful Tips" /><published>2019-08-15T00:00:00+00:00</published><updated>2019-08-15T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business</id><content type="html" xml:base="http://www.saifkhichi.com//blog/tips-to-boost-mortgage-business">&lt;p&gt;The Great Recession of late 2000s was one of the biggest economic catastrophes in recent history. The housing crash which primarily led to this decline took the marketing powers away from mortgage brokers who were at their peak before this recession. Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years. National Mortgage News, Mortgage Professionals of America and the American Banker have all reported how mortgage professionals are not only returning but taking back their share of the originations from banks.&lt;/p&gt;
+
+&lt;h2 id=&quot;put-the-customer-first&quot;&gt;Put the Customer First&lt;/h2&gt;
+&lt;p&gt;There are many reasons why people are flocking away from banks and towards local professionals. Lack of corporate culture is one of them. Banks follow a culture which is focused more on making a sale, of mortgage loans in this case, than on helping their clientele with their financial goals. On the other hand, financial professionals with their greater training are able to make this connection with the clients. This subsequently lets them sell more loans. Banks’ marketing campaigns notwithstanding, their culture about making a profit rather than the consumers. This is all the leverage mortgage brokers need. Combined with greater understanding of customers’s needs, luring borrowers back to themselves becomes easier.&lt;/p&gt;
+
+&lt;p&gt;As a mortgage broker, your goal may be to sell as many loans as possible. But to do that, focusing on your relationship with the customer instead of actual transaction can help you increase the number of loans you sell. Be empathetic to client needs because you are after all helping them with one of the biggest financial decisions they will ever make. Mortgage is important to them, and an opportunity for you to relate to your customers on an emotional level. Making an emotional connection with your customers can help you gain their trust, upon which long-term relationships can be built.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-power-of-social-media&quot;&gt;The Power of Social Media&lt;/h2&gt;
+&lt;p&gt;Social media with its ability to support marketing efforts has proven to be of great value to mortgage professionals. Ever since they started making a comeback, local brokers have seen this potential. Social media is one of the greatest tool in your arsenal. Be where your competitors are not by establishing your online presence.&lt;/p&gt;
+
+&lt;p&gt;Online platforms offer a huge potential because of their instantaneous and huge reach, Facebook leading the way with 2.2 billion monthly active users (https://www.dreamgrow.com/top-15-most-popular-social-networking-sites/). Facebook influenced 52% of the consumers’ offline and online purchases in 2015, with more than 50 million small businesses having their presence on the social media giant (https://web.facebook.com/sheryl/posts/10156250899685177?_rdc=1&amp;amp;_rdr).
+Effective social media campaigns can take your business miles ahead. The 3Ys strategy which says that your customers should know YOU, like YOU and trust YOU should be your guidepost when marketing, especially online. The reason customers turn to lenders instead of banks is the sense of personal connection. Knowing this, the worst damage you can to your marketing efforts is making your campaigns cliché and robotic.&lt;/p&gt;
+
+&lt;p&gt;In today’s digital world of low attention spans, going beyond merely posting about industry rates and news can stop many social media users mid-scroll. Visual content is 40 times more likely to be catch interest than other types of content, according to HubSpot (https://blog.hubspot.com/marketing/visual-content-marketing-strategy). Instead of automated posts and standard marketing slogans, investing a little effort into knowing what the customers actually care about can make all the difference.&lt;/p&gt;
+
+&lt;h2 id=&quot;patience-is-the-key&quot;&gt;Patience is the Key&lt;/h2&gt;
+&lt;p&gt;If you are a new mortgage broker, breaking into the market will take you time. If you are an established professional who has just now started building their online presence, online engagement may initially be less than what you are used to expect. Give it some time. Identify your customers, and then sit back and study them so that you can get the most out of your marketing efforts. Not everything is about ROI, or at least about instant ROI! Think of it more as a marathon, a long-term effort, than a sprint. If you are looking for swift success, you are bound to be disappointed. There is no one tactic which works for everyone, so the best strategy is to try everything and find out what works for you.&lt;/p&gt;
+
+&lt;p&gt;To conclude, the best way to be a great mortgage professional is to be your own customer, and to focus on what your clients need as opposed to what you want.&lt;/p&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Lifestyle" /><summary type="html">The Great Recession of late 2000s was one of the biggest economic catastrophes in recent history. The housing crash which primarily led to this decline took the marketing powers away from mortgage brokers who were at their peak before this recession. Mortgage professionals have made effort to make a comeback ever since, with considerable success recently. Increasing numbers of friendly brokers have been observed over the past few years. National Mortgage News, Mortgage Professionals of America and the American Banker have all reported how mortgage professionals are not only returning but taking back their share of the originations from banks.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/tips-to-boost-mortgage-business/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/tips-to-boost-mortgage-business/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Check out these new NOVOMATIC SLOT MACHINES!</title><link href="http://www.saifkhichi.com//blog/check-out-these-new-novomatic-slot-machines" rel="alternate" type="text/html" title="Check out these new NOVOMATIC SLOT MACHINES!" /><published>2019-07-15T00:00:00+00:00</published><updated>2019-07-15T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/check-out-these-new-novomatic-slot-machines</id><content type="html" xml:base="http://www.saifkhichi.com//blog/check-out-these-new-novomatic-slot-machines">&lt;p&gt;Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free. With games of all types, novomatic machines have something to offer for everyone from people looking to spend some quality time with casual gameplay to those wanting to make some extra money while at it. Therefore, if you are looking for online casino slot games, play online novomatic which are the best bet you can make.&lt;/p&gt;
+
+&lt;p&gt;Before 2009, Novomatic specialised in land-based casino games but their focus has shifted to online casino slot games since then. Being highly configurable, novomatic slot machines are best suited to catch interest of gamblers of every kind. Also, these casino slot games have an added advantage in their ability of being accessible from any PC or mobile device.&lt;/p&gt;
+
+&lt;h2 id=&quot;popular-titles&quot;&gt;Popular Titles&lt;/h2&gt;
+&lt;p&gt;In this section, we discover some of the most popular titles, which are readily accessible on all devices. Pharaoh’s Gold 2, Book of Ra, Sizzling Hot and Banana Splash are some of the most well-received titles. With the types of reviews these titles have received, they are sure to not disappoint you.&lt;/p&gt;
+
+&lt;p&gt;However, if you are looking for something out of the box, then the following less-conventional titles may be the ones for you. They might not be the most popular, but boring they are not:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hoffmania&lt;/li&gt;
+  &lt;li&gt;Cindereela&lt;/li&gt;
+  &lt;li&gt;Attila&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;payment-methods&quot;&gt;Payment Methods&lt;/h2&gt;
+&lt;p&gt;New novomatic slot machines are everywhere now. Here is a list of reliable payment methods which are accepted by most of the online casino slot games:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Paypal&lt;/li&gt;
+  &lt;li&gt;Skrill&lt;/li&gt;
+  &lt;li&gt;Visa&lt;/li&gt;
+  &lt;li&gt;Trustly&lt;/li&gt;
+  &lt;li&gt;Neteller&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Hence, with the type of fame novomatic enjoys, novomatic slot machines should sound familiar to experienced players. They may not have titles to rival some the flashiest games of the gambling industry, but novomatic slot machines offer a consistent and reliable experience which is quite honestly one of the best you will ever encounter.&lt;/p&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Tech" /><summary type="html">Novomatic is a pioneer of online casino, popular for its incredible casino slot games of all kinds. They have some of the most well-developed games available with these new novomatic slot machines to play for free. With games of all types, novomatic machines have something to offer for everyone from people looking to spend some quality time with casual gameplay to those wanting to make some extra money while at it. Therefore, if you are looking for online casino slot games, play online novomatic which are the best bet you can make.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/check-out-these-new-novomatic-slot-machines/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/check-out-these-new-novomatic-slot-machines/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">His Last Speech</title><link href="http://www.saifkhichi.com//blog/his-last-speech" rel="alternate" type="text/html" title="His Last Speech" /><published>2019-06-15T00:00:00+00:00</published><updated>2019-06-15T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/his-last-speech</id><content type="html" xml:base="http://www.saifkhichi.com//blog/his-last-speech"></content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Story" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/his-last-speech/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/his-last-speech/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Remembering the Battle of Hogwarts</title><link href="http://www.saifkhichi.com//blog/remembering-the-battle-of-hogwarts" rel="alternate" type="text/html" title="Remembering the Battle of Hogwarts" /><published>2018-05-02T00:00:00+00:00</published><updated>2018-05-02T00:00:00+00:00</updated><id>http://www.saifkhichi.com//blog/remembering-the-battle-of-hogwarts</id><content type="html" xml:base="http://www.saifkhichi.com//blog/remembering-the-battle-of-hogwarts">&lt;p&gt;Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.&lt;/p&gt;
+
+&lt;p&gt;Folks on Twitter and Facebook are marking the day with the hashtag &lt;a href=&quot;https://twitter.com/search?q=%23BattleOfHogwarts19&amp;amp;src=typd&quot;&gt;#BattleOfHogwarts19&lt;/a&gt;. In this article, we recall some of the most memorable moments from the battle which decided the fate of the Wizarding World.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-man-who-trusted-you&quot;&gt;“A man who trusted you!”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/1.jpg&quot; alt=&quot;&amp;quot;A man who trusted you!&amp;quot;&quot; /&gt;
+Admit it, we all get goosebumps when Harry Potter finally confronts Severus Snape about the murder of Albus Dumbledore.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tell them how you looked him in the eyes, a man who trusted you, and killed him.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Harry, and the whole of Order of Phoenix, successfully breached Snape’s exhaustive security measures and entered the Hogwarts castle via a secret passage from the Hog’s Head bar in the nearby village.&lt;/p&gt;
+
+&lt;h2 id=&quot;coward&quot;&gt;“Coward!”&lt;/h2&gt;
+&lt;p&gt;And then McGonagall put herself between Harry and Snape, forcing him to flee the castle. Snape flew out a window, leaving his cronies Amycus and Alecto Carrow Stunned in the Great Hall.&lt;/p&gt;
+
+&lt;p&gt;Watch Maggie Smith and Daniel Radcliffe being badass, and Alan Rickman in his element in video of this scene below:&lt;/p&gt;
+
+&lt;p&gt;This scene plays out slightly differently in the books. Snape duels Professors Flitwick, Slughorn and McGonagall all at once before fleeing through a window, leaving a Snape-shaped hole in it. McGonagall boos at him, calling out “&lt;em&gt;Coward!&lt;/em&gt;” as he flees.&lt;/p&gt;
+
+&lt;h2 id=&quot;ive-always-wanted-to-use-that-spell&quot;&gt;“I’ve always wanted to use that spell.”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/3.jpg&quot; alt=&quot;&amp;quot;I've always wanted to use that spell.&amp;quot;&quot; /&gt;
+And then, Voldemort arrived. He gave the castle’s defenders an hour to hand Harry over to him. McGonagall used it to rally the castle’s defenders. Including the suits of armor!&lt;/p&gt;
+
+&lt;p&gt;Such nostalgia! Every time we re-watch this scene, the pride in Professor McGonagall’s eyes has us crying our hearts out. Mrs. Weasley thinks McGonagall has gone mad, though.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-have-your-mothers-eyes&quot;&gt;“You have your mother’s eyes”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/4.jpg&quot; alt=&quot;&quot; /&gt;
+Fast-forwarding to Severus Snape’s death in the Shrieking Shack (or the boathouse, if you prefer the movies) where we witness what we could never have imagined even in our wildest dreams. Severus Snape crying with actual tears and talking to Harry with something akin to tenderness in his voice.&lt;/p&gt;
+
+&lt;p&gt;Snape leaves Harry his memories, and asks him to “look at him” as Hermione and Ron silently look on. He was bitten by Nagini on the Dark Lord’s orders who believed Snape to be the master of Elder Wand.&lt;/p&gt;
+
+&lt;h2 id=&quot;after-all-this-time&quot;&gt;“After all this time?”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/5.jpg&quot; alt=&quot;&quot; /&gt;
+Harry takes Snape’s memories to the Pensieve in the Headmaster’s office. We learn that Dumbledore had been raising Harry as a pig for slaughter. Harry has a piece of Voldemort’s soul and must die for Voldemort to be killed.&lt;/p&gt;
+
+&lt;p&gt;Snape is furious when he learns this, and reminds Dumbledore they were supposed to have been protecting Lily Evans’ son, not preparing him for death! He conjures up a doe Patronus from his wand, the same as Lily’s. Same Patronuses are a mark of true love in the Wizarding World.&lt;/p&gt;
+
+&lt;h2 id=&quot;until-the-very-end&quot;&gt;“Until the very end”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/6.jpg&quot; alt=&quot;&quot; /&gt;
+Harry goes into the Forbidden Forest where Voldemort is waiting for him and greets death as an old friend. &lt;a href=&quot;http://www.telegraph.co.uk/culture/harry-potter/11882434/JK-Rowling-explains-how-Harry-Potter-got-his-Invisibility-Cloak.html&quot;&gt;Like Ignotus Peverell&lt;/a&gt;. He finally works out how to open the snitch Dumbledore left him in his will, and uses the Resurrection Stone inside to call images of his parents, Sirius, and Lupin from death.&lt;/p&gt;
+
+&lt;p&gt;Harry asks them to stay close to him as he walks to meet his death. He finds Voldemort and the Death Eaters in Aragog’s clearing and Voldemort uses a Killing Curse on him.&lt;/p&gt;
+
+&lt;h2 id=&quot;draco-is-he-alive&quot;&gt;“Draco, is he alive?”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/7.jpg&quot; alt=&quot;&quot; /&gt;
+Voldemort sends Narcissa Malfoy to confirm whether Harry is really dead this time. Narcissa however no longer cares about Voldemort’s victory by now. All she wants is to return to the castle and find her son. Her love for her son has overpowered her fear of the Dark Lord.&lt;/p&gt;
+
+&lt;p&gt;So she lies. After confirming Draco’s well-being from Harry in a whisper, &lt;a href=&quot;https://www.quora.com/At-the-end-of-Deathly-Hallows-if-Harry-was-a-horcrux-how-could-he-survive-Voldemort-attacking-him-with-the-Avada-Kedavra-curse-in-the-forest&quot;&gt;who survived the Killing Curse yet again&lt;/a&gt;, she announces that Harry is dead. Voldemort, who had recovered from aftereffects of his curse moments ago, is not able to detect the lie in his moment of weakness.&lt;/p&gt;
+
+&lt;h2 id=&quot;not-my-daughter-you-b&quot;&gt;“Not my daughter, you b&lt;em&gt;**&lt;/em&gt;!”&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/remembering-the-battle-of-hogwarts/8.jpg&quot; alt=&quot;&quot; /&gt;
+Voldemort returns to the castle at head of a victorious army. That is, until Harry reveals that he is alive. Narcissa has fled with her husband and son by then. Many other Death Eaters desert Voldemort on seeing Harry alive.&lt;/p&gt;
+
+&lt;p&gt;But not Bellatrix. She fights as fiercely as Voldemort himself. As one of Bellatrix’s Killing Curses misses Ginny Weasley by inches, the motherly Mrs. Weasley challenges Bellatrix and duels her to death.&lt;/p&gt;
+
+&lt;p&gt;These are some of the most iconic moments from the Battle. As we conclude the article, we would like to ask everyone to raise their wands and observe a minute of silence in memory of the fallen warriors of the Battle of Hogwarts; Severus Snape, Fred Weasley, Remus Lupin, Nymphadora Tonks, Colin Creevy, Lavender Brown, and all others who laid their lives defending the world from the darkest wizard of all times.&lt;/p&gt;</content><author><name>Muhammad Saif Ullah Khan</name></author><category term="Books" /><summary type="html">Today marks the day of the final showdown between the defenders of Hogwarts and the forces of late Lord Voldemort. In the fictional world of Magical Britain, nineteen years ago today on 2 May 1998, the Chosen One sacrificed himself for the Wizarding World, and the Dark Lord was eventually killed by his own rebounding Killing Curse.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://www.saifkhichi.com//assets/images/blog/remembering-the-battle-of-hogwarts/0.jpg" /><media:content medium="image" url="http://www.saifkhichi.com//assets/images/blog/remembering-the-battle-of-hogwarts/0.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
